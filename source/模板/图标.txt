@@ -1,0 +1,1 @@
+<includeonly>{{#if:{{{2|}}}|[[File:{{{2}}}|15px|link={{{1}}}]]|[[File:{{{1}}}.svg|15px|link={{{1}}}]]}} [[{{{1}}}]]</includeonly><noinclude>{{图标|宠物|宠物.png}}</noinclude>
