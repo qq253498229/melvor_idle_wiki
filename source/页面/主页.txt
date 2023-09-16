@@ -1,0 +1,146 @@
+<div class="container main">
+<div class="row">
+<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 "><div class="game-introduction" style="margin-bottom:40px">
+__NOTOC__
+=主页=
+
+
+
+{{提示|错误|维基目前正在为 Atlas of Discovery 扩展包的发布进行更新。在更新完成之前，一些页面可能显示不准确的信息。}}
+
+__NOTOC__
+
+
+==欢迎来到《梅尔沃放置》维基百科！==
+
+
+
+这是《[https://www.melvoridle.com/ 梅尔沃放置]》的中文维基百科，这款受《RuneScape》启发并由[https://wiki.melvoridle.com/w/Malcs_(aka_MrFrux) Malcs（又名MrFrux）]创建，[https://wiki.melvoridle.com/w/Prat Prat] 和 [https://wiki.melvoridle.com/w/User:Coolrox95 Coolrox95] 也提供了帮助的放置类RPG。社区的一部分也积极参与维基的改进和填写，尽管维基的大部分内容是从源代码生成的。
+
+
+
+游戏当前版本为v1.2。关于未来计划，请查看[https://changelog.melvoridle.com/ 官方路线图]。尚未确定未来更新的日期，但请务必加入社交媒体以第一时间获取公告！
+
+</div>
+<div class="game-introduction" style="margin-bottom:40px">
+__TOC__
+
+
+
+==梅尔沃放置==
+
+
+
+* [https://www.melvoridle.com/ 梅尔沃放置官方网站]
+* [https://store.steampowered.com/app/1267910/Melvor_Idle/ Steam页面]
+* [https://play.google.com/store/apps/details?id=com.malcs.melvoridle 谷歌商店页面]
+* [https://apps.apple.com/us/app/melvor-idle/id1518963622 苹果商店页面]
+
+
+
+
+
+正如在Steam上所指出的：“''受《RuneScape》启发，Melvor Idle将冒险游戏令人上瘾的核心内容剥离到了最纯粹的形式！这是一个功能丰富的放置/数值游戏，将独特的熟悉感与全新的游戏体验相结合。增加20多种技能让体验更加愉快。''”
+
+
+
+截止到今天，游戏内容包括升级各种技能至其最高级别，获得不同的战利品，并击败游戏最终的boss。
+
+
+如果您是新手，可以阅读[[入门指南]]以了解更多信息。
+
+
+Melvor Idle由[https://jagex.com/ Jagex]发布。
+</div>
+
+<div class="game-introduction" style="margin-bottom:40px">
+
+
+==主菜单导航==
+
+
+{{菜单}}
+
+
+<div class="game-introduction" style="margin-bottom:40px">
+
+
+==其它重要文章==
+
+* 游戏模式
+* 有用的外部链接
+* 常见问题解答
+* 指南
+* 更新日志
+* Mod 创建
+* 电子表格和理论构建
+* 术语表 - 社区常用的缩写和速记列表。
+</div>
+
+==贡献==
+
+* ''重要文章：贡献''
+
+
+如果您想帮助维基，可以加入我们的Discord，并直接私信维基管理员以获取账号。
+
+
+=== 注意事项 ===
+
+
+
+维基上的许多内容都是通过Lua函数生成的。请在进行编辑时小心谨慎。如果您注意到一个页面是由Lua生成的，请在编辑页面之前联系维基管理员。
+
+
+=== 可以做什么 ===
+
+
+* ''重要文章：贡献/待办事项列表''
+
+
+如果您想帮助但不知道该做什么，以下是一些您可以做的事情：
+
+* 检查“过时页面”分类，如果需要，请更新它们，然后将页面上的模板调用更新到最新版本。
+* 检查“带有损坏文件链接”的页面，并在需要时修复缺失的图像。 更新页面，如“赚钱指南”或“常见问题解答”，以淘汰已过时的答案，并更新已过时的答案。
+* 查看现有的指南并改进格式或添加额外信息。
+</div>
+<!--在左侧8列中再分出2列-->
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<!--链接块1开始-->
+
+<!--链接块1结束-->
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<!--链接块1开始-->
+
+<!--链接块1结束-->
+</div>
+<!--在左侧8列中再分出2列-->
+</div>__TOC__<!--左侧8列的内容结束-->
+<!--以下开始是右侧4列的内容-->
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+
+<!--关于WIKI开始-->
+<div class="sidebar-card" style="margin:0 0 20px 0">
+<div class="bili-title-h1">关于WIKI</div>
+<div class="bili-divider"></div>
+
+
+欢迎大家来到梅尔沃放置 WIKI！
+
+本WIKI现有{{NUMBEROFUSERS}} 名注册用户；近期有 [[特殊:贡献得分|{{NUMBEROFACTIVEUSERS}}]] 位活跃编辑者， {{NUMBEROFEDITS}} 次编辑； [[特殊:最近更改|{{NUMBEROFPAGES}}]] 个页面。
+
+
+</span>
+<div class="sidebar-content"></div>
+</div>
+<!--关于WIKI结束-->
+<!--关于游戏开始-->
+<span class="plainlinks">[https://store.steampowered.com/app/1267910/Melvor_Idle/ <div class="chronicon-button" style="width:100%"> <span class="txt" style="color:#fff">游戏Steam商店地址</span></div>]</span>
+<span class="plainlinks">[https://melvoridle.com/ <div class="chronicon-button" style="width:100%"> <span class="txt" style="color:#fff">游戏官方主页</span></div>]</span>
+<!--关于游戏结束-->
+</div>
+<!--右侧4列的内容结束-->
+</div>
+</div>
+<!--页面结束-->
