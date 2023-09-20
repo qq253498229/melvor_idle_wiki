@@ -47,9 +47,9 @@
 |-
 |宠物斯内克-扒窃稀有     || 	+50% 扒窃金币掉落
 |-
-|屋顶狂奔-灵巧5级      || 	-0.2秒扒窃间隔<br/>+20% 扒窃金币掉落<br/>+35 隐匿
+|屋顶跑酷-灵巧5级      || 	-0.2秒扒窃间隔<br/>+20% 扒窃金币掉落<br/>+35 隐匿
 |-
-|冰冻跳跃-灵巧9级      || 	+5% 全局道具翻倍
+|冰川跳跃-灵巧9级      || 	+5% 全局道具翻倍
 |-
 |技能支柱-灵巧被动      || +3% 全局道具翻倍
 |-
@@ -154,14 +154,14 @@
 
 ==== 提高金币加成 ====
 {| class="wikitable"
-! Name
-! Effect
+! 名称
+! 效果
 |-
-| {{Icon|Mastery|notext=true}} Level 90 in every used Obstacle || -27% 灵巧间隔
+| 每个障碍专精等级90级 || -27% 灵巧间隔
 |-
-| 灵巧Mountain Climb || -12% 灵巧间隔<br> +15% 灵巧获得的金币
+| 障碍5翻山越岭 || -12% 灵巧间隔<br> +15% 灵巧获得的金币
 |-
-| {{Skill|灵巧|Tree Balance}} || -12% 灵巧间隔
+| 障碍6树顶平衡 || -12% 灵巧间隔
 |-
 | Aorpheat的图章戒指 || +100% 灵巧获得的金币
 |-
@@ -173,7 +173,7 @@
 |-
 | 灵巧斗篷 || +10% 灵巧获得的金币
 |-
-| {{PetIcon|Sam}} || +15% 灵巧获得的金币
+| 灵巧宠物山姆 || +15% 灵巧获得的金币
 |-
 | 灵巧25% 节点 || +10% 灵巧获得的金币
 |-
@@ -185,188 +185,200 @@
 ==== 方法 ====
 {| class="wikitable" style="width:99%; text-align:center;"
 |- class="headerRow-0"
-!style="width:9%" |Slot 1
-!style="width:9%" |Slot 2
-!style="width:9%" |Slot 3
-!style="width:9%" |Slot 4
-!style="width:9%" |Slot 5
-!style="width:9%" |Slot 6
-!style="width:9%" |Slot 7
-!style="width:9%" |Slot 8
-!style="width:9%" |Slot 9
-!style="width:9%" |Slot 10
+!style="width:9%" |障碍 1
+!style="width:9%" |障碍 2
+!style="width:9%" |障碍 3
+!style="width:9%" |障碍 4
+!style="width:9%" |障碍 5
+!style="width:9%" |障碍 6
+!style="width:9%" |障碍 7
+!style="width:9%" |障碍 8
+!style="width:9%" |障碍 9
+!style="width:9%" |障碍 10
 !style="width:9%" |Pillar
 |-
-| Rope Swing || Monkey Bars || Pit Jump || Gap Jump || Mountain Climb || Tree Balance || Heat Trap || Tree Hang || Ice Jump || Dragon Fight || Pillar of Generosity
+| 秋千 || 攀爬架 || 深坑跳远 || 沟壑跳远 || 翻山越岭 || 树顶平衡 || 灼热陷阱 || 树木悬挂 || 冰川跳跃 || 斗龙 || Pillar of Generosity
 |}
 
-Using the obstacles listed above and all available boosts results in a maximum of 59% 灵巧间隔 Reduction and +195% GP. The total duration for this course is 79s, which is reduced by 59% to 32.39s. The total GP is {{GP|15187}}, which is increased by 195% to {{GP|44802}}, for a total of {{GP|4979498}} per hour. Although 灵巧 cannot achieve the higher GP rates of other methods, its main advantage is being extremely passive. Once set up, it can be left running and make GP with zero effort.
+使用上面列出的障碍物和并获取所有可用的加成，最多可以减少59%的灵巧间隔，并增加195%的金币获取量。
+该课程的总时长为79秒，减少了59%后为32.39秒。
+总金币获取量为15,187，增加195%之后为 44,802，总共每小时获取金币 4,979,498，也就是大概5,000k。
+尽管灵巧无法达到其他方法那样更高的金币获取效率，但其主要优势在于省心。
+一旦设置好，它可以持续运行，十分稳定地赚取金币。
 
-== Fishing (Max {{GP|4421}}k/hr) ==
-{{Main|Reference=Fishing/Moneymaking}}
+== 钓鱼 (最大每小时4,421k) ==
+重要文章: {{钓鱼赚钱}}
 
-{{:Fishing/Moneymaking}}
+== 带着宝石手套采矿 (一般每小时470k,最大每小时 1,350k) ==
 
-== 采矿 with Gem Gloves (470k/hr usual, 1350k/hr max) ==
-{{OldStrategy|1.0.5}}
 ==== 需求 ====
-* {{GP|500000}} to purchase {{ItemIcon|Gem Gloves}}.
+
+* 攒够500k购买[[宝石手套]]
+
 ==== 提高金币加成 ====
 
 {| class="wikitable"
-! Name
-! Effect
+! 名称
+! 效果
 |-
-| {{UpgradeIcon|Dragon Pickaxe}} || -50% 采矿 Time, +7% Chance of obtaining 2 ore
+| 龙岩稿 || -50% 采矿间隔, +7% 几率获得双倍矿石
 |-
-| {{UpgradeIcon|Master of Nature}} || -15% Base 采矿 Interval (additive with Dragon Pickaxe to a total of -65% 采矿 Time)
+| 自然之主 || -15% 基础采矿间隔 (和龙岩稿一同使用，总共 -65% 采矿间隔)
 |-
-| {{MasteryReq|Adamantite Ore|99}}/{{MasteryReq|Dragonite Ore|99}} || +15% Chance of obtaining 2 ore
+| 精金矿专精99级/龙岩矿专精99级 || +15% 几率获得双倍矿石
 |-
-| {{ItemIcon|Aorpheat's Signet Ring}} || +10% chance to gain double resources
+| Aorpheat的图章戒指 || +10% 几率获得双倍资源
 |-
-| {{ItemIcon|Ring of Wealth}} || +7% chance to gain double resources
+| 富贵戒指 || +7% 几率获得双倍资源
 |-
-| {{ItemIcon|采矿 斗篷}} || +1 Coal Ore per Action
+| 采矿斗篷 || +1 每次采矿获得煤矿石
 |-
-| {{Icon|Terra|type=constellation}} || Up to +15% Chance to Double Items in 采矿 and +15% Chance to receive gems or +15% chance to do zero damage
+| 泰拉星座 || +15% 几率在采矿中获得双倍物品, +15% 几率获得宝石（不包括符文精华）, +15% 几率不对矿点造成伤害
 |-
-| {{ItemIcon|Perfect Swing Potion IV}} || +80% Chance to deal no Damage to a 采矿 Node
+| 精雕细琢药水 || +80% 几率不对矿点造成伤害
 |-
-| {{ItemIcon|Miner's Helmet}} || +3% Chance to deal no Damage to a 采矿 Node
+| 矿工帽 || +3% 几率不对矿点造成伤害
 |-
-| {{ItemIcon|Merchant's Permit}} || Gem Gloves only cost 450k instead of 500k
+| 商人许可证 || 宝石手套价格从500k降低到450k
 |-
-| [[采矿#Mastery Pool Checkpoints|25% 采矿 Mastery Pool Checkpoint]] || Reduced Ore respawn time by 10%
+| 采矿25%精通池节点 || 10% 矿石再生时间缩短
 |-
-| [[采矿#Mastery Pool Checkpoints|50% 采矿 Mastery Pool Checkpoint]] || Reduce 采矿 interval by 0.2s
+| 采矿50%精通池节点 || 0.2s 采矿间隔缩短
 |-
-| [[采矿#Mastery Pool Checkpoints|95% 采矿 Mastery Pool Checkpoint]] || All Rocks gain +10 Maximum HP
+| 采矿95%精通池节点 || +10 全部矿点最大生命值
 |-
-| {{PetIcon|Cool Rock}} || +5 采矿 Node HP
+| 采矿宠物 || +5 全部矿点最大生命值
 |}
 
 ==== 方法 ====
-This method is recommended to use if you play {{Icon|Adventure}} and there's no better money-making method at hand.
 
-# Buy {{ItemIcon|Gem Gloves}},
-# Mine {{ItemIcon|Adamantite Ore}} or anything below it until you unlock it,
-# Sell gems and ores that you got.
+如果你正在玩毛线磨石，并且没有更好的赚钱办法，那么建议使用这个办法。
 
-The method relies on the {{ItemIcon|Gem Gloves}} that increase the gems drop chance to 100% when 采矿 anything but the {{ItemIcon|Rune Essence}}. The average value of a [[采矿#Gems|Gem]] is {{GP|381.25}}, while a single charge of the Gem Gloves costs only {{GP|250}}. Thus {{GP|131.25}} of profit is earned per 采矿 action from gems.
+# 购买宝石手套
+# 挖精金矿或者是更高的矿点
+# 卖出全部矿石和宝石
 
-With the {{UpgradeIcon|Dragon Pickaxe}} and {{MasteryReq|Adamantite Ore|50}}, you will get around {{GP|470000}} per hour.
+这种方法依赖于宝石手套，当采矿时，它可以将掉落宝石的几率提高到100%，当然是除了符文精华之外的任何矿石。
+平均一个宝石的价值为381.25，而宝石手套的一次使用只需 250。因此，每次采矿操作从宝石中可以获得 131.25的利润。
 
-A fully juiced setup with the {{ItemIcon|Dragonite Ore}} will give around {{GP|1350000}} per hour.<br>
-Please note that this setup already includes the {{UpgradeIcon|Master of Nature}} which is unlocked after beating the {{ZoneIcon|Earth God Dungeon}}. This upgrade is quite essential to reach GP rates this high. Players at this point have probably already better money making methods at hand.
-Without the {{UpgradeIcon|Master of Nature}} upgrade and only {{ItemIcon|Perfect Swing Potion III}} the GP rate already drops to {{GP|787000}}.<br>
-The calculation does not include any {{Skill|星象学}} modifiers.
+如果搭配龙岩镐和50级采矿专精，你将每小时获得大约 470k。
 
-{{SpoilerBox|text=
-The results were calculated with the [[Spreadsheets_and_Theorycrafting#List_of_Spreadsheets|Melvor Idle Rate and Resource Calculator]] created by Kidbiz20#2026.
-To check your own setup, do the following:
-# Copy the spreadsheet to your Google Drive.
-# On the Equipment tab, specify for 采矿 that you wear Gem Gloves.
-# On the 采矿 tab, set Current Experience to unlock the ores, Ores masteries, and other things that you have.
-# Specify any additional things in the sheet if you want to, like pets and so on.
-# You should see your gains in the kGP/h column of the 采矿 tab.
-|title=Details|color=default}}
+如果是完全体挖龙岩矿的花，每小时将获得大约 1,350k。
+请注意，此设置已经包括了在击败大地之神地牢后解锁的自然之主效果。
+这个升级对于达到如此高的金币获取率非常重要。
+此时的玩家可能已经有更好的赚钱方法。
+如果没有自然之主升级，只有精雕细琢药水III的花，金币获取率将下降到 787k。
 
-== Fletching Dragon Javelins with Alt. Magic (Max 18,265k/hr) ==
-{{OldStrategy|1.0.5}}
+这个计算没有包括任何星象学修正。
+
+
+{{折叠面板|开始|主框=1}}
+{{折叠面板|标题=细节|选项=1|主框=1|样式=info|展开=否}}
+这些结果是由 Kidbiz20#2026 创建的 [[https://docs.google.com/spreadsheets/d/1iOafXHZponuxGm-p95sHLGQpanVtetCnL8h9kjFFX18 梅尔沃放置速率和资源计算器]] 计算得出。
+要检查您自己的配置，请执行以下步骤:
+# 将电子表格复制到您的Google Drive中。
+# 在 Equipment 标签页上，为采矿设置您穿戴宝石手套。
+# 在"Mining"标签页上，将"Current Experience"设置为您所解锁的矿石、矿石专精等。
+# 如果需要，可以在表格中指定任何其他附加信息，比如宠物等。
+# 您应该在"Mining"标签页的"kGP/h"列中看到您的收益。
+{{折叠面板|内容结束}}
+{{折叠面板|结束}}
+
+== 使用生活类魔法辅助锻造制作龙岩标枪头 (最大每小时 18,265k) ==
+
 ==== 需求 ====
-* {{SkillReq|伐木|90}}
-* {{SkillReq|采矿|95}}, 271 采矿 Mastery levels in total
-* {{SkillReq|Smithing|93}}
-* {{SkillReq|Fletching|92}}
-* {{SkillReq|Runecrafting|80}}
-* {{SkillReq|Magic|95}}
+* 伐木90级
+* 采矿95级, 全部采矿专精总和271级
+* 锻造93级
+* 弓匠92级
+* 符文锻造80级
+* 生活类魔法95级
 
 ==== 提高金币加成 ====
 ===== 伐木 =====
 {| class="wikitable"
-! Name
-! Effect
+! 名称
+! 效果
 |-
-| {{UpgradeIcon|Dragon Axe}} || -50% cut time
+| 龙岩斧 || -50% 伐木间隔
 |-
-| {{ItemIcon|伐木 斗篷}} || -15% Base 伐木 Interval (additive with the bonuses above a total of -65% cut time)
+| 伐木斗篷 || -15% 基础伐木间隔 (算上之前的一共 -65% 伐木间隔)
 |-
-| {{UpgradeIcon|Master of Nature}} || -15% Base 伐木 Interval (additive with the bonuses above to a total of -80% cut time)
+| 自然之主 || -15% 基础伐木间隔 (算上之前的一共 -80% 伐木间隔)
 |-
-| {{MasteryReq|Redwood Logs|99}}<br> {{MasteryReq|Yew Logs|99}} || Decreased cut interval by 0.2s for this Tree (on top of the -80% cut time from above modifiers)<br> +45% chance to receive 2x Logs per action
+| 红杉树专精99级<br>紫杉树专精99级 || -0.2s 制定树木的伐木间隔 (在之前-80%伐木间隔的基础上)<br> +45% 几率伐木获得翻倍
 |-
-| {{ItemIcon|Bird Nest Potion IV}} || +30% Chance for [[Bird Nest]]s to drop in 伐木
+| 鸟巢药水 IV || +30% 几率在伐木时获得[[鸟巢]]
 |-
-| {{ItemIcon|Lumberjack's Top}} || +2% Bird Nest drop rate
+| 伐木工衬衣 || +2% 鸟巢掉落几率
 |-
-| [[伐木#Mastery Pool Checkpoints|25% 伐木 Mastery Pool Checkpoint]] || +5% increased chance to receive double Logs per action
+| 25% 伐木精通池节点 || +5% 几率每次动作获得双倍木材
 |-
-| [[伐木#Mastery Pool Checkpoints|50% 伐木 Mastery Pool Checkpoint]] || All Logs sell for +50% GP Value
+| 50% 伐木精通池节点 || 所有木材售价 +50% 金币
 |-
-| [[伐木#Mastery Pool Checkpoints|95% 伐木 Mastery Pool Checkpoint]] || When you receive a Birds Nest, always receive a base minimum of 2.
+| 95% 伐木精通池节点 || 收货鸟巢时的最少基础数量永远为 2
 |-
-| {{PetIcon|Beavis}} || +5% Chance to Double Items in 伐木
+| 伐木宠物 || +5% 几率伐木获得翻倍
 |-
-| {{UpgradeIcon|Multi-Tree}} || cut 2 different trees simultaneously
+| 多树砍伐 || 同时砍伐两种不同的树木
 |-
-| {{MasteryReq|Deedree|type=constellation|99}} || +15% Chance to Double Items In 伐木 and +15% Chance for Bird Nests to drop in 伐木
+| 狄德利星座专精99级 || +15% 几率伐木获得翻倍<br> +15% 鸟巢掉落几率
 |}
 
 ===== 采矿 =====
 {| class="wikitable"
-! Name
-! Effect
+! 名称
+! 效果
 |-
-| {{UpgradeIcon|Dragon Pickaxe}} || -50% 采矿 Time, +7% Chance of obtaining 2 ore
+| 龙岩稿 || -50% 采矿间隔, +7% 几率获得双倍矿石
 |-
-| {{UpgradeIcon|Master of Nature}} || -15% Base 采矿 Interval (additive with Dragon Pickaxe to a total of -65% 采矿 Time)
+| 自然之主 || -15% 基础采矿间隔 (和龙岩稿一同使用，总共 -65% 采矿间隔)
 |-
-| {{MasteryReq|Rune Essence|99}}<br>{{MasteryReq|Runite Ore|99}}<br>{{MasteryReq|Dragonite Ore|99}} || +15% Chance of obtaining 2 ore
+| 符文精华专精99级<br>符文矿专精99级<br>龙岩矿专精99级 || +15% 几率获得双倍矿石
 |-
-| {{ItemIcon|采矿 斗篷}} || +1 Coal Ore per Action
+| 采矿斗篷 || +1 每次采矿获得煤矿石
 |-
-| {{ItemIcon|Miner's Helmet}} || +3% Chance to deal no Damage to a 采矿 Node
+| 矿工帽 || +3% 几率不对矿点造成伤害
 |-
-| [[采矿#Mastery Pool Checkpoints|25% 采矿 Mastery Pool Checkpoint]] || Reduced Ore respawn time by 10%
+| 采矿25%精通池节点 || 10% 矿石再生时间缩短
 |-
-| [[采矿#Mastery Pool Checkpoints|50% 采矿 Mastery Pool Checkpoint]] || Reduce 采矿 interval by 0.2s
+| 采矿50%精通池节点 || 0.2s 采矿间隔缩短
 |-
-| [[采矿#Mastery Pool Checkpoints|95% 采矿 Mastery Pool Checkpoint]] || All Rocks gain +10 Maximum HP
+| 采矿95%精通池节点 || +10 全部矿点最大生命值
 |-
-| {{PetIcon|Cool Rock}} || +5 采矿 Node HP
+| 采矿宠物 || +5 全部矿点最大生命值
 |-
-| {{ItemIcon|Perfect Swing Potion IV}} || +80% Chance to deal no Damage to a 采矿 Node
+| 精雕细琢药水 || +80% 几率不对矿点造成伤害
 |-
-| {{MasteryReq|Terra|type=constellation|99}} || +15% Chance to Double Items in 采矿 and +15% Chance to deal no Damage to a 采矿 Node
+| 泰拉星座 || +15% 几率在采矿中获得双倍物品, +15% 几率获得宝石（不包括符文精华）, +15% 几率不对矿点造成伤害
 |-
-| {{ItemIcon|Merchant's Permit}} || permanent 10% discount on all skill gloves
+| 商人许可证 || 宝石手套价格从500k降低到450k
 |-
-| preferably {{ItemIcon|采矿 Gloves}} || Collect 2x ore when worn
+| 最好是采矿手套（不是宝石手套） || 穿戴时采矿 x2
 |}
 
-===== Runecrafting =====
+===== 符文锻造 =====
 {| class="wikitable"
-! Name
-! Effect
+! 名称
+! 效果
 |-
-| {{ItemIcon|Runecrafting 斗篷}} || +35% Chance to Preserve Resources in Runecrafting
+| 符文锻造斗篷 || +15% 几率通过符文锻造获得双倍掉落和锻造符文时额外创造<br> +5 枚同类型符文
 |-
-| {{MasteryReq|Lava Rune|99}}<br>{{MasteryReq|Spirit Rune|99}} || 11 Runes Produced per Runecraft
+| 岩浆符文专精99级<br>灵魂符文专精99级 || 每次制作 11 枚符文
 |-
-| [[Runecrafting#Mastery Pool Checkpoints|50% Runecrafting Mastery Pool Checkpoint]] || +10% resource preservation chance for Runecrafting
+| 50% 扒窃精通池节点 || +10% 几率符文锻造时留存资源
 |-
-| [[Runecrafting#Mastery Pool Checkpoints|95% Runecrafting Mastery Pool Checkpoint]] || Grants an extra 5 Runes per craft
+| 95% 扒窃精通池节点 || 每次锻造符文时额外 5 份符文
 |-
-| {{UpgradeIcon|Expanded Knowledge}} || -15% Base Runecrafting Interval
+| 博学多识 || -15% 基础符文锻造间隔
 |-
-| {{PetIcon|Gunter}} || +10% Chance to Preserve Resources in Runecrafting
+| 符文锻造宠物 || +10% 几率符文锻造时留存资源
 |}
 
-===== Alt. Magic =====
+===== 生活类魔法 =====
 {| class="wikitable"
-! Name
-! Effect
+! 名称
+! 效果
 |-
 | {{ItemIcon|Nature's Call Staff}} || Reduces the Nature Rune cost of spells by 1
 |-
@@ -378,15 +390,15 @@ To check your own setup, do the following:
 |-
 | {{PetIcon|Jelly Jim}} || +2% Rune Preservation
 |-
-| {{ItemIcon|Amulet of Incantation}} || -0.2s Magic Interval<br>+10% Rune Preservation for Alt. Magic Spells
+| {{ItemIcon|Amulet of Incantation}} || -0.2s Magic Interval<br>+10% Rune Preservation for 生活类魔法 Spells
 |-
-| {{MasteryReq|Arachi|type=constellation|99}} || +15% Chance to Double Items in Runecrafting and +15% Rune Preservation for Alt. Magic Spells
+| {{MasteryReq|Arachi|type=constellation|99}} || +15% Chance to Double Items in 符文锻造 and +15% Rune Preservation for 生活类魔法 Spells
 |}
 
 ===== Smithing =====
 {| class="wikitable"
-! Name
-! Effect
+! 名称
+! 效果
 |-
 | {{MasteryReq|Dragon Javelin Heads|99}} || +30% Chance to preserve Resources, +35% Chance to double Items
 |-
@@ -405,8 +417,8 @@ To check your own setup, do the following:
 
 ===== Fletching =====
 {| class="wikitable"
-! Name
-! Effect
+! 名称
+! 效果
 |-
 | {{ItemIcon|Fletching 斗篷}} || x2 Items received from Fletching
 |-
@@ -427,8 +439,8 @@ To check your own setup, do the following:
 
 ===== Other =====
 {| class="wikitable"
-! Name
-! Effect
+! 名称
+! 效果
 |-
 | {{ItemIcon|Aorpheat's Signet Ring}} affects all skills above || +10% Chance to Double Items Globally
 |-
@@ -436,7 +448,7 @@ To check your own setup, do the following:
 |-
 | {{ItemIcon|Clue Chasers Insignia}} affects all skills above except {{Skill|Alternative Magic}} || 10% increased chance to receive Global Rare Items, Mastery Tokens, Bird Nests from 伐木, Gems from 采矿, and Coal from 生火.
 |-
-| {{ItemIcon|Crown of Rhaelyx}} affects all skills above except {{Skill|Alternative Magic}} || +10% chance to preserve resources in non-combat skills (Does not work with Alt. Magic).
+| {{ItemIcon|Crown of Rhaelyx}} affects all skills above except {{Skill|Alternative Magic}} || +10% chance to preserve resources in non-combat skills (Does not work with 生活类魔法).
 |-
 | {{SkillReq|灵巧|99}} obstacles about resource preservation and pillar || build cost reduction and half debuffs
 |-
@@ -453,13 +465,13 @@ The following setup will maximize total profits when all things are considered, 
 * Equip the following:
 ** {{ItemIcon|Miner's Helmet}}
 ** {{ItemIcon|Clue Chasers Insignia}}
-** {{ItemIcon|Maximum 斗篷}} (or {{ItemIcon|采矿 斗篷}} when {{Skill|采矿}}, {{ItemIcon|伐木 斗篷}} when {{Skill|伐木}}, {{ItemIcon|Runecrafting 斗篷}} when {{Skill|Runecrafting}}, {{ItemIcon|Magic 斗篷}} when performing {{Skill|Alt. Magic}} and {{ItemIcon|Fletching 斗篷}} when {{Skill|Fletching}})
+** {{ItemIcon|Maximum 斗篷}} (or {{ItemIcon|采矿 斗篷}} when {{Skill|采矿}}, {{ItemIcon|伐木 斗篷}} when {{Skill|伐木}}, {{ItemIcon|符文锻造 斗篷}} when {{Skill|符文锻造}}, {{ItemIcon|Magic 斗篷}} when performing {{Skill|生活类魔法}} and {{ItemIcon|Fletching 斗篷}} when {{Skill|Fletching}})
 ** {{ItemIcon|采矿 Gloves}}
 ** {{ItemIcon|Lumberjack's Top}}
 ** {{ItemIcon|Aorpheat's Signet Ring}}
 ** {{ItemIcon|Ring of Wealth}} on [[Passive Slot]]
 ** {{ItemIcon|Bird Nest Potion IV}} on {{Skill|伐木}}
-** {{ItemIcon|Elemental Potion IV}} on {{Skill|Runecrafting}}
+** {{ItemIcon|Elemental Potion IV}} on {{Skill|符文锻造}}
 ** {{ItemIcon|Perfect Swing Potion IV}} on {{Skill|采矿}}
 ** {{ItemIcon|Skilled Fletching Potion IV}} on {{Skill|Fletching}}
 ** {{ItemIcon|Nature's Call Staff}}
@@ -475,10 +487,10 @@ The following setup will maximize total profits when all things are considered, 
 ** Cut {{ItemIcon|Redwood Logs|qty=2509}} and {{ItemIcon|Yew Logs}}
 * {{Skill|采矿}}
 ** Mine {{ItemIcon|Rune Essence|qty=12}}, {{ItemIcon|Dragonite Ore|qty=48}} and {{ItemIcon|Runite Ore|qty=96}}
-* {{Skill|Runecrafting}}
+* {{Skill|符文锻造}}
 ** Runecraft {{ItemIcon|Spirit Rune|qty=76}} and {{ItemIcon|Lava Rune|qty=179}}
 
-*{{Skill|Alt. Magic}}
+*{{Skill|生活类魔法}}
 ** Equip {{ItemIcon|Amulet of Incantation}}
 ** Change {{Skill|灵巧}} Obstacle 4 to Cave Climb to get +5% Rune Preservation (Min cost {{GP|125000}}, {{ItemIcon|Air Rune|qty=25}}, {{ItemIcon|Earth Rune|qty=25}} and {{ItemIcon|Iron Bar|qty=13}})
 ** Cast {{Icon|Superheat|Superheat IV}} to create {{ItemIcon|Dragonite Bar|qty=178|Draonite Bars}}
@@ -501,8 +513,8 @@ For each hour of Fletching you'll need to spend (on average):
 * 00:01s 采矿 {{ItemIcon|Rune Essence}}
 * 00:11.5s 采矿 {{ItemIcon|Dragonite Ore}}
 * 00:23s 采矿 {{ItemIcon|Runite Ore}}
-* 00:27s runecrafting {{ItemIcon|Spirit Rune}}
-* 01:04s runecrafting {{ItemIcon|Lava Rune}}
+* 00:27s 符文锻造 {{ItemIcon|Spirit Rune}}
+* 01:04s 符文锻造 {{ItemIcon|Lava Rune}}
 * 01:21s Superheat IV'ing {{ItemIcon|Dragonite Bar}}
 * 37:16s 伐木 {{ItemIcon|Redwood Logs}} and {{ItemIcon|Yew Logs}}
 * 09:38s Smithing {{ItemIcon|Dragon Javelin Heads}}
@@ -511,7 +523,7 @@ and it'll generate 50,297 Dragon Javelins, selling for 32,693,142 GP and leave a
 * 8.09 {{ItemIcon|Mastery Token (Fletching)}}
 * 2.60 {{ItemIcon|Mastery Token (Smithing)}}
 * 0.70 {{ItemIcon|Mastery Token (伐木)}}
-* 0.02 {{ItemIcon|Mastery Token (Runecrafting)}}
+* 0.02 {{ItemIcon|Mastery Token (符文锻造)}}
 * 0.03 {{ItemIcon|Mastery Token (采矿)}}
 * 0.12 {{ItemIcon|Circlet of Rhaelyx}}
 * 0.30 {{ItemIcon|Jewel of Rhaelyx}}
@@ -658,8 +670,8 @@ Without using [[Aorpheat's Signet Ring]] and [[Skilled Fletching Potion IV]] pro
 {{OldStrategy|1.0.5}}
 ==== 提高金币加成 ====
 {| class="wikitable"
-! Name
-! Effect
+! 名称
+! 效果
 |-
 | {{UpgradeIcon|Dragon Axe}} || -50% Cut time
 |-
@@ -677,9 +689,9 @@ Without using [[Aorpheat's Signet Ring]] and [[Skilled Fletching Potion IV]] pro
 |-
 | {{ItemIcon|Clue Chasers Insignia}} || 10% Increased chance to receive [[Bird Nest]]s from 伐木
 |-
-| {{ItemIcon|Aorpheat's Signet Ring}} || +10% Chance to gain double resources
+| {{ItemIcon|Aorpheat's Signet Ring}} || +10% 几率获得双倍资源
 |-
-| {{ItemIcon|Ring of Wealth}} || +7% Chance to gain double resources
+| {{ItemIcon|Ring of Wealth}} || +7% 几率获得双倍资源
 |-
 | {{UpgradeIcon|Multi-Tree}} || Cut 2 different trees in 伐木 simultaneously
 |-
