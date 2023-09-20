@@ -1,0 +1,1095 @@
+<!--No version number since version is per method
+-->
+
+对于 '''初学者''' 来说，所需技能最少但能够获得最大产出的方法就是 [[File:钓鱼.svg|15px|link=钓鱼]] [[钓鱼|钓鱼]]。
+每种方法中列出的技能要求都是 ''最低'' 要求，如果没有达到相关要求，比如 [[技能斗篷]] 或是从其他技能中获得提升的能力，你通常会难以达到最大产出率。
+
+<br><br>
+
+=游戏本体=
+== 扒窃 ==
+
+==== 提高金币加成 ====
+
+{| class="wikitable"
+! 名称
+! 效果
+|-
+|技能斗篷-扒窃99级      || 	-0.5秒扒窃间隔<br/>+100%扒窃金币掉落+150 隐匿
+|-
+|10% 扒窃精通池节点    || 	+30 隐匿
+|-
+|25% 扒窃精通池节点    || 	-0.2秒扒窃间隔
+|-
+|50% 扒窃精通池节点    || 	+100% 扒窃金币掉落
+|-
+|95% 扒窃精通池节点    || 	+100 扒窃隐匿<br/>通过扒窃获取独特区域物品的几率变为三倍
+|-
+|扒窃手套-商店买       || 	+75 隐匿
+|-
+|缄默手套-屠杀区域刷盗贼   || 	-0.1秒扒窃间隔<br/>+150 扒窃金币掉落<br/>+50 隐匿
+|-
+|盗贼钱袋-制造49级做    || 	将20%的最大偷窃金币获取加成到最小金币获取
+|-
+|哥布林面具-扒窃哥布林酋长  || 	+20 扒窃金币掉落<br/>+20 隐匿
+|-
+|潜行靴-扒窃稀有       || 	+5% 全局金币加成<br/>+40 隐匿
+|-
+|珠宝项链-男人/女人     || 	+5% 全局金币加成
+|-
+|精致钱袋-女人        || 	+10% 全局金币加成
+|-
+|小矮妖-召唤45       || 	+50 扒窃金币掉落
+|-
+|妙手空空药水 IV-草药45 || 	+75 隐匿
+|-
+|图章戒指           || 	+100% 全局金币加成<br/>+5% 全局道具翻倍
+|-
+|宠物斯内克-扒窃稀有     || 	+50% 扒窃金币掉落
+|-
+|屋顶狂奔-灵巧5级      || 	-0.2秒扒窃间隔<br/>+20% 扒窃金币掉落<br/>+35 隐匿
+|-
+|冰冻跳跃-灵巧9级      || 	+5% 全局道具翻倍
+|-
+|技能支柱-灵巧被动      || +3% 全局道具翻倍
+|-
+|屠杀者商店顶级衣服      || +3% 几率盗窃物品翻倍
+|-
+|宠物-大气副本        || +1% 全局道具翻倍
+|-
+|廓尔-70级星象	      || 15%几率盗窃物品翻倍,<br/>+15%最小扒窃金币掉落
+|}
+
+=== 扒窃公主然后制作翡翠弩箭 (最多每小时24,740k) ===
+
+==== 需求 ====
+* 采矿15级
+* 锻造10级
+* 扒窃92级
+* 弓匠95级
+
+==== 提高金币加成 ====
+除了上面列出的增益效果之外，对于这种特定方法还有更多的增益效果：
+
+{| class="wikitable"
+! 名称
+! 效果
+|-
+| 扒窃公主专精等级99级 || +100% 扒窃公主获取金币<br/>+174 对公主潜行
+|-
+| 弓匠99技能斗篷 || 通过弓匠获得的物品翻倍
+|-
+| 小矮妖+恶魔 召唤90级 || +50 扒窃金币掉落<br/>50% 获得金币x2<br/>35% 获得金币x4<br/>15% 什么都不获得
+|-
+| Rhaelyx之冠以及Rhaelyx魔能石 || +25% 几率不消耗资源
+|-
+| colspan="2" | 灵巧技能提供不消耗资源的几率
+|}
+
+==== 方法 ====
+# 从公主那里偷取翡翠石
+# 挖取铁矿石
+# 锻造铁锭
+# 锻造无头弩箭
+# 弓匠制作翡翠弩箭
+# 卖掉常规掉落物。对价值超过15,000金币的掉落物使用物品炼金 III
+
+默认情况下，偷窃方法不一定比使用 [[龙岩标枪]] (最大每小时 18,265k)赚钱更快。
+这两种方法都严重依赖于物品、被动效果和技能的增益效果。
+使这种方法能够起步的最重要的增益效果是所有与潜行和偷窃间隔减少有关的增益效果。
+一旦可以稳定生存下来，下一个重要的增益效果是利用矮妖和恶魔的协同作用，增加翡翠石的收集数量。
+
+此外，在制作翡翠箭矢期间，高资源保留和物品返回也非常好用。强烈建议在这里使用Rhaelyx之冠及其充能石。
+如果这些增益效果大多数都没有的话，偷窃收益可能会低到每小时4,000k金币。
+
+使用Nomeru#4261的[https://docs.google.com/spreadsheets/d/1caJNSMYi6fjqEpSe3vhU4MXgqimAy8JePyk-NqXoKjY 扒窃金币计算器] 来检查自己的偷窃设置。
+
+=== 使用小矮妖 + 猴子扒窃骑士 (最大每小时16,476k) ===
+
+这是一种替代方案，需要较少的技能和增益效果就能获得可行的结果。
+
+==== 需求 ====
+* 扒窃88级
+* 召唤55级
+* 召唤小矮妖4级
+* 召唤猴子3级
+
+==== 提高金币加成 ====
+除了上面列出的增益效果之外，对于这种特定方法还有更多的增益效果：
+
+{| class="wikitable"
+! 名称
+! 效果
+|-
+| 扒窃骑士专精等级99级  || +100% 扒窃骑士获取金币<br/>+174 对骑士潜行
+|}
+
+==== 方法 ====
+这种方法依赖于矮妖+猴子的连携效果，增加了普通掉落物的销售价值：“从偷窃中获得普通掉落物后，自动以其基础销售价值的1500%出售。”
+
+# 制作小矮妖和猴子的石板并装备它们。
+# 扒窃骑士。
+# 出售所有未售出的掉落物。对价值超过10,000金币的掉落物使用物品炼金 III。
+
+如果没有大多数增益效果，偷窃收益可能会低至每小时8,000k 金币。
+
+使用Nomeru#4261的[https://docs.google.com/spreadsheets/d/1caJNSMYi6fjqEpSe3vhU4MXgqimAy8JePyk-NqXoKjY 扒窃金币计算器] 来检查自己的偷窃设置。
+
+== 灵巧 (最大每小时 4,978k) ==
+
+==== 需求 ====
+* 灵巧99级
+* 星象学70级
+* 扒窃60级
+* 草药学62级
+* 农务60级
+* 采矿60级
+* 杀戮者60级
+* 伐木80级
+* 生火80级
+* 攻击95级
+* 力量95级
+* 防御95级
+* 祝祭95级
+
+==== 提高金币加成 ====
+{| class="wikitable"
+! Name
+! Effect
+|-
+| {{Icon|Mastery|notext=true}} Level 90 in every used Obstacle || -27% 灵巧间隔
+|-
+| 灵巧Mountain Climb || -12% 灵巧间隔<br> +15% 灵巧获得的金币
+|-
+| {{Skill|灵巧|Tree Balance}} || -12% 灵巧间隔
+|-
+| Aorpheat的图章戒指 || +100% 灵巧获得的金币
+|-
+| 潜行靴 || +5% 全局金币
+|-
+| 珠宝项链 || +5% 全局金币
+|-
+| 精致钱袋 || +10% 全局金币
+|-
+| 灵巧斗篷 || +10% 灵巧获得的金币
+|-
+| {{PetIcon|Sam}} || +15% 灵巧获得的金币
+|-
+| 灵巧25% 节点 || +10% 灵巧获得的金币
+|-
+| 心灵手巧药水 IV || -8% 灵巧间隔
+|-
+| 廓尔星座 || +15% 灵巧获得的金币
+|}
+
+==== 方法 ====
+{| class="wikitable" style="width:99%; text-align:center;"
+|- class="headerRow-0"
+!style="width:9%" |Slot 1
+!style="width:9%" |Slot 2
+!style="width:9%" |Slot 3
+!style="width:9%" |Slot 4
+!style="width:9%" |Slot 5
+!style="width:9%" |Slot 6
+!style="width:9%" |Slot 7
+!style="width:9%" |Slot 8
+!style="width:9%" |Slot 9
+!style="width:9%" |Slot 10
+!style="width:9%" |Pillar
+|-
+| Rope Swing || Monkey Bars || Pit Jump || Gap Jump || Mountain Climb || Tree Balance || Heat Trap || Tree Hang || Ice Jump || Dragon Fight || Pillar of Generosity
+|}
+
+Using the obstacles listed above and all available boosts results in a maximum of 59% 灵巧间隔 Reduction and +195% GP. The total duration for this course is 79s, which is reduced by 59% to 32.39s. The total GP is {{GP|15187}}, which is increased by 195% to {{GP|44802}}, for a total of {{GP|4979498}} per hour. Although 灵巧 cannot achieve the higher GP rates of other methods, its main advantage is being extremely passive. Once set up, it can be left running and make GP with zero effort.
+
+== Fishing (Max {{GP|4421}}k/hr) ==
+{{Main|Reference=Fishing/Moneymaking}}
+
+{{:Fishing/Moneymaking}}
+
+== 采矿 with Gem Gloves (470k/hr usual, 1350k/hr max) ==
+{{OldStrategy|1.0.5}}
+==== 需求 ====
+* {{GP|500000}} to purchase {{ItemIcon|Gem Gloves}}.
+==== 提高金币加成 ====
+
+{| class="wikitable"
+! Name
+! Effect
+|-
+| {{UpgradeIcon|Dragon Pickaxe}} || -50% 采矿 Time, +7% Chance of obtaining 2 ore
+|-
+| {{UpgradeIcon|Master of Nature}} || -15% Base 采矿 Interval (additive with Dragon Pickaxe to a total of -65% 采矿 Time)
+|-
+| {{MasteryReq|Adamantite Ore|99}}/{{MasteryReq|Dragonite Ore|99}} || +15% Chance of obtaining 2 ore
+|-
+| {{ItemIcon|Aorpheat's Signet Ring}} || +10% chance to gain double resources
+|-
+| {{ItemIcon|Ring of Wealth}} || +7% chance to gain double resources
+|-
+| {{ItemIcon|采矿 斗篷}} || +1 Coal Ore per Action
+|-
+| {{Icon|Terra|type=constellation}} || Up to +15% Chance to Double Items in 采矿 and +15% Chance to receive gems or +15% chance to do zero damage
+|-
+| {{ItemIcon|Perfect Swing Potion IV}} || +80% Chance to deal no Damage to a 采矿 Node
+|-
+| {{ItemIcon|Miner's Helmet}} || +3% Chance to deal no Damage to a 采矿 Node
+|-
+| {{ItemIcon|Merchant's Permit}} || Gem Gloves only cost 450k instead of 500k
+|-
+| [[采矿#Mastery Pool Checkpoints|25% 采矿 Mastery Pool Checkpoint]] || Reduced Ore respawn time by 10%
+|-
+| [[采矿#Mastery Pool Checkpoints|50% 采矿 Mastery Pool Checkpoint]] || Reduce 采矿 interval by 0.2s
+|-
+| [[采矿#Mastery Pool Checkpoints|95% 采矿 Mastery Pool Checkpoint]] || All Rocks gain +10 Maximum HP
+|-
+| {{PetIcon|Cool Rock}} || +5 采矿 Node HP
+|}
+
+==== 方法 ====
+This method is recommended to use if you play {{Icon|Adventure}} and there's no better money-making method at hand.
+
+# Buy {{ItemIcon|Gem Gloves}},
+# Mine {{ItemIcon|Adamantite Ore}} or anything below it until you unlock it,
+# Sell gems and ores that you got.
+
+The method relies on the {{ItemIcon|Gem Gloves}} that increase the gems drop chance to 100% when 采矿 anything but the {{ItemIcon|Rune Essence}}. The average value of a [[采矿#Gems|Gem]] is {{GP|381.25}}, while a single charge of the Gem Gloves costs only {{GP|250}}. Thus {{GP|131.25}} of profit is earned per 采矿 action from gems.
+
+With the {{UpgradeIcon|Dragon Pickaxe}} and {{MasteryReq|Adamantite Ore|50}}, you will get around {{GP|470000}} per hour.
+
+A fully juiced setup with the {{ItemIcon|Dragonite Ore}} will give around {{GP|1350000}} per hour.<br>
+Please note that this setup already includes the {{UpgradeIcon|Master of Nature}} which is unlocked after beating the {{ZoneIcon|Earth God Dungeon}}. This upgrade is quite essential to reach GP rates this high. Players at this point have probably already better money making methods at hand.
+Without the {{UpgradeIcon|Master of Nature}} upgrade and only {{ItemIcon|Perfect Swing Potion III}} the GP rate already drops to {{GP|787000}}.<br>
+The calculation does not include any {{Skill|星象学}} modifiers.
+
+{{SpoilerBox|text=
+The results were calculated with the [[Spreadsheets_and_Theorycrafting#List_of_Spreadsheets|Melvor Idle Rate and Resource Calculator]] created by Kidbiz20#2026.
+To check your own setup, do the following:
+# Copy the spreadsheet to your Google Drive.
+# On the Equipment tab, specify for 采矿 that you wear Gem Gloves.
+# On the 采矿 tab, set Current Experience to unlock the ores, Ores masteries, and other things that you have.
+# Specify any additional things in the sheet if you want to, like pets and so on.
+# You should see your gains in the kGP/h column of the 采矿 tab.
+|title=Details|color=default}}
+
+== Fletching Dragon Javelins with Alt. Magic (Max 18,265k/hr) ==
+{{OldStrategy|1.0.5}}
+==== 需求 ====
+* {{SkillReq|伐木|90}}
+* {{SkillReq|采矿|95}}, 271 采矿 Mastery levels in total
+* {{SkillReq|Smithing|93}}
+* {{SkillReq|Fletching|92}}
+* {{SkillReq|Runecrafting|80}}
+* {{SkillReq|Magic|95}}
+
+==== 提高金币加成 ====
+===== 伐木 =====
+{| class="wikitable"
+! Name
+! Effect
+|-
+| {{UpgradeIcon|Dragon Axe}} || -50% cut time
+|-
+| {{ItemIcon|伐木 斗篷}} || -15% Base 伐木 Interval (additive with the bonuses above a total of -65% cut time)
+|-
+| {{UpgradeIcon|Master of Nature}} || -15% Base 伐木 Interval (additive with the bonuses above to a total of -80% cut time)
+|-
+| {{MasteryReq|Redwood Logs|99}}<br> {{MasteryReq|Yew Logs|99}} || Decreased cut interval by 0.2s for this Tree (on top of the -80% cut time from above modifiers)<br> +45% chance to receive 2x Logs per action
+|-
+| {{ItemIcon|Bird Nest Potion IV}} || +30% Chance for [[Bird Nest]]s to drop in 伐木
+|-
+| {{ItemIcon|Lumberjack's Top}} || +2% Bird Nest drop rate
+|-
+| [[伐木#Mastery Pool Checkpoints|25% 伐木 Mastery Pool Checkpoint]] || +5% increased chance to receive double Logs per action
+|-
+| [[伐木#Mastery Pool Checkpoints|50% 伐木 Mastery Pool Checkpoint]] || All Logs sell for +50% GP Value
+|-
+| [[伐木#Mastery Pool Checkpoints|95% 伐木 Mastery Pool Checkpoint]] || When you receive a Birds Nest, always receive a base minimum of 2.
+|-
+| {{PetIcon|Beavis}} || +5% Chance to Double Items in 伐木
+|-
+| {{UpgradeIcon|Multi-Tree}} || cut 2 different trees simultaneously
+|-
+| {{MasteryReq|Deedree|type=constellation|99}} || +15% Chance to Double Items In 伐木 and +15% Chance for Bird Nests to drop in 伐木
+|}
+
+===== 采矿 =====
+{| class="wikitable"
+! Name
+! Effect
+|-
+| {{UpgradeIcon|Dragon Pickaxe}} || -50% 采矿 Time, +7% Chance of obtaining 2 ore
+|-
+| {{UpgradeIcon|Master of Nature}} || -15% Base 采矿 Interval (additive with Dragon Pickaxe to a total of -65% 采矿 Time)
+|-
+| {{MasteryReq|Rune Essence|99}}<br>{{MasteryReq|Runite Ore|99}}<br>{{MasteryReq|Dragonite Ore|99}} || +15% Chance of obtaining 2 ore
+|-
+| {{ItemIcon|采矿 斗篷}} || +1 Coal Ore per Action
+|-
+| {{ItemIcon|Miner's Helmet}} || +3% Chance to deal no Damage to a 采矿 Node
+|-
+| [[采矿#Mastery Pool Checkpoints|25% 采矿 Mastery Pool Checkpoint]] || Reduced Ore respawn time by 10%
+|-
+| [[采矿#Mastery Pool Checkpoints|50% 采矿 Mastery Pool Checkpoint]] || Reduce 采矿 interval by 0.2s
+|-
+| [[采矿#Mastery Pool Checkpoints|95% 采矿 Mastery Pool Checkpoint]] || All Rocks gain +10 Maximum HP
+|-
+| {{PetIcon|Cool Rock}} || +5 采矿 Node HP
+|-
+| {{ItemIcon|Perfect Swing Potion IV}} || +80% Chance to deal no Damage to a 采矿 Node
+|-
+| {{MasteryReq|Terra|type=constellation|99}} || +15% Chance to Double Items in 采矿 and +15% Chance to deal no Damage to a 采矿 Node
+|-
+| {{ItemIcon|Merchant's Permit}} || permanent 10% discount on all skill gloves
+|-
+| preferably {{ItemIcon|采矿 Gloves}} || Collect 2x ore when worn
+|}
+
+===== Runecrafting =====
+{| class="wikitable"
+! Name
+! Effect
+|-
+| {{ItemIcon|Runecrafting 斗篷}} || +35% Chance to Preserve Resources in Runecrafting
+|-
+| {{MasteryReq|Lava Rune|99}}<br>{{MasteryReq|Spirit Rune|99}} || 11 Runes Produced per Runecraft
+|-
+| [[Runecrafting#Mastery Pool Checkpoints|50% Runecrafting Mastery Pool Checkpoint]] || +10% resource preservation chance for Runecrafting
+|-
+| [[Runecrafting#Mastery Pool Checkpoints|95% Runecrafting Mastery Pool Checkpoint]] || Grants an extra 5 Runes per craft
+|-
+| {{UpgradeIcon|Expanded Knowledge}} || -15% Base Runecrafting Interval
+|-
+| {{PetIcon|Gunter}} || +10% Chance to Preserve Resources in Runecrafting
+|}
+
+===== Alt. Magic =====
+{| class="wikitable"
+! Name
+! Effect
+|-
+| {{ItemIcon|Nature's Call Staff}} || Reduces the Nature Rune cost of spells by 1
+|-
+| {{ItemIcon|Magic 斗篷}} || doubles the Effect of the {{ItemIcon|Nature's Call Staff}}
+|-
+| {{ItemIcon|Ring of Wealth}} || +7% Chance to Double Items Globally
+|-
+| {{PetIcon|Salem}} || +5% Rune Preservation
+|-
+| {{PetIcon|Jelly Jim}} || +2% Rune Preservation
+|-
+| {{ItemIcon|Amulet of Incantation}} || -0.2s Magic Interval<br>+10% Rune Preservation for Alt. Magic Spells
+|-
+| {{MasteryReq|Arachi|type=constellation|99}} || +15% Chance to Double Items in Runecrafting and +15% Rune Preservation for Alt. Magic Spells
+|}
+
+===== Smithing =====
+{| class="wikitable"
+! Name
+! Effect
+|-
+| {{MasteryReq|Dragon Javelin Heads|99}} || +30% Chance to preserve Resources, +35% Chance to double Items
+|-
+| [[Smithing#Mastery Pool Checkpoints|25% Smithing Mastery Pool Checkpoint]] || +5% Chance to preserve Resources
+|-
+| [[Smithing#Mastery Pool Checkpoints|50% Smithing Mastery Pool Checkpoint]] || +5% Chance to preserve Resources
+|-
+| [[Smithing#Mastery Pool Checkpoints|95% Smithing Mastery Pool Checkpoint]] || +10% Chance to double Items
+|-
+| {{UpgradeIcon|Art of Control}} || -15% Base Smithing Interval
+|-
+| {{PetIcon|Puff, the Baby Dragon}} || +10% Chance to preserve Resources
+|-
+| {{MasteryReq|Iridan|type=constellation|99}} || +15% Chance to Double Items in Smithing and -15% Smithing Interval
+|}
+
+===== Fletching =====
+{| class="wikitable"
+! Name
+! Effect
+|-
+| {{ItemIcon|Fletching 斗篷}} || x2 Items received from Fletching
+|-
+| [[Fletching#Mastery Pool Checkpoints|25% Fletching Mastery Pool Checkpoint]] || Produce 1 extra Javelin per Fletch (Applied to base quantity)
+|-
+| [[Fletching#Mastery Pool Checkpoints|95% Fletching Mastery Pool Checkpoint]] || Reduce Fletching Interval by 0.2s
+|-
+| {{MasteryReq|Dragon Javelin|99}} || +24.8% chance to preserve resources.
+|-
+| {{ItemIcon|Skilled Fletching Potion IV}} || +25% Chance to Double Items in Fletching
+|-
+| {{UpgradeIcon|Perpetual Haste}} || -15% Fletching Interval
+|-
+| {{PetIcon|Quill}} || -0.2s Fletching Interval
+|-
+| {{MasteryReq|Syllia|type=constellation|80}} || +15% Chance to Double Items in Fletching
+|}
+
+===== Other =====
+{| class="wikitable"
+! Name
+! Effect
+|-
+| {{ItemIcon|Aorpheat's Signet Ring}} affects all skills above || +10% Chance to Double Items Globally
+|-
+| {{PetIcon|Aquarias}} affects all skills above || +1% Chance to Double Items Globally
+|-
+| {{ItemIcon|Clue Chasers Insignia}} affects all skills above except {{Skill|Alternative Magic}} || 10% increased chance to receive Global Rare Items, Mastery Tokens, Bird Nests from 伐木, Gems from 采矿, and Coal from 生火.
+|-
+| {{ItemIcon|Crown of Rhaelyx}} affects all skills above except {{Skill|Alternative Magic}} || +10% chance to preserve resources in non-combat skills (Does not work with Alt. Magic).
+|-
+| {{SkillReq|灵巧|99}} obstacles about resource preservation and pillar || build cost reduction and half debuffs
+|-
+| {{ItemIcon|草药学 斗篷}} || x2 Items received from 草药学
+|-
+| {{PetIcon|Gronk}} || +2% Chance to Double Items in 草药学
+|-
+| {{MasteryReq|Qimican|type=constellation|99}} || +15% Chance to Double Items in 草药学 and +15% Chance to preserve potion Charges
+|}
+
+==== 方法 ====
+The following setup will maximize total profits when all things are considered, note that a lot of the optional improvements marginally contribute to the final GP rate.
+
+* Equip the following:
+** {{ItemIcon|Miner's Helmet}}
+** {{ItemIcon|Clue Chasers Insignia}}
+** {{ItemIcon|Maximum 斗篷}} (or {{ItemIcon|采矿 斗篷}} when {{Skill|采矿}}, {{ItemIcon|伐木 斗篷}} when {{Skill|伐木}}, {{ItemIcon|Runecrafting 斗篷}} when {{Skill|Runecrafting}}, {{ItemIcon|Magic 斗篷}} when performing {{Skill|Alt. Magic}} and {{ItemIcon|Fletching 斗篷}} when {{Skill|Fletching}})
+** {{ItemIcon|采矿 Gloves}}
+** {{ItemIcon|Lumberjack's Top}}
+** {{ItemIcon|Aorpheat's Signet Ring}}
+** {{ItemIcon|Ring of Wealth}} on [[Passive Slot]]
+** {{ItemIcon|Bird Nest Potion IV}} on {{Skill|伐木}}
+** {{ItemIcon|Elemental Potion IV}} on {{Skill|Runecrafting}}
+** {{ItemIcon|Perfect Swing Potion IV}} on {{Skill|采矿}}
+** {{ItemIcon|Skilled Fletching Potion IV}} on {{Skill|Fletching}}
+** {{ItemIcon|Nature's Call Staff}}
+** {{Skill|灵巧}} Obstacle 6: Tree Hop
+** {{Skill|灵巧}} Obstacle 9: Ice Jump
+** {{Skill|灵巧}} Obstacle 10: Lava Waterfall Dodge
+** {{Skill|灵巧}} Pillar: Pillar of Generosity
+
+'''for every hour of fletching intended''':
+* {{Skill|伐木}}
+** Change {{Skill|灵巧}} Obstacle 3 to Stepping Stones to get another -6% 伐木 Interval (Min cost {{GP|75000}}, {{ItemIcon|Willow Logs|qty=15}} and {{ItemIcon|Teak Logs|qty=15}})
+** Change {{Skill|灵巧}} Obstacle 5 to Rock Climb to get +5% Chance to Double Items in 伐木 and 采矿 (Min cost {{GP|250000}}, {{ItemIcon|Teak Logs|qty=25}}, {{ItemIcon|Coal Ore|qty=25}} and {{ItemIcon|Onion Seeds|qty=25}})
+** Cut {{ItemIcon|Redwood Logs|qty=2509}} and {{ItemIcon|Yew Logs}}
+* {{Skill|采矿}}
+** Mine {{ItemIcon|Rune Essence|qty=12}}, {{ItemIcon|Dragonite Ore|qty=48}} and {{ItemIcon|Runite Ore|qty=96}}
+* {{Skill|Runecrafting}}
+** Runecraft {{ItemIcon|Spirit Rune|qty=76}} and {{ItemIcon|Lava Rune|qty=179}}
+
+*{{Skill|Alt. Magic}}
+** Equip {{ItemIcon|Amulet of Incantation}}
+** Change {{Skill|灵巧}} Obstacle 4 to Cave Climb to get +5% Rune Preservation (Min cost {{GP|125000}}, {{ItemIcon|Air Rune|qty=25}}, {{ItemIcon|Earth Rune|qty=25}} and {{ItemIcon|Iron Bar|qty=13}})
+** Cast {{Icon|Superheat|Superheat IV}} to create {{ItemIcon|Dragonite Bar|qty=178|Draonite Bars}}
+
+* {{Skill|Smithing}}
+** Equip {{ItemIcon|Clue Chasers Insignia}}
+** Change {{Skill|灵巧}} Obstacle 3 to Pipe Balance to get +10 采矿 Node HP and +3% Chance to Preserve Resources in Skills (Min cost {{GP|75000}}, {{ItemIcon|Iron Ore|qty=15}} and {{ItemIcon|Tin Ore|qty=15}})
+** Change {{Skill|灵巧}} Obstacle 4 to Coal Stones to get +3% Chance to Preserve Resources in Skills (Min cost {{GP|125000}}, {{ItemIcon|Tomato Seeds|qty=5}} and {{ItemIcon|Salmon|qty=25}})
+** Change {{Skill|灵巧}} Obstacle 5 to Mountain Climb to get rid of the -10% Chance to Preserve Resources in Skills from Rock Climb (Min cost {{GP|250000}} and {{ItemIcon|Bones|qty=50}})
+** Smith {{ItemIcon|Dragon Javelin Heads|qty=4182}}
+
+* {{Skill|Fletching}}
+** Charge your {{ItemIcon|Mysterious Stone|Mysterious Stones}}
+** Fletch {{ItemIcon|Dragon Javelin|Dragon Javelins}} until you run out of resources
+
+It is recommended to fletch for many hours at a time as to minimize the cost of switching between 灵巧 obstacles
+
+====Ratios====
+For each hour of Fletching you'll need to spend (on average):
+* 00:01s 采矿 {{ItemIcon|Rune Essence}}
+* 00:11.5s 采矿 {{ItemIcon|Dragonite Ore}}
+* 00:23s 采矿 {{ItemIcon|Runite Ore}}
+* 00:27s runecrafting {{ItemIcon|Spirit Rune}}
+* 01:04s runecrafting {{ItemIcon|Lava Rune}}
+* 01:21s Superheat IV'ing {{ItemIcon|Dragonite Bar}}
+* 37:16s 伐木 {{ItemIcon|Redwood Logs}} and {{ItemIcon|Yew Logs}}
+* 09:38s Smithing {{ItemIcon|Dragon Javelin Heads}}
+
+and it'll generate 50,297 Dragon Javelins, selling for 32,693,142 GP and leave as byproducts:
+* 8.09 {{ItemIcon|Mastery Token (Fletching)}}
+* 2.60 {{ItemIcon|Mastery Token (Smithing)}}
+* 0.70 {{ItemIcon|Mastery Token (伐木)}}
+* 0.02 {{ItemIcon|Mastery Token (Runecrafting)}}
+* 0.03 {{ItemIcon|Mastery Token (采矿)}}
+* 0.12 {{ItemIcon|Circlet of Rhaelyx}}
+* 0.30 {{ItemIcon|Jewel of Rhaelyx}}
+* 1.06 {{ItemIcon|Mysterious Stone}}
+* 40.71 {{ItemIcon|Coal Ore}}
+* 1351 {{ItemIcon|Bird Nest}}
+* 2330 {{ItemIcon|Yew Logs}}
+
+and consume:
+* 2.57 {{ItemIcon|Charge Stone of Rhaelyx}}
+* 0.08 {{ItemIcon|采矿 Gloves}}
+* 0.39 {{ItemIcon|Perfect Swing Potion IV}}
+* 0.64 {{ItemIcon|Elemental Potion IV}}
+
+It is recommended to first combine {{ItemIcon|Circlet of Rhaelyx}} and {{ItemIcon|Jewel of Rhaelyx}} into {{ItemIcon|Crown of Rhaelyx|Crowns of Rhaelyx}}, then convert the crowns into GP by using {{Icon|type=spell|Item Alchemy III}} while utilizing [[Item Alchemy|GP boosts]]. This will add (per hour of fletching) 0.02 seconds to sell crowns and 0.04 seconds to sell the leftover {{ItemIcon|Jewel of Rhaelyx|Jewels of Rhaelyx}}. Combined with the sale of other leftover elements, this will result in a maximum possible profit of approximately {{GP|18265154}} per hour, all things considered.
+
+<!--
+
+Old methods commented out until they are able to be updated
+
+== Smithing Dragon Platebodies (Max 2117k/hr) ==
+{{OldStrategy|0.14}}
+==== 需求 ====
+* {{SkillReq|采矿|99}}
+* {{SkillReq|Smithing|99}}
+* {{ItemIcon|采矿 斗篷}}
+* {{ItemIcon|Smithing 斗篷}}
+* [[Dragon Pickaxe]]
+* 500k GP to purchase {{ItemIcon|Gem Gloves}}
+
+==== 提高金币加成 ====
+* Making [[Diamond|diamonds]] into [[草药学#Combat Potions|Diamond Luck Potions]] with the [[草药学 斗篷]] more than doubles their value. This requires:
+** Level 99 [[草药学]]
+** Level 80 [[农务]]
+* [[Aorpheat's Signet Ring]] for a 10% chance to double ore, bar, platebody, and potion gains
+* [[草药学#Skill Potions|Perfect Swing Potions]] to increase the idle rate that ore can be mined at.
+** Level 53 [[草药学]]
+** Level 50 [[农务]]
+* Increasing [[Mastery]] Level of items provide additional resource-saving and doubling benefits.
+==== 方法 ====
+# Gather [[Dragonite Ore]], [[Runite Ore]] and [[Coal Ore]] in a 1:2:6 ratio. This should be done wearing the [[采矿 斗篷]]. Depending on [[Mastery]] Levels and whether or not [[草药学#Combat Potions|Diamond Luck Potions]] are being made, either [[Gem Gloves]] or [[采矿 Gloves]] should be worn.
+# Make [[Dragonite Bar|Dragonite Bars]] while wearing the [[Smithing 斗篷]].
+# Make [[Dragon Platebody|Dragon Platebodies]]
+# Make the [[Diamond|diamonds]] into [[草药学#Combat Potions|Diamond Luck Potions]] with the [[草药学 斗篷]] if possible.
+# Sell the [[采矿#Gems|Gems]], [[草药学#Combat Potions|Diamond Luck Potions]] and [[Dragon Platebody|Dragon Platebodies]] for profit
+
+==== GP Rates with different Equipment and Mastery ====
+The mastery in the tables below assume that every item has that mastery level. Note that the time to gather the ingredients for and make [[草药学#Skill Potions|Perfect Swing Potions]] has not been included in the calculation due to it being negligible. It is also assumed that the [[Barrentoe Herb|Barrentoe Herbs]] for creating [[草药学#Combat Potions|Diamond Luck Potions]] is grown concurrently during the money-making method, and do not add additional time.
+
+{|class="wikitable"
+|-
+!colspan="8"|Equipment
+|- style="text-align:right;"
+!Gloves
+|采矿
+|Gem
+|采矿
+|Gem
+|Gem
+|Gem
+|Gem
+|- style="text-align:right;"
+!Signet Ring
+|No
+|No
+|Yes
+|Yes
+|No
+|Yes
+|Yes
+|- style="text-align:right;"
+!Make Diamond Luck
+|No
+|No
+|No
+|No
+|Yes
+|Yes
+|Yes
+|- style="text-align:right;"
+!Perfect Swing
+|No
+|No
+|No
+|No
+|No
+|No
+|Tier 4
+|-
+!Mastery
+!colspan="7"|GP Per Hour
+|- style="text-align:right;"
+|1||35,053||92,850||61,748||109,548||143,643||168,705||470,490
+|- style="text-align:right;"
+|10||99,836||203,815||157,843||240,733||303,798||355,771||700,881
+|- style="text-align:right;"
+|20||185,162||308,001||272,655||364,947||450,083||526,414||853,812
+|- style="text-align:right;"
+|30||277,900||404,524||393,769||481,140||572,598||670,720||979,278
+|- style="text-align:right;"
+|40||405,089||513,805||553,085||614,290||718,743||842,954||1,137,911
+|- style="text-align:right;"
+|50||526,119||617,919||705,407||741,425||839,503||987,252||1,270,966
+|- style="text-align:right;"
+|60||717,626||767,405||938,896||924,779||992,359||1,172,130||1,442,452
+|- style="text-align:right;"
+|70||874,577||894,775||1,132,811||1,080,840||1,156,265||1,366,490||1,637,861
+|- style="text-align:right;"
+|80||1,165,196||1,122,613||1,480,715||1,358,751||1,375,280||1,631,844||1,895,516
+|- style="text-align:right;"
+|90||1,368,183||1,286,852||1,727,857||1,559,149||1,545,851||1,837,532||2,099,939
+|- style="text-align:right;"
+|99||1,382,560||1,306,346||1,744,793||1,581,345||1,577,716||1,872,574||2,117,292
+|}
+
+==== Calculating the GP Rate ====
+The GP rate can be calculated by finding the profit of completing a single platebody action and dividing by the time to complete the action and gather/craft all sub-components.
+
+{{Main|Reference=Math:Dragon_Platebodies}}
+
+
+== Fletching Magic Longbows (Max 975k/hr) ==
+{{OldStrategy|0.14}}
+==== 需求 ====
+* Level 99 [[伐木]]
+* Level 99 [[Fletching]]
+* [[Dragon Axe]] Upgrade
+* [[Multi-Tree]] Upgrade
+* [[伐木 斗篷]]
+* [[Fletching 斗篷]]
+* (Optional) [[Aorpheat's Signet Ring]]
+* (Optional) [[Skilled Fletching Potion IV]]
+==== 方法 ====
+By utilizing the output doubling of the [[Fletching 斗篷]], the value of [[Magic Logs|magic logs]] can be more than quadrupled; it is doubled once making unstrung bows, and another time making strung bows. Profits can be further increased by using [[Skilled Fletching Potion IV]] and [[Aorpheat's Signet Ring]]. To calculate the maximum [[GP]] per hour, 99 mastery level will be assumed. The entire process is as follows:
+# Cut [[Yew Logs|yew logs]] and [[Magic Logs|magic logs]] simultaneously while wearing the [[伐木 斗篷]]. The yew logs should be sold.
+# Fletch the magic logs into [[Magic Longbow (u)]] while wearing the [[Fletching 斗篷]].
+# Purchase [[Bowstring|bowstrings]] from the [[Shop]] and fletch the unstrung bows into [[Magic Longbow]].
+# Sell the longbows for profit.
+Without using [[Aorpheat's Signet Ring]] and [[Skilled Fletching Potion IV]] profits are around 624k/hr, however, using the ring and potion increases profits by 351k/hr.
+
+-->
+
+==伐木==
+{{OldStrategy|1.0.5}}
+==== 提高金币加成 ====
+{| class="wikitable"
+! Name
+! Effect
+|-
+| {{UpgradeIcon|Dragon Axe}} || -50% Cut time
+|-
+| {{ItemIcon|伐木 斗篷}} || -15% Base 伐木 Interval (additive with the bonuses above a total of -65% cut time)
+|-
+| {{UpgradeIcon|Master of Nature}} || -15% Base 伐木 Interval (additive with the bonuses above to a total of -80% cut time)
+|-
+| {{Skill|灵巧|Stepping Stones}} || -6% Base 伐木 Interval (additive with the bonuses above to a total of -86% cut time)
+|-
+| {{Skill|灵巧|Rock Climb}} || +5% Chance to Double Items in 伐木
+|-
+| {{MasteryReq|Magic Logs|99}} || Decreased cut interval by 0.2s for this Tree (on top of the -86% cut time from above modifiers)<br> +45% chance to receive 2x Logs per action
+|-
+| {{ItemIcon|Bird Nest Potion IV}} || +30% Chance for [[Bird Nest]]s to drop in 伐木
+|-
+| {{ItemIcon|Clue Chasers Insignia}} || 10% Increased chance to receive [[Bird Nest]]s from 伐木
+|-
+| {{ItemIcon|Aorpheat's Signet Ring}} || +10% Chance to gain double resources
+|-
+| {{ItemIcon|Ring of Wealth}} || +7% Chance to gain double resources
+|-
+| {{UpgradeIcon|Multi-Tree}} || Cut 2 different trees in 伐木 simultaneously
+|-
+| {{ItemIcon|Lumberjack's Top}} || +2% Bird Nest drop rate
+|-
+| {{PetIcon|Beavis}} || +5% Chance to Double Items in 伐木
+|-
+| [[伐木#Mastery Pool Checkpoints|25% 伐木 Mastery Pool Checkpoint]] || +5% Increased chance to receive double Logs per action
+|-
+| [[伐木#Mastery Pool Checkpoints|50% 伐木 Mastery Pool Checkpoint]] || All Logs sell for +50% GP Value
+|-
+| [[伐木#Mastery Pool Checkpoints|95% 伐木 Mastery Pool Checkpoint]] || When you receive a Birds Nest, always receive a base minimum of 2.
+|-
+| {{Icon|Deedree|type=constellation}} || Up to +15% Chance to Double Items in 伐木 and up to +15% Bird Nest drop rate
+|-
+| {{ItemIcon|Ent}} || +10% Chance to gain +1 additional resource in 伐木. Cannot be doubled
+|-
+| {{ItemIcon|Ent}} + {{ItemIcon|Bear}} [[Synergy]] || Increases the quantity of {{ItemIcon|Bird Nest|Bird Nests}} dropped by +1
+|}
+
+=== Chopping Logs With Bird Nests Potions (Max {{GP|7847}}k/hr) ===
+==== 需求 ====
+* {{SkillReq|伐木|10}}
+* {{SkillReq|草药学|1}}
+
+Please note: Although the requirements seem low, using {{ItemIcon|Bird Nest Potion IV}} and minimum action time ({{UpgradeIcon|Dragon Axe}}, {{ItemIcon|伐木 斗篷}} and {{UpgradeIcon|Master of Nature}} god upgrade) are advised or else the GP rate drops significantly.
+
+==== 方法 ====
+Cut down {{ItemIcon|Normal Logs}}, selling the logs and {{ItemIcon|Bird Nest|Bird Nests}} for profit. Do not cut any other logs as doing so will significantly increase the action time, which decreases the amount of Bird Nests gained over time.
+
+A portion of the nests can be opened for {{ItemIcon|Potato Seeds}} to make more potions if required.
+
+==== Expected Resources Per Hour ====
+The maximum rates assume:
+* The {{UpgradeIcon|Dragon Axe}}, and {{UpgradeIcon|Master of Nature}} upgrades have been purchased
+* {{PetIcon|Beavis}} is unlocked
+* The following items are equipped: {{ItemIcon|Aorpheat's Signet Ring}}, {{ItemIcon|Ring of Wealth}} (in the [[Passive Slot]]), {{ItemIcon|Clue Chasers Insignia}}, {{ItemIcon|伐木 斗篷}}, {{ItemIcon|Lumberjack's Top}}
+* The {{ItemIcon|Ent}} + {{ItemIcon|Bear}} [[Synergy]] is in use
+* The 95% 伐木 Mastery Pool Checkpoint is active, and level 99 {{Icon|Mastery}} in the trees being cut has been reached
+* The following {{Skill|灵巧}} obstacles are active: {{Skill|灵巧|Stepping Stones|nolink=true}} (3), {{Skill|灵巧|Rock Climb|nolink=true}} (5), {{Skill|灵巧|Ice Jump|nolink=true}} (9), and {{Skill|灵巧|Pillar of Skilling|nolink=true}}
+* {{Icon|Deedree|type=constellation}} provides both +15% chance to double items in {{Skill|伐木}}, and +15% chance for {{ItemIcon|Bird Nest|Bird Nests}} to drop
+
+Per hour, this yields the following:
+{| class="wikitable stickyHeader sortable"
+|- class="headerRow-0"
+! rowspan="2" | Item !! colspan="2" | No {{Skill|星象学}} !! colspan="2" | {{Skill|星象学}}
+|- class="headerRow-1"
+! Qty !! GP !! Qty !! GP
+|-
+| {{ItemIcon|Normal Logs}}
+| data-sort-value="28223" | {{formatnum:28223}}
+| data-sort-value="28223" | {{GP|28223}}
+| data-sort-value="30241" | {{formatnum:30241}}
+| data-sort-value="30241" | {{GP|30241}}
+|-
+| {{ItemIcon|Bird Nest}}
+| data-sort-value="15203" | {{formatnum:15203}}
+| data-sort-value="5321050" | {{GP|5321050}}
+| data-sort-value="22335" | {{formatnum:22335}}
+| data-sort-value="7817250" | {{GP|7817250}}
+|- class="sortbottom"
+! colspan="2" | Total
+| {{GP|5349273}}
+!
+| {{GP|7847491}}
+|}
+
+{{SpoilerBox|text=
+The results were determined by using [https://melvoridle.com/save/38gIWZbE this save] followed by the execution of <code>game.testForOffline(1000)</code> from the browser console. To run offline progression for 1,000 hours, a script which extends the maximum offline time beyond its usual limits or a modification to the <code>getOfflineTimeDiff</code> function must be used.|title=Details|color=default}}
+
+=== Chopping Magic and Mahogany Logs (Max {{GP|2933}}k/hr) ===
+==== 需求 ====
+* {{SkillReq|伐木|75}}
+==== 方法 ====
+Simply cut down {{ItemIcon|Magic Logs}} and {{ItemIcon|Mahogany Logs}}, selling the logs and {{ItemIcon|Bird Nest|Bird Nests}} for profit.
+
+==== Expected Resources Per Hour ====
+Other than the addition of the {{UpgradeIcon|Multi-Tree}} upgrade, the maximum rates assume the same setup in terms of equipment, upgrades, and so on as the above method for Normal Logs and Bird Nests.
+
+Per hour, this yields the following:
+{| class="wikitable stickyHeader sortable"
+|- class="headerRow-0"
+! rowspan="2" | Item !! colspan="2" | No {{Skill|星象学}} !! colspan="2" | {{Skill|星象学}}
+|- class="headerRow-1"
+! Qty !! GP !! Qty !! GP
+|-
+| {{ItemIcon|Mahogany Logs}}
+| data-sort-value="5428" | {{formatnum:5428}}
+| data-sort-value="407100" | {{GP|407100}}
+| data-sort-value="5815" | {{formatnum:5815}}
+| data-sort-value="436125" | {{GP|436125}}
+|-
+| {{ItemIcon|Magic Logs}}
+| data-sort-value="2714" | {{formatnum:2714}}
+| data-sort-value="1628400" | {{GP|1628400}}
+| data-sort-value="2908" | {{formatnum:2908}}
+| data-sort-value="1744800" | {{GP|1744800}}
+|-
+| {{ItemIcon|Bird Nest}}
+| data-sort-value="1464" | {{formatnum:1464}}
+| data-sort-value="512400" | {{GP|512400}}
+| data-sort-value="2150" | {{formatnum:2150}}
+| data-sort-value="752500" | {{GP|752500}}
+|- class="sortbottom"
+! colspan="2" | Total
+| {{GP|2547900}}
+!
+| {{GP|2933425}}
+|}
+
+{{SpoilerBox|text=
+The results were determined by using [https://melvoridle.com/save/38gIWZbE this save] followed by the execution of <code>game.testForOffline(1000)</code> from the browser console. To run offline progression for 1,000 hours, a script which extends the maximum offline time beyond its usual limits or a modification to the <code>getOfflineTimeDiff</code> function must be used.|title=Details|color=default}}
+
+== Combat (~18,750k/hr) ==
+{{OldStrategy|1.0.5}}
+Combat can yield decent GP rates, but will generally not be comparable with a dedicated skilling setup. {{Skill|Magic}} is the generally the most profitable, but it can differ greatly based on the gear and skills in your possession. Assuming {{SkillReq|Magic|85}} and {{ItemIcon|Cloudburst Staff}}, Magic is almost always superior to Melee and {{Skill|Ranged}}.
+
+Calculating the specific GP/hr depends heavily on your stats, gear, and buffs. The [[Scripting_and_Extensions/Combat_Simulator|Combat Simulator]] can help you to calculate the gains for your build. The exact rates are difficult to determine, but the best targets, in rough descending order by profit and tier are:
+
+* {{ZoneIcon|Infernal Stronghold}}
+* {{MonsterIcon|Hunting Greater Dragon}}
+
+* {{MonsterIcon|Black Dragon}}
+* {{MonsterIcon|Furious Horned Elite}}
+
+* {{MonsterIcon|Master Farmer}}
+
+The two most important items to make this method good are {{ItemIcon|Chapeau Noir}} and {{ItemIcon|Aorpheat's Signet Ring}}.
+
+To stress again, calculating the specific GP/hr depends heavily on your stats, gear, and buffs. The [[Scripting_and_Extensions/Combat_Simulator|Combat Simulator]] can help you to calculate the specific gains for your specific build.
+
+The most profitable target is the {{ZoneIcon|Infernal Stronghold}} because it drops a lot of raw GP that gets doubled with the {{ItemIcon|Aorpheat's Signet Ring}}. The raw GP gained with the ring is 250,000 per clear.
+
+It also drops the {{ItemIcon|Infernal Cape}} and the {{ItemIcon|Infernal Core}} that will net you 402,400 additional GP per clear if sold with [[Item Alchemy III]].
+
+For one clear {{ZoneIcon|Infernal Stronghold}} will yield a total of 250,000 + 402,400 = 652,400 GP per clear.
+
+Do note that all [[Combat Guide#Mid Game (God Dungeons)|God Dungeons]] should net around about 6-10,000k/h minimum while 农务 them with appropriate gear, so if you're working on or near these dungeons, you could be looking at a nice payday without needing to rely on other methods to earn GP.
+
+Some of the setups are listed below, but it is (yes, again) advised that you use the [[Scripting_and_Extensions/Combat_Simulator|Combat Simulator]] to check your build. By default, all of the listed setups are 99 in all skills, have optimized {{skill|灵巧}} obstacles, and have only 30% accuracy from {{skill|星象学}}
+
+Each setup will have a second listed amount, this will be the gp/h with standardized rates applied to all consumables ([[农务|excluding food]]) in combat sim.
+
+==== Infernal Stronghold (~24,200k/hr) ====
+
+{| class="wikitable"
+|-
+! Head
+|colspan="4"| {{ItemIcon|杀戮者 Wizard Hat (Master)}}
+|-
+! Body
+|colspan="4"| {{ItemIcon|杀戮者 Wizard Robes (Master)}}
+|-
+! Leggings
+|colspan="6"| {{ItemIcon|Glacia God Platelegs}}
+|-
+! Boots
+|colspan="6"| {{ItemIcon|Glacia God Boots}}
+|-
+! Hands
+|colspan="6"| {{ItemIcon|Glacia God Gloves}}
+|-
+! Cape
+|colspan="2"| {{ItemIcon|Skull Cape}}
+|-
+! Neck
+|colspan="2"| {{ItemIcon|Fury of the Elemental Zodiacs}}
+|-
+! Passive
+|colspan="2"| {{ItemIcon|Chapeau Noir}}
+|-
+! Ring
+|colspan="2"| {{ItemIcon|Aorpheat's Signet Ring}}
+|-
+! Weapon
+|colspan="2" rowspan="2"| {{ItemIcon|Cloudburst Staff}}
+|-
+|}
+
+Spells: {{Icon|Water Surge|type=spell}} or {{Icon|Water Wave|type=spell}} (-4% total gp, -1.5% adjusted gp, -13% runes), {{Icon|Anguish III|type=curse}}, and {{Icon|Fury II|type=aurora}}.
+
+祝祭: {{Icon|Battleheart|type=祝祭}} and {{Icon|Augury|type=祝祭}}
+
+Tablets: {{ItemIcon|Golbin Thief}} and {{ItemIcon|Occultist}}
+
+Potion: {{ItemIcon|Diamond Luck Potion IV|Diamond Luck Potions}}
+
+* Total GP: ~24,200k/hr
+* Adjusted GP: ~18,800k/hr
+
+With better {{skill|星象学}}, this method gets closer to the (Max ~24,350k/hr) listed above
+
+==== Hunting Greater Dragon (~16,750k/hr)====
+
+{| class="wikitable"
+|-
+! Head
+|colspan="4"| {{ItemIcon|杀戮者 Helmet (Master)}}
+|-
+! Body
+|colspan="4"| {{ItemIcon|杀戮者 Platebody (Master)}}
+|-
+! Leggings
+|colspan="4"| {{ItemIcon|Ragnar God Platelegs}}
+|-
+! Boots
+|colspan="4"| {{ItemIcon|Ragnar God Boots}}
+|-
+! Hands
+|colspan="4"| {{ItemIcon|Ragnar God Gloves}}
+|-
+! Cape
+|colspan="4"| {{ItemIcon|Maximum 斗篷}}
+|-
+! Passive
+|colspan="4"| {{ItemIcon|Gold Ruby Necklace}}
+|-
+! Neck
+|colspan="4"| {{ItemIcon|Fury of the Elemental Zodiacs}}
+|-
+! Ring
+|colspan="2"| {{ItemIcon|Nature's Blessing Ring}}
+|-
+! Weapon
+|colspan="4"| {{ItemIcon|Infernal Claw}}
+|-
+! Offhand
+|colspan="4"| {{ItemIcon|Dragonfire Shield}}
+|}
+
+祝祭: {{Icon|Battleheart|type=祝祭}} and {{Icon|Rejuvenation|type=祝祭}}
+
+Tablets: {{ItemIcon|Golbin Thief}} and {{ItemIcon|Unicorn}}
+
+Potion: {{ItemIcon|Regeneration Potion IV|Regeneration Potions}}
+
+* Total GP: ~16,750k/hr
+* Adjusted GP: ~15,950k/hr
+
+={{TotH}} Throne of the Herald Expansion=
+
+==Item Alchemy IV on Vorloran Watcher Armor (something like 4b/hr max)==
+===需求===
+Potion: {{ItemIcon|Penetration Potion IV}} or {{ItemIcon|Damage Reduction Potion IV}} if you do not have the {{ItemIcon|Superior Cape of Completion}}
+
+Consumables: {{ItemIcon|Monster Hunter Scroll|Monster Hunter Scrolls}}
+
+{{Equipment/Recommended
+|style=Melee
+|helm1=Mask of Madness
+|neck1=Fury of the Elemental Zodiacs
+|cape1=Superior Cape of Completion
+|body1=Ward of Flame Platebody
+|legs1=Burning Protection Platelegs
+|weapon1=Agile Wings Rapier
+|shield1=Shield of Melee Power
+|gloves1=Vorloran Protector Gauntlets
+|boots1=Frostspark Boots
+|ring1=Ring of Power
+|passive1=Fighter Amulet
+|familiar11=Minotaur
+|familiar21=Spectre
+|祝祭11=Battleborn
+|祝祭21=Battleheart
+}}
+
+{| class="wikitable"
+!colspan="1"| #
+!colspan="1"| Obstacle
+|-
+!colspan="1"| 1
+| X
+|-
+!colspan="1"| 2
+| X
+|-
+!colspan="1"| 3
+| {{Skill|灵巧|Pipe Climb}}
+|-
+!colspan="1"| 4
+| {{Skill|灵巧|Cave Climb}}
+|-
+!colspan="1"| 5
+| {{Skill|灵巧|Cliff Balance}}
+|-
+!colspan="1"| 6
+| {{Skill|灵巧|Lake Swim}}
+|-
+!colspan="1"| 7
+| {{Skill|灵巧|Boulder Trap}}
+|-
+!colspan="1"| 8
+| {{Skill|灵巧|Pipe Crawl}}
+|-
+!colspan="1"| 9
+| {{Skill|灵巧|Lava Jump}}
+|-
+!colspan="1"| 10
+| {{Skill|灵巧|Dragon Fight}}
+|-
+!colspan="1"| P
+| {{Skill|灵巧|Pillar of Combat}}
+|-
+!colspan="1"| 11
+| {{TotH}} {{Skill|灵巧|Water Maze}}
+|-
+!colspan="1"| 12
+| {{TotH}} {{Skill|灵巧|Boulder Balance}}
+|-
+!colspan="1"| 13
+| {{TotH}} {{Skill|灵巧|Balance Trap}}
+|-
+!colspan="1"| 14
+| {{TotH}} {{Skill|灵巧|Gap Climb}}
+|-
+!colspan="1"| 15
+| {{TotH}} {{Skill|灵巧|Waterfall Crossing}}
+|-
+!colspan="1"| EP
+| {{TotH}} {{Skill|灵巧|Elite Pillar of Expertise}}
+|-
+|}
+
+===提高金币加成===
+See the [[Item Alchemy]] page for more information on how to improve the return from item alchemy!
+
+===Method===
+Kill {{MonsterIcon|Vorloran Watcher}}, collect and cast {{Icon|Item Alchemy IV|type=spell}} on all of the loot.
+
+==Fletching Meteor Bolts (80,000k/hr max)==
+===需求===
+Just fletching bolts is approximately 240m/h, adjusted for the smithing/alt-magic required to obtain {{ItemIcon|Meteorite Bar|Meteorite Bars}}, works out to around 80m/h
+===提高金币加成===
+* {{ItemIcon|Beaver}} + {{ItemIcon|Devil}}
+* {{ItemIcon|Sharp Fletcher Gloves}}
+
+==灵巧 (~50,492k/hr max)==
+===需求===
+===提高金币加成===
+* {{ItemIcon|Eagle}} + {{ItemIcon|Leprechaun}}
+* {{ItemIcon|Stamina Pouch}}
+* {{ItemIcon|Performance Enhancing Potion IV}}
+
+===Method===
+{| class="wikitable"
+!colspan="1"| #
+!colspan="1"| Obstacle
+|-
+!colspan="1"| 1
+| {{Skill|灵巧|Cargo Net}}
+|-
+!colspan="1"| 2
+| {{Skill|灵巧|Monkey Bars}}
+|-
+!colspan="1"| 3
+| {{Skill|灵巧|Pit Jump}}
+|-
+!colspan="1"| 4
+| {{Skill|灵巧|Gap Jump}}
+|-
+!colspan="1"| 5
+| {{Skill|灵巧|Mountain Climb}}
+|-
+!colspan="1"| 6
+| {{Skill|灵巧|Tree Balance}}
+|-
+!colspan="1"| 7
+| {{Skill|灵巧|Heat Trap}}
+|-
+!colspan="1"| 8
+| {{Skill|灵巧|Tree Hang}}
+|-
+!colspan="1"| 9
+| {{Skill|灵巧|Ice Jump}}
+|-
+!colspan="1"| 10
+| {{Skill|灵巧|Boulder Move}}
+|-
+!colspan="1"| P
+| {{Skill|灵巧|Pillar of Skilling}}
+|-
+!colspan="1"| 11
+| {{Skill|灵巧|Frozen Maze}}
+|-
+!colspan="1"| 12
+| {{Skill|灵巧|Forest Jog}}
+|-
+!colspan="1"| 13
+| {{Skill|灵巧|Burning Trap}}
+|-
+!colspan="1"| 14
+| {{Skill|灵巧|Waterfall Climb}}
+|-
+!colspan="1"| 15
+| {{Skill|灵巧|Mountain Trail}}
+|-
+!colspan="1"| P2
+| {{Skill|灵巧|Elite Pillar of Expertise}}
+|-
+|}
+
+==扒窃 Vampires for Blood Vials (76,451k/hr max)==
+===需求===
+See the {{Skill|扒窃}} page for how to acquire the maximum Stealth value
+===提高金币加成===
+* {{ItemIcon|Leprechaun}} + {{ItemIcon|Devil}}
+* {{ItemIcon|Gentle Hands Potion IV}}
+* {{ItemIcon|扒窃 Gloves}}
+===Method===
+Thieve Vampires, sell everything you get.
+
+{{Menu}}
+[[Category:Guides]]
