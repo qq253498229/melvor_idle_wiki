@@ -1,0 +1,201 @@
+{{V|1.1.2}}
+{{Otheruses|training the Agility skill|the skill itself|Agility}}
+
+==Training==
+===Total Costs===
+This is the total cost to build or change all obstacles as listed in the guide below, assuming no cost reductions. Note that this could be lower in practice if [[Agility#Mastery Unlocks|Mastery Pool checkpoints]] are active or if the same obstacle is constructed multiple times.
+
+{| class="wikitable"
+! Cost
+![[Full Version|Base Game]]<br/>Level 1-99
+!{{TotH}}<br/>Level 100-120
+!Total
+|-
+| {{Icon|Gold Pieces|img=Coins}} || {{formatnum:46110000}} || {{formatnum:510000000}} || {{formatnum:556110000}}
+|-
+| {{Icon|屠杀者 Coins}} || {{formatnum:150000}} || {{formatnum:500000}} || {{formatnum:650000}}
+|-
+| 生鲱鱼 || 300 ||class="table-na"| N/A || 300
+|-
+| 生鲑鱼 || 300 ||class="table-na"| N/A || 300
+|-
+| 心智符文 || 500 ||class="table-na"| N/A || 500
+|-
+| 桃花心木 || {{formatnum:1000}} ||class="table-na"| N/A || {{formatnum:1000}}
+|-
+| 铁制箭矢 || {{formatnum:2000}} ||class="table-na"| N/A || {{formatnum:2000}}
+|-
+| 混乱符文 || {{formatnum:2000}} ||class="table-na"| N/A || {{formatnum:2000}}
+|-
+| 西瓜 || {{formatnum:3000}} ||class="table-na"| N/A || {{formatnum:3000}}
+|-
+| 巴伦托尔草 || {{formatnum:5000}} ||class="table-na"| N/A || {{formatnum:5000}}
+|-
+| 螃蟹 || {{formatnum:2500}} ||class="table-na"| N/A || {{formatnum:2500}}
+|-
+| 煤炭 || {{formatnum:5000}} ||class="table-na"| N/A || {{formatnum:5000}}
+|-
+| 钻石 || {{formatnum:2000}} ||class="table-na"| N/A || {{formatnum:2000}}
+|-
+| 骨头 || {{formatnum:1000}} ||class="table-na"| N/A || {{formatnum:1000}}
+|-
+| 龙岩锭 || {{formatnum:10000}} ||class="table-na"| N/A || {{formatnum:10000}}
+|-
+| 红杉木 || {{formatnum:10000}} ||class="table-na"| N/A || {{formatnum:10000}}
+|-
+| 绿宝石 || {{formatnum:2000}} ||class="table-na"| N/A || {{formatnum:2000}}
+|-
+| 岩浆鱼 ||class="table-na"| N/A || {{formatnum:8000}} || {{formatnum:8000}}
+|-
+| 刚玉锭 ||class="table-na"| N/A || {{formatnum:6000}} || {{formatnum:6000}}
+|-
+| 山铜 ||class="table-na"| N/A || {{formatnum:5000}} || {{formatnum:5000}}
+|-
+| 魔法树 ||class="table-na"| N/A || {{formatnum:5000}} || {{formatnum:5000}}
+|-
+| 蔚蓝石 ||class="table-na"| N/A || {{formatnum:5000}} || {{formatnum:5000}}
+|-
+| 钯金锭 ||class="table-na"| N/A || {{formatnum:15000}} || {{formatnum:15000}}
+|-
+| 纯净精华 ||class="table-na"| N/A || {{formatnum:20000}} || {{formatnum:20000}}
+|-
+| 陨石锭 ||class="table-na"| N/A || {{formatnum:10000}} || {{formatnum:10000}}
+|-
+| 陨石标枪 ||class="table-na"| N/A || {{formatnum:15000}} || {{formatnum:15000}}
+|-
+| 亡魂木 ||class="table-na"| N/A || {{formatnum:25000}} || {{formatnum:25000}}
+|}
+
+===Total Skill Requirements===
+In order to follow this guide, you'll need the following skills:
+* Level 1-99 ([[Full Version|Base Game]])
+** 防御70
+** 祝祭70
+** 屠杀者60
+** 伐木99
+** 生火99
+** 烹饪60
+** 采矿60
+** 扒窃60
+** 伐木80
+* Level 100-120 ({{TotH}} [[Throne of the Herald Expansion]])
+** 屠杀者100
+** 烹饪100
+** 防御110
+** 远程110
+** 魔法110
+** 锻造115
+** 弓匠115
+** 制造115
+
+===Obstacles===
+The following guide was created assuming level 50 Mastery for each obstacle. In practice, obstacles will start at level 1 Mastery and will end up far above level 50 (especially for later level blocks), but although that effects the actual XP rates gained it will not ultimately change which courses are best at a given level block in practice.
+
+This changes from Agility80 onwards, which are chosen assuming you'll hit 99 Mastery partway through the level block. In practice, you will not hit level 99 Mastery in all obstacles in the course, but you should hit level 99 Mastery in the most relevant obstacles, which are the ones with penalties that affect the speed at which you gain Agility XP.
+
+{| class="wikitable stickyHeader"
+|- class="headerRow-0"
+!等级!!课程变更!!style="min-width:190px"|消耗!!style="min-width:90px"|需求!!全部课程
+|-
+!1-10
+|建造 渔网
+|金币10k
+|渔网
+|-
+!10-20
+|建造 平衡梁
+|金币50k
+|渔网, 平衡梁
+|-
+!20-30
+|建造 深坑跳远
+|金币150k<br/>生鲱鱼300<br/>生鲑鱼300||
+|渔网, 平衡梁, 深坑跳远
+|-
+!30-40
+|建造 沟壑跳远
+|金币250k<br/>心智符文500||
+|渔网, 平衡梁, 深坑跳远, 沟壑跳远
+|-
+!40-50
+|建造 爬树
+|金币500k<br/>桃花心木1000<br/>铁制箭矢2000<br/>混乱符文2000
+|生火60
+|渔网, 平衡梁, 深坑跳远, 沟壑跳远, 爬树
+|-
+!50-60
+|建造 木筏漂流
+|金币1,000k<br/>西瓜3000
+|伐木60
+|渔网, 平衡梁, 深坑跳远, 沟壑跳远, 爬树, 木筏漂流
+|-
+!60-70
+|建造 灼热陷阱
+|金币2,500k||
+|渔网, 平衡梁, 深坑跳远, 沟壑跳远, 爬树, 木筏漂流, 灼热陷阱
+|-
+!70-80
+|建造 树木悬挂
+|金币5,000k<br/>巴伦托尔草5000
+|伐木80<br/>生火80
+|渔网, 平衡梁, 深坑跳远, 沟壑跳远, 爬树, 木筏漂流, 灼热陷阱, 树木悬挂
+|-
+!80-90
+|建造  冰川跳跃<br/>用 平衡翘板 替换 深坑跳远<br/>用 翻山越岭 替换 爬树<br/>用 树顶平衡 替换 木筏漂流
+|金币11,650k<br/>螃蟹2500<br/>煤炭5000<br/>钻石2000<br/>骨头1000
+|烹饪60<br/>采矿60<br/>屠杀者60<br/>扒窃60
+|渔网, 平衡梁, 平衡翘板, 沟壑跳远, 翻山越岭, 树顶平衡, 灼热陷阱, 树木悬挂,  冰川跳跃
+|-
+!90-100
+|建造 巨石挪动<br/>用 尖刺跳跃 替换 树木悬挂
+|金币25,000k<br/>屠杀者硬币150k<br/>龙岩锭10k<br/>红杉木10k<br/>绿宝石2k
+|伐木99<br/>生火99<br/>防御70<br/>祝祭70
+|渔网, 平衡梁, 平衡翘板, 沟壑跳远, 翻山越岭, 树顶平衡, 灼热陷阱, 尖刺跳跃,  冰川跳跃, 巨石挪动
+|-
+!100-105
+|建造 森林迷宫
+|金币30,000k<br/>屠杀者硬币500k<br/>岩浆鱼8000<br/>刚玉锭6000
+|烹饪100<br/>屠杀者100<br/>锻造100
+|渔网, 平衡梁, 平衡翘板, 沟壑跳远, 翻山越岭, 树顶平衡, 灼热陷阱, 尖刺跳跃,  冰川跳跃, 巨石挪动, 森林迷宫
+|-
+!105-110
+|建造 森林迷宫<br/>用 舒缓慢跑 替换 尖刺跳跃
+|金币55000000<br/>山铜5000<br/>魔法树5000
+|
+|渔网, 平衡梁, 平衡翘板, 沟壑跳远, 翻山越岭, 树顶平衡, 灼热陷阱, 舒缓慢跑,  冰川跳跃, 巨石挪动, 森林迷宫, 森林迷宫
+|-
+!110-115
+|建造 洞窟陷阱
+|金币75000000
+|
+|渔网, 平衡梁, 平衡翘板, 沟壑跳远, 翻山越岭, 树顶平衡, 灼热陷阱, 舒缓慢跑,  冰川跳跃, 巨石挪动, 森林迷宫, 森林迷宫, 洞窟陷阱
+|-
+!115-118
+|建造 冰冻攀爬
+|金币150000000<br/>蔚蓝石5000<br/>钯金锭15000<br/>纯净精华20000
+|防御110<br/>远程110<br/>魔法110
+|渔网, 平衡梁, 平衡翘板, 沟壑跳远, 翻山越岭, 树顶平衡, 灼热陷阱, 舒缓慢跑,  冰川跳跃, 巨石挪动, 森林迷宫, 森林迷宫, 洞窟陷阱, 冰冻攀爬
+|-
+!118-120
+|建造 峻岭远足
+|金币200000000<br/>陨石锭10000<br/>陨石标枪15000<br/>亡魂木25000
+|锻造115<br/>弓匠115<br/>制造115
+|渔网, 平衡梁, 平衡翘板, 沟壑跳远, 翻山越岭, 树顶平衡, 灼热陷阱, 舒缓慢跑,  冰川跳跃, 巨石挪动, 森林迷宫, 森林迷宫, 洞窟陷阱, 冰冻攀爬, 峻岭远足
+|}
+
+==Boosters==
+===XP===
+{{ModifierTable|increasedGlobalSkillXP,increasedSkillXP,increasedNonCombatSkillXP|XP Boost|false|skill=Agility}}
+
+===金币===
+{{ModifierTable|increased金币Global,increased金币FromAgility|金币 Boost|false|skill=Agility}}
+
+The Fine Coinpurse can replace the Book of Scholars depending on whether you prefer 25% more 金币/hr or 3% more XP/hr as the Book reduces global 金币 by 15%. At later Agility levels this can add up to a significant amount of 金币 lost for a 3% XP boost.
+
+===Action Time===
+{{ModifierTable|decreasedSkillIntervalPercent,decreasedSkillInterval,decreasedGlobalSkillIntervalPercent|Action Interval|false|skill=Agility}}
+
+{{SkillGuideMenu}}
+{{Menu}}
+[[Category:Guides]]
+[[Category:Skill Training]]

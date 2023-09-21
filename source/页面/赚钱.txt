@@ -380,15 +380,15 @@
 ! 名称
 ! 效果
 |-
-| {{ItemIcon|Nature's Call Staff}} || Reduces the Nature Rune cost of spells by 1
+| 野性呼唤法杖 || -1 自然符文消耗
 |-
-| {{ItemIcon|Magic 斗篷}} || doubles the Effect of the {{ItemIcon|Nature's Call Staff}}
+| 魔法斗篷 || 野性呼唤法杖效果翻倍
 |-
-| {{ItemIcon|Ring of Wealth}} || +7% Chance to Double Items Globally
+| 富贵戒指 || +7% 几率获得双倍资源
 |-
-| {{PetIcon|Salem}} || +5% Rune Preservation
+| 魔法宠物 || +5% 符文留存资源
 |-
-| {{PetIcon|Jelly Jim}} || +2% Rune Preservation
+| 荧菇洞窟BOSS宠物 || +2% 符文留存资源
 |-
 | {{ItemIcon|Amulet of Incantation}} || -0.2s Magic Interval<br>+10% Rune Preservation for 生活类魔法 Spells
 |-
@@ -465,7 +465,7 @@ The following setup will maximize total profits when all things are considered, 
 * Equip the following:
 ** {{ItemIcon|Miner's Helmet}}
 ** {{ItemIcon|Clue Chasers Insignia}}
-** {{ItemIcon|Maximum 斗篷}} (or {{ItemIcon|采矿 斗篷}} when {{Skill|采矿}}, {{ItemIcon|伐木 斗篷}} when {{Skill|伐木}}, {{ItemIcon|符文锻造 斗篷}} when {{Skill|符文锻造}}, {{ItemIcon|Magic 斗篷}} when performing {{Skill|生活类魔法}} and {{ItemIcon|Fletching 斗篷}} when {{Skill|Fletching}})
+** {{ItemIcon|Maximum 斗篷}} (or {{ItemIcon|采矿 斗篷}} when {{Skill|采矿}}, {{ItemIcon|伐木 斗篷}} when {{Skill|伐木}}, {{ItemIcon|符文锻造 斗篷}} when {{Skill|符文锻造}}, {{ItemIcon|魔法斗篷}} when performing {{Skill|生活类魔法}} and {{ItemIcon|Fletching 斗篷}} when {{Skill|Fletching}})
 ** {{ItemIcon|采矿 Gloves}}
 ** {{ItemIcon|Lumberjack's Top}}
 ** {{ItemIcon|Aorpheat's Signet Ring}}
@@ -474,7 +474,7 @@ The following setup will maximize total profits when all things are considered, 
 ** {{ItemIcon|Elemental Potion IV}} on {{Skill|符文锻造}}
 ** {{ItemIcon|Perfect Swing Potion IV}} on {{Skill|采矿}}
 ** {{ItemIcon|Skilled Fletching Potion IV}} on {{Skill|Fletching}}
-** {{ItemIcon|Nature's Call Staff}}
+** {{ItemIcon|野性呼唤法杖}}
 ** {{Skill|灵巧}} Obstacle 6: Tree Hop
 ** {{Skill|灵巧}} Obstacle 9: Ice Jump
 ** {{Skill|灵巧}} Obstacle 10: Lava Waterfall Dodge
@@ -1031,65 +1031,65 @@ Just fletching bolts is approximately 240m/h, adjusted for the smithing/alt-magi
 ==灵巧 (~50,492k/hr max)==
 ===需求===
 ===提高金币加成===
-* {{ItemIcon|Eagle}} + {{ItemIcon|Leprechaun}}
-* {{ItemIcon|Stamina Pouch}}
-* {{ItemIcon|Performance Enhancing Potion IV}}
+* 鹰+小矮妖
+* 耐力袋
+* 心灵手巧药水
 
-===Method===
+===方法===
 {| class="wikitable"
 !colspan="1"| #
-!colspan="1"| Obstacle
+!colspan="1"| 障碍
 |-
 !colspan="1"| 1
-| {{Skill|灵巧|Cargo Net}}
+| 渔网
 |-
 !colspan="1"| 2
-| {{Skill|灵巧|Monkey Bars}}
+| 攀爬架
 |-
 !colspan="1"| 3
-| {{Skill|灵巧|Pit Jump}}
+| 深坑跳远
 |-
 !colspan="1"| 4
-| {{Skill|灵巧|Gap Jump}}
+| 沟壑跳远
 |-
 !colspan="1"| 5
-| {{Skill|灵巧|Mountain Climb}}
+| 翻山越岭
 |-
 !colspan="1"| 6
-| {{Skill|灵巧|Tree Balance}}
+| 树顶平衡
 |-
 !colspan="1"| 7
-| {{Skill|灵巧|Heat Trap}}
+| 灼热陷阱
 |-
 !colspan="1"| 8
-| {{Skill|灵巧|Tree Hang}}
+| 树木悬挂
 |-
 !colspan="1"| 9
-| {{Skill|灵巧|Ice Jump}}
+| 冰川跳跃
 |-
 !colspan="1"| 10
-| {{Skill|灵巧|Boulder Move}}
+| 巨石挪动
 |-
-!colspan="1"| P
-| {{Skill|灵巧|Pillar of Skilling}}
+!colspan="1"| 被动
+| 技能支柱
 |-
 !colspan="1"| 11
-| {{Skill|灵巧|Frozen Maze}}
+| 寒冰迷宫
 |-
 !colspan="1"| 12
-| {{Skill|灵巧|Forest Jog}}
+| 森林漫步
 |-
 !colspan="1"| 13
-| {{Skill|灵巧|Burning Trap}}
+| 燃烧陷阱
 |-
 !colspan="1"| 14
-| {{Skill|灵巧|Waterfall Climb}}
+| 瀑布攀爬
 |-
 !colspan="1"| 15
-| {{Skill|灵巧|Mountain Trail}}
+| 峻岭远足
 |-
 !colspan="1"| P2
-| {{Skill|灵巧|Elite Pillar of Expertise}}
+| 精英知识支柱
 |-
 |}
 

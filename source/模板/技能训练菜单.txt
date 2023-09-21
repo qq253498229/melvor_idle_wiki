@@ -1,0 +1,23 @@
+{| class="wikitable" style="margin:auto; text-align:center; clear:both; margin-top:10px; width:100%;"
+|-
+![[首页|梅尔沃放置]] 技能训练菜单</span>
+|-
+| [[File:战斗.svg|15px]] [[战斗指南|战斗]]
+[[File:伐木.svg|15px]] [[伐木-练级|伐木]]
+[[File:钓鱼.svg|15px]] [[钓鱼-练级|钓鱼]]
+[[File:生火.svg|15px]] [[生火-练级|生火]]
+[[File:烹饪.svg|15px]] [[烹饪-练级|烹饪]]
+[[File:采矿.svg|15px]] [[采矿-练级|采矿]]
+[[File:锻造.svg|15px]] [[锻造-练级|锻造]]
+[[File:扒窃.svg|15px]] [[扒窃-练级|扒窃]]
+[[File:农务.svg|15px]] [[农务-练级|农务]]
+[[File:弓匠.svg|15px]] [[弓匠-练级|弓匠]]
+[[File:制造.svg|15px]] [[制造-练级|制造]]
+[[File:符文锻造.svg|15px]] [[符文锻造-练级|符文锻造]]
+[[File:草药学.svg|15px]] [[草药学-练级|草药学]]
+[[File:灵巧.svg|15px]] [[灵巧-练级|灵巧]]
+[[File:召唤.svg|15px]] [[召唤-练级|召唤]]
+[[File:星象学.svg|15px]] [[星象学-练级|星象学]]
+[[File:城镇.svg|15px]] [[城镇-练级|城镇]]
+[[File:生活类魔法.svg|15px]] [[生活类魔法-练级|生活类魔法]]
+|}

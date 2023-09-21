@@ -61,6 +61,10 @@ Melvor Idle由[https://jagex.com/ Jagex]发布。
 
 {{菜单}}
 
+<br><br>
+
+{{技能训练菜单}}
+
 
 <div class="game-introduction" style="margin-bottom:40px">
 
