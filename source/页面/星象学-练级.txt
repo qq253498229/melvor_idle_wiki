@@ -1,0 +1,120 @@
+{{V|1.1.2}}
+{{Otheruses|training the Astrology skill|the skill itself|Astrology}}
+
+== Training ==
+Study on the highest level Constellation that is unlocked. It may be useful to reach 80 {{Icon|Mastery}} in each Constellation before moving on, as this will unlock 5 Modifiers for each Constellation, giving you some decent bonuses for other skills. This will slow your leveling, but will grant various benefits to other skills.
+
+{{Icon|Secret Stardust Potion|Secret Stardust Potions}} can be used to increase the rate of leveling, but it is only suggested to be used if high levels of preservation and doubling can be obtained to maximize the amount of potions created per {{ItemIcon|Stardust}} used. Using {{ItemIcon|Alchemist's Bag|Alchemist's Bags}} can also reduce potion usage while actually training the skill.
+
+The below table lists the amount of time that would be spent training on each constellation supposing that neither XP boosts nor action interval reductions applied. Therefore, players should expect to reach {{SkillReq|Astrology|99}}, and subsequently Level 120, significantly quicker than is stated below. For example, maxing the Astrology Skill XP and Interval Modifiers within {{Icon|Variel|type=constellation}} will negate a day of training from 100-120. Reaching -20% Astrology interval and +24% Astrology (arbitrarily chosen percentages, but easily obtainable), will make Levels 100-120 take 4 days less--a 40% decrease in time.
+
+{| class="wikitable col-3-right col-4-right col-5-right"
+! colspan="2" | Constellation !! {{Skill|Astrology|Level|nolink=true}} !! XP !! Time
+|-
+| {{Icon|Deedree|type=constellation|notext=true}} || [[Deedree]] || 1-10 || 5 || 00:11:33
+|-
+| {{Icon|Iridan|type=constellation|notext=true}} || [[Iridan]] || 10-20 || 13 || 00:12:45
+|-
+| {{Icon|Ameria|type=constellation|notext=true}} || [[Ameria]] || 20-30 || 21 || 00:21:12
+|-
+| {{Icon|Terra|type=constellation|notext=true}} || [[Terra]] || 30-40 || 29 || 00:41:09
+|-
+| {{Icon|Vale|type=constellation|notext=true}} || [[Vale]] || 40-50 || 37 || 01:26:39
+|-
+| {{Icon|Syllia|type=constellation|notext=true}} || [[Syllia]] || 50-60 || 45 || 03:11:33
+|-
+| {{Icon|Arachi|type=constellation|notext=true}} || [[Arachi]] || 60-69 || 53 || 07:17:39
+|-
+| {{Icon|Ko|type=constellation|notext=true}} || [[Ko]] || 70-80 || 61 || 17:03:18
+|-
+| {{Icon|Tellus|type=constellation|notext=true}} || [[Tellus]] || 80-90 || 69 || data-sort-value="40:35:00" | 1 days, 16:35:00
+|-
+| {{Icon|Hyden|type=constellation|notext=true}} || [[Hyden]] || 90-95 || 77 || data-sort-value="37:04:09" | 1 days, 13:04:09
+|-
+| {{Icon|Qimican|type=constellation|notext=true}} || [[Qimican]] || 95-99 || 85 || data-sort-value="41:47:36" | 1 days, 17:47:36
+|- class="sortbottom"
+! colspan="4" | Total !! 6 days, 05:52:33
+|}
+
+{| class="wikitable sortable col-3-right col-4-right col-5-right"
+! colspan="2" | Constellation !! {{Skill|Astrology|Level|nolink=true}} !! XP !! Time
+|-
+| {{Icon|Qimican|type=constellation|notext=true}} || [[Qimican]] || 99-100 || 85 || 13:18:05
+|-
+| {{Icon|Variel|type=constellation|notext=true}} || {{TotH}} [[Variel]] || 100-105 || 155 || data-sort-value="49:34:09" | 2 days, 01:34:09
+|-
+| {{Icon|Haemir|type=constellation|notext=true}} || {{TotH}} [[Haemir]] || 105-110 || 235 || data-sort-value="53:38:26" | 2 days, 05:38:26
+|-
+| {{Icon|Rosaniya|type=constellation|notext=true}} || {{TotH}} [[Rosaniya]] || 110-115 || 335 || data-sort-value="61:44:09" | 2 days, 13:44:09
+|-
+| {{Icon|Ashtar|type=constellation|notext=true}} || {{TotH}} [[Ashtar]] || 115-120 || 475 || data-sort-value="71:26:05" | 2 days, 23:26:05
+|- class="sortbottom"
+! colspan="4" | Total !! 10 days, 09:40:53
+|}
+
+Total = 16 days, 15 hours, 33 minutes, 26 seconds
+
+== Gear ==
+{{Equipment/Recommended
+|helm1 = Star Gazing Hat
+|body1 = Star Gazing Body
+|legs1 = Star Gazing Leggings
+|boots1 = Star Gazing Boots
+
+|cape1 = Superior Astrology Skillcape
+|cape2 = Superior Firemaking Skillcape
+|cape3 = Firemaking Skillcape
+
+|ring1 = Ancient Ring of Skills
+|ring2 = Ancient Ring of Mastery
+
+|shield1 = Book of Scholars
+
+|familiar11 = Eagle
+|familiar21 = Owl
+
+|familiar12 = Owl
+|familiar22 = !
+
+|familiar13 = Devil
+|familiar23 = Owl
+}}
+
+It's smart to also add {{ItemIcon|Travellers Compass}} if you have them, for extra meteorite. Using all four Star Gazing Gear gives extra synergy.
+
+Only use the {{ItemIcon|Devil}} synergy if you have maxed {{ItemIcon|Golden Stardust}} upgrades.
+
+== Obstacles ==
+{{Obstacles/Recommended
+|obs31 = Pit Jump
+|obs51 = Tree Climb
+|obs81 = A Lovely Jog
+|obs101 = Waterfall
+|obs141 = Forest Climb
+|pillar1 = Skilling
+|epillar1 = Expertise
+}}
+
+== Other effects ==
+{| class="wikitable"
+|-
+| {{ItemIcon|Secret Stardust Potion IV}}
+| -15% reduced interval. Huge.
+|-
+| {{ItemIcon|Travellers Compass}}
+| 0.25% chance for meteorites. Don't miss out.
+|-
+| {{PetIcon|Pyro}}
+| +1% Global XP. Very hot indeed.
+|-
+| {{ConstellationIcon|Variel}}
+| +8% XP and Mastery. -5% interval.
+|-
+| {{ConstellationIcon|Rosaniya}}
+| Further +5% global mastery. Also +4% {{ItemIcon|Stardust}}. Must have!
+|}
+
+{{SkillGuideMenu}}
+{{Menu}}
+[[Category:Guides]]
+[[Category:Skill Training]]
