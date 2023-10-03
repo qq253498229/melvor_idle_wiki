@@ -1,5 +1,7 @@
 = 熔岩洞窟/指南
 
+https://wiki.melvoridle.com/w/Volcanic_Cave/Guide[原文地址,window=_blank]
+
 这份指南的目标是自动挂机该副本。如果您想手动进行，要求会低很多，拥有更多DR（Damage Reduction伤害减免）仍然会更容易。
 
 == 概括
