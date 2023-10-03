@@ -1,8 +1,4 @@
 = 熔岩洞窟/指南
-:toc: left
-:toclevels: 5
-:toc-title: 目录
-:sectnums: 6
 
 这份指南的目标是自动挂机该副本。如果您想手动进行，要求会低很多，拥有更多DR（Damage Reduction伤害减免）仍然会更容易。
 

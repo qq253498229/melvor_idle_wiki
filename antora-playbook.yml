@@ -1,0 +1,15 @@
+site:
+  title: 梅尔沃放置指南
+  start_page: melvor::index.adoc
+content:
+  sources:
+    - url: .
+      start_path: melvor
+      branches: [master]
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: supplemental-ui
+output:
+  dir: ./docs

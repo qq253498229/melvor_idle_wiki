@@ -1,0 +1,11 @@
+name: melvor
+title: 梅尔沃放置
+version: '1.0.0'
+start_page: ROOT:战斗-练级.adoc
+nav:
+  - modules/ROOT/nav.adoc
+asciidoc:
+  attributes:
+    page-toclevels: 3
+    page-toctitle: 目录
+    sectnums: 6
