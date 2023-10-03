@@ -1,0 +1,3671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.20">
+<title>战斗指南</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment the following line when using as a custom stylesheet */
+/* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700"; */
+html{font-family:sans-serif;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+b,strong{font-weight:bold}
+abbr{font-size:.9em}
+abbr[title]{cursor:help;border-bottom:1px dotted #dddddf;text-decoration:none}
+dfn{font-style:italic}
+hr{height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type=checkbox],input[type=radio]{padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,::before,::after{box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;line-height:1;position:relative;cursor:auto;-moz-tab-size:4;-o-tab-size:4;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:1px solid #dedede;word-wrap:normal}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre).nobreak{word-wrap:normal}
+:not(pre).nowrap{white-space:nowrap}
+:not(pre).pre-wrap{white-space:pre-wrap}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 .1em #fff;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin:0 auto;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border:1px solid #e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:hsla(0,0%,100%,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details{margin-left:1.25rem}
+details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
+details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
+details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
+.sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:first-child,.sidebarblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child,.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans-serif;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;font-size:.85rem;text-align:left;margin-right:0}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:1.25em;word-wrap:anywhere}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>*>tr>*{border-width:1px}
+table.grid-cols>*>tr>*{border-width:0 1px}
+table.grid-rows>*>tr>*{border-width:1px 0}
+table.frame-all{border-width:1px}
+table.frame-ends{border-width:1px 0}
+table.frame-sides{border-width:0 1px}
+table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-child>*{border-top-width:0}
+table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
+table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
+table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
+table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+li>p:empty:only-child::before{content:"";display:inline-block}
+ul.checklist>li>p:first-child{margin-left:-1em}
+ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
+ul.inline{display:flex;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+td.hdlist2{word-wrap:anywhere}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:4px solid #fff;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,td.hdlist1,span.alt,summary{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]{border-bottom:1px dotted}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#header,#content,#footnotes,#footer{max-width:none}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media amzn-kf8,print{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>战斗指南</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">目录</div>
+<ul class="sectlevel1">
+<li><a href="#_介绍">1. 介绍</a>
+<ul class="sectlevel2">
+<li><a href="#_利用非战斗技能来提高战斗能力">1.1. 利用非战斗技能来提高战斗能力</a></li>
+<li><a href="#_属性">1.2. 属性</a>
+<ul class="sectlevel3">
+<li><a href="#_共享属性">1.2.1. 共享属性</a>
+<ul class="sectlevel4">
+<li><a href="#_攻击间隔">攻击间隔</a></li>
+<li><a href="#_伤害减免">伤害减免</a></li>
+<li><a href="#_自动进食">自动进食</a>
+<ul class="sectlevel5">
+<li><a href="#_自动进食阈值">自动进食阈值</a></li>
+<li><a href="#_自动进食效率">自动进食效率</a></li>
+<li><a href="#_生命偷取">生命偷取</a></li>
+</ul>
+</li>
+<li><a href="#_屠杀者区域效果减免">屠杀者区域效果减免</a></li>
+<li><a href="#_攻击加成命中率">攻击加成/命中率</a></li>
+<li><a href="#_防御闪避率">防御/闪避率</a></li>
+<li><a href="#_隐藏技能等级">隐藏技能等级</a></li>
+<li><a href="#_反弹伤害">反弹伤害</a></li>
+<li><a href="#_怪物重生时间">怪物重生时间</a></li>
+</ul>
+</li>
+<li><a href="#_与职业相关的属性">1.2.2. 与职业相关的属性</a>
+<ul class="sectlevel4">
+<li><a href="#_近战属性">近战属性</a></li>
+<li><a href="#_魔法属性">魔法属性</a></li>
+<li><a href="#_远程属性">远程属性</a></li>
+</ul>
+</li>
+<li><a href="#_最小攻击伤害和特殊攻击">1.2.3. 最小攻击伤害和特殊攻击</a></li>
+<li><a href="#_被动效果">1.2.4. 被动效果</a></li>
+</ul>
+</li>
+<li><a href="#_游戏外工具">1.3. 游戏外工具</a></li>
+</ul>
+</li>
+<li><a href="#_游戏本体战斗">2. 游戏本体战斗</a>
+<ul class="sectlevel2">
+<li><a href="#_开局阶段1级_40级">2.1. 开局阶段：1级-40级</a>
+<ul class="sectlevel3">
+<li><a href="#_主要目标">2.1.1. 主要目标</a></li>
+<li><a href="#_屠杀者">2.1.2. 屠杀者</a></li>
+<li><a href="#_升级指南">2.1.3. 升级指南</a></li>
+<li><a href="#_近战">2.1.4. 近战</a>
+<ul class="sectlevel4">
+<li><a href="#_升级">升级</a></li>
+<li><a href="#_目标装备">目标装备</a></li>
+</ul>
+</li>
+<li><a href="#_远程">2.1.5. 远程</a>
+<ul class="sectlevel4">
+<li><a href="#_升级_2">升级</a></li>
+<li><a href="#_目标装备_2">目标装备</a></li>
+</ul>
+</li>
+<li><a href="#_魔法">2.1.6. 魔法</a>
+<ul class="sectlevel4">
+<li><a href="#_升级_3">升级</a></li>
+<li><a href="#_目标装备_3">目标装备</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_游戏前期41_75级">2.2. 游戏前期：41-75级</a>
+<ul class="sectlevel3">
+<li><a href="#_主要目标_2">2.2.1. 主要目标</a>
+<ul class="sectlevel4">
+<li><a href="#_可选装备">可选装备</a></li>
+</ul>
+</li>
+<li><a href="#_屠杀者_2">2.2.2. 屠杀者</a></li>
+<li><a href="#_近战_2">2.2.3. 近战</a>
+<ul class="sectlevel4">
+<li><a href="#_升级_4">升级</a></li>
+<li><a href="#_目标装备_4">目标装备</a></li>
+</ul>
+</li>
+<li><a href="#_远程_2">2.2.4. 远程</a>
+<ul class="sectlevel4">
+<li><a href="#_升级_5">升级</a></li>
+<li><a href="#_目标装备_5">目标装备</a></li>
+</ul>
+</li>
+<li><a href="#_魔法_2">2.2.5. 魔法</a>
+<ul class="sectlevel4">
+<li><a href="#_升级_6">升级</a></li>
+<li><a href="#_目标装备_6">目标装备</a></li>
+</ul>
+</li>
+<li><a href="#_熔岩洞窟和古代盔甲">2.2.6. 熔岩洞窟和古代盔甲</a></li>
+</ul>
+</li>
+<li><a href="#_游戏中期76_95级">2.3. 游戏中期：76-95级</a>
+<ul class="sectlevel3">
+<li><a href="#_主要目标_3">2.3.1. 主要目标</a></li>
+<li><a href="#_外部增益">2.3.2. 外部增益</a>
+<ul class="sectlevel4">
+<li><a href="#_祝祭">祝祭</a></li>
+<li><a href="#_灵巧">灵巧</a></li>
+<li><a href="#_草药学">草药学</a></li>
+<li><a href="#_召唤">召唤</a></li>
+<li><a href="#_屠杀者_3">屠杀者</a></li>
+</ul>
+</li>
+<li><a href="#_fury_of_the_elemental_zodiacs_fez">2.3.3. Fury of the Elemental Zodiacs (FEZ)</a></li>
+<li><a href="#_副本指南">2.3.4. 副本指南</a>
+<ul class="sectlevel4">
+<li><a href="#_infernal_stronghold">Infernal Stronghold</a></li>
+<li><a href="#_air_god_dungeon">Air God Dungeon</a></li>
+<li><a href="#_water_god_dungeon">Water God Dungeon</a></li>
+<li><a href="#_earth_god_dungeon">Earth God Dungeon</a></li>
+<li><a href="#_fire_god_dungeon">Fire God Dungeon</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_into_the_mist">2.4. Into the Mist</a>
+<ul class="sectlevel3">
+<li><a href="#_战斗被动槽位">2.4.1. 战斗被动槽位</a></li>
+<li><a href="#_何时完成大师屠杀任务在完成itm之前还是之后">2.4.2. 何时完成大师屠杀任务：在完成ITM之前还是之后</a></li>
+</ul>
+</li>
+<li><a href="#_游戏后期96_99级">2.5. 游戏后期：96-99级</a>
+<ul class="sectlevel3">
+<li><a href="#_主要目标_4">2.5.1. 主要目标</a></li>
+<li><a href="#_dark_waters">2.5.2. Dark Waters</a></li>
+<li><a href="#_unhallowed_wasteland">2.5.3. Unhallowed Wasteland</a></li>
+</ul>
+</li>
+<li><a href="#_impending_darkness_event">2.6. Impending Darkness Event</a>
+<ul class="sectlevel3">
+<li><a href="#_常见问题解答">2.6.1. 常见问题解答</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_使者的王座_dlc">3. 使者的王座 DLC</a>
+<ul class="sectlevel2">
+<li><a href="#_使者的王座dlc_对基础游戏战斗的影响">3.1. 使者的王座DLC 对基础游戏战斗的影响</a></li>
+<li><a href="#_属性与增益">3.2. 属性与增益</a>
+<ul class="sectlevel3">
+<li><a href="#_星象学">3.2.1. 星象学</a></li>
+<li><a href="#_灵巧_2">3.2.2. 灵巧</a></li>
+<li><a href="#_草药学_2">3.2.3. 草药学</a></li>
+<li><a href="#_召唤_2">3.2.4. 召唤</a></li>
+<li><a href="#_可消耗物品槽">3.2.5. 可消耗物品槽</a></li>
+</ul>
+</li>
+<li><a href="#_使者的王座战斗">3.3. 使者的王座战斗</a>
+<ul class="sectlevel3">
+<li><a href="#_使者的王座dlc游戏前期100级至110级">3.3.1. 使者的王座DLC游戏前期：100级至110级</a>
+<ul class="sectlevel4">
+<li><a href="#_主要目标_5">主要目标</a></li>
+<li><a href="#_近战_3">近战</a></li>
+<li><a href="#_远程_3">远程</a></li>
+<li><a href="#_魔法_3">魔法</a></li>
+</ul>
+</li>
+<li><a href="#_使者的王座dlc游戏中期111_120级">3.3.2. 使者的王座DLC游戏中期：111-120级</a>
+<ul class="sectlevel4">
+<li><a href="#_主要目标_6">主要目标</a></li>
+<li><a href="#_近战_4">近战</a></li>
+<li><a href="#_远程_4">远程</a></li>
+<li><a href="#_魔法_4">魔法</a></li>
+</ul>
+</li>
+<li><a href="#_使者的王座dlc游戏后期118_120级">3.3.3. 使者的王座DLC游戏后期：118-120级</a>
+<ul class="sectlevel4">
+<li><a href="#_主要目标_7">主要目标</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_介绍">1. 介绍</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>本指南是为那些玩 <strong>标准</strong> 游戏模式的角色编写的。如果是玩 <strong>硬核</strong> 或 <strong>冒险</strong> 模式，某些事件的准备工作有所不同，尤其是因为 <strong>战斗三角</strong> 差异之下的 <strong>火神副本</strong>。本指南将假设玩家没有自行添加限制，如果您选择在某种方式上限制您的角色，您需要自行找出如何克服它的方式。</p>
+</div>
+<div class="paragraph">
+<p>虽然《梅尔沃放置》的主要游戏进程都围绕着战斗展开；但非战斗技能也会对战斗提供辅助，让战斗体验更好。本指南将把游戏分为多个部分，并尝试为每个部分提供建议。本指南将研究的部分以及它们大致需要多长时间提前列出如下：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>开局：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>这时候的玩家装备很差，尚未购买或升级 <strong>自动进食</strong> 以及获得 <strong>财宝护符</strong>，此时可能需要更多地手动(甚至是纯手动)的玩法来安全地过渡。这个过程可能需要几天到一周左右的时间。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>前期：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>大多数游戏内容开始展开，战斗开始变得有趣起来。玩家已经获得了一些基础装备，能够在战斗区域和屠杀者区域前面一部分中与大多数怪物舒适地战斗，并开始准备向获得更强大的装备而努力。这一部分可能需要一两个月的时间，以完成 <strong>熔岩洞窟</strong> 为标志。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>中期：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>这一部分围绕着完善您的护甲套装、将您的面板数据最大化、以及完成长期成就，如四神副本。这一部分可能需要几个月的时间，通常以完成 <strong>遁入迷雾</strong> 为标志。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>后期：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>这是玩家正在升级他们在 <strong>幽暗水域</strong> 区域的武器、在 <strong>不洁废土</strong> 区域的护甲，并完全准备好击败 <strong>湮灭黑暗活动</strong> 的时候。这一步包含了漫长的挑战，但如果已经做了足够的准备，最多只需要几周的时间。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>大后期：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>到这里，玩家已经完成了大多数成就，此时的目标是补上剩下的成就。这一步的长度是可变的，因为它取决于之前完成了多少，以及玩家对流程的优化/幸运程度。可能需要花费很多天来寻找一个您实际上永远不会使用的物品！</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>本指南将从概述战斗方式、统计数据以及影响它们的物品开始。然后，将详细描述游戏的第一个有挑战的副本， <strong>熔岩洞窟</strong> 的升级过程。接下来是<strong>四神副本</strong>，并提供游戏后期内容的建议。请记住，这里提到的大多数内容都只是“建议”，并不是必须的，也不是最优解；如果您不想做指南中提到的某件事，您可能不必去做。</p>
+</div>
+<div class="sect2">
+<h3 id="_利用非战斗技能来提高战斗能力">1.1. 利用非战斗技能来提高战斗能力</h3>
+<div class="paragraph">
+<p>有几种非战斗技能可以在各个方面提高战斗体验：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>灵巧</strong> - 许多障碍物提供重要的战斗加成。</p>
+</li>
+<li>
+<p><strong>草药学</strong> - <strong>钻石运势药水</strong> 是游戏中最高的DPS提升之一。</p>
+</li>
+<li>
+<p><strong>扒窃</strong> - 有许多有用的物品掉落，包括 <strong>黑礼帽</strong>、<strong>Knight&#8217;s Defender</strong> 和其他物品。</p>
+</li>
+<li>
+<p><strong>星象学</strong> - 许多强大而重要的被动效果，包括 <strong>隐藏技能等级</strong>，这些效果提供了进一步的战斗加成。</p>
+</li>
+<li>
+<p><strong>召唤</strong> - 召唤石板(使魔)可以提供战斗效果的提升，并独立造成伤害。比如 <strong>龙</strong> 石板的燃烧效果对高生命值的敌人特别有效。</p>
+</li>
+<li>
+<p><strong>烹饪</strong> - 烹饪食物吃以避免死亡！</p>
+</li>
+<li>
+<p><strong>农务</strong> - 种植食物吃以避免死亡！农务特别有用，因为它不需要您花时间积极参与，您完全可以在 “战斗的同时” 种植食物。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>其它有助于顺利过渡的技能包括：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>锻造</strong> - <strong>近战</strong> 护甲和武器。</p>
+</li>
+<li>
+<p><strong>弓匠</strong> - <strong>远程</strong> 弹药和武器。</p>
+</li>
+<li>
+<p><strong>制造</strong> - 具有独特效果的 <strong>首饰</strong> 和 <strong>远程</strong> 护甲。</p>
+</li>
+<li>
+<p><strong>符文锻造</strong> - <strong>魔法</strong> 护甲和武器。</p>
+</li>
+<li>
+<p><strong>生火 99级</strong> - <strong>生火斗篷</strong> 提供了经验加成以及 <strong>灰烬</strong> ，可以用来埋葬换取 <strong>祝祭</strong> 点数</p>
+</li>
+<li>
+<p><strong>城镇</strong> - 商人可以用来交换食物和消耗品，使战斗更容易。</p>
+</li>
+<li>
+<p><strong>城镇</strong> - 城镇还有许多可用的任务，为玩家在实现某些成就或拥有某些物品时提供奖励，如果您不确定该做什么，顺着这些任务游戏也是一个很好的方法。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>《梅尔沃放置》不是竞技性的游戏，因此建议设定您自己的目标，并朝着这些目标努力。游戏将需要很长时间才能完成，所以任何能够使这个过程更有趣的事情都强烈推荐；使用您个人认为酷或有用的武器，或者不使用某个物品(仅仅因为它不好玩)都是完全可以接受的，这会使游戏更有趣！</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_属性">1.2. 属性</h3>
+<div class="paragraph">
+<p>所有的装备都有一定的属性，将其与三种战斗风格之一联系起来：<strong>近战</strong>, <strong>远程</strong>, 或 <strong>魔法</strong>。一般来说，更难获得的装备 <strong>通常</strong> 更好。接近游戏末期，选择变得更加情境化。</p>
+</div>
+<div class="paragraph">
+<p><em>要了解属性分解和数学计算，请使用 <a href="https://wiki.melvoridle.com/w/Combat_Simulator">战斗计算器</a> 或阅读 <strong>战斗</strong> 页面。</em></p>
+</div>
+<div class="sect3">
+<h4 id="_共享属性">1.2.1. 共享属性</h4>
+<div class="sect4">
+<h5 id="_攻击间隔">攻击间隔</h5>
+<div class="ulist">
+<ul>
+<li>
+<p><em>重要文章: <strong>攻击间隔</strong></em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>攻击速度主要由武器上的默认攻击间隔决定，它影响着攻击之间所需的时间。攻击速度以每次攻击的秒数表示，因此较低的数字更好。各种因素，如 <strong>装备</strong>、<strong>宠物</strong>、<strong>法术</strong> 和 <strong>祝祭</strong>，都可以减少玩家的攻击间隔。</p>
+</div>
+<div class="paragraph">
+<p>有关影响玩家攻击间隔的事物的完整列表，请参阅 <strong>攻击间隔</strong> 页面。</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_伤害减免">伤害减免</h5>
+<div class="ulist">
+<ul>
+<li>
+<p><em>重要文章: <strong>伤害减免</strong></em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><em><strong>伤害减免</strong></em>，或称<strong>DR</strong>，是游戏中最重要的属性。在考虑玩家在 <strong>死亡</strong> 之前最多能承受多少伤害时，会同时考虑伤害减免、<strong>生命值</strong>，以及 <strong>自动进食</strong> 等级。伤害减免可以在以下装备上找到：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>龙岩胸甲(镀金)</strong> <strong>黑龙皮背心</strong> <strong>大气专家巫师长袍</strong> - 技能装备中最高级别护甲的升级版本。</p>
+</li>
+<li>
+<p><strong>古代胸甲</strong> - 所有古代级别的装备，完全升级后。</p>
+</li>
+<li>
+<p><strong>四神装备</strong> - 所有四神副本装备。</p>
+</li>
+<li>
+<p><strong>钻石银戒指</strong> - 可通过 <strong>制作</strong>, <strong>战斗</strong>, 或 <strong>扒窃</strong> 获得。</p>
+</li>
+<li>
+<p><strong>伤害减免药水</strong> 。</p>
+</li>
+<li>
+<p><strong>Leonardo</strong>  - <strong>防御</strong> 宠物。</p>
+</li>
+<li>
+<p><strong>Erran</strong> - <strong>大地之神副本</strong> 宠物。</p>
+</li>
+<li>
+<p><strong>灵巧</strong> 障碍物。</p>
+</li>
+<li>
+<p><strong>守护</strong>、<strong>石块皮肤</strong> - <strong>|祝祭</strong>。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>至于游戏末期，有一些 <strong>祝祭</strong> 和从 <strong>湮灭黑暗活动</strong> 掉落的物品会影响敌人的伤害减免：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Battleheart 95级祝祭</strong> - 祝祭，降低敌人的伤害减免。</p>
+</li>
+<li>
+<p><strong>远程之盾</strong> 。</p>
+</li>
+<li>
+<p><strong>魔法之盾</strong> 。</p>
+</li>
+<li>
+<p><strong>近战之盾</strong> 。</p>
+</li>
+<li>
+<p><strong>力量之戒</strong> 。</p>
+</li>
+<li>
+<p><strong>Bone</strong> - 完成<strong>湮灭黑暗活动</strong>之后必定获得。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_自动进食">自动进食</h5>
+<div class="ulist">
+<ul>
+<li>
+<p><em>重要文章: <strong>自动进食</strong></em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>自动进食</strong> 是一个升级，会在达到一定的生命阈值后自动食用已装备的食物。<strong>尽快升级这个是至关重要的。</strong> 自动进食等级，连同 <strong>生命值</strong> 和伤害减免，代表着玩家可以在没有死亡风险的情况下在哪些玩法中挂机。</p>
+</div>
+<div class="paragraph">
+<p>拥有 <strong>自动进食</strong> 后，食物的类型就不重要了，只要数量够多不用完就行。玩家无论是装备 <strong>土豆</strong> 还是 <strong>完美鲸鱼</strong>，都能让玩家保持存活。不同食物来源之间的主要区别在于花在 <strong>烹饪</strong>、<strong>钓鱼</strong> 或 <strong>农务</strong> 上的时间，而不是打怪时的强度。</p>
+</div>
+<div class="sect5">
+<h6 id="_自动进食阈值">自动进食阈值</h6>
+<div class="paragraph">
+<p><strong>自动进食阈值</strong> 是触发自动进食所需的HP值，降低了所需的HP/伤害减免。在基本游戏中，只有一个物品会影响自动进食阈值：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>铺张之戒</strong> - 从 <strong>妖邪真龙</strong> 掉落。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_自动进食效率">自动进食效率</h6>
+<div class="ulist">
+<ul>
+<li>
+<p><em>重要文章: <strong>自动进食效率</strong></em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>自动进食效率</strong> 增加了消耗每个食物时治疗的生命值数值。可以在以下这些中获得：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>烹饪</strong> 物品 <strong>专精</strong>。</p>
+</li>
+<li>
+<p><strong>星象学</strong> 星座修正。</p>
+</li>
+<li>
+<p><strong>灵巧</strong> 障碍物。</p>
+</li>
+<li>
+<p><strong>饥荒药水</strong> 。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_生命偷取">生命偷取</h6>
+<div class="ulist">
+<ul>
+<li>
+<p><em>重要文章: <strong>生命偷取</strong></em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>生命偷取</strong> 可以让玩家在造成伤害时恢复一部分生命值，而不是造成额外的伤害。当生命偷取被激活时，玩家造成伤害时都会触发吸血效果，恢复的生命值数量取决于生命偷取修正的强度。例如，+10% 生命偷取修正可以让玩家在造成任何伤害时恢复相当于该次伤害的10%的生命值。</p>
+</div>
+<div class="paragraph">
+<p>生命偷取可以根据伤害类型具体分为不同种类，如近战吸血、魔法吸血、流血吸血、燃烧吸血、中毒吸血，以及目标受到诅咒时的吸血。</p>
+</div>
+<div class="paragraph">
+<p>这一属性可以在以下位置找到：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>星象学星座-维拉。</p>
+</li>
+<li>
+<p>上古之冠(屠杀者区域-晦暗荒野-上古吸血鬼)。</p>
+</li>
+<li>
+<p>热忱 I。</p>
+</li>
+<li>
+<p><strong>术士护符</strong>。</p>
+</li>
+<li>
+<p><strong>狼</strong> 召唤石板的某些连携效果。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_屠杀者区域效果减免">屠杀者区域效果减免</h5>
+<div class="ulist">
+<ul>
+<li>
+<p><em>重要文章: <strong>屠杀者区域效果减免</strong></em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>屠杀者区域效果减免</strong> 降低在这些领域中战斗时受到的减益影响。这些减益效果从可以让人讨厌的（ <strong>粘液森林</strong>、<strong>干旱平原</strong>）到直接阻碍游戏进度的（<strong>黑暗水域</strong>、<strong>不洁废土</strong>）。这一属性可以在以下物品上找到：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>战斗之柱</strong> - <strong>灵巧</strong> 的顶级技能。</p>
+</li>
+<li>
+<p><strong>猎手戒指</strong> - 从 <strong>狩猎真龙</strong> (屠杀者-险恶山脉) 掉落。</p>
+</li>
+<li>
+<p><strong>屠杀者头盔</strong> - 商店中的所有 <strong>屠杀者</strong> 装备（更高级的提供更多效果）。</p>
+</li>
+<li>
+<p><strong>屠杀者斗篷</strong>。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_攻击加成命中率">攻击加成/命中率</h5>
+<div class="paragraph">
+<p>这些属性包括在所有武器以及某些护甲上。<strong>近战</strong> 武器具有 <strong>戳刺</strong>、<strong>劈砍</strong> 和 <strong>格挡</strong> 加成，而 <strong>远程</strong> 和 <strong>魔法</strong> 武器具有各自的攻击加成。在战斗中，玩家的命中率决定了他们击中敌人的概率，根据敌人的闪避率来计算。<strong>召唤</strong> 石板也使用玩家的命中率来计算它们命中的几率。</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_防御闪避率">防御/闪避率</h5>
+<div class="paragraph">
+<p>这些属性包括在所有护甲上，并与 <strong>战斗三角</strong> 密切相关。数值越高越好。闪避只有在敌人能够眩晕、减速或沉睡时，才能帮助玩家更快地杀死敌人，因为玩家会更频繁地躲避它们的致残攻击。</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_隐藏技能等级">隐藏技能等级</h5>
+<div class="paragraph">
+<p>主要的 <strong>战斗</strong> 页面详细介绍了游戏用于计算您的属性的最大伤害、命中率和闪避等方面的具体公式。总结起来，<strong>攻击</strong>、<strong>力量</strong>、<strong>远程</strong>、<strong>魔法</strong> 和 <strong>防御</strong> 等技能的等级会根据不同的公式增加您的属性值，但仅限于等级上限（基础游戏为99级，使者的王座DLC下可达120级）。</p>
+</div>
+<div class="paragraph">
+<p>在这些属性中的任何一个拥有隐藏等级都会使这些公式使用玩家的基础技能等级（显示在侧边栏上，等于获得的经验值数量）以及玩家的隐藏等级，从而使玩家比其属性表现出的要强大。此外，隐藏等级允许公式计算超出等级上限的属性值。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>例如，一个力量等级为15级，隐藏等级为+5级的角色会根据其有效等级为20来计算近战最大伤害。</p>
+</li>
+<li>
+<p>而一个力量等级为99级，隐藏等级为+5级的角色会根据其有效等级为104来计算近战最大伤害，即使他们的等级已经达到上限，仍然可以继续提升。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_反弹伤害">反弹伤害</h5>
+<div class="paragraph">
+<p>这个效果是指每当玩家受到伤害时，他们也会立即将部分伤害反弹给敌人。反弹不会减少受到的伤害量。反弹伤害无法杀死敌人，不提供经验点，且在下一次激活之前有2秒的冷却时间。</p>
+</div>
+<div class="paragraph">
+<p>这个效果可以在以下物品上找到：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>蓝宝石金戒指</p>
+</li>
+<li>
+<p>反弹护盾</p>
+</li>
+<li>
+<p>星象学星座特鲁斯。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_怪物重生时间">怪物重生时间</h5>
+<div class="ulist">
+<ul>
+<li>
+<p><em>重要文章: <strong>怪物重生时间</strong></em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>在击杀任何怪物后，下一个怪物出现之前会有3秒的重生时间。在这段时间内，玩家无法造成伤害，因此无法获得经验值。这意味着怪物重生可以被视为一个确保未中（或两次未中）的情况。</p>
+</div>
+<div class="paragraph">
+<p>这个计时器可以通过以下效果减少：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>灵巧9LJ岩浆跳跃</p>
+</li>
+<li>
+<p>灵巧10DF斗龙</p>
+</li>
+<li>
+<p>灵巧战斗支柱</p>
+</li>
+<li>
+<p>猎人帽子(商店城镇页)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_与职业相关的属性">1.2.2. 与职业相关的属性</h4>
+<div class="sect4">
+<h5 id="_近战属性">近战属性</h5>
+<div class="paragraph">
+<p><strong>近战</strong> 装备注重以下4个属性：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>力量</strong> 加成：决定最大攻击伤害的因素之一。</p>
+</li>
+<li>
+<p>戳刺/劈砍/格挡加成：决定了特定攻击类型的准确性（命中率）。每种近战武器都对某种攻击类型有偏好，正确选择将大幅提高玩家的准确性。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_魔法属性">魔法属性</h5>
+<div class="paragraph">
+<p><strong>魔法</strong> 护甲和武器注重以下2个属性：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>魔法伤害加成：决定最大攻击伤害。</p>
+</li>
+<li>
+<p>魔法攻击加成：决定准确性。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>此外，<strong>魔法</strong> 也受益于符文保存几率和符文成本降低。这些属性可以在多个物品和增益效果中找到，包括：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>大气奥秘法杖</strong> - 所有法杖</p>
+</li>
+<li>
+<p><strong>大气之杖</strong> - 所有灌输魔杖，通过 <strong>符文锻造</strong> 从 <strong>魔杖(精英)</strong> 制作而成</p>
+</li>
+<li>
+<p><strong>艾利之书</strong> - <strong>巫师大厅(副本)</strong>掉落</p>
+</li>
+<li>
+<p><strong>秘教之书</strong> - <strong>死灵法师(屠杀者区域-废墟遗迹)</strong> 掉落</p>
+</li>
+<li>
+<p><strong>Salem</strong> - 魔法 <strong>宠物</strong></p>
+</li>
+<li>
+<p><strong>骷髅斗篷</strong> - <strong>屠杀者</strong> 商店</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_远程属性">远程属性</h5>
+<div class="paragraph">
+<p><strong>远程</strong> 装备和武器注重以下2个属性：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>远程力量加成：决定最大攻击伤害。</p>
+</li>
+<li>
+<p>远程攻击加成：决定准确性。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>此外，<strong>远程</strong> 装备还受益于弹药保存。这可以在多个物品和增益效果中找到，包括：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>游侠之靴</strong> - 从<strong>蜘蛛之箱</strong>在<strong>蜘蛛森林</strong>掉落</p>
+</li>
+<li>
+<p><strong>游侠帽</strong> - 从<strong>蜘蛛之箱</strong>在<strong>蜘蛛森林</strong>掉落</p>
+</li>
+<li>
+<p><strong>远程技能斗篷</strong></p>
+</li>
+<li>
+<p><strong>远程保护斗篷</strong></p>
+</li>
+<li>
+<p><strong>玛拉胡特</strong> - 远程 <strong>宠物</strong></p>
+</li>
+<li>
+<p><strong>远古投掷小刀</strong>/<strong>远古标枪</strong> - 所有投掷小刀和标枪</p>
+</li>
+<li>
+<p><strong>投掷力量手套</strong> - 使用投掷武器时负面影响远程保存。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_最小攻击伤害和特殊攻击">1.2.3. 最小攻击伤害和特殊攻击</h4>
+<div class="paragraph">
+<p>玩家或敌人发动的每次普通攻击都会造成随机数量的伤害，伤害值在最小值和最大值之间波动。对于所有怪物以及没有任何加成的玩家，最小攻击伤害为1。</p>
+</div>
+<div class="paragraph">
+<p>通过增加最小攻击伤害的方式，可以使用以下增益效果：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>所有<strong>符文锻造</strong>装备，如<strong>空气侍僧巫师帽</strong> <strong>水侍僧巫师帽</strong> <strong>土侍僧巫师帽</strong> <strong>火侍僧巫师帽</strong></p>
+</li>
+<li>
+<p><strong>充能 I</strong></p>
+</li>
+<li>
+<p><strong>战斗之心</strong></p>
+</li>
+<li>
+<p><strong>战斗之柱</strong></p>
+</li>
+<li>
+<p><strong>星象学</strong> 星座 <strong>艾丽丹</strong>。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>特殊攻击通常在武器上找到，有一定的触发几率，在战斗中时会替代普通攻击。如果玩家拥有多个带有特殊攻击的物品，并且它们的组合总和大于100%，游戏将尝试平衡使用任何一种攻击的几率。例如，如果玩家同时佩戴<strong>远古之剑</strong>和<strong>刃回响之戒</strong>，那么玩家将有50%的几率使用生命吸取，50%的几率使用刃回响。可以在<strong>特殊攻击</strong>页面上查看具有特殊攻击的装备和法术列表。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_被动效果">1.2.4. 被动效果</h4>
+<div class="paragraph">
+<p>除了上述属性之外，装备还具有许多其它被动效果，这些效果不直接提高玩家在战斗中的能力。</p>
+</div>
+<div class="paragraph">
+<p>被动效果是始终生效的加成。它们可以增加所造成的伤害、获得的 <strong>金币</strong>，或者简单地提供更多的物品掉落。物品加倍效果非常强大，因为它独立于所造成的伤害或重生时间而增加了物品数量。这可以在多个物品和增益效果中找到，包括：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>富贵戒指</strong> - 在战斗中时获得7%物品加倍效果，比<strong>Aorpheat的图章戒指(ab戒)</strong>提供的加成高2%</p>
+</li>
+<li>
+<p><strong>Aorpheat的图章戒指</strong> - 由A/B部件制作，从佩戴<strong>黄宝石金戒指</strong>时进行战斗(b)/非战斗(a)技能收集获得</p>
+</li>
+<li>
+<p><strong>黑礼帽</strong> - 稀有<strong>扒窃</strong>掉落</p>
+</li>
+<li>
+<p><strong>8SJ尖刺跳跃</strong></p>
+</li>
+<li>
+<p><strong>9IJ冰川跳跃</strong></p>
+</li>
+<li>
+<p><strong>技能支柱</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>增加金币的效果可以在以下物品中找到：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>黄宝石金戒指</strong> - 在<strong>制造</strong>中制作，或普通掉落</p>
+</li>
+<li>
+<p><strong>缄默手套</strong> - 从<strong>盗贼</strong>掉落</p>
+</li>
+<li>
+<p><strong>精致钱包</strong> - 从<strong>女人</strong>扒窃</p>
+</li>
+<li>
+<p><strong>黄金纹章盾</strong> - 从<strong>国王</strong>扒窃</p>
+</li>
+<li>
+<p><strong>宝石项链</strong> - 低级城镇<strong>扒窃</strong>掉落</p>
+</li>
+<li>
+<p><strong>富贵戒指</strong> - 皇家城堡<strong>扒窃</strong>掉落</p>
+</li>
+<li>
+<p><strong>潜行靴</strong> - 稀有<strong>扒窃</strong>掉落</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_游戏外工具">1.3. 游戏外工具</h3>
+<div class="paragraph">
+<p>两个流行的游戏外工具是<strong>战斗模拟器</strong>和<strong>能不能挂机</strong>。</p>
+</div>
+<div class="paragraph">
+<p><strong>战斗模拟器</strong> 是一个Mod，允许您估算战斗的许多属性，如死亡率、每小时经验、每小时掉落、DPS等等。使用战斗模拟器，检查您的设置是否有效非常容易。它使用游戏自己的代码以高速模拟战斗，因此非常准确。截止到游戏版本v1.1.1，该Mod尚未更新以适应新的内置Mod管理器，目前无法使用。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://zxv975.github.io/CanIIdle/">能不能挂机</a> 是由Silber制作的网站。您可以在战斗页面输入一些属性，然后查看您可以挂机哪些敌人。这是游戏中非常有用的工具。自v1.1以来，该网站不再更新任何超出基础游戏的内容，但对于尚未购买任何扩展内容的玩家来说，它仍然完全准确。对于已完成 <strong>湮灭黑暗活动</strong> <strong>并购买了 </strong>使者的王座DLC<strong>的玩家，它只会在精英/大师级 </strong>屠杀者** 任务方面不准确。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_游戏本体战斗">2. 游戏本体战斗</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_开局阶段1级_40级">2.1. 开局阶段：1级-40级</h3>
+<div class="paragraph">
+<p>在游戏早期，主要是升级核心战斗属性，熟悉战斗系统，并获得基本战斗装备。</p>
+</div>
+<div class="paragraph">
+<p>所有三种战斗风格都是相互关联的。如果您希望完成所有内容，那么在整个游戏中只使用一种风格是不可能的。<strong>战斗三角</strong>决定了您在不同战斗风格的敌人面前有多少伤害和伤害减免，这在选择如何应对战斗中非常重要。</p>
+</div>
+<div class="paragraph">
+<p>强烈建议将所有风格提升至一定水平，以避免在您几乎准备好挑战需要特定战斗风格的副本时，突然发现不得不花费两个星期将该技能从1级开始提升上来。</p>
+</div>
+<div class="sect3">
+<h4 id="_主要目标">2.1.1. 主要目标</h4>
+<div class="paragraph">
+<p>大多数玩家最早追求的目标是购买商店中售价 <strong>1000k</strong> 的 <strong>自动进食</strong> 升级，然后是在 <strong>蜘蛛森林</strong> 中找到的 <strong>财宝护符</strong>，它将使战斗完全自动化。除此之外，主要是学习战斗的基本原理和提升技能等级。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>自动进食</strong></p>
+</li>
+<li>
+<p><strong>财宝护符</strong></p>
+</li>
+<li>
+<p><strong>强盗(战斗-强盗窝点)</strong>, <strong>大巫师(战斗-巫师之塔)</strong>, <strong>凶猛魔鬼(屠杀者-半影之间)</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>这些怪物掉落有用的物品，是提升 <strong>近战</strong>、<strong>远程</strong>和<strong>魔法</strong>经验的好目标，只要您遵循战斗三角原则，并且这一部分的最终目标。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_屠杀者">2.1.2. 屠杀者</h4>
+<div class="paragraph">
+<p><strong>屠杀者</strong>是一项主要围绕在特殊区域中与怪物战斗的技能，这些区域类似于正常的战斗区域，如<strong>农田</strong>；然而，每个<strong>屠杀者</strong>区域还有一个对所有在那里发生的战斗产生负面被动修正的功能。在早期游戏中，很难应对屠杀区域效应，所以可以忽略不计。</p>
+</div>
+<div class="paragraph">
+<p><strong>屠杀者</strong>的另一个重要方面是<strong>屠杀者任务</strong>：通过击杀一定数量的敌人而获得“悬赏”的奖励：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>需要选择“新任务”按钮并选择难度才能获得第一个任务。</p>
+</li>
+<li>
+<p>每次按下“新任务”按钮时，窗口将重新打开，玩家必须支付 <strong>屠杀币</strong>的费用，来重新选择相同或不同难度的新任务。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>简单难度的重新选择成本为 <strong>0</strong>，如果需要的话，可以无限次重新选择以随机到特定的怪物。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>玩家将获得一个在该难度级别中可用的随机敌人的任务。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>“延长任务”按钮将再次收取 <strong>屠杀币</strong>的费用，并将一定数量的怪物添加到当前任务中。包括费用在内，完成延长任务总会提供比未延长任务更多的屠杀币。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>每当玩家击杀这些怪物中的一个时，将获得 <strong>屠杀币</strong>。</p>
+</li>
+<li>
+<p>任何完成的任务都将自动结束，并替换为相同难度的不同任务，战斗将继续进行，玩家将停止获得 <strong>屠杀币</strong>。</p>
+</li>
+<li>
+<p><strong>屠杀</strong>经验可以通过完成屠杀任务或在屠杀区域杀死敌人而获得，这些数值可以叠加在一起获得，因此通过在屠杀区域完成屠杀任务可以获得更多的经验。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>建议尽早开始执行<strong>屠杀</strong>任务，以解锁 <strong>自动屠杀</strong>作为主要目标。请注意，由于玩家在这个阶段能够击败的敌人不会掉落很多 <strong>屠杀币</strong>，这可能需要一些时间。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>要做到这一点的捷径就是不断重选，直到当前屠杀任务随机到玩家当前正在战斗的怪物，然后延长任务以尽可能延长任务时间。</p>
+</li>
+<li>
+<p>尽可能频繁地使用屠杀任务可以同时提升多个技能。</p>
+</li>
+<li>
+<p>屠杀任务还可以鼓励玩家为了奖励而与他们通常不会战斗的目标进行战斗。</p>
+</li>
+<li>
+<p><strong>在早期游戏中，由于其免费的重新选择，建议坚持选择简单难度的任务</strong></p>
+</li>
+<li>
+<p>在屠杀中付出的捷径就是不断重选，直到玩家正在战斗的怪物成为任务目标。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>这在与<strong>植物</strong>, <strong>牛</strong>, <strong>鸡</strong>和其他级别非常低的怪物战斗时特别有用。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_升级指南">2.1.3. 升级指南</h4>
+<div class="paragraph">
+<p>由于玩家刚刚接触战斗，本节将尽量简单明了，同时也为整个指南设定一些指导方针。本指南的每个部分中的表格通常提供最低建议。以下是如何使用所提供信息的一些注意事项：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>玩家必须具备适当等级的<strong>自动进食</strong>，并且食物不会被耗尽。</p>
+</li>
+<li>
+<p>玩家的<strong>伤害减免</strong>必须够高，以便在<strong>自动进食</strong>本身不足的情况下生存下来，并抵御敌人的攻击。</p>
+</li>
+<li>
+<p>护甲应该在可以升级的时候尽量在仓库界面中升级。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>对于<strong>近战</strong>装备，除了<strong>龙岩手套</strong>以外的所有装备都可以升级。</p>
+</li>
+<li>
+<p>对于<strong>远程</strong>装备，首次升级可能是<strong>绿色龙皮胴体</strong>及以上装备。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>在第一部分，玩家可能不会拥有披风、护身符、戒指、<strong>祝祭</strong>、<strong>草药学</strong>、<strong>星象学</strong>加成或<strong>灵巧</strong>障碍。具备适当的奖励，玩家可以尝试更难的内容并更快地取得进展。关于第一部分的一些注意事项：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>所有假定的技能等级与装备所需的技能等级相等。</p>
+</li>
+<li>
+<p>在选择适当的怪物进行刷怪时，建议遵循以下优先规则：</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>掉落有用的东西。</p>
+</li>
+<li>
+<p>是当前的屠杀任务。</p>
+</li>
+<li>
+<p>每小时经验最高。</p>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>因为它们是“最好的”，连续两周攻击同一敌人是一种非常无聊的游戏方式。</p>
+</div>
+<div class="paragraph">
+<p>最后，使用 <strong>战斗模拟器</strong>和 <a href="https://zxv975.github.io/CanIIdle/">能不能挂机</a>应该是您的首选，而不是印刷在这里的任何内容。本指南不对不及时的死亡负责。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_近战">2.1.4. 近战</h4>
+<div class="sect4">
+<h5 id="_升级">升级</h5>
+<div class="paragraph">
+<p>大多数玩家会从<strong>近战</strong>开始战斗玩法，因为它不像远程一样需要<strong>弓匠</strong>制作弹药，也不需要像魔法一样用<strong>符文锻造</strong>制作魔法武器的符文。</p>
+</div>
+<div class="paragraph">
+<p>对于近战，使用<strong>锻造</strong>可以制作护甲和武器。</p>
+</div>
+<div class="paragraph">
+<p>锻造的装备可以在仓库中升级两次（<strong>青铜头盔</strong> &#8594; <strong>青铜头盔(镀银)</strong> &#8594; <strong>青铜头盔(镀金)</strong>），第一次使用<strong>银锭</strong>升级，第二次使用<strong>金锭</strong>升级。通常情况下，升级装备在额外花费的时间上不值得，至少直到<strong>精钢头盔</strong>之前都不值得。</p>
+</div>
+<div class="paragraph">
+<p>近战升级分为3种不同的技能，<strong>攻击</strong>、<strong>力量</strong>和<strong>防御</strong>。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>使用<strong>戳刺</strong>攻击风格训练<strong>攻击</strong>。</p>
+</li>
+<li>
+<p>使用<strong>劈砍</strong>攻击风格训练<strong>力量</strong>。</p>
+</li>
+<li>
+<p>使用<strong>格挡</strong>攻击风格训练<strong>防御</strong>。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>一般来说，近战武器鼓励使用以下攻击风格：</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-middle">武器</th>
+<th class="tableblock halign-center valign-middle">详情</th>
+<th class="tableblock halign-center valign-middle" colspan="2">风格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">钢制匕首, 精金匕首, 龙岩匕首等 <strong>匕首</strong></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">快速，伤害较低</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">戳刺</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">格挡</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">钢制剑, 精金剑, 龙岩剑等 <strong>剑</strong></p></td>
+<td class="tableblock halign-center valign-middle"></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">戳刺</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">格挡</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">钢制弯刀, 精金弯刀, 龙岩弯刀等 <strong>弯刀</strong></p></td>
+<td class="tableblock halign-center valign-middle"></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">劈砍</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">钢制双手剑, 精金双手剑, 龙岩双手剑等 <strong>双手剑</strong></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">无盾牌，慢</p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">劈砍</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">钢制战斧, 精金战斧, 龙岩战斧等 <strong>战斧</strong></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">较慢</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">劈砍</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">格挡</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-middle">近战等级</th>
+<th class="tableblock halign-center valign-middle">攻击武器</th>
+<th class="tableblock halign-center valign-middle">力量武器</th>
+<th class="tableblock halign-center valign-middle">防御武器</th>
+<th class="tableblock halign-center valign-middle">护甲</th>
+<th class="tableblock halign-center valign-middle">推荐怪物</th>
+<th class="tableblock halign-center valign-middle">副本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">青铜匕首</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">青铜弯刀</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">青铜匕首</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">青铜护甲</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">奶牛(战斗-农庄)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">铁质匕首</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">铁质弯刀</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">铁质匕首</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">铁质护甲</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">5</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">钢制匕首</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">钢制弯刀</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">钢制匕首</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">钢制护甲</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">骷髅(战斗-墓地)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">10</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">黑骑士匕首 /<br>
+钢制匕首</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">黑骑士弯刀 /<br>
+钢制弯刀</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">黑骑士匕首 /<br>
+钢制匕首</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">黑骑士护甲 /<br>
+钢制护甲</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">触手(战斗-砂砾海岸) /<br>
+骷髅(战斗-墓地)</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">鸡舍(需要自动进食II)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">20</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">秘银剑 /<br>
+秘银匕首</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">钢制弯刀</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">秘银匕首</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">秘银护甲</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="3"><p class="tableblock">寒冰射手(战斗-霜冻山)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">30</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">精金剑 /<br>
+精金匕首</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">精金战斧 /<br>
+精金弯刀</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">精金战斧</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">精金护甲</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">亡灵墓地</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">40</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">符文剑 /<br>
+符文匕首</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">符文战斧 /<br>
+符文弯刀</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">符文战斧</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">符文护甲</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">蜘蛛森林 /<br>
+寒冰洞窟 /<br>
+强盗基地</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">冰霜剑</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">强盗(战斗-强盗窝点)</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">荧菇洞窟(需要自动进食III)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="_目标装备">目标装备</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>武器：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>冰霜剑</strong> 攻击 40级 - 从 <strong>寒冰洞窟(副本)</strong>/<strong>冰霜怪物(战斗-霜冻山)</strong>。</p>
+</li>
+<li>
+<p><strong>艾瑞恩长矛</strong> 攻击 40级 - 从 <strong>艾瑞恩战士(战斗-艾瑞恩战场)</strong>  掉落。</p>
+</li>
+<li>
+<p><strong>全能鲁特琴</strong> - 从 <strong>游方艺人(普通屠杀者任务随机)</strong> 掉落。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>装备：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>力量护符</strong> - 从<strong>木乃伊(屠杀者-半影之间)</strong> 掉落。</p>
+</li>
+<li>
+<p><strong>折磨护符</strong> - 从<strong>凶猛魔鬼(屠杀者-半影之间)</strong>、<strong>深海宝船(副本)</strong> 掉落。</p>
+</li>
+<li>
+<p><strong>黑曜石斗篷</strong> - 从<strong>精金骑士(战斗-诸王城堡)</strong> 掉落。</p>
+</li>
+<li>
+<p><strong>财宝护符</strong> - 从<strong>蛛网森林(副本)</strong> 掉落。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_远程">2.1.5. 远程</h4>
+<div class="paragraph">
+<p>和近战一样，你应该选择拥有每小时经验值最高的怪物，并穿上最好的装备。由于攻击速度较慢并且使用<strong>弓匠</strong>制作大量弩箭相对较难，直到你获得了<strong>龙岩十字弩</strong>或更好的十字弩之前，都不建议使用<strong>十字弩</strong>。对于弩箭来说，除了<strong>翡翠弩箭</strong>以下的任何弩箭都可以出售。将钻石保留下来用于制作<strong>钻石运势药水IV</strong>。</p>
+</div>
+<div class="sect4">
+<h5 id="_升级_2">升级</h5>
+<div class="paragraph">
+<p><strong>远程</strong> 有很多可以造成巨大伤害的选项，特别是对<strong>魔法</strong>敌人，这些敌人用近战可能很难击败。</p>
+</div>
+<div class="paragraph">
+<p>对于远程，使用<strong>制造</strong>来获得最高级别的护甲，以及<strong>弓匠</strong>来获得最高级别的武器和弹药。</p>
+</div>
+<div class="paragraph">
+<p>制作的护甲可以在仓库升级（<strong>绿龙皮背心</strong> <strong>(升级)绿龙皮背心</strong>），需要很多的<strong>绿龙皮</strong> <strong>蓝龙皮</strong> <strong>红龙皮</strong> <strong>黑龙皮</strong>。一旦可以升级远程护甲，建议马上升级。</p>
+</div>
+<div class="paragraph">
+<p>远程有三种不同的攻击方式，<strong>精准</strong>，<strong>速射</strong>和<strong>远距离</strong>：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>精准</strong> 增加了你的隐藏远程等级，使每次攻击更准确，造成更多伤害。</p>
+</li>
+<li>
+<p><strong>速射</strong> 降低了武器的攻击间隔0.4秒，使每次攻击明显更快。</p>
+</li>
+<li>
+<p><strong>远距离</strong> 增加了你的隐藏远程等级，但比精确增加的少，还提供了隐藏的防御等级，并平均分配了获得的经验值到<strong>远程</strong>和<strong>防御</strong>之间。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>一般来说，在低级别时，<strong>精准</strong>更有效，而在高级别时，<strong>速射</strong>更有效。大约在40级左右有一个分界点。在这个分界点之前，可能需要使用<strong>远距离</strong>来对<strong>防御</strong>提升一定的级别！</p>
+</div>
+<div class="paragraph">
+<p>远程有几种不同的武器类型可供选择，每种都有其优点和缺点。在游戏的早期阶段，建议使用长弓，因为箭矢比较容易获得：</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-middle">武器</th>
+<th class="tableblock halign-center valign-middle">详情</th>
+<th class="tableblock halign-center valign-middle">弹药</th>
+<th class="tableblock halign-center valign-middle">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">普通短弓, 枫木短弓, 魔法木短弓等 <strong>短弓</strong></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">快速，伤害较低</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">钢制箭矢, 精金箭矢, 龙岩箭矢等 <strong>箭矢</strong></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">不推荐</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">普通长弓, 枫木长弓, 魔法木长弓等 <strong>长弓</strong></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">更精准，伤害更高</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">钢制箭矢, 精金箭矢, 龙岩箭矢等 <strong>箭矢</strong></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">箭便宜且易于批量生产。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">钢制十字弩, 精金十字弩, 龙岩十字弩等 <strong>十字弩</strong></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">速度慢，伤害高</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">黄宝石弩箭, 红宝石弩箭, 钻石弩箭等 <strong>弩箭</strong></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">弩箭很贵并且难以制造。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">钢制飞刀, 精金飞刀, 龙岩飞刀等 <strong>投掷飞刀</strong></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">速度极快，伤害低且准确</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">-</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">不需要<strong>弓匠</strong>，而是锻造。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">钢制标枪, 精金标枪, 龙岩标枪等 <strong>标枪</strong></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">速度快，伤害高，精度低</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">-</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">标枪出售时非常值钱</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-middle">远程等级</th>
+<th class="tableblock halign-center valign-middle">弓</th>
+<th class="tableblock halign-center valign-middle">箭</th>
+<th class="tableblock halign-center valign-middle">护甲</th>
+<th class="tableblock halign-center valign-middle">推荐怪物</th>
+<th class="tableblock halign-center valign-middle">副本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle" rowspan="3"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="3"><p class="tableblock">普通长弓</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">青铜箭矢</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="4"><p class="tableblock">皮革护甲</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="3"><p class="tableblock">奶牛(战斗-农庄)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">铁质箭矢</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">冰霜箭矢</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">5</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">橡木长弓</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">钢制箭矢</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">骷髅(战斗-墓地)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">10</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="3"><p class="tableblock">硬质皮革护甲</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">触手(战斗-砂砾海岸)</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">鸡舍(需要自动进食II)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">20</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">柳木长弓</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">秘银箭矢</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">巫师(战斗-巫师之塔)</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">30</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">枫木长弓</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">精金箭矢</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">强盗(战斗-强盗窝点)</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">亡灵墓地</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">40</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">紫衫木长弓</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">符文箭矢</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">绿龙皮背心 /<br>
+游侠帽子 /<br>
+游侠靴</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">蜘蛛森林</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">冰霜短弓</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">冰霜头盔</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大巫师(战斗-巫师之塔)</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">强盗基地 /<br>
+巫师之厅 /<br>
+寒冰洞窟 /<br>
+深海宝船 /<br>
+荧菇洞窟(需要自动进食III)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="_目标装备_2">目标装备</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>武器：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>冰霜短弓</strong> 远程 40级 - 从 <strong>寒冰洞窟(副本)</strong>掉落。</p>
+</li>
+<li>
+<p><strong>艾瑞恩长弓</strong> 远程 40级 - 从 <strong>艾瑞恩射手(战斗-艾瑞恩战场)</strong>  掉落。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>装备：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>游侠帽子</strong> / <strong>游侠靴</strong> 远程 40级 - 从<strong>蜘蛛森林(副本)</strong>掉落。</p>
+</li>
+<li>
+<p><strong>远程护符</strong> - 从<strong>强盗(战斗-强盗窝点)</strong>掉落。</p>
+</li>
+<li>
+<p><strong>财宝护符</strong> - 从<strong>蜘蛛森林(副本)</strong>掉落。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_魔法">2.1.6. 魔法</h4>
+<div class="sect4">
+<h5 id="_升级_3">升级</h5>
+<div class="paragraph">
+<p>请参阅<strong>魔法-练级</strong>以了解非战斗法术升级的替代方法。</p>
+</div>
+<div class="paragraph">
+<p>由于游戏中<strong>近战</strong>敌人极为常见，魔法是一种耗时但有回报的战斗风格。对付游戏中最常见的敌人造成更多伤害并减少受到的伤害非常棒。</p>
+</div>
+<div class="paragraph">
+<p>对于魔法，使用<strong>符文锻造</strong>来获得最高级别的武器和护甲，以及制作符文来施放法术。</p>
+</div>
+<div class="paragraph">
+<p><strong>符文锻造</strong>护甲不需要升级以提供伤害减免，适当级别的袍子将自动提供此属性。</p>
+</div>
+<div class="paragraph">
+<p>魔法有两种不同的攻击方式，<strong>魔法</strong> 和 <strong>防御</strong>：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>魔法</strong> 增加了你的隐藏魔法等级，使每次攻击更准确且造成更多伤害。</p>
+</li>
+<li>
+<p><strong>防御</strong> 增加你的隐藏魔法等级较少，同时提供隐藏的防御等级，并均匀分配所获得的经验值到<strong>魔法</strong>和<strong>防御</strong>之间。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>一般来说，<strong>防御</strong> 总是最高效的攻击方式，因为使用<strong>防御</strong>训练<strong>防御</strong>需要的时间和伤害最少，同时保持高效。</p>
+</div>
+<div class="paragraph">
+<p>战斗魔法有很多不同的选择，主要取决于施放每个法术所需符文的数量和类型。诅咒和光环咒语可以增加很多伤害，但完全是可选的，因为它们增加了所需的符文数量。</p>
+</div>
+<div class="paragraph">
+<p>建议在<strong>大气符文</strong>, <strong>流水符文</strong>, <strong>大地符文</strong>, <strong>火焰符文</strong>中选择一种类型的符文，然后使用对应的咒语、法杖、被动效果和光环咒语。</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-middle">符文</th>
+<th class="tableblock halign-center valign-middle">法杖</th>
+<th class="tableblock halign-center valign-middle">咒语</th>
+<th class="tableblock halign-center valign-middle">光环</th>
+<th class="tableblock halign-center valign-middle">被动效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大气符文</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大气奥秘法杖</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">风之迸发</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">迸发I</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大气专家巫师长袍</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">流水符文</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">流水奥秘法杖</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">水之迸发</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">狂怒I</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">流水专家巫师长袍</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大地符文</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大地奥秘法杖</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">地之迸发</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">热忱I</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大地专家巫师长袍</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">火焰符文</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">火焰奥秘法杖</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">炎之迸发</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">迸发I</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">火焰专家巫师长袍</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>每个非风系法术还可以选择使用<strong>迷雾符文</strong> <strong>沙尘符文</strong> <strong>烟雾符文</strong>组合符文。组合符文是提升<strong>符文锻造</strong>的好方法，因为它们的经验值远高于它们各自的单个符文；为你计划使用的法术制作组合符文是更有效地提升<strong>符文锻造</strong>的好方法。</p>
+</div>
+<div class="paragraph">
+<p><strong>在使用组合符文时，要考虑将你的法杖与同时施放的任何光环咒语进行搭配，因为它们的符文成本减免不适用于组合符文。例如，如果你正在使用</strong>火之战斗法杖<strong>施放</strong>炎之波<strong>，而你使用的是</strong>烟雾符文<strong>，那么使用</strong>风之战斗法杖<strong>与</strong>火焰波<strong>同时施放</strong>冲击II**将会有益处。</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-middle">魔法等级</th>
+<th class="tableblock halign-center valign-middle">武器</th>
+<th class="tableblock halign-center valign-middle">咒语</th>
+<th class="tableblock halign-center valign-middle">护甲</th>
+<th class="tableblock halign-center valign-middle">推荐怪物</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大气法杖</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">风之击</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">大气学徒巫师</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">触手(战斗-砂砾海岸)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">魔杖(基础)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">10</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大气法杖 /<br>
+流水法杖 /<br>
+大地法杖 /<br>
+火焰法杖</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">风之击 /<br>
+水之击 /<br>
+地之击 /<br>
+炎之击</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大气学徒巫师 /<br>
+流水学徒巫师 /<br>
+大地学徒巫师 /<br>
+火焰学徒巫师</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">迷途海盗(战斗-砂砾海岸)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">30</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大气战斗法杖 /<br>
+流水战斗法杖 /<br>
+大地战斗法杖 /<br>
+火焰战斗法杖</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">风之失 /<br>
+水之失 /<br>
+地之失 /<br>
+炎之失</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">大气学徒巫师 /<br>
+流水学徒巫师 /<br>
+大地学徒巫师 /<br>
+火焰学徒巫师</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">巨型螃蟹(战斗-砂砾海岸)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">魔杖(强力)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">40</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大气奥秘法杖 /<br>
+流水奥秘法杖 /<br>
+大地奥秘法杖 /<br>
+火焰奥秘法杖</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">风爆 /<br>
+水爆 /<br>
+地爆 /<br>
+炎爆</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大气门徒巫师 /<br>
+流水门徒巫师 /<br>
+大地门徒巫师 /<br>
+火焰门徒巫师</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">巨型螃蟹(战斗-砂砾海岸)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="_目标装备_3">目标装备</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>武器：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>大气奥秘法杖</strong> <strong>流水奥秘法杖</strong> <strong>大地奥秘法杖</strong> <strong>火焰奥秘法杖</strong> 魔法 40级 - 可通过70级<strong>符文锻造</strong>制作。</p>
+</li>
+<li>
+<p><strong>野性呼唤法杖</strong> 魔法 40级 - 从<strong>艾瑞恩法师(战斗-艾瑞恩战场)</strong>和<strong>德鲁伊(屠杀者-废墟遗迹)</strong>分别掉落的两部分进行合成。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>装备：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>附魔斗篷</strong> - 从<strong>大巫师(战斗-巫师之塔)</strong>掉落。</p>
+</li>
+<li>
+<p><strong>魔法护符</strong> - 从<strong>大巫师(战斗-巫师之塔)</strong>掉落。</p>
+</li>
+<li>
+<p><strong>财宝护符</strong> - 从<strong>蜘蛛森林(副本)</strong>掉落。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_游戏前期41_75级">2.2. 游戏前期：41-75级</h3>
+<div class="paragraph">
+<p><strong>熔岩洞窟</strong> （其次是<strong>龙穴(副本)</strong>）是玩家的第一个真正挑战，为它做好准备可能需要几周的时间进行挂机。</p>
+</div>
+<div class="paragraph">
+<p>这时<strong>战斗三角</strong>逐渐变得重要，完全忽视它可能会危及生命或阻碍进展。</p>
+</div>
+<div class="sect3">
+<h4 id="_主要目标_2">2.2.1. 主要目标</h4>
+<div class="paragraph">
+<p>本节的主要目标是用通过战斗获得的装备替换所有通过非战斗技能获得的装备以及武器。请注意，所有的<strong>古代龙皮背心(龙穴副本)</strong> <strong>古代巫师长袍(巫师大厅副本)</strong> <strong>古代胸甲(熔岩洞窟副本)</strong>理论上都可以跳过，尤其是如果尽早完成四神副本的话，它们将很快被替换掉。它们在指南中被保留，因为玩家通常会顺路获取它们，而且它们可以使游戏进展更加顺利。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>自动切换屠杀者目标</p>
+</li>
+<li>
+<p><strong>圣骑士(屠杀者-神圣群岛)</strong>和<strong>沙怪(屠杀者-干旱平原)</strong> - <strong>圣骑士手套</strong>和<strong>沙尘暴戒指</strong>，对<strong>近战</strong>来说非常出色。</p>
+</li>
+<li>
+<p><strong>盗贼(屠杀者-废墟遗迹)</strong> - 掉落<strong>缄默手套</strong>，<strong>扒窃</strong>的最佳手套，也对从战斗中获取<strong>金币</strong>非常有用。</p>
+</li>
+<li>
+<p><strong>真视精英角兽(屠杀者-荒芜平原)</strong> - 出色的<strong>远程</strong>经验来源，还有<strong>狂怒护符</strong>。</p>
+</li>
+<li>
+<p><strong>古代胸甲</strong> - 来自<strong>熔岩洞窟(副本)</strong>。</p>
+</li>
+<li>
+<p><strong>古代龙皮背心</strong> - 来自<strong>龙穴(副本)</strong>。</p>
+</li>
+<li>
+<p><strong>古代巫师长袍</strong> - 来自<strong>巫师大厅(副本)</strong>。</p>
+</li>
+<li>
+<p><strong>落日刺剑</strong> - 从<strong>深海船(副本)</strong>掉落。</p>
+</li>
+<li>
+<p><strong>屠杀者十字弩</strong> - 从<strong>荒凉平原(屠杀者)</strong>的怪物掉落升级。在训练<strong>屠杀者等级</strong>时非常出色，也适合训练<strong>远程</strong>。</p>
+</li>
+<li>
+<p><strong>古代十字弩</strong> - 从<strong>龙穴(副本)</strong>掉落。适合在副本中使用的远程武器。</p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="_可选装备">可选装备</h5>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>沙地靴</strong> - 从<strong>土库尔骑手(屠杀者-干旱平原)</strong>掉落。</p>
+</li>
+<li>
+<p><strong>精英防御护符</strong> - 通过100个<strong>防御护符</strong>合成或从<strong>亡灵墓地(副本)</strong>获得。</p>
+</li>
+<li>
+<p><strong>折磨护符</strong> 或 <strong>精英荣誉护符</strong> - 从<strong>凶猛魔鬼(屠杀者-半影之间)</strong>掉落或合成100个<strong>荣誉护符(战斗-诸神城堡-符文骑士/屠杀者-粘液森林-散落妖/屠杀者-晦暗荒野-赏金猎人)</strong> - 用于近战的攻击版本。</p>
+</li>
+<li>
+<p><strong>缄默手套</strong> - 从<strong>盗贼</strong>掉落 - 可以用于从击杀中赚取一些额外的<strong>金币</strong>。</p>
+</li>
+<li>
+<p><strong>圣骑士手套</strong> - 从<strong>圣骑士(屠杀者-神圣群岛)</strong>掉落 - 从相对较容易的怪物获得的大量伤害减免。</p>
+</li>
+<li>
+<p><strong>沙漠绷手带</strong> - 从<strong>土库尔射手(屠杀者-干旱平原)</strong>掉落 - 比<strong>圣骑士手套</strong>的伤害减免少，但属性更均衡。</p>
+</li>
+<li>
+<p><strong>牧师帽</strong> - 从<strong>牧师(屠杀者-神圣群岛)</strong>掉落。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_屠杀者_2">2.2.2. 屠杀者</h4>
+<div class="paragraph">
+<p>在游戏的这个阶段，许多重要物品都可以从<strong>屠杀者</strong>区域的怪物中获得，因此在继续下一步之前提高屠杀者等级是很有帮助的。</p>
+</div>
+<div class="paragraph">
+<p>在这个阶段，玩家应该已经具备足够的装备来轻松处理普通难度的任务，并在这一步骤结束时转入困难难度的任务。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>屠杀者头盔(基础)</strong> - 通过完成15个普通屠杀任务在商店中解锁。</p>
+</li>
+<li>
+<p><strong>屠杀者装备升级包(强化)</strong> - 通过完成25个困难屠杀任务在商店中解锁。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>屠杀区域有时需要使用<strong>屠杀者硬币</strong>从<strong>商店</strong>购买的物品，例如<strong>镜盾</strong>和<strong>沙漠帽子</strong>。在购买了这些物品之前，屠杀者区域中锁定的怪物不会出现在<strong>屠杀任务</strong>中。此外，如果您使用了<strong>自动屠杀</strong>，那么对那些需要装备才能进入的锁定区域，如果不装备对应的物品，里面的怪物将永远不会出现；您可以利用这一点来控制任务的随机性。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_近战_2">2.2.3. 近战</h4>
+<div class="sect4">
+<h5 id="_升级_4">升级</h5>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-middle">近战等级</th>
+<th class="tableblock halign-center valign-middle">攻击武器</th>
+<th class="tableblock halign-center valign-middle">力量武器</th>
+<th class="tableblock halign-center valign-middle">护甲</th>
+<th class="tableblock halign-center valign-middle">推荐怪物</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">41</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">符文剑 / 符文匕首, 艾瑞恩长矛</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">符文弯刀, 符文战斧</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">符文护甲</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">战斗-强盗窝点-强盗</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">50</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">沙漠马刀(屠杀者-干旱平原-土库尔巨人) / 符文剑</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">沙漠马刀(屠杀者-干旱平原-土库尔巨人) / 符文战斧</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">符文护甲</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">战斗-强盗窝点-强盗</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">60</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">龙爪(屠杀者-云巅-狮鹫用100个碎片升级) / 龙岩剑</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">龙爪(屠杀者-云巅-狮鹫用100个碎片升级) / 龙岩战斧</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">龙岩护甲</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">屠杀者-半影之间-吸血鬼</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">70</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">古代剑(深海宝船副本) / 战戟(屠杀者-荒芜平原-真视精英角兽)</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">古代双手剑(屠杀者-荒芜平原-黑暗精英角兽) / 战斧(屠杀者-荒芜平原-狂怒精英角兽)</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">古代护甲</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">屠杀者-神圣群岛-神圣射手</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="_目标装备_4">目标装备</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>武器：</p>
+</li>
+<li>
+<p>装备：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>精英力量护符</strong> - 通过100个<strong>力量护符</strong>合成(屠杀者-半影之间-木乃伊/战斗-湿漉森林-潮湿妖怪)。</p>
+</li>
+<li>
+<p><strong>精英防御护符</strong> - 通过100个<strong>防御护符</strong>合成(屠杀者-粘液森林-紫色妖/战斗-湿漉森林-湿漉妖怪/屠杀者-晦暗荒野-赏金猎人)。</p>
+</li>
+<li>
+<p><strong>精英荣誉护符</strong> - 通过100个<strong>荣誉护符</strong>合成(战斗-诸神城堡-符文骑士/屠杀者-粘液森林-散落妖/屠杀者-晦暗荒野-赏金猎人)。</p>
+</li>
+<li>
+<p><strong>沙尘暴戒指</strong>  攻击 50级 - 从<strong>沙怪</strong>掉落(屠杀者-干旱平原)。</p>
+</li>
+<li>
+<p><strong>沙漠绑手带</strong> - 从<strong>土库尔射手</strong>掉落(屠杀者-干旱平原)。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_远程_2">2.2.4. 远程</h4>
+<div class="sect4">
+<h5 id="_升级_5">升级</h5>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-middle">远程等级</th>
+<th class="tableblock halign-center valign-middle">武器</th>
+<th class="tableblock halign-center valign-middle">弹药</th>
+<th class="tableblock halign-center valign-middle">护甲</th>
+<th class="tableblock halign-center valign-middle">推荐怪物</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">41</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">符文标枪 / 紫衫木长弓</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">符文箭矢</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">绿龙皮背心</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大巫师(战斗-巫师之塔)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">50</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">符文标枪 / 魔法木长弓</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">符文箭矢</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">蓝龙皮背心</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大巫师(战斗-巫师之塔)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">60</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">屠杀者十字弩 / 龙岩标枪</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">绿宝石弩箭</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">红龙皮背心</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大巫师(战斗-巫师之塔)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">70</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">屠杀者十字弩 / 龙岩标枪</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">绿宝石弩箭</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">黑龙皮背心</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">至尊复眼魔(屠杀者-怪异洞窟)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="_目标装备_5">目标装备</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>武器：</p>
+</li>
+<li>
+<p>装备：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>精英远程护符</strong> - 通过合成100个<strong>远程护符(战斗-强盗窝点-强盗)</strong>升级获得。</p>
+</li>
+<li>
+<p><strong>投掷之力手套</strong> - 从<strong>土库尔投手(屠杀者-干旱平原)</strong>掉落。</p>
+</li>
+<li>
+<p><strong>远程庇佑斗篷</strong> - 从<strong>神圣射手(屠杀者-神圣群岛)</strong>掉落。</p>
+</li>
+<li>
+<p><strong>鳞盾</strong> - 从<strong>古代龙皮盾牌</strong>升级而来，后者从<strong>龙穴(副本)</strong>掉落。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_魔法_2">2.2.5. 魔法</h4>
+<div class="sect4">
+<h5 id="_升级_6">升级</h5>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-middle">魔法等级</th>
+<th class="tableblock halign-center valign-middle">武器</th>
+<th class="tableblock halign-center valign-middle">咒语</th>
+<th class="tableblock halign-center valign-middle">护甲</th>
+<th class="tableblock halign-center valign-middle">推荐怪物</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">41</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大气/流水/大地/火焰 奥秘法杖</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">风/水/地/炎 爆</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大气/流水/大地/火焰 门徒巫师</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">巨型螃蟹(战斗-砂砾海岸)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">50</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大气/流水/大地/火焰 奥秘法杖</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">风/水/地/炎 之波</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大气/流水/大地/火焰 门徒巫师</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">土库尔巨人(屠杀者-干旱平原)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">60</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大气/流水/大地/火焰 奥秘法杖</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">风/水/地/炎 之迸发</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大气/流水/大地/火焰 门徒巫师</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">狮鹫(屠杀者-云巅)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">70</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">大气/流水/大地/火焰 奥秘法杖</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">风/水/地/炎 之迸发 /<br>
+切割之风</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">大气/流水/大地/火焰 专家巫师 /<br>
+古代巫师</p></td>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock">毒蛇(屠杀者-剧毒沼泽)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">魔杖(精英) /<br>
+大气/流水/大地/火焰 之杖</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="_目标装备_6">目标装备</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>武器：</p>
+</li>
+<li>
+<p>装备：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>精英魔法护符</strong> - 通过合成100个<strong>魔法护符(战斗-巫师之塔-大巫师)</strong>获得。</p>
+</li>
+<li>
+<p><strong>艾利之书</strong> - <strong>巫师大厅(副本)</strong>掉落</p>
+</li>
+<li>
+<p><strong>萨满戒指</strong> - 从<strong>萨满(屠杀者-废墟遗迹)</strong>掉落。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>可以用10,000个<strong>自然符文</strong>升级为<strong>自然祝福戒指</strong>。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_熔岩洞窟和古代盔甲">2.2.6. 熔岩洞窟和古代盔甲</h4>
+<div class="paragraph">
+<p>本节的主要目标是找到并装备<strong>古代胸甲</strong>,<strong>古代龙皮背心</strong>,<strong>古代巫师长袍</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>古代巫师帽</strong>,<strong>古代巫师长袍</strong>,<strong>古代巫师下装</strong>,<strong>古代巫师靴</strong>从<strong>巫师大厅(副本)</strong>掉落。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>这个副本并不难，没有必要遵循攻略，建议使用最好的远程装备以最大程度地从<strong>战斗三角</strong>中受益。</p>
+</li>
+<li>
+<p>与大多数魔法装备一样，这些装备无需升级即可获得全部效益。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>古代龙皮背心</strong>,<strong>古代龙皮长裤</strong>,<strong>古代龙皮护腕</strong>,<strong>古代龙皮盾牌</strong>从<strong>龙穴(副本)</strong>掉落。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>这套盔甲需要升级，获取升级所需的材料 - 原始龙皮 - 可能需要比获得一套盔甲的时间还要长。</p>
+</li>
+<li>
+<p><strong>古代龙皮盾牌</strong>还有一个二次升级，<strong>鳞盾</strong>，在很长一段时间内是远程最佳装备。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>古代头盔</strong>,<strong>古代胸甲</strong>,<strong>古代盾牌</strong> 从<strong>熔岩洞窟</strong>掉落。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>这套盔甲，就像<strong>锻造</strong>盔甲一样，需要升级两次。</p>
+</li>
+<li>
+<p><strong>古代盾牌</strong> 有第四次升级，<strong>龙焰盾牌</strong>，在很长一段时间内是近战最佳选择。升级这个盾牌需要 7050个 <strong>龙骨</strong>。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>由于游戏的性质，完全可以跳过古代盔甲，直接进入下一部分。然而，这需要更多关于游戏机制的了解，不一定需要这样做。<strong>龙焰盾牌</strong> 和 <strong>鳞盾</strong> 是两个重要的物品，不应该被跳过。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_游戏中期76_95级">2.3. 游戏中期：76-95级</h3>
+<div class="paragraph">
+<p>在获取并装备了所有古代盔甲套装并获得了不错的武器后，玩家现在应该准备好迎接游戏中的下一个挑战，炼狱堡垒和四神副本。但首先，强烈建议评估所有非战斗技能的进度；这些副本都很困难，如果没有<strong>祝祭</strong>、<strong>草药学</strong>、<strong>召唤</strong>符文或<strong>灵巧</strong> / <strong>星象学</strong>加成，进度可能会比想象的慢得多。</p>
+</div>
+<div class="paragraph">
+<p>本节将首先概述任何特别有用的增益效果和一些重要的装备，然后再继续。</p>
+</div>
+<div class="paragraph">
+<p>此时，拥有<strong>使者的王座DLC</strong> 可以在新物品和被动技能方面为玩家带来真正的好处。请查看 <strong><a href="#_使者的王座_对基础游戏战斗的影响">使者的王座_对基础游戏战斗的影响</a></strong> 部分，了解哪些物品和升级会改变游戏进程。所有<strong>使者的王座DLC</strong>物品都需要100以上的技能等级，并且可能需要很长时间才能获得。战斗装备，如<strong>Divine Helmet</strong>、<strong>Carrion Body</strong>或<strong>Poison Legendary Wizard Hat</strong>，只有在击败<strong>Bane, Instrument of Fear</strong>并完成基本游戏战斗后才能装备。</p>
+</div>
+<div class="sect3">
+<h4 id="_主要目标_3">2.3.1. 主要目标</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Infernal Cape</strong>（地狱披风）</p>
+</li>
+<li>
+<p><strong>Infernal Claw</strong>（地狱之爪）</p>
+</li>
+<li>
+<p><strong>Fury of the Elemental Zodiacs</strong>（元素黄道之怒）</p>
+</li>
+<li>
+<p><strong>Stormsnap</strong>（风暴猛击）</p>
+</li>
+<li>
+<p><strong>Cloudburst Staff</strong>（云爆法杖）</p>
+</li>
+<li>
+<p><strong>Earth Layered Shield</strong>（大地分层盾）</p>
+</li>
+<li>
+<p><strong>Big ol Ron</strong>（巨大的奥隆）</p>
+</li>
+<li>
+<p><strong>Aeris God Platebody</strong> <strong>Glacia God Platebody</strong> <strong>Terran God Platebody</strong> <strong>Ragnar God Platebody|God Armor</strong>（气神板甲、冰神板甲、大地神板甲、拉格纳神板甲）</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_外部增益">2.3.2. 外部增益</h4>
+<div class="sect4">
+<h5 id="_祝祭">祝祭</h5>
+<div class="paragraph">
+<p><strong>祝祭</strong>虽然始终有用，但在早期游戏中很难提升，许多玩家因其所需的材料而忽视它。现在是弥补这一点的好时机！</p>
+</div>
+<div class="paragraph">
+<p>获得<strong>祝祭</strong>点数是主要的要素，这可能需要时间和努力，但是非常有回报。<strong>祝祭</strong>点数来自以下来源：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>埋葬<strong>Bones</strong> <strong>Big Bones</strong> <strong>Dragon Bones</strong> <strong>Magic Bones|all Bones</strong> <strong>和Holy Dust</strong>，一般不建议这样做，除非你有一个稳定的非战斗来源，因为骨头相对较难收集，通常用于非战斗技能。</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Bones</strong> 和 <strong>Holy Dust</strong> 可以使用<strong>Magic|Alt-Magic</strong>法术制造。</p>
+</li>
+<li>
+<p><strong>Magic Bones</strong> ** 可以从商店购买，需要话费屠杀者硬币。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Ash</strong> 可以通过<strong>生火</strong>获得，可以单独埋葬，也可以在<strong>制造</strong>中制成Small Urn<strong>或M</strong>edium Urn<strong>，然后在</strong>Magic|Alt-Magic<strong>中制成</strong>Small Urn (Enchanted)<strong>和</strong>Medium Urn (Enchanted)**。</p>
+</li>
+<li>
+<p>如果玩家找到<strong>瓶中信</strong>，可以在<strong>钓鱼</strong>中捕获<strong>生骷髅鱼</strong>。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>至于要使用哪些祝祭，最好选择<strong>Battleheart</strong>和最好的战斗风格祝祭，如<strong>Piety</strong>、<strong>Rigour</strong>或<strong>Augury</strong>。</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_灵巧">灵巧</h5>
+<div class="paragraph">
+<p>灵巧提供了许多强大的加成，其中最重要的是增加<strong>生命值</strong>。当您的有效生命值比应该的高9级时，这可以使挂机变得更容易。</p>
+</div>
+<div class="paragraph">
+<p>您选择哪些加成以及是否要经常更换障碍物，完全<code>取决于您</code>，因为哪些障碍物最好取决于您正在做什么以及您当前的目标是什么，但以下表格将列出具有有用的战斗加成的障碍物：</p>
+</div>
+<div class="paragraph">
+<p>{| class="wikitable"
+!colspan="1"| #
+!colspan="1"| Obstacle
+!colspan="4"| Reason
+|-
+! colspan="1"| 1
+<strong>| {{AgilityIcon|Cargo Net</strong>
+| +3% Global GP, woohoo!
+|-
+! 2
+| colspan="2"| X
+|-
+! 3
+<strong>| {{AgilityIcon|Pipe Climb</strong>
+| The only obstacle on this tier with any benefit to combat.
+|-
+! rowspan="2"| 4
+<strong>| {{AgilityIcon|Coal Stones</strong>
+| The only obstacle on this tier with a net-positive benefit to combat.
+|-
+<strong>| {{AgilityIcon|Mud Dive</strong><strong> / {{AgilityIcon|Cave Climb</strong>
+| These obstacles are decent in the Early Game for squeezing out a little bit of extra power when your HP and Damage Reduction don&#8217;t really matter.
+|-
+! rowspan="2"| 5
+<strong>| {{AgilityIcon|Cliff Climb</strong>
+| Use this typically any time when doing slayer, but be aware of the negative modifier and pick and choose when to run this.
+|-
+<strong>| {{AgilityIcon|Cliff Balance</strong>
+| Can be used as the default combat obstacle, the <strong>Prayer</strong> point increase is really not as bad as it sounds.
+|-
+! rowspan="2"| 6
+<strong>| {{AgilityIcon|Rocky Waters</strong>
+| This obstacle is '''extremely powerful''' in the early game, and is always viable for Combat. This obstacle can single-handedly let you do Dungeons much earlier than normal.
+|-
+<strong>| {{AgilityIcon|Lake Swim</strong>
+| Damage reduction is great, so is doing more damage and preserving <strong>Prayer</strong> points! In the later stages of the game, this obstacle is typically more useful than Rocky Waters, but will rarely, if ever, provide more survivability.
+|-
+! 7
+| colspan="2"| '''Pick the trap that hinders what you&#8217;re doing the least, this varies based on where you are in the game and what goals you have.'''
+|-
+! rowspan=3 | 8
+<strong>| {{AgilityIcon|Pipe Crawl</strong>
+| Used for <strong>Slayer</strong>.
+|-
+<strong>| {{AgilityIcon|Raft Building</strong>
+| More well rounded, and can help making damage reduction breakpoints. This obstacle can safely be the default.
+|-
+<strong>| {{AgilityIcon|Spike Jump</strong>
+| Used for completing Dungeons.
+|-
+! rowspan=5 | 9
+<strong>| {{AgilityIcon|Lava Jump</strong>
+| Primarily used for killing weak enemies as quickly as possible, particularly when the enemy dies in one or two hits. The negative modifiers make this unappealing for any other use
+|-
+<strong>| {{AgilityIcon|Water Jump</strong>
+<strong>| Great if you do not need the bonuses from {{AgilityIcon|Ice Jump</strong><strong> or {{AgilityIcon|Frozen Lake Crossing</strong> and can afford to swap to something else when you do want those bonuses.
+|-
+<strong>| {{AgilityIcon|Ice Jump</strong>
+| The most well rounded for all Skills including, and can be used as the default.
+|-
+<strong>| {{AgilityIcon|Cave Maze</strong>
+| Competes with a bunch of heavy hitters, there should be no reason to use this instead of the other options.
+|-
+<strong>| {{AgilityIcon|Frozen Lake Crossing</strong>
+| The most well rounded for combat, not as useful for non-combat and can be used as the default.
+|-
+! rowspan=3 | 10
+<strong>| {{AgilityIcon|Lava Waterfall Dodge</strong>
+| Well rounded and often best for non-combat skills, this can be used as the default.
+|-
+<strong>| {{AgilityIcon|Dragon Fight</strong>
+| Primarily used for killing weak enemies as quickly as possible, particularly when the enemy dies in one or two hits.
+|-
+<strong>| {{AgilityIcon|Ocean Rafting</strong>
+| Always useful for combat, not as useful for non-combat and should generally only be used if you really need extra Damage or <strong>Slayer|Slayer Coins</strong>.
+|-
+! rowspan="1"| P
+<strong>| {{AgilityIcon|Pillar of Combat</strong>
+| Does everything you want it to.
+|}</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_草药学">草药学</h5>
+<div class="paragraph">
+<p>最好使用<strong>钻石运势药水 IV</strong>或<strong>Damage Reduction Potion IV</strong>。或者可以选择以下替代品：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Melee Strength Potion IV</strong>、<strong>Ranged Strength Potion IV</strong>或<strong>Magic Damage Potion IV</strong></p>
+</li>
+<li>
+<p><strong>Hinder Potion IV</strong></p>
+</li>
+<li>
+<p><strong>Lethal Toxins Potion IV</strong></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_召唤">召唤</h5>
+<div class="paragraph">
+<p>对于副本，最好使用<strong>Dragon</strong>和最好的战斗风格符文，<strong>Minotaur</strong>、<strong>Centaur</strong>或<strong>Witch</strong>。对于<strong>Slayer</strong>，<strong>Cyclops</strong>与相同战斗风格符文是一个安全的选择。最好的两个替代品是：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Yak</strong></p>
+</li>
+<li>
+<p><strong>Occultist</strong></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_屠杀者_3">屠杀者</h5>
+<div class="paragraph">
+<p><strong>Slayer</strong> 在这一点上对于继续升级您的装备至关重要；如果被忽视了，现在几乎是最后一次迎头赶上而不会落后的机会。精英和大师难度的任务可能非常困难，尤其是如果使用<strong>Auto Slayer</strong>，只在可能的情况下完成任务，而在玩家无法在场时正常战斗每个敌人可能更有效。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Skull Cape</strong> - 可以在商店以<strong>400k</strong>屠杀者硬币的价格购买。</p>
+</li>
+<li>
+<p><strong>Ancient Claw</strong> - 从<strong>Pegasus</strong>掉落。</p>
+</li>
+<li>
+<p><strong>Hunter&#8217;s Ring</strong> - 从<strong>Hunting Greater Dragon</strong>掉落。</p>
+</li>
+<li>
+<p><strong>Wasteful Ring</strong> - 从<strong>Wicked Greater Dragon</strong>掉落。</p>
+</li>
+<li>
+<p><strong>Elder Crown</strong> - 从<strong>Elder Vampire</strong>掉落。</p>
+</li>
+<li>
+<p><strong>Magic Wand (Elite)</strong> - 从<strong>Cursed Maiden</strong>掉落，用于制作<strong>Air Imbued Wand</strong> <strong>Water Imbued Wand</strong> <strong>Earth Imbued Wand</strong> <strong>Fire Imbued Wand|Imbued Wands</strong>。</p>
+</li>
+<li>
+<p><strong>Slayer Helmet (Elite)|Elite Slayer Armor</strong> - 在完成30个精英难度的<strong>屠杀者</strong>任务后，可以在商店购买。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_fury_of_the_elemental_zodiacs_fez">2.3.3. Fury of the Elemental Zodiacs (FEZ)</h4>
+<div class="paragraph">
+<p>精英护身符的最终升级。FEZ有一张表格详细说明了每个护身符上的许多重要统计信息，可以在[[FEZ/Guide]]上找到。如果直到此时已经彻底遵循了指南，以下是每个护身符应该从哪里最快获得的简要总结：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Mummy</strong><strong> 以获取Amulet of Strength</strong>。</p>
+</li>
+<li>
+<p><strong>Bandit</strong><strong> 以获取Amulet of Ranged</strong>。</p>
+</li>
+<li>
+<p><strong>Master Wizard</strong> 以获取<strong>Amulet of Magic</strong>。</p>
+</li>
+<li>
+<p><strong>Bounty Hunter</strong> 以获取<strong>Amulet of Glory</strong>、<strong>Amulet of Accuracy</strong> 和 <strong>Amulet of Defence</strong>。</p>
+</li>
+<li>
+<p><strong>Fierce Devil</strong> 以获取<strong>Amulet of Torture</strong>。</p>
+</li>
+<li>
+<p><strong>Seething Horned Elite</strong> 以获取<strong>Amulet of Fury</strong>。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>请注意，<strong>Deep Sea Ship</strong> 掉落<strong>Amulet of Torture</strong>， <strong>熔岩洞窟</strong>  掉落<strong>Amulet of Fury</strong>，因此建议首先完成从这些副本获得的任何物品，以帮助减轻困难。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_副本指南">2.3.4. 副本指南</h4>
+<div class="sect4">
+<h5 id="_infernal_stronghold">Infernal Stronghold</h5>
+<div class="ulist">
+<ul>
+<li>
+<p><em>这个副本有一个指南，位于<strong>Infernal Stronghold/Guide</strong></em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>完成这个副本的主要原因是获得<strong>Infernal Cape</strong>，它提供4%的伤害减免，适用于每种战斗风格。这里掉落的<strong>Infernal Core|Infernal Cores</strong>可以用来升级<strong>Ancient Claw</strong>，制成一把关键而强大的单手近战武器<strong>Infernal Claw</strong>。</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_air_god_dungeon">Air God Dungeon</h5>
+<div class="ulist">
+<ul>
+<li>
+<p><em>这个副本有一个指南，位于<strong>Air God Dungeon/Guide</strong>。</em></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Air God Dungeon</strong> 掉落<strong>Ranged</strong> 护甲和装备，通常使用 <strong>熔岩洞窟</strong>  中的*Attack|Melee* 装备来完成。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_water_god_dungeon">Water God Dungeon</h5>
+<div class="ulist">
+<ul>
+<li>
+<p><em>这个副本有一个指南，位于<strong>Water God Dungeon/Guide</strong>。</em></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Water God Dungeon</strong> 掉落<strong>Magic</strong> 护甲和装备，通常使用<strong>Air God Dungeon</strong> 中的<strong>Ranged</strong> 装备来完成。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_earth_god_dungeon">Earth God Dungeon</h5>
+<div class="ulist">
+<ul>
+<li>
+<p><em>这个副本有一个指南，位于<strong>Earth God Dungeon/Guide</strong>。</em></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Earth God Dungeon</strong> 掉落<strong>Melee</strong> 面向坦克的护甲和装备，通常使用<strong>Water God Dungeon</strong> 中的<strong>Magic</strong> 装备来完成。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_fire_god_dungeon">Fire God Dungeon</h5>
+<div class="ulist">
+<ul>
+<li>
+<p><em>这个副本有一个指南，位于<strong>Fire God Dungeon/Guide</strong>。</em></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Fire God Dungeon</strong> 掉落<strong>Melee</strong> 面向 DPS 的护甲和装备，通常使用<strong>Air God Dungeon</strong> 中的<strong>Ranged</strong> 装备来完成。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_into_the_mist">2.4. Into the Mist</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><em>这个副本有一个指南，位于<strong>Into the Mist/Guide</strong>。</em></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Into the Mist</strong> 是游戏中最困难的挑战之一。不能使用自动模式。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>首先，玩家必须首先与随机选择的165到677级之间的20个受影响的怪物战斗。任何怪物，包括Boss，都可以选择，除了来自<strong>Unhallowed Wasteland</strong> 或 <strong>Dark Waters</strong> 的怪物。</p>
+</div>
+<div class="paragraph">
+<p><strong>Affliction</strong>是怪物施加的特殊状态效果，降低了你的最大生命值。这意味着这些遭遇是与时间赛跑，迫使你在受影响的堆叠太高之前杀死敌人。因此，建议在选择三套装备时，将DPS置于首位。</p>
+</div>
+<div class="paragraph">
+<p><em>没有从商店购买的副本装备更换升级，无法完成此副本。</em></p>
+</div>
+<div class="paragraph">
+<p>请注意，可能有利于在首次完成<strong>Into the Mist</strong>之前完成解锁<strong>Slayer Gear Upgrade Kit (Master)</strong>所需的<strong>大师级屠杀者</strong>任务。这是因为<strong>Dark Waters</strong>中的怪物被添加到可用敌人的池中。对于大师级任务，使用<strong>Auto Slayer</strong>将不再是微不足道的，因为新的敌人相当强大，并且对普通玩家的威胁更大，比<strong>Perilous Peaks</strong>版本的大师任务中可用的巨龙更致命。如果您不熟悉如何手动进行屠杀任务，请随时自动屠杀Perilous Peaks。请参阅下面的更详细解释。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Into the Mist</strong> 由3个Boss阶段组成，按照一定顺序进行，每个阶段之间有暂停时间。请参考<strong>Into the Mist/Guide</strong>，以获取有关完成此副本的详尽指南。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>值得注意的加成：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>可以访问<strong>Dark Waters</strong> 杀手区域，那里可以获得T90武器</p>
+</li>
+<li>
+<p><strong>Pablo</strong> - 完成5次后掉落</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_战斗被动槽位">2.4.1. 战斗被动槽位</h4>
+<div class="paragraph">
+<p>重要文章: <strong>Combat Passive Slot</strong></p>
+</div>
+<div class="paragraph">
+<p>恭喜完成<strong>Into the Mist</strong>！奖励是游戏中最好的升级之一:被动槽位。这允许装备任何带有“被动: ____”效果的物品到该槽位。</p>
+</div>
+<div class="paragraph">
+<p>虽然原始文章更为详尽，但以下是一些最佳选择的亮点：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Chapeau Noir</strong> - 更多物品加倍总是不错的</p>
+</li>
+<li>
+<p><strong>Ring of Wealth</strong> - 更多物品加倍总是不错的</p>
+</li>
+<li>
+<p><strong>Slayer Helmet (Master)|Master Slayer Armor</strong> - 允许您闪避更多的平坦杀手区域减少，还有少量的物品加倍</p>
+</li>
+<li>
+<p><strong>Elder Crown</strong> - 攻击间隔减少略微增加DPS，大量的自由生命偷取有助于保存食物库存</p>
+</li>
+<li>
+<p><strong>Fighter Amulet</strong> - 仅限近战，有良好的DPS，减少敌人的攻击</p>
+</li>
+<li>
+<p><strong>Deadeye Amulet</strong> - 仅限远程，出色的DPS</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_何时完成大师屠杀任务在完成itm之前还是之后">2.4.2. 何时完成大师屠杀任务：在完成ITM之前还是之后</h4>
+<div class="paragraph">
+<p><strong>屠杀者装备升级包(大师)</strong> 和因此 <strong>屠杀者头盔(大师)</strong> 可以通过完成40个<strong>大师级屠杀者</strong>任务来解锁。在基础游戏中，大师级屠杀包括以下解锁条件的3个屠杀区域：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Perilous Peaks</strong> - <strong>屠杀者 99级</strong>。默认情况下，只有该区域的敌人会出现在大师任务中。</p>
+</li>
+<li>
+<p><strong>Dark Waters</strong> - 至少完成了<strong>Into the Mist</strong>。</p>
+</li>
+<li>
+<p><strong>Unhallowed Wasteland</strong> - 从<strong>商店</strong>购买的<strong>Map to the Unhallowed Wasteland</strong>。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>使者的王座DLC</strong> 包含新的大师级屠杀区域，但所有这些都需要完成<strong>Impending Darkness Event</strong>。</p>
+</div>
+<div class="paragraph">
+<p>完成40个大师任务可能需要20-80+小时（平均约40小时），取决于您的设置、任务长度的运气，或在最快击杀怪物上进行短任务的效率/运气。这些任务可以在<strong>Into the Mist</strong>之前或之后完成，您选择哪种方法都取决于您。</p>
+</div>
+<div class="paragraph">
+<p>由于<strong>Dark Waters</strong>中的敌人难度较高，因此在完成<strong>Into the Mist</strong>后，使用<strong>Auto Slayer</strong>来完成大师任务不再可行。因此，在只解锁<strong>Perilous Peaks</strong>的情况下完成所有40个任务会比较“简单”，因为唯一的必要条件是满足每个怪物的伤害减免检查点。您还需要相当数量的食物，因为这些大型龙都具有大型龙息能力，可以造成大量无法避免的伤害。</p>
+</div>
+<div class="paragraph">
+<p><strong>Dark Waters</strong> 掉落用于制作强大武器的有价值的材料，通常消耗的食物等于或更少于大型龙，每个任务平均需要约40小时才能完成，前提是有最佳设置。因此，即使不能在自动模式下完成，完成大师任务同时工作于你的T90武器，很可能会消耗更少的食物，通常在任务上总体花费更少的时间。主要的缺点是你需要每2-3小时回来检查并更换装备，手动切换到下一个任务。这不是强制性的，但建议这样做，因为你将一直赚取屠杀经验和屠杀币，而且你将能够以盈利购买<strong>祝祭点数</strong>和<strong>食物</strong>。</p>
+</div>
+<div class="paragraph">
+<p>考虑添加<strong>战斗被动槽位</strong> - 通过在这个槽位装备强大的被动效果，你可以大大增加你的DPS、物品掉落率，或大大减少你的食物消耗。这在大型龙上最为明显；装备<strong>上古之冠</strong>后，对这些敌人的食物消耗会大幅下降。<strong>斗士护符</strong> 也对主要使用近战的敌人产生类似的效果；<strong>Rokken</strong> 和 <strong>Hunting Greater Dragon</strong>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_游戏后期96_99级">2.5. 游戏后期：96-99级</h3>
+<div class="paragraph">
+<p>完成<strong>Into the Mist</strong>后，你现在可以访问<strong>Dark Waters</strong>，倒数第二的屠杀者区域，并将很快能够解锁<strong>Unhallowed Wasteland</strong>。</p>
+</div>
+<div class="paragraph">
+<p>这些是漫长的过程，可能需要相当多的准备工作。</p>
+</div>
+<div class="paragraph">
+<p>我们建议在作为杀手任务的情况下与每个怪物战斗，这将需要关闭自动杀手，并鼓励半频繁的签到。在任务中这样做将增加你对它们造成的伤害，来自各种增益效果，尤其是<strong>屠杀者斗篷</strong>。</p>
+</div>
+<div class="paragraph">
+<p>这两个区域中掉落的所有物品都以最终版本的碎片形式出现，需要数百个个体物品才能制作出一个最终版本，因此建议尽量将更多的物品加倍纳入你的装备中。强烈建议使用<strong>战斗模拟器</strong>来测量你在没有死亡的情况下每小时的掉落率。它可以在实际的打磨时间上节省数天。</p>
+</div>
+<div class="sect3">
+<h4 id="_主要目标_4">2.5.1. 主要目标</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Maximum Skillcape</strong></p>
+</li>
+<li>
+<p><strong>Tidal Edge</strong></p>
+</li>
+<li>
+<p><strong>Ocean Song</strong></p>
+</li>
+<li>
+<p><strong>Shockwave</strong></p>
+</li>
+<li>
+<p><strong>Shield of Melee Power</strong> <strong>Shield of Ranged Power</strong> <strong>Shield of Magic Power|Power Shields</strong></p>
+</li>
+<li>
+<p><strong>Poison Virulence Gloves</strong> <strong>Burning Madness Gloves</strong> <strong>Spiked Shell Gloves</strong> <strong>Relentless Fury Gloves|Upgraded God Gloves</strong></p>
+</li>
+<li>
+<p><strong>Poison Virulence Ring</strong> <strong>Burning Madness Ring</strong> <strong>Spiked Shell Ring</strong> <strong>Relentless Fury Ring|Upgraded God Rings</strong></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dark_waters">2.5.2. Dark Waters</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><em>这个杀手区域有一个指南，位于 <strong>Dark Waters/Guide</strong></em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>这3种怪物掉落T90（等级要求）武器的碎片，这些高级而强大的武器在完成以下杀手区域以及即将到来的黑暗来临事件中非常有帮助。每个武器通过组合100个碎片来升级，碎片有2%的掉落率。这意味着平均需要击杀5,000只怪物，没有物品加倍的机会。</p>
+</div>
+<div class="paragraph">
+<p>使用以上的“手动”杀手方法将使您获得武器的顺序实际上是随机的，但如果您想按特定顺序完成它们，我们建议以下方式：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Shockwave</strong> - 由<strong>Rokken</strong>掉落的<strong>Shockwave Fragment</strong>制成</p>
+</li>
+<li>
+<p><strong>Ocean Song</strong> - 由<strong>Ku-tul</strong>掉落的<strong>Ocean Song Fragment</strong>制成</p>
+</li>
+<li>
+<p><strong>Tidal Edge</strong> - 由<strong>Umbora</strong>掉落的<strong>Tidal Edge Fragment</strong>制成</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>此外，您还应该在完成这个任务时获得宠物<strong>Otto</strong>，如果没有，继续在或不在任务上杀死的怪物中杀死速度最快的怪物，直到获得它。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_unhallowed_wasteland">2.5.3. Unhallowed Wasteland</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><em>这个杀手区域有一个指南，位于<strong>Unhallowed Wasteland/Guide</strong></em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>在完成T90武器的挑战后，你准备好面对另一个困难的挑战，<strong>Unhallowed Wasteland</strong>（UW） - 基本游戏中的最终<strong>屠杀者</strong>区域。</p>
+</div>
+<div class="paragraph">
+<p>要进入这个区域，你需要购买一个<strong>Map to the Unhallowed Wasteland</strong>。</p>
+</div>
+<div class="paragraph">
+<p>这个区域需要最大化与DR不同的统计数据。这里的所有怪物每2次攻击都会恢复当前HP的一定百分比，这将严重妨碍你的DPS，无论设置如何。为了减轻这个问题，你需要累积100%的Flat Slayer Area Effect Negation。</p>
+</div>
+<div class="paragraph">
+<p>在没有物品加倍的机会下，这些怪物都需要平均击杀4000只才能获得所有所需的物品。</p>
+</div>
+<div class="paragraph">
+<p>以下是近战所需的装备示例：</p>
+</div>
+<div class="paragraph">
+<p>{| class="wikitable"
+|-
+! Item
+! Slot
+! Slayer Area&lt;br&gt;Effect Negation %
+|-
+<strong>| Slayer Helmet (Master)</strong>
+| Head
+| 20%
+|-
+<strong>| Slayer Platebody (Master)</strong>
+| Body
+| 20%
+|-
+<strong>| Slayer Cowl (Master)</strong>
+| Passive
+| 20%
+|-
+<strong>| Max Skillcape</strong><strong>/Slayer Skillcape</strong>
+| Cape
+| 25%
+|-
+<strong>| Hunter&#8217;s Ring</strong>
+| Ring
+| 10%
+|-
+<strong>| {{AgilityIcon|Pillar of Combat</strong>
+| Agility
+| 5%
+|-
+! scope="row" colspan="2" | Total
+| 100%
+|}</p>
+</div>
+<div class="paragraph">
+<p>对于其他战斗风格，你将穿着相应的大师杀手装备。需要注意的是，你永远不能穿两件相同的物品，所以你选择放入被动槽的物品必须是当前未装备在胸部/头部槽中的护甲之一。</p>
+</div>
+<div class="paragraph">
+<p>值得注意的是，尽管UW被列为第一，但<em>首先完成<strong>Impending Darkness Event</strong>将使这个挑战更快！</em> 你可以在没有任何UW套装的情况下完成ID，这些套装对事件帮助不大，并且盾牌显著加速了杀手区域。</p>
+</div>
+<div class="paragraph">
+<p>在这里，你将努力获得每个UW怪物掉落的套装加成装备：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Poison Virulence Gloves</strong> <strong>/Poison Virulence Ring</strong> - 从<strong>Worm Spike</strong> <strong>/Poison Essence</strong>升级而来，由<strong>Legaran Wurm</strong>掉落</p>
+</li>
+<li>
+<p><strong>Burning Madness Gloves</strong> <strong>/Burning Madness Ring</strong> - 从<strong>Cursed Hands</strong> <strong>/Burning Essence</strong>升级而来，由<strong>Cursed Lich</strong>掉落</p>
+</li>
+<li>
+<p><strong>Spiked Shell Gloves</strong> <strong>/Spiked Shell Ring</strong> - 从<strong>Tough Shell</strong> <strong>/Stinging Essence</strong>升级而来，由<strong>Spiked Red Claw</strong>掉落</p>
+</li>
+<li>
+<p><strong>Relentless Fury Gloves</strong> <strong>/Relentless Fury Ring</strong> - 从<strong>Desecrated Bones</strong> <strong>/Undead Essence</strong>升级而来，由<strong>Greater Skeletal Dragon</strong>掉落</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_impending_darkness_event">2.6. Impending Darkness Event</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><em>这个副本有一个指南，位于<strong>Impending Darkness Event/Guide</strong>。</em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>梅尔沃放置基本游戏的最后一个副本也有一堆独特的机制：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>战斗发生在<strong>屠杀者</strong>区域，具有各自的Slayer区域效果</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>这还包括每个区域的入场要求！</em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>负面修改器，事件的每个阶段都需要玩家选择一个应用于所有敌人的修改器。</p>
+</li>
+<li>
+<p>逃离战斗不会使你离开事件，但会重置对<em>未完成的</em>杀手区域的任何进度。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Bane的战斗风格也会重新随机选择，如果你想选择不同的战斗风格。</p>
+</li>
+<li>
+<p>所有非战斗技能都可以在事件暂停时进行训练，这对于玩家想要在多个游戏会话中完成事件而不浪费时间什么都不做非常有帮助。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>还有一些回归的机制：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Affliction</strong> - 大家最喜欢的减益效果！</p>
+<div class="ulist">
+<ul>
+<li>
+<p>事件的每个阶段都会给普通的杀手敌人增加更多的最大生命值、更高的最大伤害和更高的减益应用几率。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>手动进食 - 在这个事件中要保证你的安全几乎是不可能的，除非你小心地手动进食并了解每个敌人的攻击。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>与<strong>Ahrenia</strong>类似，<strong>Bane</strong>要求你使用与他使用的相同的战斗风格与他战斗。</p>
+</div>
+<div class="paragraph">
+<p>事件的每个阶段都相同，但增加了额外的负面修改器和增加的基础被动效果。玩家将被要求选择一个负面修改器，然后必须完成一系列的试炼，通过4个困难的杀手区域，这些试炼由每个区域可用怪物池中随机选择的最多8只怪物组成。完成每个区域后，事件会暂停，直到玩家选择下一个区域。在完成最后的杀手区域后，<strong>Bane</strong>将立即以随机的战斗风格生成。虽然重要文章有更多的信息，但建议按照以下顺序完成杀手区域：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Unhallowed Wasteland</strong></p>
+</li>
+<li>
+<p><strong>Dark Waters</strong></p>
+</li>
+<li>
+<p><strong>Shrouded Badlands</strong></p>
+</li>
+<li>
+<p><strong>Perilous Peaks</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>由于<strong>Bane</strong>使用来自你与他战斗的杀手区域的修改器，所以你应该总是在<strong>Perilous Peaks</strong>中与他战斗。你的祝祭将是<strong>Battleheart</strong> 和<strong>Protect from Melee</strong> <strong>Protect from Ranged</strong> <strong>Protect from Magic|Protect from Style</strong>，这使区域效果（-% 闪避）实际上不会影响<strong>Bane</strong>击中玩家的几率。</p>
+</div>
+<div class="paragraph">
+<p>与<strong>Bane</strong>的最后一场战斗是一个特殊版本，<strong>Bane, Instrument of Fear</strong>，具有额外的能力。</p>
+</div>
+<div class="paragraph">
+<p>每次<strong>Bane</strong>被击败后，以下奖励将直接给予玩家，按照以下顺序设置。所有这些都是基本游戏中的最佳选择，仍然在任何扩展内容中有用且可行：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Shield of Melee Power</strong></p>
+</li>
+<li>
+<p><strong>Shield of Ranged Power</strong></p>
+</li>
+<li>
+<p><strong>Shield of Magic Power</strong></p>
+</li>
+<li>
+<p><strong>Ring of Power</strong></p>
+</li>
+<li>
+<p><strong>Bone</strong> - 宠物</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_常见问题解答">2.6.1. 常见问题解答</h4>
+<div class="paragraph">
+<p>Q: 没有怪物刷新！
+答：确保您选择了一个屠杀区域！怪物不会自行刷新。</p>
+</div>
+<div class="paragraph">
+<p>Q: 我的攻击没有造成任何伤害，而且无法错过的攻击也错过了！
+答：由于战斗发生在*屠杀*区域内，玩家需要获得进入该区域的权限才能造成伤害。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>屠杀技能披风</strong><strong> 或 最大技能披风</strong>。</p>
+</li>
+<li>
+<p><strong>在被动槽中放置炽热灯笼</strong>。</p>
+</li>
+<li>
+<p><strong>在被动槽中放置攀登靴</strong>。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Q: 这个副本需要多长时间？
+答：大约需要2小时，具体取决于您的装备和准备情况。副本的每个阶段（共5个阶段）应该需要大约20分钟的战斗时间和5-10分钟的装备更换、能力阅读和休息时间。</p>
+</div>
+<div class="paragraph">
+<p>Q: 我需要完成这个活动多少次？
+答：只需要杀死<strong>恐惧之仪的祸害</strong>一次。请注意，在达到最终首领之前，必须杀死<strong>祸害</strong>四次。</p>
+</div>
+<div class="paragraph">
+<p>Q: 活动暂停时可以训练哪些技能？
+答：所有非战斗技能，包括*魔法|替代魔法*。在活动完成或按下“停止活动”按钮之前，无法训练其他战斗技能。</p>
+</div>
+<div class="paragraph">
+<p>Q: 如何击败这个活动？
+答：保持您的*生命值|HP*在0以上，同时降低敌人的*生命值|HP*到0。每次都有效！</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_使者的王座_dlc">3. 使者的王座 DLC</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>使者的王座DLC</strong>中的战斗遵循与基础游戏类似的进程，分为三个部分：早期游戏、中期游戏和使者的王座的晚期游戏。</p>
+</div>
+<div class="paragraph">
+<p>本指南的整个部分都可能会发生变化，并将随着时间的推移进行更新，但目前遵循一些基本准则是一个很好的入门方式：使者的王座扩展中的战斗主要围绕着使用*屠杀*区域来准备完成副本展开。升级可以在前两个屠杀区域——<strong>丛林迷宫</strong> 和<strong>熔岩湖</strong>中进行，需要注意的是，<strong>致命毒药</strong>只是<strong>毒药</strong>的更高伤害版本，它在持续时间内造成的伤害是玩家生命值的25%，而不是10%。</p>
+</div>
+<div class="paragraph">
+<p>一个简单的<strong>使者的王座DLC</strong>战斗完成顺序：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>丛林迷宫</strong><strong>，以获取</strong>迷宫解决方案**</p>
+</li>
+<li>
+<p><strong>远古圣所</strong> - 参见<strong>远古圣所/指南</strong></p>
+</li>
+<li>
+<p><strong>熔岩湖</strong>和<strong>被遗忘的冻土</strong></p>
+</li>
+<li>
+<p><strong>地下熔岩湖</strong>和<strong>电光区</strong>副本</p>
+</li>
+<li>
+<p><strong>可选</strong>：<strong>蜘蛛女皇的巢穴</strong> - 此阶段必须手动清除。</p>
+</li>
+<li>
+<p><strong>雾湖</strong>，获取强大的中期工具</p>
+</li>
+<li>
+<p><strong>午夜山谷</strong>，获取强大的中期武器</p>
+</li>
+<li>
+<p><strong>诅咒森林</strong>和<strong>死灵法师宫殿</strong>，获取强大的晚期装备</p>
+</li>
+<li>
+<p><strong>金云山脉</strong>，仅在获得<strong>金色碎片</strong>之后</p>
+</li>
+<li>
+<p><strong>千年之门</strong>，获得具有最高伤害减免的BIS末期护甲</p>
+</li>
+<li>
+<p><strong>金云山脉</strong>，获取BIS末期武器</p>
+</li>
+<li>
+<p><strong>蜘蛛女皇的巢穴</strong></p>
+</li>
+<li>
+<p><strong>使者的王座</strong></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_使者的王座dlc_对基础游戏战斗的影响">3.1. 使者的王座DLC 对基础游戏战斗的影响</h3>
+<div class="paragraph">
+<p>所有战斗技能可以提升至120级，作为玩家在游戏中花费时间的奖励，提供了增加的属性：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>生命值</strong>：额外的200生命值可以缓解游戏中的痛点，并使玩家能够在不需要做出太多装备妥协的情况下完成更困难的挑战。</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>祝祭</strong>：在完成基础游戏战斗时，祝祷技能很可能会达到99级以上，使玩家能够使用非常强大的<strong>战斗之子</strong>和<strong>勇气</strong> <strong>贪婪</strong> <strong>启示</strong>，这是最高级别的“最大伤害”祝祭。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>攻击</strong>、<strong>力量</strong>、<strong>防御</strong>、<strong>远程</strong>、<strong>魔法</strong>允许玩家的最大伤害、命中率和闪避率都会增加，使玩家更加强大。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>所有的战斗装备（如<strong>刚玉板甲</strong> <strong>刚玉剑</strong>来自<strong>锻造</strong>，<strong>复仇者之身</strong> <strong>复仇者短弓</strong> 来自<strong>制造</strong>，以及<strong>闪电神话巫袍</strong> <strong>闪电法杖</strong> 来自<strong>符文锻造</strong>）在击败<strong>恐惧之仪的祸害</strong>之前<em>无法装备</em>。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>死灵法师之冠</strong>，需要<strong>扒窃 99级</strong>，可以自动使所有<strong>骨头</strong> <strong>大骨头</strong> <strong>龙骨</strong> <strong>魔骨</strong>，以及从四神副本的怪物掉落的<strong>神圣之尘</strong> 和<strong>气息碎片</strong> <strong>水之碎片</strong> <strong>土之碎片</strong> <strong>火之碎片</strong>碎片翻倍。</p>
+</li>
+<li>
+<p>大多数<strong>草药学</strong>药水可以在不进行<strong>使者的王座DLC</strong>战斗的情况下制作和使用。</p>
+</li>
+<li>
+<p><strong>灵巧</strong>提供比以前更强大的增益效果，而且不需要战斗进度。<strong>灵巧|瀑布过渡</strong>是一个出色的顶级障碍，消除了使用<strong>钻石幸运药水</strong>来可靠地连接攻击的需要。</p>
+</li>
+<li>
+<p><strong>塞壬</strong>和<strong>狐狸</strong>可以在<strong>召唤</strong>中制作，无需高级别的战斗。</p>
+</li>
+<li>
+<p><strong>星象学</strong>的星座<strong>阿斯塔</strong>。</p>
+</li>
+<li>
+<p><strong>卓越的最大技能披风</strong> 是对已经完全升级了所有技能的玩家的奖励，是99级<strong>最大技能披风</strong>的直接升级。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_属性与增益">3.2. 属性与增益</h3>
+<div class="sect3">
+<h4 id="_星象学">3.2.1. 星象学</h4>
+<div class="paragraph">
+<p>在玩家的冒险过程中，可以安全地假设他们已经解锁了*星象学*的绝大部分奖励，如果玩家刚开始进入扩展并且还没有完成星象学，那么可以尽快获取<strong>阿斯塔</strong>提供的一些重大好处，以及<strong>罗萨妮雅</strong>提供的一些好处。</p>
+</div>
+<div class="paragraph">
+<p>当然，清除<strong>诅咒森林</strong> 以获取<strong>星辰之印</strong>是有帮助的，但这需要深入到扩展战斗中，可能是不必要的。同样，在击败<strong>恐惧之仪|Bane</strong>, <strong>Instrument of Fear</strong>后，将解锁<strong>恶魔</strong>的<strong>城镇</strong>崇拜，提供强大的（<strong>城镇傍晚</strong>）季节，将<strong>星象学</strong>的间隔缩短了50%，持续3天。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_灵巧_2">3.2.2. 灵巧</h4>
+<div class="paragraph">
+<p>{| class="wikitable"
+! #
+! Obstacle
+! Reason
+|-
+!rowspan=4| 11
+<strong>| {{TotH</strong><strong> {{AgilityIcon|Frozen Maze</strong>
+| A great all-rounder with the primary bonus of additional Damage Reduction.
+|-
+<strong>| {{TotH</strong><strong> {{AgilityIcon|Water Maze</strong>
+| Global doubling is fantastic for monsters that die very quickly.
+|-
+<strong>| {{TotH</strong><strong> {{AgilityIcon|Forest Maze</strong>
+<strong>| Fantastic for <strong>Slayer</strong> if Area Effect Negation is required or the player is specifically hunting {{SC|SC</strong>
+|-
+<strong>| {{TotH</strong><strong> {{AgilityIcon|Pipe Maze</strong>
+| Fantastic for killing enemies of all kinds, can be detrimental to how fast the player can collect items due to its high negative doubling.
+|-
+! 12
+<strong>| {{TotH</strong><strong> {{AgilityIcon|Boulder Balance</strong>
+| More damage and a faster [[Attack Interval]] making the player deal even more damage and possibly able to avoid dangerous <a id="Stun"></a>, <a id="Freeze"></a> or <a id="Sleep"></a> effects.
+|-
+!rowspan=2| 13
+<strong>| {{TotH</strong><strong> {{AgilityIcon|Rope Trap</strong>
+| Particularly useful for the earlier stages of Expansion Combat where the player can be hampered by the dps requirement of dungeon bosses.
+|-
+<strong>| {{TotH</strong><strong> {{AgilityIcon|Balance Trap</strong>
+| Great for general use.
+|-
+!rowspan=2|14
+<strong>| {{TotH</strong><strong> {{AgilityIcon|Freezing Climb</strong>
+| Great for Expansion dungeons, deal more damage, take damage slightly less often!
+|-
+<strong>| {{TotH</strong><strong> {{AgilityIcon|Gap Climb</strong>
+| Great for <strong>Slayer</strong>, adding more damage and Area Effect Negation.
+|-
+!rowspan=2|15
+<strong>| {{TotH</strong><strong> {{AgilityIcon|Waterfall Crossing</strong>
+<strong>| This grants the effect of Diamond Luck Potion IV</strong> for an generally inconsequential penalty of <strong>Hitpoints</strong>.
+|-
+<strong>| {{TotH</strong><strong> {{AgilityIcon|Freezing Rafting</strong>
+| This should be the player&#8217;s absolute last line of defence for survivability, and should not be considered unless absolutely necessary.
+|-
+! rowspan=2| EP
+<strong>| {{TotH</strong><strong> {{AgilityIcon|Elite Pillar of Expertise</strong>
+| The default pillar for nearly all of the Expansion - immensely powerful buffs for all skills, Global Doubling being very powerful in combat particularly.
+|-
+<strong>| {{TotH</strong><strong> {{AgilityIcon|Elite Pillar of Conflict</strong>
+| This Pillar is only recommended if <strong>Slayer</strong> Area Effect Negation is 'required', its effects are rather lacklustre otherwise.
+|-
+|}</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_草药学_2">3.2.3. 草药学</h4>
+<div class="paragraph">
+<p>当<strong>灵巧|瀑布十字路口</strong>生效时，<strong>钻石幸运药水 IV</strong>不再是提供的伤害量所必需的，这为玩家选择使用哪种药水开启了许多新的选项。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>近战力量药水 IV</strong> <strong>远程力量药水 IV</strong> <strong>魔法伤害药水 IV</strong> 最大打击药水可以成为增加伤害的可靠来源。</p>
+</li>
+<li>
+<p><strong>减伤药水 IV</strong> 对于满足减伤需求非常有用，尤其是对于后期扩展的怪物和副本。</p>
+</li>
+<li>
+<p><strong>杀戮赏金药水 IV</strong> 对于农场<strong>屠杀者硬币</strong>非常有用的强大增益效果。</p>
+</li>
+<li>
+<p><strong>区域控制药水 IV</strong> 对于抵消有害的杀戮区域效果（如<strong>熔岩湖</strong>, <strong>被遗忘的冻土</strong>或<strong>雾气湖</strong>）非常有用。</p>
+</li>
+<li>
+<p><strong>穿透药水 IV</strong> 可能是从药水中获得的最高原始DPS，并且一旦解锁，可以在轻松获取<strong>幽灵粘液</strong>后，立即用作所有扩展战斗的默认战斗药水。</p>
+</li>
+<li>
+<p><strong>暴击药水 IV</strong> 在大多数情况下与穿透药水相当，但需要一种更容易获得的材料，而无需进行困难的战斗。</p>
+</li>
+<li>
+<p><strong>自适应防御药水 IV</strong> <strong>自适应精准药水 IV</strong> 自适应药水具有最初在<strong>飞马</strong>上找到的机制，通常不应使用这些药水，因为它们的效果实际上会在玩家的技能*生命值*低于其最大值的57％以下时“降低”玩家的属性，并且效果相对于众多可用选项而言效果不佳。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_召唤_2">3.2.4. 召唤</h4>
+<div class="paragraph">
+<p>一些特定的协同效应值得注意：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>牛头怪</strong> <strong>半人马</strong> <strong>女巫</strong> <strong>和幽灵</strong> - 针对具有较高减伤的敌人，提供大量额外伤害。</p>
+</li>
+<li>
+<p><strong>牛头怪</strong> <strong>半人马</strong> <strong>女巫</strong> <strong>和狐狸</strong> - 针对减伤较低的敌人，提供大量额外伤害。</p>
+</li>
+<li>
+<p><strong>牛头怪</strong> <strong>半人马</strong> <strong>女巫</strong> <strong>和塞壬</strong> - 额外伤害，并附带CC的好处，对于多次攻击特殊攻击最有用 - 睡着的怪物无法造成伤害！</p>
+</li>
+<li>
+<p><strong>邪教徒</strong> <strong>和幽灵</strong> - 通常会提供疯狂的原始准确性和命中几率，这是少数几个地方之一，其中仅仅获得更多准确性实际上是一个有形的好处，而不是微小的力量变化之一。</p>
+</li>
+<li>
+<p><strong>狐狸</strong> <strong>和龙</strong> - 针对生命值较高的敌人，特别适用于多次攻击特殊攻击。</p>
+</li>
+<li>
+<p><strong>蜘蛛</strong> <strong>和龙</strong> - 特别适用于<strong>配合阻碍药水 IV</strong> <strong>和皇家毒液长矛</strong>、<strong>咒语｜毒性荚囊</strong> 或<strong>咒语|自然之花</strong>使用。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_可消耗物品槽">3.2.5. 可消耗物品槽</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>探险者地图</strong> <strong>和探险者地图 II</strong> 提供了一组非常强大的<strong>屠杀者</strong>增益效果。</p>
+</li>
+<li>
+<p><strong>磨刀石</strong> 可让玩家造成更多的*近战*伤害。</p>
+</li>
+<li>
+<p><strong>巫师卷轴</strong> 和 <strong>巫师卷轴 II</strong> 可以保留符文。</p>
+</li>
+<li>
+<p><strong>杀戮之火炬</strong> <strong>和神秘灯笼</strong> 用于解锁<strong>受诅咒之城</strong>和<strong>午夜山谷</strong> <strong>屠杀者</strong>区域。玩家可以通过装备和卓越屠杀者技能披风<strong>来避免使用这些可消耗物品 - 和屠杀者技能披风</strong> 不适用于这些物品。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_使者的王座战斗">3.3. 使者的王座战斗</h3>
+<div class="sect3">
+<h4 id="_使者的王座dlc游戏前期100级至110级">3.3.1. 使者的王座DLC游戏前期：100级至110级</h4>
+<div class="paragraph">
+<p>在击败了<strong>恐惧之器贝恩</strong>（Bane, Instrument of Fear）于<strong>迫在眉睫的黑暗事件</strong>中后，玩家将解锁穿戴所有100级及以上的武器和盔甲的能力。立即的目标将是装备全新的装备，并开始通过击败<strong>丛林迷宫</strong>中的怪物以解锁所需的线索，从而解锁<strong>古老圣殿</strong>。</p>
+</div>
+<div class="sect4">
+<h5 id="_主要目标_5">主要目标</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>从非战斗技能中获得新的武器和盔甲。所有等级达到100以上的盔甲都是直接升级版本，具有更好的攻击统计数据和伤害减免，分别是 <strong>Aeris God Helmet|Aeris</strong>, <strong>Glacia God Helmet|Glacia</strong>, 以及 <strong>Terran God Helmet|Terran</strong> 神圣盔甲。不幸的是，<strong>Ragnar God Helmet|Ragnar</strong> 神圣盔甲的额外准确性和伤害会丧失，但大量的额外伤害减免绝对是值得的：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Smithing</strong> 用于制作 <strong>Corundum Helmet|Corundum</strong>, <strong>Augite Helmet|Augite</strong>, <strong>Meteorite Helmet|Meteorite</strong>, 以及 <strong>Divine Helmet|Divinite</strong> 盔甲和武器。所有盔甲除了 <strong>Meteorite Helmet|Meteorite</strong> 必须使用 <strong>Iridium Bar|Iridium</strong> 和 <strong>Palladium Bar|Palladium</strong> 条来升级到其最大值。</p>
+</li>
+<li>
+<p><strong>Crafting</strong> 用于制作 <strong>Elderwood Body|Elderwood</strong>, <strong>Revenant Body|Revenant</strong>, 以及 <strong>Carrion Body|Carrion</strong> 盔甲和武器。所有盔甲必须使用制作原始物品时使用的相同原木升级到其最大值。<strong>Carrion Body|Carrion</strong> 盔甲需要从 <strong>Ancient Sanctuary</strong> 获取的 <strong>Carrion Bark</strong>。</p>
+</li>
+<li>
+<p><strong>符文锻造</strong> 用于制作 <strong>Poison Mythical Wizard Hat|Poison</strong>, <strong>Lightning Mythical Wizard Hat|Lightning</strong>, 以及 <strong>Infernal Mythical Wizard Hat|Infernal</strong> 大师、传奇和神话等级的巫师法袍。法袍不需要升级以获取新的统计数据。还有新的 <strong>Archaic Rune|Runes</strong> 和 <strong>Archaic Wand|Weapons</strong>，用于促进新的古老魔法的使用，第一个古老魔法在打败 <strong>Ancient Sanctuary</strong> 后解锁。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Jungle Labyrinth</strong> 的怪物掉落购买 <strong>Labyrinth Solution</strong> 所需的物品，以及最早的装备升级选项。</p>
+</li>
+<li>
+<p><strong>Ancient Sanctuary</strong> 掉落一些物品并解锁扩展的其余部分。</p>
+</li>
+<li>
+<p><strong>Lava Lake</strong> 和 <strong>Underground Lava Lake</strong> 掉落 <strong>Burning Protection Material</strong> 和 <strong>Ward of Flame Material</strong>，以及 <strong>Blazing Helmet</strong>。</p>
+</li>
+<li>
+<p><strong>Forsaken Tundra</strong> 和 <strong>Lightning Region</strong> 掉落 <strong>Freezing Touch Material</strong> 以及制作 <strong>Frostspark Boots</strong>, <strong>FrostSpark 1H Sword</strong>, 以及 <strong>FrostSpark Amulet</strong> 所需的各种零件。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_近战_3">近战</h5>
+<div class="paragraph">
+<p>通常情况下，近战训练应该在<strong>Alraune</strong>上进行，或者在<strong>Ancient Sanctuary</strong>中进行，这取决于玩家的长期目标。</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_远程_3">远程</h5>
+<div class="paragraph">
+<p>前几个杀手区域有很多潜在的<strong>Magic</strong>怪物可以杀死，以获取<strong>Ranged</strong>经验。<strong>Spectral Ice Wolf</strong>更可取，因为要获得<strong>FrostSpark 1H Sword</strong>所需的<strong>Spectral Ice Sword Shard|Spectral Ice Sword Shards</strong>平均需要击败约10,000只<strong>Spectral Ice Wolf|Wolves</strong>，而没有物品翻倍。</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_魔法_3">魔法</h5>
+<div class="paragraph">
+<p>前几个杀手区域有很多潜在的*Melee*怪物可以杀死，以获取*Magic*经验。不幸的是，它们都不掉落稀有物品，或者需要很长时间才能获得，所以选择取决于哪种方式最方便，或者哪种方式提供最佳的经验值。</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_使者的王座dlc游戏中期111_120级">3.3.2. 使者的王座DLC游戏中期：111-120级</h4>
+<div class="paragraph">
+<p>在这里，玩家的目标是收集尽可能多的特殊装备，以完全装备他们的角色，为战斗的最后阶段做准备。这将包括所有非最终Boss的副本，以及除了最后两个杀手区域以外的所有内容。</p>
+</div>
+<div class="sect4">
+<h5 id="_主要目标_6">主要目标</h5>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Foggy Lake</strong>的怪物掉落<strong>Allure Amulet</strong>、<strong>Bleed Burner Cape</strong>，以及制作<strong>Leviathan Shield</strong>的零件。</p>
+</li>
+<li>
+<p><strong>Goliath Werewolf</strong> 掉落<strong>Gauntlets of Rage</strong>。</p>
+</li>
+<li>
+<p><strong>Lair of the Spider Queen</strong>掉落强大的<strong>Royal Toxins Spear</strong>。</p>
+</li>
+<li>
+<p><strong>Cursed Forest</strong>掉落强大的<strong>Mask of Madness</strong>、<strong>Mask of Torment</strong>和<strong>Mask of Despair</strong>，专为<strong>Attack|Melee</strong>、<strong>Ranged</strong>和<strong>Magic</strong>设计。这些面具可以在游戏的其余部分佩戴。</p>
+</li>
+<li>
+<p><strong>Necromancers Palace</strong>掉落的物品并不特别强大，可以出于完成任务的目的而避免。</p>
+</li>
+<li>
+<p><strong>Midnight Valley</strong>的怪物掉落<strong>Ethereal Greataxe</strong>、<strong>Ethereal Longbow</strong>和<strong>Ethereal Staff</strong>，可以帮助突破其他中后期怪物的坚固伤害减免。每个怪物还有<strong>Ectoplasm</strong>作为它们的骨头掉落，可以用来制作<strong>Spectre</strong>召唤符。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_近战_4">近战</h5>
+<div class="paragraph">
+<p>通常来说，<strong>Cockatrice</strong>将是最佳的经验来源，但在专注追求经验之前，确保您获得了所需的物品非常重要。</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_远程_4">远程</h5>
+<div class="paragraph">
+<p>通常来说，<strong>Siren</strong>将是最佳的经验来源，但在专注追求经验之前，确保您获得了所需的物品非常重要。</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_魔法_4">魔法</h5>
+<div class="paragraph">
+<p>通常来说，<strong>Gret-Yun</strong>将是最佳的经验来源，但在专注追求经验之前，确保您获得了所需的物品非常重要。</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_使者的王座dlc游戏后期118_120级">3.3.3. 使者的王座DLC游戏后期：118-120级</h4>
+<div class="paragraph">
+<p><strong>在这里，我们将击败游戏中最终、最强大的怪物，然后杀死</strong>The Herald**，结束他的统治。</p>
+</div>
+<div class="sect4">
+<h5 id="_主要目标_7">主要目标</h5>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Torvair</strong>，<strong>Arctair</strong>和<strong>Harkair</strong> 掉落游戏中最强大的武器的碎片 - <strong>Agile Wings Rapier</strong>，<strong>Feather Storm Crossbow</strong>和<strong>Slicing Maelstrom Wand</strong>。这些怪物的指南可以在<strong>Golden Cloud Mountains/Guide</strong>找到。</p>
+</li>
+<li>
+<p><strong>Vorloran Protector</strong>，<strong>Vorloran Watcher</strong>和<strong>Vorloran Devastator</strong> 掉落游戏中最高伤害减免的盔甲 - <strong>Vorloran Protector Helmet|Vorloran Protector Armor</strong>，<strong>Vorloran Watcher Helmet|Vorloran Watcher Armor</strong>和<strong>Vorloran Devastator Helmet|Vorloran Devastator Armor</strong>。这些怪物的指南可以在<strong>Millennium Gate/Guide</strong>找到。</p>
+</li>
+<li>
+<p><strong>Throne of the Herald</strong> 包含<strong>The Herald</strong>。这个副本的指南可以在<strong>Throne of the Herald (Dungeon)/Guide</strong>找到。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2023-09-26 22:13:58 +0800
+</div>
+</div>
+</body>
+</html>

@@ -1,60 +1,60 @@
-{{V|1.1.2}}
-{{Otheruses|training the Astrology skill|the skill itself|Astrology}}
 
-== Training ==
-Study on the highest level Constellation that is unlocked. It may be useful to reach 80 {{Icon|Mastery}} in each Constellation before moving on, as this will unlock 5 Modifiers for each Constellation, giving you some decent bonuses for other skills. This will slow your leveling, but will grant various benefits to other skills.
+== 练级 ==
+研究已解锁的最高级星座。在继续前，达到每个星座的80熟练度可能会很有用，因为这将为每个星座解锁5个修正，为其他技能提供一些不错的奖励。这将减缓你的升级速度，但却可以为其他技能提供各种好处。
 
-{{Icon|Secret Stardust Potion|Secret Stardust Potions}} can be used to increase the rate of leveling, but it is only suggested to be used if high levels of preservation and doubling can be obtained to maximize the amount of potions created per {{ItemIcon|Stardust}} used. Using {{ItemIcon|Alchemist's Bag|Alchemist's Bags}} can also reduce potion usage while actually training the skill.
+秘密星尘药水可以用于提高升级速度，但只建议在星象学等级很高并且保留资源概率也很高的时候使用，以最大化每颗使用星尘所创造的药剂数量。同时，使用炼金术士袋也可以减少在实际训练技能时的药剂消耗。
 
-The below table lists the amount of time that would be spent training on each constellation supposing that neither XP boosts nor action interval reductions applied. Therefore, players should expect to reach {{SkillReq|Astrology|99}}, and subsequently Level 120, significantly quicker than is stated below. For example, maxing the Astrology Skill XP and Interval Modifiers within {{Icon|Variel|type=constellation}} will negate a day of training from 100-120. Reaching -20% Astrology interval and +24% Astrology (arbitrarily chosen percentages, but easily obtainable), will make Levels 100-120 take 4 days less--a 40% decrease in time.
+The below table lists the amount of time that would be spent training on each constellation supposing that neither XP boosts nor action interval reductions applied. Therefore, players should expect to reach Astrology99, and subsequently Level 120, significantly quicker than is stated below. For example, maxing the Astrology Skill XP and Interval Modifiers within 瓦利尔 will negate a day of training from 100-120. Reaching -20% Astrology interval and +24% Astrology (arbitrarily chosen percentages, but easily obtainable), will make Levels 100-120 take 4 days less--a 40% decrease in time.
+
+下表列出了在假设没有经验加成和行动间隔减少的情况下，每个星座训练所需的时间。因此，玩家可以预期在比下面所述的更快的时间内达到星象学学99级，随后达到120级。例如，在瓦利尔中将星象学技能的经验和间隔修正最大化将减少从100级到120级的训练时间一天。达到-20%的星象学间隔和+24%的星象学（这些百分比是任意选择的，但容易获得）将使100级到120级的时间减少4天，降低了40%的时间。
 
 {| class="wikitable col-3-right col-4-right col-5-right"
-! colspan="2" | Constellation !! {{Skill|Astrology|Level|nolink=true}} !! XP !! Time
+! colspan="2" | 星座 !! 星象学 !! 经验 !! 时间
 |-
-| {{Icon|Deedree|type=constellation|notext=true}} || [[Deedree]] || 1-10 || 5 || 00:11:33
+| 狄德利 || [[狄德利]] || 1-10 || 5 || 00:11:33
 |-
-| {{Icon|Iridan|type=constellation|notext=true}} || [[Iridan]] || 10-20 || 13 || 00:12:45
+| 艾丽丹 || [[艾丽丹]] || 10-20 || 13 || 00:12:45
 |-
-| {{Icon|Ameria|type=constellation|notext=true}} || [[Ameria]] || 20-30 || 21 || 00:21:12
+| 艾美利亚 || [[艾美利亚]] || 20-30 || 21 || 00:21:12
 |-
-| {{Icon|Terra|type=constellation|notext=true}} || [[Terra]] || 30-40 || 29 || 00:41:09
+| 泰拉 || [[泰拉]] || 30-40 || 29 || 00:41:09
 |-
-| {{Icon|Vale|type=constellation|notext=true}} || [[Vale]] || 40-50 || 37 || 01:26:39
+| 维拉 || [[维拉]] || 40-50 || 37 || 01:26:39
 |-
-| {{Icon|Syllia|type=constellation|notext=true}} || [[Syllia]] || 50-60 || 45 || 03:11:33
+| 希里亚 || [[希里亚]] || 50-60 || 45 || 03:11:33
 |-
-| {{Icon|Arachi|type=constellation|notext=true}} || [[Arachi]] || 60-69 || 53 || 07:17:39
+| 阿拉奇 || [[阿拉奇]] || 60-69 || 53 || 07:17:39
 |-
-| {{Icon|Ko|type=constellation|notext=true}} || [[Ko]] || 70-80 || 61 || 17:03:18
+| 廓尔 || [[廓尔]] || 70-80 || 61 || 17:03:18
 |-
-| {{Icon|Tellus|type=constellation|notext=true}} || [[Tellus]] || 80-90 || 69 || data-sort-value="40:35:00" | 1 days, 16:35:00
+| 特鲁斯 || [[特鲁斯]] || 80-90 || 69 || data-sort-value="40:35:00" | 1 天, 16:35:00
 |-
-| {{Icon|Hyden|type=constellation|notext=true}} || [[Hyden]] || 90-95 || 77 || data-sort-value="37:04:09" | 1 days, 13:04:09
+| 海登 || [[海登]] || 90-95 || 77 || data-sort-value="37:04:09" | 1 天, 13:04:09
 |-
-| {{Icon|Qimican|type=constellation|notext=true}} || [[Qimican]] || 95-99 || 85 || data-sort-value="41:47:36" | 1 days, 17:47:36
+| 奇米康 || [[奇米康]] || 95-99 || 85 || data-sort-value="41:47:36" | 1 天, 17:47:36
 |- class="sortbottom"
-! colspan="4" | Total !! 6 days, 05:52:33
+! colspan="4" | 总共 !! 6 天, 05:52:33
 |}
 
 {| class="wikitable sortable col-3-right col-4-right col-5-right"
-! colspan="2" | Constellation !! {{Skill|Astrology|Level|nolink=true}} !! XP !! Time
+! colspan="2" | 星座 !! 星象学 !! 经验 !! 时间
 |-
-| {{Icon|Qimican|type=constellation|notext=true}} || [[Qimican]] || 99-100 || 85 || 13:18:05
+| 奇米康 || [[奇米康]] || 99-100 || 85 || 13:18:05
 |-
-| {{Icon|Variel|type=constellation|notext=true}} || {{TotH}} [[Variel]] || 100-105 || 155 || data-sort-value="49:34:09" | 2 days, 01:34:09
+| 瓦利尔 || {{TotH}} [[瓦利尔]] || 100-105 || 155 || data-sort-value="49:34:09" | 2 天, 01:34:09
 |-
-| {{Icon|Haemir|type=constellation|notext=true}} || {{TotH}} [[Haemir]] || 105-110 || 235 || data-sort-value="53:38:26" | 2 days, 05:38:26
+| 海密尔 || {{TotH}} [[海密尔]] || 105-110 || 235 || data-sort-value="53:38:26" | 2 天, 05:38:26
 |-
-| {{Icon|Rosaniya|type=constellation|notext=true}} || {{TotH}} [[Rosaniya]] || 110-115 || 335 || data-sort-value="61:44:09" | 2 days, 13:44:09
+| 罗萨妮娅 || {{TotH}} [[罗萨妮娅]] || 110-115 || 335 || data-sort-value="61:44:09" | 2 天, 13:44:09
 |-
-| {{Icon|Ashtar|type=constellation|notext=true}} || {{TotH}} [[Ashtar]] || 115-120 || 475 || data-sort-value="71:26:05" | 2 days, 23:26:05
+| 阿斯塔 || {{TotH}} [[阿斯塔]] || 115-120 || 475 || data-sort-value="71:26:05" | 2 天, 23:26:05
 |- class="sortbottom"
 ! colspan="4" | Total !! 10 days, 09:40:53
 |}
 
-Total = 16 days, 15 hours, 33 minutes, 26 seconds
+总共 = 16 天, 15 小时, 33 分钟, 26 秒
 
-== Gear ==
+== 装备 ==
 {{Equipment/Recommended
 |helm1 = Star Gazing Hat
 |body1 = Star Gazing Body
@@ -63,7 +63,7 @@ Total = 16 days, 15 hours, 33 minutes, 26 seconds
 
 |cape1 = Superior Astrology Skillcape
 |cape2 = Superior Firemaking Skillcape
-|cape3 = Firemaking Skillcape
+|cape3 = 生火斗篷
 
 |ring1 = Ancient Ring of Skills
 |ring2 = Ancient Ring of Mastery
@@ -80,12 +80,12 @@ Total = 16 days, 15 hours, 33 minutes, 26 seconds
 |familiar23 = Owl
 }}
 
-It's smart to also add {{ItemIcon|Travellers Compass}} if you have them, for extra meteorite. Using all four Star Gazing Gear gives extra synergy.
+如果你有的话，添加旅行者罗盘也是明智的选择，可以获得额外的陨石。同时使用四件占星装备能够提供额外的套装效果。
 
-Only use the {{ItemIcon|Devil}} synergy if you have maxed {{ItemIcon|Golden Stardust}} upgrades.
+如果你的技能已经升满，不需要黄金星尘的时候，可以只使用一个恶魔石板。
 
-== Obstacles ==
-{{Obstacles/Recommended
+== 障碍 ==
+{{障碍/建议
 |obs31 = Pit Jump
 |obs51 = Tree Climb
 |obs81 = A Lovely Jog
@@ -95,7 +95,7 @@ Only use the {{ItemIcon|Devil}} synergy if you have maxed {{ItemIcon|Golden Star
 |epillar1 = Expertise
 }}
 
-== Other effects ==
+== 其它效果 ==
 {| class="wikitable"
 |-
 | {{ItemIcon|Secret Stardust Potion IV}}
@@ -107,10 +107,10 @@ Only use the {{ItemIcon|Devil}} synergy if you have maxed {{ItemIcon|Golden Star
 | {{PetIcon|Pyro}}
 | +1% Global XP. Very hot indeed.
 |-
-| {{ConstellationIcon|Variel}}
+| {{ConstellationIcon|瓦利尔}}
 | +8% XP and Mastery. -5% interval.
 |-
-| {{ConstellationIcon|Rosaniya}}
+| {{ConstellationIcon|罗萨妮娅}}
 | Further +5% global mastery. Also +4% {{ItemIcon|Stardust}}. Must have!
 |}
 

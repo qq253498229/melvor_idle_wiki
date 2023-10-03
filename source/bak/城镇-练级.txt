@@ -1,0 +1,143 @@
+{{V|1.2}}
+{{Otheruses|training the Township skill|the skill itself|Township}}
+
+==Before Starting Township==
+*{{Skill|Township}} takes approximately 2-3 weeks to reach Level 99 and 3-4 additional weeks to reach Level 120 (5-7 weeks total). This can be lower or higher depending on activity. Completing [[Township/Tasks#Casual|Casual Tasks]] can help speed up this process.
+* Township will provide you with plenty of {{Icon|GP}} from {{TownshipIcon|Town Hall|Town Halls}} and various resources and consumables from the {{TownshipIcon|Trading Post}}.
+*Your Town will degrade if you don't keep upgrading it. Be consistent when it comes to Township. You should be updating your town at least once per day. More will be beneficial.
+*Degradation will delete resources if your {{TownshipIcon|Storage}} cannot hold them (possibly a bug). This could slow you down significantly. This will only happen after your maximum storage is below your current storage and a tick/town update happens.
+*Seasonal Modifiers boost production early and decrease it later making it better to build quickly at the start. If you're not quite ready to commit to Township, it may be better to just wait until you are.
+*You cannot fail Township. No matter how bad it looks, there's always a solution to fixing your town.
+*Each "tick", or "town update", is takes 1 hour and is done automatically.
+
+==Quick Tips==
+*[[Township/Tasks#Casual|Casual Tasks]] can greatly speed up the early game. Completing each of the base game [[Dungeons]] once will unlock [[Township/Tasks#Casual|Casual Tasks]] for 10,000-75,000 {{TownshipIcon|Food|nolink=true}}+{{TownshipIcon|Wood|nolink=true}}+{{TownshipIcon|Stone|nolink=true}}. Starting with Dragons Den, these tasks will also give {{TownshipIcon|Planks|nolink=true}} and {{TownshipIcon|Bar|nolink=true}}s!
+*The general goal with Township is to prioritize whatever resource you're low on and then increase {{TownshipIcon|Population|Population (XP)}}.
+*If you are unsure which worship to use, Aeris is the safest and pick due to having the highest cost reduction at -25% building cost which is doubled in spring. This can reduce the resource and repair costs for Township.
+**The cost to switch worships, including to and from "None :(" is {{GP|50000000}}. This will also destroy any worship buildings and your entire town will need 50% repairs. It's highly advised you pick a god due to this.
+*The building costs to Level 99 is around {{GP|60000000}}. {{TownshipIcon|Statue of Worship}} and {{TownshipIcon|Town Hall}} will add an additional {{GP|850000000}}.
+*Repairing early is a waste of resources. Building a new building repairs for '''FREE''' so when possible try to build a new building instead of repairing first and then building a new one.
+*The {{TownshipIcon|Swamp}}, {{TownshipIcon|Valley}} and {{TownshipIcon|Arid Plains}} provide a 1.5x multiplier to most buildings in these biomes while the {{TownshipIcon|Jungle}}, {{TownshipIcon|Desert}} and {{TownshipIcon|Snowlands}} provide a 2x multiplier to most buildings in these biomes.
+**This bonus production will be factored into the displayed values.
+*Building Cost Reduction will also reduce repair cost which can be very valuable before town halls are built.
+*{{TownshipIcon|Worship}} modifiers are multiplicative, dramatically increasing resources gained.
+*If your {{TownshipIcon|Population}} is low, check your {{TownshipIcon|Health}}. Health is the final multiplier of population. Having 75% health will result in 75% of your population.
+*Buildings that are at 0/x Built (meaning you haven't purchased any buildings in this tier yet) do not receive any damage! This can be useful to prevent buildings from decaying (loss in resource production). This has a very niche use case.
+*Seasons have modifiers. Click 'View Season Modifiers' In-Game or the [[Township#Seasons|Seasons Section]] on the Wiki to check them out!
+
+==General Progression==
+The general progression may change based on which god you choose. The following will be based on Aeris.
+
+#Always bulk up your {{TownshipIcon|Storage}} before going to sleep to ensure you don't cap out over night!
+#Always prioritize resources you aren't generating enough of.
+#After resources, your next priority should be {{TownshipIcon|Population|Population (XP)}}. If the next tier of unlocks provides another upgrade to a much needed resource, prioritizing population over resource production is a valid strategy.
+Remember, building a new building will repair for '''FREE'''. Do not repair unless that building is 100% maxed out. Its likely you can avoid repairs entirely by just building new buildings until you're past Level 90.
+
+==Level 1-14==
+'''New Buildings:''' {{TownshipIcon|Basic Shelter}} ({{TownshipIcon|Population|nolink=true}}), {{TownshipIcon|Wooden Hut}} ({{TownshipIcon|Population|nolink=true}}), {{TownshipIcon|Woodcutter Camp}} ({{TownshipIcon|Wood|nolink=true}}), {{TownshipIcon|Carpenters Workshop}} ({{TownshipIcon|Planks|nolink=true}}), {{TownshipIcon|Miners Pit}} ({{TownshipIcon|Stone|nolink=true}},{{TownshipIcon|Ore|nolink=true}},{{TownshipIcon|Coal|nolink=true}}), {{TownshipIcon|Blacksmiths Smithy}} ({{TownshipIcon|Bar|nolink=true}}), {{TownshipIcon|Hunters Cabin}} ({{TownshipIcon|Leather|nolink=true}}), {{TownshipIcon|Gatherers Hut}} ({{TownshipIcon|Herbs|nolink=true}}), {{TownshipIcon|Herbalist}} ({{TownshipIcon|Potions|nolink=true}}), {{TownshipIcon|Storehouse}} ({{TownshipIcon|Storage|nolink=true}}), {{TownshipIcon|School}} ({{TownshipIcon|Education|nolink=true}})
+
+*Build 20 {{TownshipIcon|Basic Shelter|Basic Shelters|nolink=true}}, 20 {{TownshipIcon|Woodcutter Camp|Woodcutter Camps|nolink=true}}, and 4 {{TownshipIcon|Carpenters Workshop|Carpenters Workshops|nolink=true}}. Save the rest of your {{TownshipIcon|Wood|nolink=true}} for more {{TownshipIcon|Carpenters Workshop|Carpenters Workshops|nolink=true}}.
+*After having 10-20 {{TownshipIcon|Carpenters Workshop|Carpenters Workshops|nolink=true}} built, start building {{TownshipIcon|Wooden Hut|Wooden Huts|nolink=true}} to reach Level 15 faster.
+*If you're an {{Icon|Adventure}} mode character, check for any [[Township/Tasks#Casual|Casual Tasks]] that give {{TownshipIcon|Wood|nolink=true}}, {{TownshipIcon|Planks|nolink=true}} or {{TownshipIcon|Stone|nolink=true}}. Completing these will speed up the beginning by a lot. Non-Adventure mode characters will not have tasks yet.
+*{{TownshipIcon|Health|nolink=true}} will start to decrease after Level 15. This can be increased with {{TownshipIcon|Herbs|nolink=true}} or {{TownshipIcon|Potions|nolink=true}} underneath the Repair All buttons. It's advised you build an {{TownshipIcon|Herbalist|nolink=true}} and keep Health at or near 100% at all times.
+
+==Level 15-34==
+'''New Upgrades:''' {{TownshipIcon|House}} ({{TownshipIcon|Population|nolink=true}}), {{TownshipIcon|Logging Camp}} ({{TownshipIcon|Wood|nolink=true}}), {{TownshipIcon|Miners Field}} ({{TownshipIcon|Stone|nolink=true}},{{TownshipIcon|Ore|nolink=true}},{{TownshipIcon|Coal|nolink=true}}), {{TownshipIcon|Blacksmiths Workshop}} ({{TownshipIcon|Bar|nolink=true}})
+
+'''New Buildings:''' {{TownshipIcon|Tailor}} ({{TownshipIcon|Clothing|nolink=true}}), {{TownshipIcon|Market}} (-0.25% Township repair costs), {{TownshipIcon|Gardens}} ({{TownshipIcon|Happiness|nolink=true}}), {{TownshipIcon|Tavern}} ({{TownshipIcon|Happiness|nolink=true}}), {{TownshipIcon|Trading Post}} (Unlocks [[Township#Trading_Post|Trader]], -0.33% Township Trader costs), {{TownshipIcon|Prats Hats}} (Unlocks Hats in the [[Shop#Township|Shop]])
+
+*All wood should go into {{TownshipIcon|Carpenters Workshop|nolink=true}} until maxed at 20/20.
+*If you don't have all {{TownshipIcon|Wooden Hut|nolink=true}} in the {{TownshipIcon|Grasslands|nolink=true}}, prioritize doing so now.
+*When you have approximately 1,500-2,000 {{TownshipIcon|Stone|nolink=true}} left, build 20 {{TownshipIcon|Miners Pit|nolink=true}} in the {{TownshipIcon|Mountains|nolink=true}}.
+*For now, you will want to balance your {{TownshipIcon|Planks|nolink=true}} usage between {{TownshipIcon|Logging Camp|nolink=true}} and {{TownshipIcon|Miners Field|nolink=true}}, prioritizing the resource you have the least of.
+*{{TownshipIcon|Clothing|nolink=true}} will become a valuable resource soon. Aim for at least 150 {{TownshipIcon|Leather|nolink=true}} per tick so you can build 1 {{TownshipIcon|Tailor|nolink=true}} every tick. More {{TownshipIcon|Leather|nolink=true}} can help get {{TownshipIcon|Basic Shelter|nolink=true}} in the {{TownshipIcon|Arid Plains|nolink=true}} built sooner. {{TownshipIcon|Clothing|nolink=true}} will be needed in high quantities in the {{TownshipIcon|Snowlands|nolink=true}} which will eventually become the best biome to build in when possible.
+*{{TownshipIcon|Food|nolink=true}} production will likely be a problem around Level 30-35. I prefer to get 20/20 {{TownshipIcon|Farmland|Farmlands|nolink=true}} in the {{TownshipIcon|Grasslands|nolink=true}} to prevent decay and then move onto {{TownshipIcon|Fishermans Dock|nolink=true}} in the {{TownshipIcon|Swamp|nolink=true}}. Aim for around 1,200 {{TownshipIcon|Food|nolink=true}} per tick for now.
+
+==Level 35-59==
+'''New Upgrades:''' {{TownshipIcon|Cottage}} ({{TownshipIcon|Population|nolink=true}}), {{TownshipIcon|Carpenters Factory}} ({{TownshipIcon|Planks|nolink=true}}), {{TownshipIcon|Hunters Lodge}} ({{TownshipIcon|Leather|nolink=true}}), {{TownshipIcon|Gatherers Lodge}} ({{TownshipIcon|Herbs|nolink=true}}), {{TownshipIcon|Infirmary}} ({{TownshipIcon|Potions|nolink=true}}), {{TownshipIcon|Clothier}} ({{TownshipIcon|Clothing|nolink=true}}), {{TownshipIcon|Warehouse}} ({{TownshipIcon|Storage|nolink=true}}), {{TownshipIcon|Large School}} ({{TownshipIcon|Education|nolink=true}})
+
+'''New Buildings:''' {{TownshipIcon|Cemetery}} (+2% {{TownshipIcon|Potions|Potion|nolink=true}} Production), {{TownshipIcon|Chapel}} ({{TownshipIcon|Worship|nolink=true}}), {{TownshipIcon|Library}} ({{TownshipIcon|Education|nolink=true}}), {{TownshipIcon|Malcs Cats}} (Unlocks Cats in the [[Shop#Township|Shop]])
+
+If you're having trouble hitting the population threshold for these upgrades and you have all housing built, try building some {{TownshipIcon|Gardens}} and {{TownshipIcon|Tavern|Taverns}}! {{TownshipIcon|Tavern|Taverns|nolink=true}} are quite expensive in {{TownshipIcon|Food|nolink=true}} while {{TownshipIcon|Gardens|nolink=true}} use {{TownshipIcon|Planks|nolink=true}}.
+
+*You'll likely want to build {{TownshipIcon|Carpenters Factory|nolink=true}} and the rest of the {{TownshipIcon|Logging Camp|nolink=true}} if you don't already have them.
+*Building up your {{TownshipIcon|Herbs|nolink=true}} supply is highly recommended. They are the only resource required to build {{TownshipIcon|Infirmary|nolink=true}} and even with max {{TownshipIcon|Herbs|Herb|nolink=true}} prudction, ittakes a few ticks to build one. If you don't start stockpiling {{TownshipIcon|Potions|nolink=true}} now, you may run out when you start building the next tier of housing, the {{TownshipIcon|Large Cottage}}.
+*Work towards getting 28-29% {{TownshipIcon|Worship|nolink=true}}. If you're very active you can increase this to 50% however 1% damage to your {{TownshipIcon|Chapel|Chapels|nolink=true}} will result in these modifiers being lost.
+**If your god is "None :(" do not build any Worship buildings. Without a god, Worship does nothing.
+*{{TownshipIcon|Bar|Bars|nolink=true}} are going needed at Level 60 so get some production now (about 200 {{TownshipIcon|Bar|Bars|nolink=true}} per tick will do for now, just to start stockpiling). If you worship Aeris, build them in the {{TownshipIcon|Mountains|nolink=true}} for the 25% bonus production at 25% {{TownshipIcon|Worship|nolink=true}}.
+*In the {{TownshipIcon|Snowlands|nolink=true}}, focus on building {{TownshipIcon|Miners Field|nolink=true}}s then {{TownshipIcon|Clothier|nolink=true}}s then {{TownshipIcon|Cottage|nolink=true}}s for now.
+*{{TownshipIcon|Malcs Cats|nolink=true}} and {{TownshipIcon|Prats Hats|nolink=true}} can be built whenever you feel like it. Don't bother repairing these until after Level 100-110. {{TownshipIcon|Malcs Cats|nolink=true}} can provide small bonuses to your Town as well as 1% Global item doubling and 5% Global GP.
+
+If you find yourself at max {{TownshipIcon|Storage|nolink=true}} and you can't build more {{TownshipIcon|Warehouse|nolink=true}}, you can make {{TownshipIcon|Trading Post|qty=1|nolink=true}} and trade out excess resources. You may not need to do this until around Level 100-110. Avoid repairing your {{TownshipIcon|Trading Post|nolink=true}} since it's very expensive to repair!
+
+==Level 60-79==
+'''New Upgrades:''' {{TownshipIcon|Large Cottage}} ({{TownshipIcon|Population|nolink=true}}), {{TownshipIcon|Forestry Camp}} ({{TownshipIcon|Wood|nolink=true}}), {{TownshipIcon|Carpenters Foundry}} ({{TownshipIcon|Planks|nolink=true}}), {{TownshipIcon|Miners Quarry}} ({{TownshipIcon|Stone|nolink=true}},{{TownshipIcon|Ore|nolink=true}},{{TownshipIcon|Coal|nolink=true}}), {{TownshipIcon|Blacksmiths Forge}} ({{TownshipIcon|Bar|nolink=true}}), {{TownshipIcon|Hunters Villa}} ({{TownshipIcon|Leather|nolink=true}}), {{TownshipIcon|Gatherers Villa}} ({{TownshipIcon|Herbs|nolink=true}})
+
+'''New Building:''' {{TownshipIcon|Magic Emporium}} ({{TownshipIcon|Rune Essence|nolink=true}})
+
+*{{TownshipIcon|Food|nolink=true}} will be needed in higher quantities soon. For now, something like 2,000-4,000 {{TownshipIcon|Food|nolink=true}} per tick will do. You'll mostly be limited by other resources anyway but this will help with building more {{TownshipIcon|Tavern|Taverns|nolink=true}} and get a nice stockpile for when you build {{TownshipIcon|Large Cottage|Large Cottages|nolink=true}}, which require 7,200 {{TownshipIcon|Food|nolink=true}} each.
+*Purchase a few {{TownshipIcon|Magic Emporium|nolink=true}}s for {{TownshipIcon|Rune Essence|nolink=true}} as it will be needed in large quantities later on. The goal would be about {{TownshipIcon|Rune Essence|qty=200-300|nolink=true}} per tick for now
+**After buying all{{TownshipIcon|Miners Quarry|Miners Quarries|nolink=true}} and {{TownshipIcon|Carpenters Foundry|Carpenters Foundries|nolink=true}} you will want to increase {{TownshipIcon|Rune Essence|nolink=true}} production to around 2,000 per tick.
+*{{TownshipIcon|Stone|nolink=true}} and {{TownshipIcon|Coal|nolink=true}} will begin to be heavily strained. Priorize the {{TownshipIcon|Miners Quarry|Miners Quarries|nolink=true}} in the {{TownshipIcon|Snowlands|nolink=true}} first due to the 2x biome modifier. Then {{TownshipIcon|Mountains|nolink=true}} if you {{TownshipIcon|Worship|nolink=true}} Aeris otherwise build in the {{TownshipIcon|Desert|nolink=true}} if your god does not decrease production there.
+*{{TownshipIcon|School|nolink=true}} and {{TownshipIcon|Library|nolink=true}} should be cheap enough that they're worth grabbing now. You may want to get {{TownshipIcon|Planks|nolink=true}} upgraded first. This should help with the lack of {{TownshipIcon|Stone|nolink=true}} and {{TownshipIcon|Coal|nolink=true}}.
+*{{TownshipIcon|Bar|Bars|nolink=true}} will start to be heavily used. {{TownshipIcon|Mountains|nolink=true}} will probably be the easiest to max out since {{TownshipIcon|Coal|nolink=true}} and {{TownshipIcon|Clothing|nolink=true}} will be in short supply.
+*{{TownshipIcon|Cemetery|nolink=true}} can be built in the {{TownshipIcon|Grasslands|nolink=true}} to further increase {{TownshipIcon|Potions|nolink=true}} production, if needed. They cost quite a bit of {{TownshipIcon|Herbs|nolink=true}} and {{TownshipIcon|Bar|nolink=true}}s so only dump your remaining resources, if you have any.
+
+==Level 80==
+'''New Upgrades:''' {{TownshipIcon|Healing Centre}} ({{TownshipIcon|Potions|nolink=true}}), {{TownshipIcon|Outfitter}} ({{TownshipIcon|Clothing|nolink=true}}), {{TownshipIcon|Repository}} ({{TownshipIcon|Storage|nolink=true}}), {{TownshipIcon|Academy}} ({{TownshipIcon|Education|nolink=true}})
+
+'''New Buildings:''' {{TownshipIcon|Town Hall}} ({{TownshipIcon|GP|nolink=true}}), {{TownshipIcon|Statue of Worship}} ({{TownshipIcon|Worship|nolink=true}})
+
+*With the {{TownshipIcon|Town Hall|nolink=true}} unlocked you can now make {{TownshipIcon|GP|nolink=true}} with Township. If you wait until Level 99, you will get an additional 15% Building Cost Reduction from the {{ItemIcon|Township Skillcape}}. This will reduce the '''resource''' cost of {{TownshipIcon|Statue of Worship|nolink=true}} which provide an additional 25% Building Cost Reduction with Aeris (15% with other gods). This is doubled during Spring with Aeris (check for your god's [[Township#Worship|2x Season here]]).
+*If you've maxed your {{TownshipIcon|Stone|nolink=true}} and {{TownshipIcon|Planks|Plank|nolink=true}} production and you have the Throne of the Herald DLC, start building all {{TownshipIcon|Magic Emporium|Magic Emporiums|nolink=true}}. You will need a lot of {{TownshipIcon|Rune Essence|nolink=true}} when you hit Level 100 and 110. Building a stockpile now will prevent any delays due to lack of {{TownshipIcon|Rune Essence|nolink=true}}.
+*Building {{TownshipIcon|Academy|Adademies|nolink=true}} will help produce {{TownshipIcon|Stone|nolink=true}} and {{TownshipIcon|Coal|nolink=true}} if you're still in need of these resources.
+
+==Level 81+==
+At this point the leveling process becomes very straightforward. Prioritize any resource that you need more of then keep building housing to maximize XP gain.
+
+*{{TownshipIcon|Market|Markets}} are something you should look into around now. They'll help reduce repair costs which should start becoming more relevant now that you're starting to max out some buildings.
+*With the [[Throne of the Herald Expansion|Throne of the Herald Expansion]] you'll get another upgrade for just about every resource at Level 100.
+*At Level 100 you unlock {{TownshipIcon|Cool Rocks}} allowing you to buy cool rock pets from the [[Shop#Township|Shop]]. These primarily improve mining and smithing but provide 5% Global Mastery as well. These cost quite a lot of {{TownshipIcon|Stone|nolink=true}} so building them with the
+*{{TownshipIcon|Trading Post|Trading Posts}} are another thing you'll want to be building around Level 100-110. When all 150 are built, this will reduce trading costs by 49.5%
+*You can increase {{TownshipIcon|Rune Essence|nolink=true}} production after you've got the basic resources done. You'll need a LOT for {{TownshipIcon|Large Repository|Large Repositories}}.
+**Storage should probably be the very last building you build. Build them during your 2x season for decreased {{TownshipIcon|Rune Essence|nolink=true}} cost
+
+==Which worship is best?==
+[[File:99 Township Repair Averages.png|thumb|Average resource generation at level 99]]
+[[File:120 Township Repair Averages.png|thumb|Average resource generation at level 120]]
+
+These charts shows the average resource per tick (hour) granted by each Worship with a maxed out at Level 99 Town with all Pets and Level 120 Town with Astrology and all Pets.
+
+For the early game and mid game, Aeris is recommended due to her larger amount of Building Cost Reduction over the other 3 starting gods. The downsides of worshipping Aeris, less {{TownshipIcon|Food|nolink=true}} and {{TownshipIcon|Leather|nolink=true}}, are relatively inconsequential since neither is a particularly valuable resource for building/leveling. The resources from each god will make a very small factor in choosing which god to worship.
+
+Once unlocked, worshipping Bane or The Herald is generally recommended due to their unique seasons. Bane gives 50% Astrology Interval Reduction during {{TownshipIcon|Nightfall|nolink=true}} and Herald gives -1s monster respawn time during {{TownshipIcon|Solar Eclipse|nolink=true}}.
+
+[https://docs.google.com/spreadsheets/d/1nuorvUH6R2t6qkill2bQf_kIC6UsP-D9LJBXAlzsz-o/edit#gid=0 Spreadsheet] used to create the Averages tables and has options to enable/disable Astrology and Pet buffs as well as set the number of Town Halls.
+
+==The Trader==
+The Trader offers consumables that are not available elsewhere. The best trades will depend on where you are in the game due to them having Township level requirements and in most cases, Skill level requirements. For boxes, pick whichever tier of box you need resources from. The exception would be {{ItemIcon|Food Box I}} which provides more overall healing per Township Resource than {{ItemIcon|Food Box II}} and {{ItemIcon|Food Box III}}. Some key items of note from the trader:
+
+*'''Food''': The {{ItemIcon|Monster Hunter Scroll}} can be very helpful as one of the earliest ways to decrease the Monster Respawn Timer. The {{ItemIcon|Ranged Hinder Scroll}} can be used to fill the consumable slot if you have no better options. The Food Boxes can also be used to quickly gather secondaries for {{ItemIcon|Pig}} and {{ItemIcon|Wolf}} tablets
+
+*'''Wood''': {{ItemIcon|Quick Burner}} will be very useful until you have the {{ItemIcon|Kindling Pouch}} or {{ItemIcon|Kindling Pouch II}} from {{Skill|Crafting}}. The Wood Boxes can be used to quickly gather secondaries for the {{ItemIcon|Ent}} Tablet.
+
+*'''Ore and Bars''': The boxes can be used to quickly gather secondaries for the {{ItemIcon|Mole}} and {{ItemIcon|Salamander}} Tablets. In addition, the Bar Box can provide resources to craft weapons and armor to be used for other summoning tablets as well.
+
+*'''Stone''': The {{ItemIcon|Melee Hinder Scroll}} can be used to fill the Consumable slot if you have no better options.
+
+*'''Essence''': {{ItemIcon|Scroll Of Essence}} can dramatically increase the amount of Essence you can mine while the {{ItemIcon|Looter Pouch}} can increase combat loot. The {{ItemIcon|Magic Hinder Scroll}} can be used to fill the Consumable slot if you have no better options.
+
+*'''Leather''': The {{ItemIcon|Gem Preserver Scroll}} can help reduce the cost for {{ItemIcon|Monkey}} tablets.
+
+*'''Potions''': The {{ItemIcon|Consumable Enhancer}} can upgrade some consumables and should be used when possible after purchasing major township upgrades. The Potion Boxes can be very useful for gathering large amounts of potions, especially potions that you don't have the level for yet, or don't greatly benefit from being upgrade like {{ItemIcon|Diamond Luck Potion I}} potions.
+
+==Boosts==
+Below is an automatically generated list of boosts that will speed up leveling. However, none of the boosts are necessary to reach 99, and can be easily skipped.
+
+{{ModifierTable|increasedSkillXP,decreasedSkillIntervalPercent,increasedSkillPreservationChance,decreasedSkillInterval,increasedChanceToDoubleItemsSkill,increasedChanceAdditionalSkillResource,increasedMasteryXP,increasedNonCombatSkillXP,increasedGlobalSkillXP|Township Boosts|false|skill=Township}}
+
+
+{{SkillGuideMenu}}
+{{Menu}}
+[[Category:Guides]]
+[[Category:Skill Training]]

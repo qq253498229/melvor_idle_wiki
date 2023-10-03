@@ -1,0 +1,143 @@
+{{V|1.2}}
+{{Otheruses|training the 城镇 skill|the skill itself|城镇}}
+
+==Before Starting 城镇==
+*{{图标|城镇}} takes approximately 2-3 weeks to reach Level 99 and 3-4 additional weeks to reach Level 120 (5-7 weeks total). This can be lower or higher depending on activity. Completing [[城镇/Tasks#Casual|Casual Tasks]] can help speed up this process.
+* 城镇 will provide you with plenty of {{图标|金币}} from {{图标|Town Hall|Town Halls}} and various resources and consumables from the {{图标|Trading Post}}.
+*Your Town will degrade if you don't keep upgrading it. Be consistent when it comes to 城镇. You should be updating your town at least once per day. More will be beneficial.
+*Degradation will delete resources if your {{图标|Storage}} cannot hold them (possibly a bug). This could slow you down significantly. This will only happen after your maximum storage is below your current storage and a tick/town update happens.
+*Seasonal Modifiers boost production early and decrease it later making it better to build quickly at the start. If you're not quite ready to commit to 城镇, it may be better to just wait until you are.
+*You cannot fail 城镇. No matter how bad it looks, there's always a solution to fixing your town.
+*Each "tick", or "town update", is takes 1 hour and is done automatically.
+
+==Quick Tips==
+*[[城镇/Tasks#Casual|Casual Tasks]] can greatly speed up the early game. Completing each of the base game [[Dungeons]] once will unlock [[城镇/Tasks#Casual|Casual Tasks]] for 10,000-75,000 {{图标|食物|nolink=true}}+{{图标|Wood|nolink=true}}+{{图标|Stone|nolink=true}}. Starting with Dragons Den, these tasks will also give {{图标|Planks|nolink=true}} and {{图标|Bar|nolink=true}}s!
+*The general goal with 城镇 is to prioritize whatever resource you're low on and then increase {{图标|Population|Population (经验)}}.
+*If you are unsure which worship to use, Aeris is the safest and pick due to having the highest cost reduction at -25% building cost which is doubled in spring. This can reduce the resource and repair costs for 城镇.
+**The cost to switch worships, including to and from "None :(" is {{金币|50000000}}. This will also destroy any worship buildings and your entire town will need 50% repairs. It's highly advised you pick a god due to this.
+*The building costs to Level 99 is around {{金币|60000000}}. {{图标|Statue of Worship}} and {{图标|Town Hall}} will add an additional {{金币|850000000}}.
+*Repairing early is a waste of resources. Building a new building repairs for '''FREE''' so when possible try to build a new building instead of repairing first and then building a new one.
+*The {{图标|Swamp}}, {{图标|Valley}} and {{图标|Arid Plains}} provide a 1.5x multiplier to most buildings in these biomes while the {{图标|Jungle}}, {{图标|Desert}} and {{图标|Snowlands}} provide a 2x multiplier to most buildings in these biomes.
+**This bonus production will be factored into the displayed values.
+*Building Cost Reduction will also reduce repair cost which can be very valuable before town halls are built.
+*{{图标|Worship}} modifiers are multiplicative, dramatically increasing resources gained.
+*If your {{图标|Population}} is low, check your {{图标|Health}}. Health is the final multiplier of population. Having 75% health will result in 75% of your population.
+*Buildings that are at 0/x Built (meaning you haven't purchased any buildings in this tier yet) do not receive any damage! This can be useful to prevent buildings from decaying (loss in resource production). This has a very niche use case.
+*Seasons have modifiers. Click 'View Season Modifiers' In-Game or the [[城镇#Seasons|Seasons Section]] on the Wiki to check them out!
+
+==General Progression==
+The general progression may change based on which god you choose. The following will be based on Aeris.
+
+#Always bulk up your {{图标|Storage}} before going to sleep to ensure you don't cap out over night!
+#Always prioritize resources you aren't generating enough of.
+#After resources, your next priority should be {{图标|Population|Population (经验)}}. If the next tier of unlocks provides another upgrade to a much needed resource, prioritizing population over resource production is a valid strategy.
+Remember, building a new building will repair for '''FREE'''. Do not repair unless that building is 100% maxed out. Its likely you can avoid repairs entirely by just building new buildings until you're past Level 90.
+
+==Level 1-14==
+'''New Buildings:''' {{图标|Basic Shelter}} ({{图标|Population|nolink=true}}), {{图标|Wooden Hut}} ({{图标|Population|nolink=true}}), {{图标|Woodcutter Camp}} ({{图标|Wood|nolink=true}}), {{图标|Carpenters Workshop}} ({{图标|Planks|nolink=true}}), {{图标|Miners Pit}} ({{图标|Stone|nolink=true}},{{图标|Ore|nolink=true}},{{图标|Coal|nolink=true}}), {{图标|Blacksmiths Smithy}} ({{图标|Bar|nolink=true}}), {{图标|Hunters Cabin}} ({{图标|Leather|nolink=true}}), {{图标|Gatherers Hut}} ({{图标|Herbs|nolink=true}}), {{图标|Herbalist}} ({{图标|Potions|nolink=true}}), {{图标|Storehouse}} ({{图标|Storage|nolink=true}}), {{图标|School}} ({{图标|Education|nolink=true}})
+
+*Build 20 {{图标|Basic Shelter|Basic Shelters|nolink=true}}, 20 {{图标|Woodcutter Camp|Woodcutter Camps|nolink=true}}, and 4 {{图标|Carpenters Workshop|Carpenters Workshops|nolink=true}}. Save the rest of your {{图标|Wood|nolink=true}} for more {{图标|Carpenters Workshop|Carpenters Workshops|nolink=true}}.
+*After having 10-20 {{图标|Carpenters Workshop|Carpenters Workshops|nolink=true}} built, start building {{图标|Wooden Hut|Wooden Huts|nolink=true}} to reach Level 15 faster.
+*If you're an {{图标|冒险}} mode character, check for any [[城镇/Tasks#Casual|Casual Tasks]] that give {{图标|Wood|nolink=true}}, {{图标|Planks|nolink=true}} or {{图标|Stone|nolink=true}}. Completing these will speed up the beginning by a lot. Non-冒险 mode characters will not have tasks yet.
+*{{图标|Health|nolink=true}} will start to decrease after Level 15. This can be increased with {{图标|Herbs|nolink=true}} or {{图标|Potions|nolink=true}} underneath the Repair All buttons. It's advised you build an {{图标|Herbalist|nolink=true}} and keep Health at or near 100% at all times.
+
+==Level 15-34==
+'''New Upgrades:''' {{图标|House}} ({{图标|Population|nolink=true}}), {{图标|Logging Camp}} ({{图标|Wood|nolink=true}}), {{图标|Miners Field}} ({{图标|Stone|nolink=true}},{{图标|Ore|nolink=true}},{{图标|Coal|nolink=true}}), {{图标|Blacksmiths Workshop}} ({{图标|Bar|nolink=true}})
+
+'''New Buildings:''' {{图标|Tailor}} ({{图标|Clothing|nolink=true}}), {{图标|Market}} (-0.25% 城镇 repair costs), {{图标|Gardens}} ({{图标|Happiness|nolink=true}}), {{图标|Tavern}} ({{图标|Happiness|nolink=true}}), {{图标|Trading Post}} (Unlocks [[城镇#Trading_Post|Trader]], -0.33% 城镇 Trader costs), {{图标|Prats Hats}} (Unlocks Hats in the [[商店#城镇|商店]])
+
+*All wood should go into {{图标|Carpenters Workshop|nolink=true}} until maxed at 20/20.
+*If you don't have all {{图标|Wooden Hut|nolink=true}} in the {{图标|Grasslands|nolink=true}}, prioritize doing so now.
+*When you have approximately 1,500-2,000 {{图标|Stone|nolink=true}} left, build 20 {{图标|Miners Pit|nolink=true}} in the {{图标|Mountains|nolink=true}}.
+*For now, you will want to balance your {{图标|Planks|nolink=true}} usage between {{图标|Logging Camp|nolink=true}} and {{图标|Miners Field|nolink=true}}, prioritizing the resource you have the least of.
+*{{图标|Clothing|nolink=true}} will become a valuable resource soon. Aim for at least 150 {{图标|Leather|nolink=true}} per tick so you can build 1 {{图标|Tailor|nolink=true}} every tick. More {{图标|Leather|nolink=true}} can help get {{图标|Basic Shelter|nolink=true}} in the {{图标|Arid Plains|nolink=true}} built sooner. {{图标|Clothing|nolink=true}} will be needed in high quantities in the {{图标|Snowlands|nolink=true}} which will eventually become the best biome to build in when possible.
+*{{图标|食物|nolink=true}} production will likely be a problem around Level 30-35. I prefer to get 20/20 {{图标|Farmland|Farmlands|nolink=true}} in the {{图标|Grasslands|nolink=true}} to prevent decay and then move onto {{图标|Fishermans Dock|nolink=true}} in the {{图标|Swamp|nolink=true}}. Aim for around 1,200 {{图标|食物|nolink=true}} per tick for now.
+
+==Level 35-59==
+'''New Upgrades:''' {{图标|Cottage}} ({{图标|Population|nolink=true}}), {{图标|Carpenters Factory}} ({{图标|Planks|nolink=true}}), {{图标|Hunters Lodge}} ({{图标|Leather|nolink=true}}), {{图标|Gatherers Lodge}} ({{图标|Herbs|nolink=true}}), {{图标|Infirmary}} ({{图标|Potions|nolink=true}}), {{图标|Clothier}} ({{图标|Clothing|nolink=true}}), {{图标|Warehouse}} ({{图标|Storage|nolink=true}}), {{图标|Large School}} ({{图标|Education|nolink=true}})
+
+'''New Buildings:''' {{图标|Cemetery}} (+2% {{图标|Potions|Potion|nolink=true}} Production), {{图标|Chapel}} ({{图标|Worship|nolink=true}}), {{图标|Library}} ({{图标|Education|nolink=true}}), {{图标|Malcs Cats}} (Unlocks Cats in the [[商店#城镇|商店]])
+
+If you're having trouble hitting the population threshold for these upgrades and you have all housing built, try building some {{图标|Gardens}} and {{图标|Tavern|Taverns}}! {{图标|Tavern|Taverns|nolink=true}} are quite expensive in {{图标|食物|nolink=true}} while {{图标|Gardens|nolink=true}} use {{图标|Planks|nolink=true}}.
+
+*You'll likely want to build {{图标|Carpenters Factory|nolink=true}} and the rest of the {{图标|Logging Camp|nolink=true}} if you don't already have them.
+*Building up your {{图标|Herbs|nolink=true}} supply is highly recommended. They are the only resource required to build {{图标|Infirmary|nolink=true}} and even with max {{图标|Herbs|Herb|nolink=true}} prudction, ittakes a few ticks to build one. If you don't start stockpiling {{图标|Potions|nolink=true}} now, you may run out when you start building the next tier of housing, the {{图标|Large Cottage}}.
+*Work towards getting 28-29% {{图标|Worship|nolink=true}}. If you're very active you can increase this to 50% however 1% damage to your {{图标|Chapel|Chapels|nolink=true}} will result in these modifiers being lost.
+**If your god is "None :(" do not build any Worship buildings. Without a god, Worship does nothing.
+*{{图标|Bar|Bars|nolink=true}} are going needed at Level 60 so get some production now (about 200 {{图标|Bar|Bars|nolink=true}} per tick will do for now, just to start stockpiling). If you worship Aeris, build them in the {{图标|Mountains|nolink=true}} for the 25% bonus production at 25% {{图标|Worship|nolink=true}}.
+*In the {{图标|Snowlands|nolink=true}}, focus on building {{图标|Miners Field|nolink=true}}s then {{图标|Clothier|nolink=true}}s then {{图标|Cottage|nolink=true}}s for now.
+*{{图标|Malcs Cats|nolink=true}} and {{图标|Prats Hats|nolink=true}} can be built whenever you feel like it. Don't bother repairing these until after Level 100-110. {{图标|Malcs Cats|nolink=true}} can provide small bonuses to your Town as well as 1% Global item doubling and 5% Global 金币.
+
+If you find yourself at max {{图标|Storage|nolink=true}} and you can't build more {{图标|Warehouse|nolink=true}}, you can make {{图标|Trading Post|qty=1|nolink=true}} and trade out excess resources. You may not need to do this until around Level 100-110. Avoid repairing your {{图标|Trading Post|nolink=true}} since it's very expensive to repair!
+
+==Level 60-79==
+'''New Upgrades:''' {{图标|Large Cottage}} ({{图标|Population|nolink=true}}), {{图标|Forestry Camp}} ({{图标|Wood|nolink=true}}), {{图标|Carpenters Foundry}} ({{图标|Planks|nolink=true}}), {{图标|Miners Quarry}} ({{图标|Stone|nolink=true}},{{图标|Ore|nolink=true}},{{图标|Coal|nolink=true}}), {{图标|Blacksmiths Forge}} ({{图标|Bar|nolink=true}}), {{图标|Hunters Villa}} ({{图标|Leather|nolink=true}}), {{图标|Gatherers Villa}} ({{图标|Herbs|nolink=true}})
+
+'''New Building:''' {{图标|魔法 Emporium}} ({{图标|Rune Essence|nolink=true}})
+
+*{{图标|食物|nolink=true}} will be needed in higher quantities soon. For now, something like 2,000-4,000 {{图标|食物|nolink=true}} per tick will do. You'll mostly be limited by other resources anyway but this will help with building more {{图标|Tavern|Taverns|nolink=true}} and get a nice stockpile for when you build {{图标|Large Cottage|Large Cottages|nolink=true}}, which require 7,200 {{图标|食物|nolink=true}} each.
+*Purchase a few {{图标|魔法 Emporium|nolink=true}}s for {{图标|Rune Essence|nolink=true}} as it will be needed in large quantities later on. The goal would be about {{图标|Rune Essence|qty=200-300|nolink=true}} per tick for now
+**After buying all{{图标|Miners Quarry|Miners Quarries|nolink=true}} and {{图标|Carpenters Foundry|Carpenters Foundries|nolink=true}} you will want to increase {{图标|Rune Essence|nolink=true}} production to around 2,000 per tick.
+*{{图标|Stone|nolink=true}} and {{图标|Coal|nolink=true}} will begin to be heavily strained. Priorize the {{图标|Miners Quarry|Miners Quarries|nolink=true}} in the {{图标|Snowlands|nolink=true}} first due to the 2x biome modifier. Then {{图标|Mountains|nolink=true}} if you {{图标|Worship|nolink=true}} Aeris otherwise build in the {{图标|Desert|nolink=true}} if your god does not decrease production there.
+*{{图标|School|nolink=true}} and {{图标|Library|nolink=true}} should be cheap enough that they're worth grabbing now. You may want to get {{图标|Planks|nolink=true}} upgraded first. This should help with the lack of {{图标|Stone|nolink=true}} and {{图标|Coal|nolink=true}}.
+*{{图标|Bar|Bars|nolink=true}} will start to be heavily used. {{图标|Mountains|nolink=true}} will probably be the easiest to max out since {{图标|Coal|nolink=true}} and {{图标|Clothing|nolink=true}} will be in short supply.
+*{{图标|Cemetery|nolink=true}} can be built in the {{图标|Grasslands|nolink=true}} to further increase {{图标|Potions|nolink=true}} production, if needed. They cost quite a bit of {{图标|Herbs|nolink=true}} and {{图标|Bar|nolink=true}}s so only dump your remaining resources, if you have any.
+
+==Level 80==
+'''New Upgrades:''' {{图标|Healing Centre}} ({{图标|Potions|nolink=true}}), {{图标|Outfitter}} ({{图标|Clothing|nolink=true}}), {{图标|Repository}} ({{图标|Storage|nolink=true}}), {{图标|Academy}} ({{图标|Education|nolink=true}})
+
+'''New Buildings:''' {{图标|Town Hall}} ({{图标|金币|nolink=true}}), {{图标|Statue of Worship}} ({{图标|Worship|nolink=true}})
+
+*With the {{图标|Town Hall|nolink=true}} unlocked you can now make {{图标|金币|nolink=true}} with 城镇. If you wait until Level 99, you will get an additional 15% Building Cost Reduction from the {{图标|城镇 Skillcape}}. This will reduce the '''resource''' cost of {{图标|Statue of Worship|nolink=true}} which provide an additional 25% Building Cost Reduction with Aeris (15% with other gods). This is doubled during Spring with Aeris (check for your god's [[城镇#Worship|2x Season here]]).
+*If you've maxed your {{图标|Stone|nolink=true}} and {{图标|Planks|Plank|nolink=true}} production and you have the 使者的王座 DLC, start building all {{图标|魔法 Emporium|魔法 Emporiums|nolink=true}}. You will need a lot of {{图标|Rune Essence|nolink=true}} when you hit Level 100 and 110. Building a stockpile now will prevent any delays due to lack of {{图标|Rune Essence|nolink=true}}.
+*Building {{图标|Academy|Adademies|nolink=true}} will help produce {{图标|Stone|nolink=true}} and {{图标|Coal|nolink=true}} if you're still in need of these resources.
+
+==Level 81+==
+At this point the leveling process becomes very straightforward. Prioritize any resource that you need more of then keep building housing to maximize 经验 gain.
+
+*{{图标|Market|Markets}} are something you should look into around now. They'll help reduce repair costs which should start becoming more relevant now that you're starting to max out some buildings.
+*With the [[使者的王座 Expansion|使者的王座 Expansion]] you'll get another upgrade for just about every resource at Level 100.
+*At Level 100 you unlock {{图标|Cool Rocks}} allowing you to buy cool rock pets from the [[商店#城镇|商店]]. These primarily improve mining and smithing but provide 5% Global 专精 as well. These cost quite a lot of {{图标|Stone|nolink=true}} so building them with the
+*{{图标|Trading Post|Trading Posts}} are another thing you'll want to be building around Level 100-110. When all 150 are built, this will reduce trading costs by 49.5%
+*You can increase {{图标|Rune Essence|nolink=true}} production after you've got the basic resources done. You'll need a LOT for {{图标|Large Repository|Large Repositories}}.
+**Storage should probably be the very last building you build. Build them during your 2x season for decreased {{图标|Rune Essence|nolink=true}} cost
+
+==Which worship is best?==
+[[File:99 城镇 Repair Averages.png|thumb|Average resource generation at level 99]]
+[[File:120 城镇 Repair Averages.png|thumb|Average resource generation at level 120]]
+
+These charts shows the average resource per tick (hour) granted by each Worship with a maxed out at Level 99 Town with all 宠物 and Level 120 Town with 星象学 and all 宠物.
+
+For the early game and mid game, Aeris is recommended due to her larger amount of Building Cost Reduction over the other 3 starting gods. The downsides of worshipping Aeris, less {{图标|食物|nolink=true}} and {{图标|Leather|nolink=true}}, are relatively inconsequential since neither is a particularly valuable resource for building/leveling. The resources from each god will make a very small factor in choosing which god to worship.
+
+Once unlocked, worshipping Bane or The Herald is generally recommended due to their unique seasons. Bane gives 50% 星象学 间隔 Reduction during {{图标|Nightfall|nolink=true}} and Herald gives -1s monster respawn time during {{图标|Solar Eclipse|nolink=true}}.
+
+[https://docs.google.com/spreadsheets/d/1nuorvUH6R2t6qkill2bQf_kIC6UsP-D9LJBXAlzsz-o/edit#gid=0 Spreadsheet] used to create the Averages tables and has options to enable/disable 星象学 and 宠物 buffs as well as set the number of Town Halls.
+
+==The Trader==
+The Trader offers consumables that are not available elsewhere. The best trades will depend on where you are in the game due to them having 城镇 level requirements and in most cases, Skill level requirements. For boxes, pick whichever tier of box you need resources from. The exception would be {{图标|食物 Box I}} which provides more overall healing per 城镇 Resource than {{图标|食物 Box II}} and {{图标|食物 Box III}}. Some key items of note from the trader:
+
+*'''食物''': The {{图标|Monster Hunter Scroll}} can be very helpful as one of the earliest ways to decrease the Monster Respawn Timer. The {{图标|远程 Hinder Scroll}} can be used to fill the consumable slot if you have no better options. The 食物 Boxes can also be used to quickly gather secondaries for {{图标|Pig}} and {{图标|Wolf}} tablets
+
+*'''Wood''': {{图标|Quick Burner}} will be very useful until you have the {{图标|Kindling Pouch}} or {{图标|Kindling Pouch II}} from {{图标|制造}}. The Wood Boxes can be used to quickly gather secondaries for the {{图标|Ent}} Tablet.
+
+*'''Ore and Bars''': The boxes can be used to quickly gather secondaries for the {{图标|Mole}} and {{图标|Salamander}} Tablets. In addition, the Bar Box can provide resources to craft weapons and armor to be used for other summoning tablets as well.
+
+*'''Stone''': The {{图标|近战 Hinder Scroll}} can be used to fill the Consumable slot if you have no better options.
+
+*'''Essence''': {{图标|Scroll Of Essence}} can dramatically increase the amount of Essence you can mine while the {{图标|Looter Pouch}} can increase combat loot. The {{图标|魔法 Hinder Scroll}} can be used to fill the Consumable slot if you have no better options.
+
+*'''Leather''': The {{图标|Gem Preserver Scroll}} can help reduce the cost for {{图标|Monkey}} tablets.
+
+*'''Potions''': The {{图标|Consumable Enhancer}} can upgrade some consumables and should be used when possible after purchasing major township upgrades. The Potion Boxes can be very useful for gathering large amounts of potions, especially potions that you don't have the level for yet, or don't greatly benefit from being upgrade like {{图标|Diamond Luck Potion I}} potions.
+
+==Boosts==
+Below is an automatically generated list of boosts that will speed up leveling. However, none of the boosts are necessary to reach 99, and can be easily skipped.
+
+{{ModifierTable|increasedSkill经验,decreasedSkill间隔Percent,increasedSkillPreservationChance,decreasedSkill间隔,increasedChanceToDoubleItemsSkill,increasedChanceAdditionalSkillResource,increased专精经验,increasedNon战斗Skill经验,increasedGlobalSkill经验|城镇 Boosts|false|skill=城镇}}
+
+
+{{Skill指南Menu}}
+{{Menu}}
+[[Category:指南s]]
+[[Category:Skill Training]]

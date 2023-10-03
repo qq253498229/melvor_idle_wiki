@@ -1,0 +1,8 @@
+= 战斗指南
+:toc: left
+:toclevels: 5
+:toc-title: 目录
+:sectnums: 6
+:leveloffset: +1
+
+include::战斗-练级.adoc[]

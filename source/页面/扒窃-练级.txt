@@ -1,0 +1,39 @@
+{{V|1.1.2}}
+{{Disclaimer|This guide only contains instructions for the base game, and does not take {{TotH}} [[Throne of the Herald Expansion|Throne of the Herald]] options into consideration}}
+{{Otheruses|training the Thieving skill|the skill itself|Thieving}}
+
+== Training ==
+Leveling is largely done by swapping to the highest experience per action enemy to gain levels quickly, as long as the success chance remains fairly high. [https://docs.google.com/spreadsheets/d/1iRPDZznC5HizeWyyADt7bymFMWxN_jzFP1dGl8Xa4P4/edit#gid=0 This spreadsheet] can be used to calculate your XP per hour on individual targets, as well as GP per hour. (Editor's note: This spreadsheet is outdated, and only contains content up to level 99. For expansion content, consider using [https://docs.google.com/spreadsheets/d/1caJNSMYi6fjqEpSe3vhU4MXgqimAy8JePyk-NqXoKjY/edit#gid=0 this experimental one] instead, which will replace the current one once any issues have been ironed out.) Make a copy of the document and fill in your own details. Note that in the later stages, the {{Icon|type=thieving|Lumberjack}} and especially {{Icon|type=thieving|Acolyte}} have lower Perception than other targets in their level range, thus being good options for efficient XP gain. While the same is true for the {{Icon|type=thieving|Squire}}, the player is unlikely to have much use for their drops, and it is preferable not to split the mastery levels.
+
+It is worth considering spending extra time pickpocketing the {{Icon|type=thieving|Golbin Chief}} for the {{ItemIcon|Golbin Mask}}, and {{Icon|type=thieving|Bandit Thug}} for the {{ItemIcon|Thiever's Cape}} to increase XP rates as well as success chance. {{Icon|type=thieving|Farmer}} is also worth pickpocketing even after higher XP targets are available. This gives the player a large base of seeds to use with {{Skill|Farming}}, especially {{ItemIcon|Strawberry Seeds}} for the {{ItemIcon|Gentle Hands Potion}}.
+
+If the player's {{Skill|Prayer}} is high enough, {{PrayerIcon|Protect Item}} and {{PrayerIcon|Safeguard}} /{{PrayerIcon|Stone Skin}} can be used without costing any prayer points.
+
+升级主要是通过切换到每次行动经验最高的敌人来迅速提升级别，只要成功率保持相当高。您可以使用[https://docs.google.com/spreadsheets/d/1iRPDZznC5HizeWyyADt7bymFMWxN_jzFP1dGl8Xa4P4/edit#gid=0 此电子表格]来计算每个目标的每小时经验和每小时金币。 （编辑注：此电子表格已过时，仅包含至99级的内容。对于扩展内容，请考虑改用[https://docs.google.com/spreadsheets/d/1caJNSMYi6fjqEpSe3vhU4MXgqimAy8JePyk-NqXoKjY/edit#gid=0 这个实验性的电子表格]，一旦所有问题都得到解决，它将取代当前的电子表格。）复制文档并填写您自己的详细信息。请注意，在后期阶段，{{Icon|type=thieving|Lumberjack}} 和尤其是{{Icon|type=thieving|Acolyte}} 的感知度比其级别范围内的其他目标低，因此是获得高效经验的不错选择。虽然对于{{Icon|type=thieving|Squire}}也是如此，但玩家不太可能对其掉落物有太多用途，最好不要分散掌握级别。
+
+值得考虑的是，在提高XP速度和成功率的同时，多花点时间扒窃{{Icon|type=thieving|Golbin Chief}}以获得{{ItemIcon|Golbin Mask}}，以及扒窃{{Icon|type=thieving|Bandit Thug}}以获得{{ItemIcon|Thiever's Cape}}。 即使有更高的XP目标可供选择，扒窃{{Icon|type=thieving|Farmer}}也是值得的。这为玩家提供了大量的种子，可以与{{Skill|Farming}}一起使用，特别是{{ItemIcon|Strawberry Seeds}}，用于{{ItemIcon|Gentle Hands Potion}}。
+
+如果玩家的{{Skill|Prayer}}足够高，可以在不消耗任何祷告点数的情况下使用{{PrayerIcon|Protect Item}}和{{PrayerIcon|Safeguard}} /{{PrayerIcon|Stone Skin}}。
+
+==Boosters==
+===XP===
+{{ModifierTable|increasedGlobalSkillXP,increasedSkillXP,increasedNonCombatSkillXP|XP Boost|false|skill=Thieving}}
+
+===GP===
+{{ModifierTable|increasedGPGlobal,increasedGPFromThieving|GP Boost|false|skill=Thieving}}
+
+===Action Time===
+{{ModifierTable|decreasedSkillIntervalPercent,decreasedSkillInterval,decreasedGlobalSkillIntervalPercent|Action Interval|false|skill=Thieving}}
+
+===Stealth===
+Because of the unique Stealth and Perception mechanics (please see [[Thieving|the main page]] for more details), it is useful to increase your Stealth as much as possible in order to maximise your success chance.
+{{ModifierTable|increasedThievingStealth|Stealth|false|skill=Thieving}}
+
+===Food===
+Food is highly recommended for anything with a less than 100% success rate. Higher {{Skill|Hitpoints}} will allow you to go without food for longer, and damage reduction Armor will allow you to eat less food. {{ItemIcon|Thieving Gloves}} or {{ItemIcon|Gloves of Silence}} will be helpful if you can afford them, but are not necessary.
+{{UpgradeIcon|Auto Eat}} is useful for idling, but if the enemy's Max Hit is higher than your Auto-Eat threshold, it is still possible to die. Your current Auto-Eat threshold can be found by hovering over the Auto-Eat icon. To reduce the target's Max Hit, wear equipment that provides [[Damage Reduction]].
+
+{{SkillGuideMenu}}
+{{Menu}}
+[[Category:Guides]]
+[[Category:Skill Training]]

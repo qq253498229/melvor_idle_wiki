@@ -1,0 +1,131 @@
+下面是翻译的术语对照，之后请按照这些将英语翻译成汉语，或者是将汉语翻译成英语，然后说知道了就可以，这部分是设定，不用翻译，还有直接翻译就可以，不用说这是xxx的翻译：
+梅尔沃放置:Melvor Idle
+非战斗:Non-Combat
+战斗三角:Combat Triangle
+战斗:Combat
+近战:Melee
+远程:Ranged
+戳刺:Stab
+劈砍:Slash
+格挡:Block
+熔岩洞窟:Volcanic Cave
+自动进食:Auto Eat
+模拟器:Simulator
+财宝护符:Amulet of Looting
+伐木:Woodcutting
+钓鱼:Fishing
+生火:Firemaking
+烹饪:Cooking
+采矿:Mining
+锻造:Smithing
+扒窃:Thieving
+农务:Farming
+弓匠:Fletching
+制造:Crafting
+符文锻造:Runecrafting
+草药学:Herblore
+灵巧:Agility
+召唤:Summoning
+星象学:Astrology
+城镇:Township
+生活类魔法:Alternative Magic
+攻击:Attack
+力量:Strength
+防御:Defence
+生命值:Hitpoints
+远程:Ranged
+魔法:Magic
+祝祭:Prayer
+屠杀者:Slayer
+制图学: Cartography
+考古学:Archaeology
+新手指南:Beginners Guide
+指南:Guide
+仓库:Bank
+专精:Mastery
+赚钱:Money Making
+商店:Shop
+彩蛋:Easter Eggs
+宠物:Pets:Pet
+戈耳宾劫掠:Golbin Raid
+使者的王座:Throne of the Herald
+使者的王座:TotH
+探索地图集:Atlas of Discovery
+食物:Food
+经验:XP
+金币:GP
+狄德利:Deedree
+艾丽丹:Iridan
+艾美利亚:Ameria
+泰拉:Terra
+维拉:Vale
+尼斯:Nysa
+希里亚:Syllia
+阿拉奇:Arachi
+廓尔:Ko
+特鲁斯:Tellus
+海登:Hyden
+奇米康:Qimican
+瓦利尔:Variel
+海密尔:Haemir
+罗萨妮雅:Rosaniya
+阿斯塔:Ashtar
+游戏模式:Game Mode
+硬核:Hardcore
+冒险:Adventure
+进程:Progression
+遁入迷雾:Into the Mist
+湮灭黑暗活动:Impending Darkness Event
+幽暗水域:Dark Waters
+不洁废土:Unhallowed Wasteland
+钻石运势药水:Diamond Luck Potions
+古代胸甲:Ancient Platebody
+妖邪真龙:Wicked Greater Dragon
+狩猎真龙:Hunting Greater Dragon
+险恶山脉:Perilous Peaks
+铺张之戒:Wasteful Ring
+生命偷取:Lifesteal
+修正:modifier
+上古之冠:Elder Crown
+热忱:Fervor
+粘液森林:Forest of Goo
+干旱平原:Arid Plains
+猎手戒指:Hunter's Ring
+屠杀者头盔:Slayer Helmet
+屠杀者斗篷:Slayer Skillcape
+石板:Tablets
+加成:bonus
+护甲:armor
+副本:dungeon
+艾利之书:Book of Eli
+巫师之厅:Hall of Wizards
+死灵法师:Necromancer
+废墟遗迹:Runic Ruins
+秘教之书:Book of Occults
+骷髅斗篷:Skull Cape
+伤害减免:DR
+伤害减免:Damage Reduction
+落日刺剑:Sunset Rapier
+沙尘暴戒指:Sandstorm Ring
+元素圣斗士之怒:Fury of the Elemental Zodiacs
+精准护符:Amulet of Accuracy
+力量护符:Amulet of Strength
+防御护符:Amulet of Defence
+魔法护符:Amulet of Magic
+远程护符:Amulet of Ranged
+荣耀护符:Amulet of Glory
+狂怒护符:Amulet of Fury
+折磨护符:Amulet of Torture
+精英精准护符:Elite Amulet of Accuracy
+精英力量护符:Elite Amulet of Strength
+精英防御护符:Elite Amulet of Defence
+精英魔法护符:Elite Amulet of Magic
+精英远程护符:Elite Amulet of Ranged
+精英荣耀护符:Elite Amulet of Glory
+大气之神地牢:Air God Dungeon
+流水之神地牢:Water God Dungeon
+大地之神地牢:Earth God Dungeon
+火焰之神地牢:Fire God Dungeon
+云爆法杖:Cloudburst Staff
+灵魂之力戒指:Ring of Spirit Power
+天机守护者普拉特:Prat, the Protector of Secrets
