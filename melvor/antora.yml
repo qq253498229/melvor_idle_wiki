@@ -9,6 +9,5 @@ asciidoc:
     page-toclevels: 3
     page-toctitle: 目录
     sectnums: 6
-    toc: left
     toc-title: 目录
     toclevels: 6

@@ -1,8 +1,8 @@
 import * as fs from 'fs-extra';
 
 const configJson = './translate.json';
-const sourceDirectory = '../source/adoc'; // 原始文件目录
-const targetDirectory = '../source/adoc'; // 输出文件目录
+const sourceDirectory = '../melvor/modules/ROOT/pages'; // 原始文件目录
+const targetDirectory = '../melvor/modules/ROOT/pages'; // 输出文件目录
 
 function replaceText(config: any, type: string, fileText: string) {
   let newFileType = fileText;
