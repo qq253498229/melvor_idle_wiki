@@ -1,0 +1,35 @@
+= 召唤
+
+> 这篇文章是关于召唤技能的。关于技能的训练，请参阅xref:../练级/召唤-练级.adoc[召唤/训练]。
+
+召唤是一项技能，允许你制造用于各种使魔的召唤符文，这些使魔在佩戴时会提供各种类型的加成效果。在单个装备栏中可以带两种类型的符文。当同时装备某些使魔的组合时，除了它们单独的常规加成外，还会提供一种连携效果。
+
+==	机制
+
+===	收集召唤印记
+
+为了制造给定召唤兽的召唤卷轴，玩家必须至少拥有相应的召唤印记之一。召唤兽的召唤印记是通过在召唤技能以外的技能中获得经验来获得的。召唤印记屏幕将显示每个玩家有资格召唤的召唤兽的印记可以在哪些技能中找到。
+
+在玩家达到制作相应卷轴的级别之前，无法找到召唤印记（如果在冒险模式中玩，玩家还必须解锁召唤技能才能开始寻找召唤印记）。在级别1时，有两个可以找到的印记：Golbin Thief的标记，这是在使用增加攻击、力量或防御经验的战斗方式进行训练时发现的，以及Ent的标记，这是在伐木时发现的。
+
+一旦为给定的召唤兽找到了第一个印记，玩家在创建至少一个该召唤兽的召唤卷轴之前将不再找到任何印记。
+
+召唤印记不是物品，不会存放到玩家的银行中。一旦找到，它们将填充进相应召唤兽印记级别的升级进度条。每级的印记数量和效益如下：
+
+
+====	Mark Discovery Chance
+=====	Maximising Mark Discovery Chance
+===	Gaining Summoning XP
+====	Creating Summoning Tablets
+====	Using Familiars
+===	Unlocking And Using Synergies
+==	Summoning Marks
+==	Summoning Tablets
+==	Synergies
+==	Mastery Unlocks
+===	Item Mastery Unlocks
+===	Mastery Pool Checkpoints
+==	Skillcape
+==	Pet
+==	Potion
+==	Skill Boosts

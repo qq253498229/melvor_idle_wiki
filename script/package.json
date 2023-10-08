@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "translate": "ts-node translate.ts",
-    "translate1": "ts-node translate1.ts"
+    "translate1": "ts-node translate1.ts",
+    "test1": "ts-node create-adoc.ts"
   },
   "devDependencies": {
     "@types/node": "^20.6.3",
