@@ -2472,3 +2472,13 @@ footer.footer {
         color: inherit
     }
 }
+
+.stemblock {
+    background-color: #eee;
+    padding-left: 0.4em;
+}
+
+.MathJax {
+    background-color: #eee;
+    padding-left: 0.4em;
+}

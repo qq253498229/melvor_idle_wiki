@@ -11,7 +11,8 @@ MathJax.Hub.Config({
   messageStyle: "none",
   tex2jax: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]], ignoreClass: "nostem|nolatexmath" },
   asciimath2jax: { delimiters: [["\\$", "\\$"]], ignoreClass: "nostem|noasciimath" },
-  TeX: { equationNumbers: { autoNumber: "none" } }
+  TeX: { equationNumbers: { autoNumber: "none" } },
+  displayAlign: "left"
 })
 MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
   MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {

@@ -552,21 +552,84 @@
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p><strong>注意</strong>：对于生火制作技能，最高的发现几率是在燃烧具有最高精通等级的木材时实现的，而不仅仅是选择燃烧时间最短的木材。请查看以下内容以获取更多信息。</p>
+</div>
 <div class="sect4">
-<h5 id="_maximising_mark_discovery_chance"><a class="anchor" href="#_maximising_mark_discovery_chance"></a>Maximising Mark Discovery Chance</h5>
-
+<h5 id="_最大化印记发现几率"><a class="anchor" href="#_最大化印记发现几率"></a>最大化印记发现几率</h5>
+<div class="paragraph">
+<p>提高宠物随时间获取印记的几率可以通过以下方式实现：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>装备相同宠物的符文石板。对于非战斗技能（除生活类魔法外），这将使几率增加2.5倍，对于战斗技能和生活类魔法，几率增加一倍。</p>
+</li>
+<li>
+<p>选择生火技能中具有最高精通等级的木材进行燃烧。由于上面提到的行动时间对每种木材都不同，拥有最高精通等级的木材相对于基本燃烧间隔来说是最快的，从而最大化了印记几率。</p>
+</li>
+<li>
+<p>减少以下消耗资源的技能的行动时间：烹饪、锻造、弓匠、制作、符文铸造和草药学。这将提高获得印记的速率。对于其他任何技能，行动时间的变化都不会影响获得印记的速率，尽管通常更长的行动时间通常更可取，以减少随时间消耗的符文石板数量。</p>
+</li>
+<li>
+<p>对于战斗技能：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>最大化玩家的命中几率将提高获得印记的速率，因为印记只在攻击成功命中时才会计算几率，而在未命中时一定不会获得。</p>
+</li>
+<li>
+<p>使用具有特殊攻击的武器，可以进行多次攻击，但这不会增加发现印记的几率，因为用于除第一个攻击之外的后续攻击的行动时间是自上次攻击以来的时间，而不是基本攻击间隔。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_gaining_summoning_xp"><a class="anchor" href="#_gaining_summoning_xp"></a>1.2. Gaining Summoning XP</h3>
-<div class="sect3">
-<h4 id="_creating_summoning_tablets"><a class="anchor" href="#_creating_summoning_tablets"></a>1.2.1. Creating Summoning Tablets</h4>
-
+<h3 id="_获得召唤经验"><a class="anchor" href="#_获得召唤经验"></a>1.2. 获得召唤经验</h3>
+<div class="paragraph">
+<p>一旦玩家拥有至少一个召唤印记，他们就可以开始提升召唤技能。有两种方式可以获得召唤经验：制作召唤石板和使用召唤石板。然而请注意，只有制作石板会获得精通经验。</p>
 </div>
 <div class="sect3">
-<h4 id="_using_familiars"><a class="anchor" href="#_using_familiars"></a>1.2.2. Using Familiars</h4>
-
+<h4 id="_制作召唤石板"><a class="anchor" href="#_制作召唤石板"></a>1.2.1. 制作召唤石板</h4>
+<div class="paragraph">
+<p>相对于其他工艺技能而言，制作召唤石板是一个较慢的过程。默认情况下，每个行动需要5秒钟，并产生25个石板。如果玩家拥有“林道远足(6FT)”，则可以将间隔减少到4.85秒。</p>
+</div>
+<div class="paragraph">
+<p>通过一系列方式，可以进一步减少间隔时间，包括使用来自商店以屠杀者硬币购买的死灵法师套装（当装备全套时，提供1秒的间隔缩短），通过“符文匍匐(12RC)”灵巧障碍获得的5%，通过奇米康星座获得的5%，通过至尊召唤技能斗篷获得的10%，通过鹰和狐狸的连携作用获得的10%，通过精英专业支柱获得的3%，以及通过哈罗德获得的2%。当所有奖励都生效时，间隔时间可以减少至1.25秒。</p>
+</div>
+<div class="paragraph">
+<p>可以通过多种方式增加制作的石板数量，包括”遗迹远足8RT“灵巧障碍、召唤的95%熟练池检查点、召唤技能斗篷、死灵法师套装和死灵法师药水。</p>
+</div>
+<div class="paragraph">
+<p>无论制作的石板数量多少，每个操作都会获得相同数量的经验点数。获得的基本经验点数等于:</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$\text{获取经验} = 5 + 2 \times \lfloor \text{召唤等级需求} \times 0.2 \rfloor\$
+</div>
+</div>
+<div class="paragraph">
+<p>例如，制作一个猪召唤石板(需要25级召唤等级)可以获得 \$5+2 \times \lfloor 25 \times 0.2 \rfloor = 15 \text{点经验}\$：</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_使用召唤石板"><a class="anchor" href="#_使用召唤石板"></a>1.2.2. 使用召唤石板</h4>
+<div class="paragraph">
+<p>一旦创建了召唤石板，就可以通过使用这些召唤石板来更快地获得召唤经验。每次消耗石板的次数时都会获得经验点数。对于非战斗石板，这发生在玩家执行相关技能的动作时。对于战斗石板，这发生在每次宠物的攻击条读满后，这需要3秒的时间。此外，邪教徒和女巫召唤石板将在执行每个生活类魔法动作时消耗，比通过战斗快1秒，但不会从石板中获得其他好处。</p>
+</div>
+<div class="paragraph">
+<p>获得的经验遵循一个公式，该公式基于召唤物的等级和动作所需的时间（以秒为单位）：</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$\text{获取经验} = \frac{\text{行动所需的时间} \times \text{召唤等级需求} \times 10}{\text{召唤等级需求} + 10}\$
+</div>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -642,7 +705,8 @@ MathJax.Hub.Config({
   messageStyle: "none",
   tex2jax: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]], ignoreClass: "nostem|nolatexmath" },
   asciimath2jax: { delimiters: [["\\$", "\\$"]], ignoreClass: "nostem|noasciimath" },
-  TeX: { equationNumbers: { autoNumber: "none" } }
+  TeX: { equationNumbers: { autoNumber: "none" } },
+  displayAlign: "left"
 })
 MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
   MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
