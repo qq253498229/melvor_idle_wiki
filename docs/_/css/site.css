@@ -2482,3 +2482,7 @@ footer.footer {
     background-color: #eee;
     padding-left: 0.4em;
 }
+
+* {
+    font-family: "Source Han Sans CN"
+}
