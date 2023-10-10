@@ -383,7 +383,7 @@
 <p>为了制造某个召唤兽的召唤石板，玩家必须至少拥有相应的召唤印记之一。召唤兽的召唤印记是通过在召唤技能以外的技能中获得经验来获得的。召唤印记页面可以显示玩家被允许召唤的召唤兽的印记可以在哪些技能中找到。</p>
 </div>
 <div class="paragraph">
-<p>在玩家达到制作相应石板的级别之前，无法找到召唤印记（如果在冒险模式中玩，玩家还必须解锁召唤技能才能开始寻找召唤印记）。在级别1时，有两个可以找到的印记：戈耳宾小偷的标记，这是在使用增加攻击、力量或防御经验的战斗方式进行训练时发现的；以及恩特树人的标记，这是在伐木时发现的。</p>
+<p>在玩家达到制作相应石板的级别之前，无法找到召唤印记（如果在冒险模式中玩，玩家还必须解锁召唤技能才能开始寻找召唤印记）。在级别1时，有两个可以找到的印记：戈耳宾小偷的印记，这是在使用增加攻击、力量或防御经验的战斗方式进行训练时发现的；以及恩特树人的印记，这是在伐木时发现的。</p>
 </div>
 <div class="paragraph">
 <p><strong>一旦为某个召唤兽找到了第一个印记，玩家在制造至少一个该召唤兽的召唤石板之前将不再找到任何印记。</strong></p>
@@ -401,7 +401,7 @@
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">等级</th>
-<th class="tableblock halign-left valign-top">升级所需标记数量</th>
+<th class="tableblock halign-left valign-top">升级所需印记数量</th>
 <th class="tableblock halign-left valign-top">累计所需印记</th>
 <th class="tableblock halign-left valign-top">效果</th>
 </tr>
@@ -451,24 +451,107 @@
 <div class="ulist">
 <ul>
 <li>
-<p>所有战斗技能（包括屠杀者技能）的标记在每次攻击中都有获得的机会，而不是只有在杀死怪物时才能获得。</p>
+<p>所有战斗技能（包括屠杀者技能）的印记在每次攻击中都有获得的机会，而不是只有在杀死怪物时才能获得。</p>
 </li>
 <li>
-<p>屠杀者标记只能从玩家当前的屠杀者任务怪物那里获得，不能从其他屠杀者怪物那里找到。</p>
+<p>屠杀者印记只能从玩家当前的屠杀者任务怪物那里获得，不能从其他屠杀者怪物那里找到。</p>
 </li>
 <li>
-<p>只有在使用每次玩家攻击都要消耗点数的祝祭时才能找到祝祭标记。</p>
+<p>只有在使用每次玩家攻击都要消耗点数的祝祭时才能找到祝祭印记。</p>
 </li>
 <li>
-<p>在进行生活类魔法时才能找到魔法标记。</p>
+<p>在进行生活类魔法时才能找到魔法印记。</p>
 </li>
 <li>
-<p>在从蛮族渔场的钓鱼区捕鱼时不能找到力量标记。</p>
+<p>在从蛮族渔场的钓鱼区捕鱼时不能找到力量印记。</p>
 </li>
 </ul>
 </div>
 <div class="sect3">
-<h4 id="_mark_discovery_chance"><a class="anchor" href="#_mark_discovery_chance"></a>1.1.1. Mark Discovery Chance</h4>
+<h4 id="_印记发现的几率"><a class="anchor" href="#_印记发现的几率"></a>1.1.1. 印记发现的几率</h4>
+<div class="paragraph">
+<p>每次行动发现印记的几率可以由以下公式算出：</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$\text{发现印记的几率} = \frac{\text{Action Time}}{(\text{Tier}+1)^2 \times 200} \times \text{Equipped Modifier}\$
+</div>
+</div>
+<div class="paragraph">
+<p>其中：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Tier</strong> 是印记的级别</p>
+</li>
+<li>
+<p><strong>Equipped Modifier</strong> 取决于：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>如果正在为已装备的召唤物发现印记，并且该宠物是在非战斗技能中发现的，则为2.5</p>
+</li>
+<li>
+<p>如果已装备的宠物是在战斗技能中发现的，则为2</p>
+</li>
+<li>
+<p>否则为1</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Action Time</strong> 是行动所需的时间（以秒为单位），对于战斗技能来说，它等于玩家的攻击速度。请注意，对于以下技能，不管实际行动所需的时间是多少，该值都被固定为以下值：</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">技能</th>
+<th class="tableblock halign-left valign-top">每次行动的秒数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">生火</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">指定木材基本燃烧间隔的 60%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">烹饪</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">指定烹饪配方基本烹饪间隔的 85%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">锻造</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.7</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">弓匠</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">制造</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.65</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">符文锻造</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.7</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">草药学</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.7</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">召唤</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.85</p></td>
+</tr>
+</tbody>
+</table>
 <div class="sect4">
 <h5 id="_maximising_mark_discovery_chance"><a class="anchor" href="#_maximising_mark_discovery_chance"></a>Maximising Mark Discovery Chance</h5>
 
@@ -553,5 +636,23 @@
 </div>
 <script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
 <script async src="../../../_/js/vendor/highlight.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: { inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]], ignoreClass: "nostem|nolatexmath" },
+  asciimath2jax: { delimiters: [["\\$", "\\$"]], ignoreClass: "nostem|noasciimath" },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
   </body>
 </html>
