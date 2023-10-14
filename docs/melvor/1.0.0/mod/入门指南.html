@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mod开发的入门指南 :: 梅尔沃放置指南</title>
+    <meta name="generator" content="Antora 3.1.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../..">梅尔沃放置指南</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="melvor" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">梅尔沃放置</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../战斗/index.html">战斗(no)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/攻击.html">攻击(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/力量.html">力量(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/防御.html">防御(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/生命值.html">生命值(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/远程.html">远程(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/魔法.html">魔法(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/祝祭.html">祝祭(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/屠杀者.html">屠杀者(no)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">非战斗(ing)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/伐木.html">伐木(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/钓鱼.html">钓鱼(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/生火.html">生火(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/烹饪.html">烹饪(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/采矿.html">采矿(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/锻造.html">锻造(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/扒窃.html">扒窃(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/弓匠.html">弓匠(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/制造.html">制造(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/符文锻造.html">符文锻造(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/草药学.html">草药学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/灵巧.html">灵巧(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/召唤.html">召唤(ing)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/星象学.html">星象学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/生活类魔法.html">生活类魔法(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/制图学.html">制图学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/考古学.html">考古学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/农务.html">农务(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/城镇.html">城镇(no)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">练级(no)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/伐木.html">伐木(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/钓鱼.html">钓鱼(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/生火.html">生火(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/烹饪.html">烹饪(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/采矿.html">采矿(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/锻造.html">锻造(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/扒窃.html">扒窃(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/弓匠.html">弓匠(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/制造.html">制造(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/符文锻造.html">符文锻造(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/草药学.html">草药学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/灵巧.html">灵巧(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/召唤-练级.html">召唤(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/星象学.html">星象学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/生活类魔法.html">生活类魔法(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/制图学.html">制图学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/考古学.html">考古学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/农务.html">农务(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/城镇.html">城镇(no)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">其它(no)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/新手指南.html">新手指南(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/指南.html">指南(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/仓库.html">仓库(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/战斗.html">战斗(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/专精.html">专精(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/赚钱.html">赚钱(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/商店.html">商店(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/菜单.html">菜单(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/宠物.html">宠物(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/哥布林突袭.html">哥布林突袭(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/版本信息.html">版本信息(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/使徒的王座DLC.html">使徒的王座DLC(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/探索地图集DLC.html">探索地图集DLC(no)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">参考表格(no)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/道具.html">道具(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/装备.html">装备(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/经验表格.html">经验表格(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/道具升级.html">道具升级(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/战斗区域.html">战斗区域(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/屠杀者区域.html">屠杀者区域(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/副本.html">副本(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/宝箱战利品表格.html">宝箱战利品表格(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/怪物.html">怪物(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/怪物掉落表格.html">怪物掉落表格(no)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">指南(ing)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../指南/战斗-练级.html">战斗-练级(ing)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../指南/熔岩洞窟-指南.html">熔岩洞窟-指南</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../指南/冒险模式-指南.html">冒险模式-指南</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Mod开发</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="入门指南.html">入门指南</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="创作工具包.html">创作工具包</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="从脚本和扩展迁移.html">从脚本和扩展迁移</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="基础指南.html">基础指南</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Mod上下文API参考.html">Mod上下文API参考</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="侧边栏API参考.html">侧边栏API参考</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="使用PetiteVue创建可复用组件.html">使用PetiteVue创建可复用组件</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="启用Steam客户端的DevTools.html">启用Steam客户端的DevTools</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="游戏内功能参考.html">游戏内功能参考</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">工具</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text"><a href="https://consolelog.gitee.io/caniidle/?language=%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87" target="_blank" rel="noopener">我能挂机吗</a></span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">梅尔沃放置</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">梅尔沃放置</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">梅尔沃放置</a></li>
+    <li><a href="index.html">Mod开发</a></li>
+    <li><a href="入门指南.html">入门指南</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///D:/src/game/melvor_idle_wiki/melvor/modules/ROOT/pages/mod/入门指南.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="目录" data-levels="3">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Mod开发的入门指南</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://wiki.melvoridle.com/w/Mod_Creation/Getting_Started" target="_target">原文地址</a></p>
+</div>
+<div class="paragraph">
+<p>在梅尔沃放置中，mod与其他带有mod的游戏类似，是由玩家社区创建的游戏修改。 对游戏的修改范围从微小的平衡变化到引入新技能和物品，或简单的生活质量改善到全套自动化工具。 无论它是简单还是复杂，梅尔沃放置中都有各种编程API可帮助您创建mod。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_前提条件"><a class="anchor" href="#_前提条件"></a>1. 前提条件</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>梅尔沃放置的mod使用JavaScript创建，因此在开始本指南之前，建议至少对JavaScript或一般编程语言有一个入门的理解。</p>
+</div>
+<div class="paragraph">
+<p>此外，您应该安装您喜欢的编写JavaScript代码的代码编辑器。一些流行的选择是 <a href="https://code.visualstudio.com/" target="_target">VSCode</a> 或 <a href="https://www.jetbrains.com/zh-cn/webstorm/promo/" target="_target">WebStorm</a> 。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_快速入门"><a class="anchor" href="#_快速入门"></a>2. 快速入门</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>如果您想立即开始创建您的第一个mod，并有一个（大部分是）空白的canvas，请按照以下步骤开始。</p>
+</div>
+<div class="sect2">
+<h3 id="_项目设置"><a class="anchor" href="#_项目设置"></a>2.1. 项目设置</h3>
+<div class="paragraph">
+<p>首先，为你的mod创建一个新的空文件夹。你需要在该新文件夹中创建两个文件：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>manifest.json</p>
+</li>
+<li>
+<p>setup.mjs</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>manifest.json</strong>文件用于定义你的mod的元数据，或者为梅尔沃放置提供重要信息，以便知道如何加载你的mod。在<strong>manifest.json</strong>中加入以下代码：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "setup": "setup.mjs"
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这告诉梅尔沃放置查找一个<strong>setup.mjs</strong>文件并运行其导出的<strong>setup</strong>函数。接下来，我们将在<strong>setup.mjs</strong>中创建该函数：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">export function setup() {
+  console.log('Hello From My Mod!');
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这里导出的单词很重要，因为它将让Mod管理器访问该setup函数以加载mod。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_让它们生效"><a class="anchor" href="#_让它们生效"></a>2.2. 让它们生效</h3>
+<div class="paragraph">
+<p>到目前为止，你已经有了一个可以工作的“mod”，但它还没有真正修改任何内容。让我们让<strong>setup</strong>函数知道我们希望在执行<strong>setup</strong>时接受一个上下文对象（简称为<strong>ctx</strong>），然后修补<strong>Skill</strong>类，使其将所有经验值加倍。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">export function setup(ctx) {
+    ctx.patch(Skill, 'addXP').before(function(amount, masteryAction) {
+        return [amount * 2, masteryAction];
+    });
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>上下文对象将是你的mod执行游戏修改所需的必要条件。请在基础指南中找到有关patch方法和上下文对象可做其他事情的详细信息。</p>
+</div>
+<div class="paragraph">
+<p>如果你想在此刻测试你的mod，可以跳到打包和添加你的mod部分。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_使用玩家输入的值"><a class="anchor" href="#_使用玩家输入的值"></a>2.3. 使用玩家输入的值</h3>
+<div class="paragraph">
+<p>将XP加倍是可以的，但如果玩家可以自定义乘以的经验值数量，那么这个mod将会更加有用。幸运的是，通过上下文对象的另一个部分（即mod设置），可以轻松实现这一点。</p>
+</div>
+<div class="paragraph">
+<p>你可以定义一个设置，供玩家使用上下文对象中的settings对象进行更改，并将上面的修补代码修改为使用该值而不是2的值：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">export function setup(ctx) {
+  ctx.settings.section('General').add({
+    type: 'number',
+    name: 'xp-multiplier',
+    label: 'XP Multiplier',
+    hint: 'Multiply all XP gains by this amount',
+    default: 1
+  });
+
+  ctx.patch(Skill, 'addXP').before(function(amount, masteryAction) {
+    const xpMultiplier = ctx.settings.section('General').get('xp-multiplier');
+    return [amount * xpMultiplier, masteryAction];
+  });
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>然后，玩家将能够从侧边栏打开你的mod的设置，并将乘数更改为他们想要的任何数字。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_打包以及添加您的mod"><a class="anchor" href="#_打包以及添加您的mod"></a>2.4. 打包以及添加您的mod</h3>
+<div class="paragraph">
+<p>一旦你准备好测试你的mod或在Mod管理器中提供该mod，你需要将它打包并上传到mod.io。</p>
+</div>
+<div class="paragraph">
+<p>打包你的mod就是将内容整体压缩成zip文件这么简单。因此，对于上面的例子，你应该在zip文件的根目录下包含manifest.json和setup.mjs文件。</p>
+</div>
+<div class="paragraph">
+<p>接下来，你应该导航到mod.io上梅尔沃放置的 <a href="https://mod.io/g/melvoridle">Mods</a>页面，并点击游戏名称旁边的“Add mod”。你需要为你的mod输入一些基本信息，比如名称和摘要（这是在选中mod时在游戏中显示的）。一定要添加相关的标签，特别注意Platforms（该mod只会在选中的平台上下载和安装）和Supported Game Version标签。</p>
+</div>
+<div class="paragraph">
+<p>如果你只是想测试你的mod并不想对所有人可见，你应该在可见性部分取消选中“Public”。这将防止mod出现在游戏中Mod管理器的Browse选项卡中，但你仍然可以通过mod.io网站订阅该mod，它仍会在游戏中下载。</p>
+</div>
+<div class="paragraph">
+<p>保存当前详细信息后，你将能够添加该mod的媒体文件（图像，视频），更重要的是添加实际的mod文件本身。在文件管理部分中，点击“Select zip file”并上传你的打包的mod。在下面的字段中给mod一个版本号，并点击“Upload”。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_使用您的mod"><a class="anchor" href="#_使用您的mod"></a>2.5. 使用您的mod</h3>
+<div class="paragraph">
+<p>现在，你可以订阅、下载、安装并使用你的mod了。如果你已经公开了mod，可以尝试在游戏中Mod管理器中搜索它并订阅它。安装后，你需要重新启动游戏才能使mod生效。</p>
+</div>
+<div class="paragraph">
+<p>如果你将mod设为私密，你可以访问mod的档案URL，该URL位于mod的编辑页面上。或者，如果你点击mod.io上右上角的个人资料图标，并点击“我的库”，你将能够在我的Mods下找到你的mod。一旦进入mod的页面，点击“订阅”按钮，下次加载游戏时，它将自动下载和安装。</p>
+</div>
+<div class="paragraph">
+<p>一旦安装并重新加载游戏后，你应该可以选取一个角色并看到你的mod在游戏中起作用了！</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_下一步"><a class="anchor" href="#_下一步"></a>3. 下一步</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在这里，强烈推荐阅读 <a href="基础指南.html" class="xref page">基础指南</a> 以了解不同modding概念和可供你使用的API。</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle" colspan="8"><p class="tableblock"><strong>Mod指南</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="入门指南.html" class="xref page">Mod开发的入门指南</a></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="创作工具包.html" class="xref page">创作工具包</a></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="从脚本和扩展迁移.html" class="xref page">从脚本和扩展迁移</a></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="基础指南.html" class="xref page">基础指南</a></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="Mod上下文API参考.html" class="xref page">Mod上下文API参考</a></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="侧边栏API参考.html" class="xref page">侧边栏API参考</a></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="使用PetiteVue创建可复用组件.html" class="xref page">使用PetiteVue创建可复用组件</a></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="启用Steam客户端的DevTools.html" class="xref page">启用Steam客户端的DevTools</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,872 @@
+= 基础指南
+
+https://wiki.melvoridle.com/w/Mod_Creation/Essentials[原文地址,window=_target]
+
+第一次为梅尔沃放置编写mod？请考虑从 xref:mod/入门指南.adoc[Mod开发/入门指南]。
+
+== 创建Mod
+
+在梅尔沃放置中，一个mod由两部分组成：元数据和资源。
+
+**元数据**在你的mod的mod.io配置页面中定义（名称、版本、预览等），并在**必须** __位于你的mod目录根目录__下的manifest.json文件中定义（这个文件包含元数据，告诉Mod Manager如何加载你的mod）。
+
+*Resources* 则包含其他所有内容，如JavaScript模块和脚本、CSS样式表、图像、声音等。这些都是资源，可以通过manifest或者你的JavaScript代码动态访问。当从任何地方（manifest或代码）引用一个资源时，路径应该**_总是_**相对于你的mod的根目录（``manifest.json``文件所在的位置）。
+
+=== Manifest
+
+你开始编写代码之前，一个好的做法是在manifest.json文件中定义一些元数据。一个完整的manifest.json看起来可能像下面这样：
+
+[source,json]
+----
+{
+  "namespace": "helloWorld",
+  "icon": "assets/icon.png",
+  "setup": "src/setup.mjs",
+  "load": ["assets/style.css"]
+}
+----
+
+==== namespace?: string
+
+一些重要的JavaScript modding API（工具）需要定义一个命名空间。这可以帮助游戏保持你的mod的数据有组织-你可以把它想象成你的mod的id，其他mod和游戏本身将使用这个id来访问你定义存储的数据。因此，最好选择一个容易识别你的mod的命名空间，以备其他mod与其交互。
+
+命名空间只能包含字母数字字符和下划线，不能以“melvor”开头。
+
+[%autowidth]
+|===
+^.^|Namespace |Valid
+|`helloWorld`|    ✔️
+|`hello_world_123`|    ✔️
+|`HelloWorld!`|    ❌
+|`melvorWorld`|    ❌
+|===
+
+尽管这个属性是可选的，但包含它是一个好习惯，以避免将来如果你最终使用一个需要命名空间的API时需要进行故障排除。
+
+==== icon?: string
+
+在Mod管理器中的“我的Mods”列表等地方与您的Mod一起显示的可选图标。值应该是相对于您的mod的根目录（manifest所在的位置）的图像文件路径。可接受的图标文件类型是``.png``或``.svg``，图标通常在游戏中以最大38像素显示。
+
+是的，您也可以提供一个绝对路径到网络URL，这将会被使用代替之前的图标路径。
+
+==== setup?: string
+
+这个属性仅在清单中不存在``“load”``属性时才**需要**。
+
+这个值应该是一个指向作为你的mod入口点的JavaScript模块的路径；这个概念将在后面的部分进一步介绍。
+
+==== load?: string | string[]
+
+这个属性仅在清单中不存在``“setup”``属性时才**需要**。
+
+此属性的值可以是单一路径，也可以是需加载资源的路径数组。这些资源在``“setup”``资源运行后，按照数组的顺序加载。可通过此属性加载的资源包括JavaScript脚本文件（`.js`）、JavaScript模块文件（`.mjs`）、CSS样式表（`.css`）、包含游戏数据包的JSON文件（`.json`）以及包含模板的HTML文件（`.html`）。然而，除非您的mod非常简单，否则建议通过代码在mod的入口点（`“setup”`）加载JavaScript资源（``.js``或``.mjs``）。
+
+同样重要的是要注意，虽然``.js``被认为是“setup”属性中JavaScript模块文件的合法扩展名，但通过“load”加载的模块必须以``.mjs``结尾，否则将被视为普通脚本文件。
+
+=== 结构化你的代码
+
+==== 使用模块（推荐）
+
+可以将代码的结构组织为脚本或模块、``“setup”``或``“load”``等许多方式。每种方式都可能有其优点，但对于大多数mod来说，推荐的方法是使用 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules[JavaScript模块] 编写代码，并具有一个单一的入口点（在manifest.json中定义为“setup”），同时将“load”属性专门用于加载CSS。
+
+使用这种方法可以使您的代码保持清晰和易于管理，同时 https://www.tutorialspoint.com/what-is-global-namespace-pollution-in-javascript[避免污染全局JavaScript范围]，因此可以避免与其他mod发生冲突。如果您不熟悉JavaScript模块，可以查看 https://www.w3schools.com/js/js_modules.asp[W3Schools的JavaScript Modules] 或 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules[MDN] 上的资源以了解更详细的信息。您将使用的通用模式是导出模块“features”（函数、变量等），然后将其导入其他模块以供使用。这也是本指南在其所有示例中使用的做法。
+
+让我们从您的mod的``“setup”``入口点定义的模块开始：
+
+[source,javascript]
+----
+// setup.mjs
+export function setup(ctx) {
+  console.log('Hello World!');
+}
+----
+
+我们在这里导出一个名为``setup``的函数，因为这是Mod Manager在加载``“setup”``模块时所寻找的。如果没有这个函数，加载此mod时会抛出错误。在mod加载后，此``setup``函数被调用并接收mod的上下文对象，这发生在角色选择屏幕可见之前。因此，此mod会在此时将'Hello World!'写入控制台。
+
+然而，为了充分利用JavaScript的模块化方法，我们不能像在常规JavaScript环境中那样在文件的顶部使用静态导入。由于modding资源的存储方式，我们必须使用特殊的``loadModule``函数来动态地导入模块。这与 https://www.w3docs.com/learn-javascript/dynamic-imports.html[动态导入] 完全相同，但它允许您使用相对于mod根目录的资源路径。
+
+如果我们定义了一个helper模块helper.mjs：
+
+[source,javascript]
+----
+// helper.mjs
+export function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+----
+
+当然，我们可以使用在我们的setup函数中导出的代码:
+
+[source,javascript]
+----
+// setup.mjs
+export async function setup({ loadModule }) {
+  const { greet } = await loadModule('helper.mjs');
+  greet('Melvor'); // > Hello, Melvor!
+}
+----
+
+如果你需要从你的助手模块中访问上下文对象，有两种方法：
+
+1.从设置函数中将上下文对象传递给已加载的模块：
+
+[source,javascript]
+----
+// configService.mjs
+export function init(ctx) {
+  // Perform actions using the context object here...
+}
+
+// setup.mjs
+export async function setup(ctx) {
+  const configService = await ctx.loadModule('configService.mjs');
+  configService.init(ctx);
+}
+----
+
+2.在全局``mod``对象上使用``getContext``方法：
+
+[source,javascript]
+----
+// configService.mjs
+const ctx = mod.getContext(import.meta);
+
+export function init() {
+  // Perform actions using the context object here...
+}
+----
+
+你必须将``import.meta``传递给``mod.getContext``方法，这是一个在所有模块中可用的特殊JavaScript对象，以接收你的mod的上下文对象。
+
+==== 使用脚本
+
+如果你选择在你的mod中包含普通脚本，无论是出于熟悉还是特殊的使用情况，你都可以通过上下文对象（可能是从``“setup”``模块接收的）或manifest的``“load”``属性将脚本加载（注入）到游戏中。
+
+通过上下文对象加载脚本与加载模块非常相似，但你不会得到返回值。
+
+[source,javascript]
+----
+export async function setup({ loadScript }) {
+  // Make sure you await the call to loadScript if your code beyond relies on it
+  await loadScript('hello-melvor-script.js');
+  // hello-melvor-script.js has executed
+
+  // But don't bother awaiting it if it's not time-sensitive
+  loadScript('some-independent-script.js');
+}
+----
+
+从你的脚本内部，你仍然可以访问上下文对象：
+
+[source,javascript]
+----
+mod.register(ctx => {
+  // Use the context object here
+});
+----
+
+请注意，mod.register方法只适用于通过loadScript或manifest的“load”属性注入的脚本。
+
+== 上下文对象
+
+你的mod的上下文对象是用于安装你的mod并对游戏进行修改的中心点。本指南的大多数其他部分将介绍通过该对象上可用的API实现的概念。要深入了解上下文对象的文档，请参阅 xref:mod/Mod上下文API参考.adoc[Mod开发/Mod上下文API参考]。
+
+== 访问Mod的资源
+
+请在此处查看与此主题相关的API参考文档 xref:mod/Mod上下文API参考.adoc#加载资源[Mod开发/Mod上下文API参考#加载资源]。
+
+很可能你将打包一些在你的manifest中没有定义加载选项的资源在你的mod中，而是需要通过你的代码来加载这些资源。你的mod的上下文对象提供了检索这些资源的方法。请记住，所有指向你的资源的文件路径应该是__相对于你的mod的根目录的__。下面是一些常见的场景：
+
+=== 加载（导入）模块
+
+使用``ctx.loadModule``导入JavaScript模块导出的特性。
+
+[source,javascript]
+----
+// my-module.mjs
+export function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+
+export const importantData = ['e', 'r', 'e', 'h', 't', ' ', 'o', 'l', 'l', 'e', 'h'];
+----
+
+[source,javascript]
+----
+// setup.mjs
+export async function setup({ loadModule }) {
+  const myModule = await loadModule('my-module.mjs');
+  myModule.greet('Melvor'); // Hello, Melvor!
+  console.log(myModule.importantData.reverse().join('')); // hello there
+}
+----
+
+=== 加载（注入）脚本
+
+使用``ctx.loadModule``导入JavaScript模块导出的特性。
+
+[source,javascript]
+----
+// setup.mjs
+export await function setup({ loadScript }) {
+  // Wait for script to run
+  await loadScript('my-script.js');
+  // Or not
+  loadScript('my-independent-script.js');
+}
+----
+
+=== 加载（注入）HTML模板
+
+使用``ctx.loadTemplates``将所有``<template>``元素注入到文档主体中。
+
+[source,javascript]
+----
+// setup.mjs
+export function setup({ loadTemplates }) {
+  loadTemplates('my-templates.html');
+}
+----
+
+=== 加载（注入）样式表
+
+使用``ctx.loadStylesheet``将CSS文件注入到页面中。
+
+[source,javascript]
+----
+// setup.mjs
+export function setup({ loadStylesheet }) {
+  loadStylesheet('my-styles.css');
+}
+----
+
+=== 从JSON加载数据
+
+使用``ctx.loadData``读取并自动解析JSON资源。
+
+[source,javascript]
+----
+// my-data.json
+{
+  "coolThings": [
+    "rocks"
+  ]
+}
+----
+
+__JSON中的注释__纯粹是说明性的，不是有效的标记
+
+[source,javascript]
+----
+// setup.mjs
+export async function setup({ loadData }) {
+  const data = await loadData('my-data.json');
+  console.log(data.coolThings[0]); // ['rocks']
+}
+----
+
+=== 图像、声音和其他内容
+
+几乎可以使用ctx.getResourceUrl访问任何资源并以某种方式使用它上面提到的助手方法在幕后都使用这个方法。有了资源的URL，您可以使用内置的JavaScript方法来使用资源。
+
+[source,javascript]
+----
+// setup.mjs
+export function setup({ getResourceUrl }) {
+  const url = getResourceUrl('sea-shanty-2.ogg');
+  const song = new Audio(url);
+  song.loop = true;
+  song.play();
+}
+----
+
+== 游戏生命周期钩子
+
+请在此处查看与此主题相关的API参考文档 xref:mod/Mod上下文API参考.adoc#生命周期钩子[Mod开发/Mod上下文API参考#生命周期钩子]。
+
+利用游戏的生命周期钩子可以让你的mod在特定时间执行操作，这对于等待某些游戏对象可用可能很有用。游戏的生命周期钩子如下：
+
+* `onModsLoaded`：在所有启用的mod完成初始加载后发生。
+* `onCharacterSelectionLoaded`：在角色选择屏幕完全加载后发生。
+* `onCharacterLoaded`：在选择了角色并且所有游戏对象都已构造之后，但在计算离线进度之前发生。
+* `onInterfaceReady`：在计算离线进度之后并且游戏界面可以可靠地修改时发生。对于任何可能通过增加角色加载时间对玩家体验产生负面影响的长运行或非关键性进程也很有用。
+
+所有游戏的生命周期钩子都可通过mod的上下文对象获得，并且接受一个回调函数作为唯一参数。此回调函数可以是同步的也可以是异步的，将在指定时间执行并接收mod的上下文对象作为参数。
+
+[source,javascript]
+----
+// setup.mjs
+export function setup({ onModsLoaded, onCharacterLoaded, onInterfaceReady }) {
+  onModsLoaded(ctx => {
+    // Utilize other mod APIs at character select
+  });
+
+  onCharacterSelectionLoaded(ctx => {
+    // Build or modify character selection UI elements
+  });
+
+  onCharacterLoaded(ctx => {
+    // Modify or hook into game objects to influence offline calculations
+  });
+
+  onInterfaceReady(ctx => {
+    // Build or modify in-game UI elements
+  });
+}
+----
+
+== 添加和修改游戏对象
+
+请在此处查看与此主题相关的API参考文档 xref:mod/Mod上下文API参考.adoc#注册游戏对象[]。
+
+mod现在可以以精简的方式注册或修改游戏对象（物品、技能、页面等）。这样做的入口点或者是``manifest.json``的``“load”``属性，或者是mod context API中的``gameData``端点。不同游戏对象类型所需的数据种类各不相同，但一般概念是相同的。您需要定义一个使用JSON的数据包并将其加载到游戏中，或者您可以通过代码动态地构建一个（某些动态对象，例如技能，需要后者）。
+
+=== 定义数据包
+
+构建游戏对象数据的第一个（也是更简单的）选项是在一个``.json``文件中定义所有的（或尽可能多的）数据，然后将其读取到游戏中以注册您的游戏对象。
+
+优点
+
+* 更简单
+* 更容易将数据与mod的逻辑分开
+* 您的文本编辑器可以通过在JSON文件中定义$schema属性来提供键入功能
+
+缺点
+
+* 不支持所有游戏对象类型，例如技能
+
+要开始使用这种方法，您的JSON文件应全部使用以下内容构建：
+
+[source,json]
+----
+{
+  "$schema": "https://melvoridle.com/assets/schema/gameData.json",
+  "data": {
+
+  }
+}
+----
+
+如果你正在使用支持它的文本编辑器，你现在应该可以在你创建的字段上获得自动完成和类型检查功能。
+
+以下是一个定义物品的示例：
+
+[source,json]
+----
+{
+  "$schema": "https://melvoridle.com/assets/schema/gameData.json",
+  "data": {
+    "items": [{
+      "id": "Wooden_Dagger",
+      "name": "Wooden Dagger",
+      "category": "Combat",
+      "type": "Weapon",
+      "media": "wooden-dagger.png",
+      "ignoreCompletion": false,
+      "obtainFromItemLog": false,
+      "golbinRaidExclusive": false,
+      "sellsFor": 0,
+      "tier": "wooden",
+      "validSlots": ["Weapon"],
+      "occupiesSlots": [],
+      "equipRequirements": [
+        {
+          "type": "SkillLevel",
+          "skillID": "melvorD:Attack",
+          "level": 1
+        }
+      ],
+      "equipmentStats": [
+        { "key": "attackSpeed", "value": 2200 },
+        { "key": "stabAttackBonus", "value": 4 },
+        { "key": "slashAttackBonus", "value": 1 },
+        { "key": "blockAttackBonus", "value": 4 },
+        { "key": "meleeStrengthBonus", "value": 1 }
+      ],
+      "itemType": "Weapon",
+      "attackType": "melee"
+    }]
+  }
+}
+----
+
+然后，你可以使用以下方法之一注册你的游戏数据：
+
+[source,json]
+----
+// manifest.json
+{
+  "namespace": "helloWorld",
+  "load": ["path-to-your-data.json"]
+}
+----
+
+_JSON中的注释纯粹是说明性的，不是有效的标记_
+
+_或者_
+
+[source,json]
+----
+// setup.mjs
+export async function setup({ gameData }) {
+  await gameData.addPackage('path-to-your-data.json');
+}
+----
+
+=== 在运行时构建数据包
+
+动态地通过mod context API构建游戏对象数据的另一种选项是：
+
+优点
+
+* 可用于注册任何类型的游戏对象
+* 能够动态构建游戏对象
+
+缺点
+
+* 更混乱且更复杂
+* 目前没有类型支持
+
+使用此方法的入口点如下所示：
+
+[source,javascript]
+----
+// setup.mjs
+export function setup({ gameData }) {
+  gameData.buildPackage((p) => {
+    // use the `p` object to add game objects
+  }).add();
+}
+----
+
+以下面的例子为例，添加一个项目：
+
+[source,javascript]
+----
+// setup.mjs
+export function setup({ gameData }) {
+  gameData.buildPackage((p) => {
+    p.items.add({
+      id: 'Wooden_Dagger',
+      name: 'Wooden Dagger',
+      category: 'Combat',
+      type: 'Weapon',
+      media: 'wooden-dagger.png',
+      ignoreCompletion: false,
+      obtainFromItemLog: false,
+      golbinRaidExclusive: false,
+      sellsFor: 0,
+      tier: 'wooden',
+      validSlots: ['Weapon'],
+      occupiesSlots: [],
+      equipRequirements: [{
+        type: 'SkillLevel',
+        skillID: 'melvorD:Attack',
+        level: 1
+      }],
+      equipmentStats: [
+        { key: 'attackSpeed', value: 2200 },
+        { key: 'stabAttackBonus', value: 4 },
+        { key: 'slashAttackBonus', value: 1 },
+        { key: 'blockAttackBonus', value: 4 },
+        { key: 'meleeStrengthBonus', value: 1 }
+      ],
+      itemType: 'Weapon',
+      attackType: 'melee'
+    });
+  }).add();
+}
+----
+
+通过调用内置包的``.add()``方法，您的游戏数据应该已经被注册了。
+
+== Mod设置
+
+请在此处查看与此主题相关的API参考文档 xref:mod/Mod上下文API参考.adoc#Mod配置[]。
+
+NOTE: 当通过Creator Toolkit以本地mod的形式加载您的mod时，必须将mod链接到mod.io，并且您必须通过mod.io订阅并安装该mod才能使这些数据持久存在。
+
+您的mod可以定义供玩家交互的设置，并在游戏中直观地配置您的mod。此功能可通过上下文对象上的``settings``属性进行访问。如果您的mod定义了任何设置，则您的mod将出现在侧边栏下的Mod Settings中。单击此选项将打开一个窗口，其中包含您定义的所有设置。
+
+设置的值是基于每个角色的进行保存的，并保存在角色的保存文件中。
+
+设置（在代码中和视觉上）分为多个部分。使用``settings``对象上的``section(name)``方法获取或创建部分。传递给``name``参数的值用作该部分的标题，因此应该易于人类阅读。这些部分按照创建它们的顺序显示。
+
+[source,javascript]
+----
+// setup.mjs
+export function setup({ settings }) {
+  // Creates a section labeled "General"
+  settings.section('General');
+
+  // Future calls to that section will not create a new "General" section, but instead return the already existing one
+  settings.section('General');
+}
+----
+
+使用``section()``方法返回的对象可以用于为该部分添加设置。有关设置配置的详细信息，请参阅下一节。
+
+[source,javascript]
+----
+// setup.mjs
+export function setup({ settings }) {
+  const generalSettings = settings.section('General');
+  // You can add settings one-by-one
+  generalSettings.add({
+    type: 'switch',
+    name: 'awesomeness-detection',
+    label: 'Awesomeness Detection',
+    hint: 'Determines if you are awesome or not.',
+    default: false
+  });
+
+  // Or multiple at a time by passing in an array
+  generalSettings.add([{
+    type: 'label',
+    display: 'I am just a label though my story seldom told...'
+  }, {
+    type: 'number',
+    name: 'pick-a-number',
+    label: 'Pick a Number',
+    hint: '1 through 10'
+  }]);
+}
+----
+
+然后，您可以通过其``name``属性``get``或``set``任何已定义设置的值。
+
+[source,javascript]
+----
+// elsewhere.mjs
+const { settings } = mod.getContext(import.meta);
+
+const generalSettings = settings.section('General');
+generalSettings.set('pick-a-number', 1);
+console.log(generalSettings.get('pick-a-number')); // 1
+----
+
+=== 设置类型
+
+目前有八种预定义的设置类型可以自动创建可用的输入：
+
+* Text（文本）
+* Number（数字）
+* Switch（开关）
+* Dropdown（下拉列表）
+* Button（按钮）
+* Checkbox Group（复选框组）
+* Radio Group（单选按钮组）
+* Label（标签）
+
+此外，您可以通过配置其他属性添加自定义设置。有关这些配置选项的更多信息，请参阅 xref:mod/Mod上下文API参考.adoc#Mod配置[]。
+
+== 自定义侧边栏
+
+__请在此处查看与此主题相关的API参考文档 xref:mod/侧边栏API参考.adoc[]。__
+
+如果您想要添加或修改游戏内侧边栏（带有银行、技能等菜单），则可以使用全局范围内可用的游戏内API，即``sidebar``。侧边栏分为四个级别：
+
+* Sidebar（侧边栏）
+** Categories（类别）
+*** Items（项目）
+**** Subitems（子项）
+
+例如，战斗和攻击是类别中的一个项目。子项用于完成日志的部分。
+
+每个可自定义的（类别、项目、子项）部分通常使用相同的方式进行交互。
+
+[source,javascript]
+----
+const combat = sidebar.catetory('Combat'); // Get the Combat category, or create one if it doesn't exist
+const attack = sidebar.category('Combat').item('Attack'); // Get the Attack item within Combat or create one if it doesn't exist
+attack.subitem('Wut'); // Get the Wut subitem within Attack or create one if it doesn't exist
+----
+
+此外，可以使用配置对象作为第二个参数来调用这些部分，以使用新的配置创建或更新现有的部分。
+
+[source,javascript]
+----
+sidebar.category('Combat').item('Slayer', {
+  before: 'Attack', // Move the Slayer item above Attack
+  ignoreToggle: true // Keep Slayer visible when its category has been hidden
+});
+----
+
+每个侧边栏部分的配置对象的完整定义可以在 xref:mod/侧边栏API参考.adoc[] 中找到。
+
+如果您需要检索所有现有的类别、项目或子项，请使用它们各自的方法：
+
+[source,javascript]
+----
+sidebar.categories(); // returns an array of all categories
+sidebar.category('Combat').items(); // returns an array of all Combat items
+sidebar.category('General').item('Completion Log').subitems(); // returns an array of all Completion Log subitems
+----
+
+删除类别、项目和子项也是可能的：
+
+[source,javascript]
+----
+sidebar.category('Non-Combat').remove(); // Remove the entire Non-Combat category
+sidebar.removeCategory('Combat'); // Alternative (this avoids creating a Combat category if it didn't already exist)
+sidebar.removeAllCategories(); // Remove all categories, but why?
+
+// Same kind of structure for items and subitems:
+sidebar.category('Modding').item('Mod Manager').remove();
+sidebar.category('General').item('Completion Log').removeAllSubitems();
+----
+
+== 创建可重用的HTML组件
+
+这个主题在 xref:mod/使用PetiteVue创建可复用组件.adoc[] 中有更详细的介绍。
+
+梅尔沃放置随附 https://github.com/vuejs/petite-vue[PetiteVue]，供mod用于创建可重复使用的HTML组件。您可以使用 https://github.com/vuejs/petite-vue[官方GitHub页面]上的文档来协助使用PetiteVue库。但是，有一些辅助函数可以让mod更容易与之交互。
+
+=== 导入HTML模板
+
+使用``manifest.json``的``“load”``属性或上下文API的``loadTemplates``方法，可以将HTML文件中的所有``<template>``元素导入到文档主体中。这些元素在创建组件时可供使用。
+
+如果您有以下HTML文件：
+
+[source,html]
+----
+<!-- templates.html -->
+<template id="counter-component">
+  <span class="text-light">{{ count }}</span>
+  <button class="btn btn-secondary" @click="inc">+</button>
+</template>
+----
+
+您可以通过以下两种方式之一导入模板：
+
+[source,json]
+----
+// manifest.json
+{
+  "load": "templates.html"
+}
+----
+
+_JSON中的注释纯粹是说明性的，不是有效的标记_
+
+_或者_
+
+[source,javascript]
+----
+// setup.mjs
+export function setup({ loadTemplates }) {
+  loadTemplates('templates.html');
+}
+----
+
+=== 定义组件
+
+根据 https://github.com/vuejs/petite-vue#components[PetiteVue文档对组件的说明]，您应该将每个组件定义为函数。该组件应该使用``$template``属性定义其模板选择器，然后定义渲染组件将使用的任何其他属性或方法。例如：
+
+[source,javascript]
+----
+function Counter(props) {
+  return {
+    $template: '#counter-component',
+    count: props.count,
+    inc() {
+      this.count++;
+    }
+  };
+}
+----
+
+=== 在UI内创建组件
+
+现在，既然您的模板已加载并且您已经定义了组件，就可以使用辅助函数``ui.create``在UI中创建该组件的实例。
+
+[source,javascript]
+----
+// Create a counter component at the bottom of the Woodcutting page
+ui.create(Counter({ count: 0 }), document.getElementById('woodcutting-container'));
+----
+
+== 数据存储
+
+_请在此处查看角色存储的相关API参考文档 xref:mod/Mod上下文API参考.adoc#存储角色数据[]。_
+
+_请在此处查看账户存储的相关API参考文档 xref:mod/Mod上下文API参考.adoc#存储账号数据[]。_
+
+NOTE: 当通过Creator Toolkit以本地mod的形式加载您的mod时，必须将mod链接到mod.io，并且您必须通过mod.io订阅并安装该mod才能使这些数据持久保存。
+
+为游戏或设置中已保存的数据之外的数据保存有两种选项：与角色一起保存的数据或保存到玩家帐户的数据。然而，对于大多数情况，应优先选择使用角色存储，并谨慎使用帐户存储。通过您mod的上下文对象，可以分别访问``characterStorage``和``accountStorage``，这两种存储具有相同的方法和行为。角色存储在加载角色后才可用（``onCharacterLoaded``生命周期钩子）。
+
+[source,javascript]
+----
+// setup.mjs
+export function setup({ characterStorage }) {
+  // This would all function identically with accountStorage, but also be available across characters
+  characterStorage.setItem('my-favorite-pet', 7);
+
+  console.log(PETS[characterStorage.getItem('my-favorite-pet')].name); // Larry, the Lonely Lizard
+
+  characterStorage.removeItem('my-favorite-pet');
+
+  characterStorage.clear(); // Removes all currently stored items
+}
+----
+
+=== 限制
+
+目前，mod的角色存储和帐户存储各自（单独地）限制为总共8，192字节（8kb）的数据。这意味着每个角色可以每个mod存储最多8kb的数据，但帐户只能存储总共8kb的数据。
+
+此外，只能存储JSON可序列化的数据。这包括任何JavaScript原始值（字符串、数字和布尔值）或仅包含原始值（或仅包含原始值的对象或数组等）的对象或数组。您不需要自己序列化/反序列化数据。
+
+最后，由于帐户数据被持久保存在云中，因此由于玩家可能遇到的网络问题，数据完整性不能得到100％保证。
+
+== 游戏对象修补/钩子
+
+请在此处查看与此主题相关的API参考文档 xref:mod/Mod上下文API参考.adoc#游戏对象修补-钩子[]。
+
+常见的一种modding方案是想要覆盖/修改游戏中的某个方法，或者在它完成之前或之后执行某个操作。您的mod的上下文对象包含一个patch属性，可以用于这种情况。补丁只能应用于JavaScript类（`Player`、`Enemy`、`CombatManager`、``Woodcutting``等）中存在的类和方法。要开始，请定义您想要修补的类和方法：
+
+[source,javascript]
+----
+// setup.mjs
+export function setup({ patch }) {
+  const xpPatch = patch(Skill, 'addXP');
+}
+----
+
+从那里，您可以使用该补丁执行以下任何操作。
+
+=== 在之前执行某项操作
+
+在补丁对象上使用before方法，以在补丁方法之前立即执行代码。此外，回调钩子将接收用于调用补丁方法的参数作为参数，并且可以选择通过返回新参数作为数组来修改它们。
+
+[source,javascript]
+----
+// setup.mjs
+export function setup({ patch }) {
+  patch(Skill, 'addXP').before((amount, masteryAction) => {
+    console.log(`Doubling XP from ${amount} to ${amount * 2}!`);
+    return [amount * 2, masteryAction]; // Double all XP gains
+  });
+}
+----
+
+=== 在之后执行某项操作
+
+在补丁对象上使用``after``方法，以在补丁方法之后立即执行代码。此外，回调钩子将接收从补丁方法返回的值以及用于调用它的参数作为参数。另外，after钩子可以选择通过返回一个值本身来覆盖返回值。_**只有**返回值为``undefined``才会被忽略_。
+
+[source,javascript]
+----
+// setup.mjs
+export function setup({ patch }) {
+  patch(Player, 'rollToHit').after((willHit) => {
+    if (!willHit) console.log('A miss? I think not!');
+    return true;
+  });
+}
+----
+
+=== 完全替换方法
+
+补丁对象上的``replace``方法将覆盖补丁方法的主体，但before和after钩子仍将被执行。替换方法将接收当前方法的实现（正在被替换的那个）以及用于调用它的参数作为参数。替换方法的返回值将是方法调用的返回值，可能会受到after钩子中进行的任何更改的影响。
+
+[source,javascript]
+----
+// setup.mjs
+export function setup({ patch }) {
+  patch(Skill, 'addXP').replace(function(o, amount, masteryAction) {
+    // Prevent any woodcutting XP
+    if (this.id === 'melvorD:Woodcutting') return;
+
+    // Double any mining XP
+    if (this.id === 'melvorD:Mining') return o(amount * 2, masteryAction);
+
+    // Grant all other XP as normal
+    return o(amount, masteryAction);
+  });
+}
+----
+
+需要注意的是，使用replace方法会替换**当前**方法的实现。这意味着，对同一个补丁方法执行多个替换将按照与它们声明的相反顺序执行：
+
+[source,javascript]
+----
+// setup.mjs
+export function setup({ patch, onInterfaceReady }) {
+  const xpPatch = patch(Skill, 'addXP');
+
+  xpPatch.replace(xpA);
+  xpPatch.replace(xpB);
+
+  onInterfaceReady(() => {
+    game.woodcutting.addXP(100);
+    // Logs:
+    // XP replace B
+    // XP replace A
+  });
+}
+
+function xpA(o, amount, masteryAction) {
+  console.log('XP replace A');
+  return o(amount, masteryAction);
+}
+
+function xpB(o, amount, masteryAction) {
+  console.log('XP replace B');
+  return o(amount, masteryAction);
+}
+----
+
+== 暴露API
+
+请在此处查看与此主题相关的API参考文档 xref:mod/Mod上下文API参考.adoc#公开属性与方法[Mod开发/Mod上下文API参考(Mod API)]。
+
+如果您的mod充当其他mod集成使用的工具，则使用``ctx.api``通过上下文对象公开API是推荐的做法。这与使用模块开发的mod一起使用时特别有用。``api``方法接受一个对象，并将该对象上的任何属性公开到``api['your-mods-namespace']``属性中的全局``mod``对象上。您可以多次调用``api``方法来添加更多API。
+
+[source,json]
+----
+// manifest.json
+{
+  "namespace": "helloWorld",
+  "setup": "setup.mjs"
+}
+----
+
+_JSON中的注释纯粹是说明性的，不是有效的标记_
+
+[source,javascript]
+----
+// setup.mjs
+export function setup({ api }) {
+  api({
+    greet: name => console.log(`Hello, ${name!}`);
+  });
+}
+----
+
+其他mod将能够与您的API进行交互：
+
+[source,javascript]
+----
+// some other mod
+mod.api.helloWorld.greet('Melvor'); // Hello, Melvor!
+----
+
+== Dev上下文
+
+为了在上传mod之前更容易地测试代码，存在一个'dev' mod上下文，您可以访问它以尝试使用上下文对象中不需要额外资源的任何方法，即您不能使用``loadModule``。要访问此上下文，您可以在浏览器控制台中使用以下内容：
+
+[source,javascript]
+----
+const devCtx = mod.getDevContext();
+----
+
+_**不应**在mod内部使用此方法/上下文。_
+
+== 下一步
+
+希望本指南涵盖了大多数常见的modding场景，并将在您mod开发过程中成为有用的参考。要深入了解特定概念，请考虑查看以下指南：
+
+* xref:mod/Mod上下文API参考.adoc[]
+* xref:mod/侧边栏API参考.adoc[]
+
+include::partial$Mod指南表格.adoc[]

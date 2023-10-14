@@ -1,0 +1,41 @@
+= Mod 开发
+
+https://wiki.melvoridle.com/w/Mod_Creation[原文地址,window=_target]
+
+这是与创建梅尔沃放置Mod相关的所有东西的集合页面。
+
+.Mod开发指南
+[%autowidth]
+|===
+^.^|指南 ^.^|秒数
+
+|xref:mod/入门指南.adoc[]
+|使用本指南作为您mod创作之旅的起点。
+
+|xref:mod/创作工具包.adoc[]
+|创作工具包是Steam游戏内或浏览器中提供的mod创作相关工具的官方平台。
+
+|xref:mod/从脚本和扩展迁移.adoc[]
+|将您的脚本或扩展迁移到新的mod格式？使用这些指南获得流畅的体验。
+
+|xref:mod/基础指南.adoc[]
+|本指南涵盖了常见的mod场景和API。
+
+|xref:mod/Mod上下文API参考.adoc[]
+|mod上下文对象的API参考指南。
+
+|xref:mod/侧边栏API参考.adoc[]
+|侧边栏对象的API参考指南。
+
+|xref:mod/使用PetiteVue创建可复用组件.adoc[]
+|关于使用可创建复用HTML组件的库PetiteVue的更多详细信息。
+
+|xref:mod/启用Steam客户端的DevTools.adoc[]
+|说明如何启用Steam客户端的 https://developer.chrome.com/docs/devtools/[DevTools]。
+
+|xref:mod/游戏内功能参考.adoc[]
+|为许多游戏内较常使用的功能提供了参考。
+|===
+
+
+

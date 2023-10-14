@@ -1,0 +1,341 @@
+= 游戏内功能参考
+
+https://wiki.melvoridle.com/w/In-game_Functions[原文地址,window=_target]
+
+游戏内功能负责游戏中的大部分事物。 可以通过控制台直接与它们进行交互。 这可以用来添加物品、级别、GP等。 这些功能可以通过控制台执行。 要访问控制台，请在浏览器中打开开发者工具（通常按F12键），然后导航到控制台。 然后，只需将代码粘贴到输入字段中，然后按回车键。 在执行这些功能之前，大多数函数都需要您填写代码中的变量。 请注意，所有代码都区分大小写。
+
+*免责声明：*盲目添加物品和经验很可能会减少游戏乐趣。 强烈建议只用于测试或恢复由于保存丢失而丧失的物品/进度。
+
+注意：您正在玩弄游戏的代码，因此如果犯错，可能会损坏游戏。 在运行任何游戏内功能之前强烈建议*备份您的存档*。
+
+== 在Steam、Android或iOS上使用游戏内功能
+
+玩家可以使用 https://mod.io/g/melvoridle/m/devconsole[dev.Console mod] 在Melvor Idle的Steam、Android和iOS版本中执行这些命令。
+
+== 将物品添加到银行
+
+addItemByID函数可用于将游戏中的任何物品添加到银行。
+
+[source,javascript]
+----
+game.bank.addItemByID(itemID, quantity, logLost, found, ignoreSpace)
+----
+
+=== 属性
+
+[%autowidth]
+|===
+|属性 |类型 |可选？ |默认值 |描述
+
+|itemID |字符串 |否 | |物品的ID。 \ +
+要查看物品及其ID的完整列表，请参阅：[[物品表]]
+
+|quantity |整数 |否 | |要添加的物品数量。
+
+|logLost |布尔值 |是 |false |如果为`true`，无法放入银行的物品将被记录为丢失
+
+|found |布尔值 |是 |false |确定通过此函数添加的物品是否将包括在完成日志中的该物品的“找到次数”统计数据中。因此，除非将此参数设置为`true`，以这种方式添加的任何物品都不会对玩家的物品完成百分比产生贡献。 \ +
+注意：添加*银行槽令牌*时，建议将此参数设置为`true`，否则这可能会导致游戏计算玩家的银行空间量的方式出现问题。
+
+|ignoreSpace |布尔值 |是 |false |如果为`true`，即使银行已满，也将物品添加到银行
+|===
+
+=== 示例
+
+[source,javascript]
+----
+game.bank.addItemByID("melvorD:Oak_Logs", 10, true, true, false);
+----
+
+上述代码将尝试将10个*橡木原木*添加到银行。 如果无法放入，将有10个橡木原木被记录为该物品统计数据中的丢失数量。 此外，橡木原木将被标记为在完成日志中发现。
+
+== 从银行中删除物品
+
+removeItemQuantityByID函数可用于从银行中删除任何物品
+
+[source,javascript]
+----
+game.bank.removeItemQuantityByID(itemID, quantity, removeItemCharges)
+----
+
+=== 属性
+
+[%autowidth]
+|===
+|属性 |类型 |可选？ |默认值 |描述
+
+|itemID |字符串 |否 | |物品的ID。 \ +
+要查看物品及其ID的完整列表，请参阅：[[物品表]]
+
+|quantity |整数 |否 | |要删除的物品数量。
+
+|removeItemCharges |布尔值 |是 |true |如果为`true`，则将物品ID为具有费用的手套的物品的费用计数设置为0。
+|===
+
+=== 示例
+
+[source,javascript]
+----
+game.bank.removeItemQuantityByID("melvorD:Oak_Logs", 10);
+----
+
+上述代码将从银行中删除10个*橡木原木*。
+
+== 调整货币（GP、杀手硬币和袭击硬币）
+
+游戏中的所有[[货币]]，包括[[GP]]、[[杀手硬币]]（SC）和[[袭击硬币]]（RC）都可以使用相同的一组函数进行调整：
+
+* 要调整GP，请使用`game.gp`
+* 要调整SC，请使用`game.slayerCoins`
+* 要调整RC，请使用`game.raidCoins`
+
+=== 添加货币
+
+可以使用 _game.currency.add_ 函数来增加玩家当前的货币余额。
+
+[source,javascript]
+----
+game.<currency>.add(amount)
+----
+
+==== 属性
+
+[source,javascript]
+|===
+|属性 |类型 |可选？ |默认值 |描述
+
+|amount |整数 |否 | |要增加指定货币余额的数量
+|===
+
+==== 示例
+
+[source,javascript]
+----
+game.gp.add(1);
+----
+
+上述代码将向玩家添加1[[GP]]。
+
+=== 删除货币
+
+可以使用 _game.currency.remove_ 函数从玩家当前的货币余额中减去数量。 如果指定的数量大于玩家当前的数量，那么货币余额将变成负数。
+
+[source,javascript]
+----
+game.<currency>.remove(amount)
+----
+
+==== 属性
+
+|===
+|属性 |类型 |可选？ |默认值 |描述
+
+|amount |整数 |否 | |要减少指定货币余额的数量
+|===
+
+==== 示例
+
+[source,javascript]
+----
+game.raidCoins.remove(1);
+----
+
+上述代码将从玩家那里移除1个 [[Raid Coin]]。
+
+=== 设置货币
+
+可以使用 _game.currency.set_ 函数将玩家的货币余额设置为指定的数量。 这个函数对于意外发现自己的GP或SC余额设置为无效值（如`NaN`）的玩家可能特别有用。
+
+[source,javascript]
+----
+game.<currency>.set(amount)
+----
+
+==== 属性
+
+|===
+|属性 |类型 |可选？ |默认值 |描述
+
+|amount |整数 |否 | |要将指定货币余额设置为的数量
+|===
+
+==== 示例
+
+[source,javascript]
+----
+game.slayerCoins.set(999);
+----
+
+上述代码将玩家的[[Raid Coin]]余额设置为999，不管之前拥有的袭击硬币余额是多少。
+
+== 添加祷告点
+
+combat.player.addPrayerPoints函数可用于向玩家添加祷告点数。
+
+[source,javascript]
+----
+game.combat.player.addPrayerPoints(amount)
+----
+
+=== 属性
+
+|===
+|属性 |类型 |可选？ |默认值 |描述
+
+|amount |整数 |否 | |要添加的祷告点数。
+|===
+
+=== 示例
+
+[source,javascript]
+----
+game.combat.player.addPrayerPoints(1);
+----
+
+上述代码将向玩家添加1个祷告点，并更新玩家的统计数据。
+
+== 添加经验
+
+addXP函数可用于向任何技能添加经验。
+
+[source,javascript]
+----
+game.skill.addXP(xp)
+----
+
+其中 `skill` 是您要添加经验的技能的小写名称。
+
+=== 属性
+
+|===
+|属性 |类型 |可选？ |默认值 |描述
+
+|xp |整数 |否 | |要添加的经验量。
+|===
+
+=== 示例
+
+[source,javascript]
+----
+game.thieving.addXP(1000);
+----
+
+上述代码将向[[扒窃]]添加1000点经验。
+
+== 添加精通经验
+
+addMasteryXP函数可用于向技能中的特定[[精通]]添加经验。
+
+[source,javascript]
+----
+game.skill.addMasteryXP(masteryAction, xp)
+----
+
+其中 `skill` 是您要添加精通经验的技能的小写名称。
+
+=== 属性
+
+|===
+|属性 |类型 |可选？ |默认值 |描述
+
+|masteryAction |对象 |否 | |要向其添加精通经验的操作。通过 `game.skill.actions.getObjectByID(id)` 获取，其中 `skill` 应替换为技能的名称（全小写），`id`是操作的ID。 \ +
+可以通过在控制台中输入以下内容来获得操作ID的列表： `console.log(game.skill.actions.allObjects.map((a) => a.id + ' - ' + a.name).join('\n'))`。
+
+|xp |整数 |是 |0 |要添加的经验量。
+|===
+
+=== 示例
+
+[source,javascript]
+----
+game.farming.addMasteryXP(game.farming.actions.getObjectByID('melvorD:Carrot'), 300);
+----
+
+上述代码将向[[农务]]的[[胡萝卜种子]]添加300点[[精通]]经验。
+
+[source,javascript]
+----
+game.firemaking.addMasteryXP(game.firemaking.actions.getObjectByID('melvorD:Teak_Logs'), 3000);
+----
+
+上述代码将向[[生火]]的[[柚木原木]]添加3000点[[精通]]经验。
+
+== 向精通池中添加经验
+
+addMasteryPoolXP函数可用于向技能添加[[精通池]]经验。
+
+game.skill.addMasteryPoolXP(xp)
+
+其中 `skill` 是您要添加精通经验的技能的小写名称。
+
+=== 属性
+
+|===
+|属性 |类型 |可选？ |默认值 |描述
+
+|xp |整数 |是 |0 |要添加的[[精通池]]经验量。
+|===
+
+=== 示例
+
+[source,javascript]
+----
+game.woodcutting.addMasteryPoolXP(600);
+----
+
+上述代码将向[[伐木]]添加600点[[精通池]]经验。
+
+== 解锁宠物
+
+petManager.unlockPetByID函数用于解锁[[宠物]]。 请注意，一旦解锁宠物是永久性的 - 不支持再次锁定宠物的方法。
+
+[source,javascript]
+----
+game.petManager.unlockPetByID(petID)
+----
+
+=== 属性
+
+|===
+|属性 |类型 |可选？ |默认值 |描述
+
+|petID |字符串 |否 | |宠物的ID，可以在单个宠物页面上找到（例如[[Ty]]）。
+|===
+
+=== 示例
+
+[source,javascript]
+----
+game.petManager.unlockPetByID('melvorD:CoolRock');
+----
+
+上述代码将解锁[[Cool Rock]]。
+
+== 发现标记
+
+discoverMark函数用于发现[[召唤印记]]。 一旦发现，就没有支持的方法可以让标记再次变为未发现。
+
+[source,javascript]
+----
+game.summoning.discoverMark(mark)
+----
+
+=== 属性
+
+|===
+|属性 |类型 |可选？ |默认值 |描述
+
+|mark |对象 |否 | |要发现的标记。通过 `game.summoning.actions.getObjectByID` (markID)获得，其中 `markID` 是标记的ID。 \ +
+可以通过在控制台中输入以下内容来获得标记ID的列表： `console.log(game.summoning.actions.allObjects.map((a) => a.id + ' - ' + a.name).join('\n'))`。
+|===
+
+=== 示例
+
+[source,javascript]
+----
+game.summoning.discoverMark(game.summoning.actions.getObjectByID('melvorF:Dragon'));
+----
+
+上述代码为[[龙]]召唤石板发现了一个标记。
+
+include::partial$Mod指南表格.adoc[]

@@ -1,0 +1,481 @@
+= 使用PetiteVue创建可复用组件
+
+https://wiki.melvoridle.com/w/Mod_Creation/Reusable_Components_with_PetiteVue[原文地址,window=_target]
+
+梅尔沃放置附带了 https://github.com/vuejs/petite-vue[PetiteVue]，供mod使用以创建可重用的HTML组件。 除了 https://github.com/vuejs/petite-vue[官方GitHub页面]上的文档，还可以参考 https://vuejs.org/guide/introduction.html[完整的Vue.js文档]（以了解PetiteVue指令的定义和功能，因为有许多完整的Vue.js功能不可用），以帮助使用PetiteVue库。 此外，还有一些辅助函数可帮助mod更轻松地与PetiteVue互动。
+
+== 辅助函数
+
+这些是梅尔沃放置提供的用于与PetiteVue互动的函数。 为了避免与加载mod时可能出现的边缘情况和奇怪现象，您应该使用这些函数来与 `PetiteVue` 全局对象互动，而不是直接操作它。
+
+=== ui.create(props: ComponentProps, host: HTMLElement): HTMLElement
+
+创建一个组件实例并将其挂载到HTML中。
+
+*参数*
+
+`props: ComponentProps` 您想要实例化的PetiteVue组件函数。
+
+`host: HTMLElement` 组件应附加到的元素。
+
+*返回*
+
+`HTMLElement` 宿主元素。
+
+*示例*
+
+[source,html]
+----
+<!-- templates.html -->
+<template id="counter-component">
+  <span class="text-light">{{ count }}</span>
+  <button class="btn btn-secondary" @click="inc">+</button>
+</template>
+----
+
+[source,json]
+----
+// manifest.json
+{
+  "load": ["templates.html"]
+}
+----
+
+_JSON中的注释仅用于说明，不是有效的标记_
+
+[source,javascript]
+----
+// setup.mjs
+function Counter(props) {
+  return {
+    $template: '#counter-component',
+    count: props.count,
+    inc() {
+      this.count++;
+    }
+  };
+}
+
+export function setup({ onInterfaceReady }) {
+  onInterfaceReady(() => {
+    // Create and append a Counter component to the bottom of the Woodcutting page
+    ui.create(Counter({ count: 0 }), document.getElementById('woodcutting-container'));
+  });
+}
+----
+
+=== ui.createStore(props: Record<string, unknown>): ComponentStore
+
+创建一个PetiteVue存储，用于在组件之间共享状态。
+
+*参数*
+
+`props: Record<string, unknown>` 存储应包含的属性。
+
+*返回*
+
+`ComponentStore` 可在组件之间共享的PetiteVue存储。
+
+*示例*
+
+在上面的 `ui.create` 示例中，如果创建了第二个 `Counter` 组件，它将包含自己的状态，单击一个组件的递增按钮不会影响另一个组件。 通过使用存储，您可以按以下方式共享状态：
+
+[source,html]
+----
+<!-- templates.html -->
+<template id="counter-component-using-store">
+  <span class="text-light">{{ store.count }}</span>
+  <button class="btn btn-secondary" @click="store.inc">+</button>
+</template>
+----
+
+[source,json]
+----
+// manifest.json
+{
+  "load": ["templates.html"]
+}
+----
+
+_JSON中的注释仅用于说明，不是有效的标记_
+
+[source,javascript]
+----
+// setup.mjs
+function CounterUsingStore({ store }) {
+  return {
+    $template: '#counter-component-using-store',
+    store
+  };
+}
+
+export function setup({ onInterfaceReady }) {
+  onInterfaceReady(() => {
+    const store = ui.createStore({
+      count: 0,
+      inc() {
+        this.count++;
+      }
+    });
+
+    // Create and append a CounterUsingStore component to the bottom of the Woodcutting page
+    ui.create(CounterUsingStore({ store }), document.getElementById('woodcutting-container'));
+    // Create and append another CounterUsingStore component to the bottom of the Firemaking page
+    ui.create(CounterUsingStore({ store }), document.getElementById('firemaking-container'));
+  });
+}
+----
+
+在此示例中，Woodcutting页面上的计数器和Firemaking页面上的计数器应该保持同步。
+
+=== ui.createStatic(template: string, host: HTMLElement): HTMLElement
+
+创建一个静态组件实例（无PetiteVue绑定）并将其挂载到HTML中。 如果只需要创建可重用的静态HTML部分，应优选使用此辅助函数。
+
+*参数*
+
+`template: string` 要克隆的模板的选择器字符串。 例如，要针对`<template id="static-component"><!-- --></template>`，可以使用`'#static-component'`。
+
+`host: HTMLElement` 组件应附加到的元素。
+
+*返回*
+
+`HTMLElement` 宿主元素。
+
+*示例*
+
+[source,html]
+----
+<!-- static-templates.html -->
+<template id="my-static-component">
+  <h3>Hello, this is static HTML</h3>
+</template>
+----
+
+[source,json]
+----
+// manifest.json
+{
+  "load": ["static-templates.html"]
+}
+----
+
+_JSON中的注释仅用于说明，不是有效的标记_
+
+[source,javascript]
+----
+// setup.mjs
+export function setup({ onInterfaceReady }) {
+  onInterfaceReady(() => {
+    // Create the static component and place it at the bottom of the Woodcutting page
+    ui.createStatic('#my-static-component', document.getElementById('woodcutting-container'));
+  });
+}
+----
+
+==== 嵌套静态组件
+
+要嵌套静态组件，需要在宿主元素上使用 `s-template` 属性引用子组件模板。
+
+例如，给定以下模板：
+
+[source,html]
+----
+<!-- static-templates.html -->
+<template id="static-parent">
+  <h3>Hello, this is static HTML from the parent</h3>
+  <div s-template="#static-child"></div>
+</template>
+
+<template id="static-child">
+  <p>And this HTML is from a static child.</p>
+</template>
+----
+
+可以使用以下方式创建父组件：
+
+[source,javascript]
+----
+// setup.mjs
+export function setup({ onInterfaceReady }) {
+  onInterfaceReady(() => {
+    ui.createStatic('#static-parent', document.getElementById('woodcutting-container'));
+  });
+}
+----
+
+这将导致以下HTML添加到Woodcutting页面底部：
+
+[source,html]
+----
+<h3>Hello, this is static HTML from the parent</h3>
+<div>
+  <p>And this HTML is from a static child.</p>
+</div>
+----
+
+== 有用的模式
+
+=== 嵌套组件
+
+PetiteVue 组件可以嵌套以创建更大的可重用组件。 这种模式，通常与 PetiteVue 存储结合使用，可以一直延伸到在单个父组件中创建整个修改的用户界面（这是首选的，而不是多次调用 `ui.create`）。
+
+考虑以下模板：
+
+[source,html]
+----
+<!-- templates.html -->
+<template id="block-component">
+  <div class="block">
+    <div class="block-header" v-scope="BlockHeader(headerProps)"></div>
+    <div class="block-content" v-scope="BlockContent(contentProps)"></div>
+  </div>
+</template>
+
+<template id="block-header">
+  <h3 class="block-title">{{ title }}</h3>
+</template>
+
+<template id="block-content">
+  <p v-for="line in lines">{{ line }}</p>
+</template>
+----
+
+以及定义的组件：
+
+[source,javascript]
+----
+function Block(props) {
+  return {
+    $template: '#block-component',
+    BlockHeader,
+    BlockContent,
+    headerProps: props.header,
+    contentProps: props.content
+  };
+}
+
+function BlockHeader(props) {
+  return {
+    $template: '#block-header',
+    title: props.title
+  };
+}
+
+function BlockContent(props) {
+  return {
+    $template: '#block-content',
+    lines: props.lines
+  };
+}
+----
+
+可以使用以下代码创建一个完整的块组件：
+
+[source,javascript]
+----
+ui.create(Block({
+  header: { title: 'My Block Component' },
+  content: { lines: ['My first paragraph.', 'My second paragraph.'] }
+}), document.getElementById('woodcutting-container'));
+----
+
+=== 编程方式操作组件
+
+如果需要以编程方式操作组件（或存储）的状态，请保存传递给 `ui.create` 的 `props` 对象的引用。 状态应该只通过对象上的方法来操作，而不是直接设置属性。
+
+例如，使用我们上面的 `Counter`：
+
+[source,html]
+----
+<!-- templates.html -->
+<template id="counter-component">
+  <span class="text-light">{{ count }}</span>
+  <button class="btn btn-secondary" @click="inc">+</button>
+</template>
+----
+
+[source,javascript]
+----
+// setup.mjs
+function Counter(props) {
+  return {
+    $template: '#counter-component',
+    count: props.count,
+    inc() {
+      this.count++;
+    }
+  };
+}
+
+export function setup({ onInterfaceReady }) {
+  onInterfaceReady(() => {
+    // Save a reference here
+    const counter = Counter({ count: 0 });
+    ui.create(counter), document.getElementById('woodcutting-container'));
+
+    // Manipulate here to reflect changes in the UI
+    // BAD: counter.count++;
+    // GOOD:
+    counter.inc();
+  });
+}
+----
+
+== PetiteVue 快速参考
+
+这不是 PetiteVue 功能的详尽介绍，但这些功能可能是最常用的，并提供了每个功能的示例。
+
+=== 文本绑定
+
+使用双大括号符号 <code>{{ }}</code> 在HTML中呈现文本。
+
+*示例*
+
+[source,html]
+----
+<template id="binding-example"><h1>{{ text }}</h1></template>
+----
+
+[source,javascript]
+----
+function BindingExample(props) {
+  return {
+    $template: '#binding-example',
+    text: props.text
+  };
+}
+----
+
+[source,javascript]
+----
+ui.create(BindingExample({ text: 'Hello, Melvor!' }), host);
+// -> <h1>Hello, Melvor!</h1>
+----
+
+=== 属性绑定
+
+使用 `v-bind` 指令或 `:` 简写将属性绑定到 props。
+
+*示例*
+
+[source,html]
+----
+<template id="attr-binding-example">
+  <span v-bind:class="`text-${(warning ? 'warning' : 'info')}`">
+    This message could be a warning or informational.
+  </span>
+</template>
+----
+
+这个表示法实现了相同的效果：
+
+[source,html]
+----
+<template id="attr-binding-example">
+  <span :class="`text-${(warning ? 'warning' : 'info')}`">
+    This message could be a warning or informational.
+  </span>
+</template>
+----
+
+=== 事件绑定/处理
+
+使用 `v-on` 指令或 `@` 简写绑定事件处理程序。
+
+*示例*
+
+[source,html]
+----
+<template id="event-binding-example">
+  <button v-on:click="onClick">Click Me!</button>
+</template>
+----
+
+这个表示法实现了相同的效果：
+
+[source,html]
+----
+<template id="event-binding-example">
+  <button @click="onClick">Click Me!</button>
+</template>
+----
+
+并且可以在组件中使用：
+
+[source,javascript]
+----
+function EventBindingExample() {
+  return {
+    $template: '#event-binding-template',
+    onClick() {
+      alert('You clicked me!');
+    }
+  };
+}
+----
+
+=== 输入值绑定
+
+可以使用 `v-model` 指令绑定输入值。
+
+*示例*
+
+[source,html]
+----
+<template id="input-binding-example">
+  <input v-model="value" />
+</template>
+----
+
+[source,javascript]
+----
+function InputBindingExample(props) {
+  return {
+    value: props.initialValue,
+    setValue(val) {
+      this.input = val;
+    }
+  };
+}
+
+const input = InputBindingExample({ initialValue: 'this is the initial value' });
+ui.create(input, host);
+// -> <input value="this is the initial value" />
+input.setValue('now this value');
+// -> <input value="now this value" />
+
+// Assume the player changes the input in the UI to "new value"
+console.log(input.value); // -> "new value"
+----
+
+=== 条件渲染
+
+可以使用 `v-if`、`v-else` 和 `v-else-if` 指令来有条件地渲染元素。
+
+*示例*
+
+[source,html]
+----
+<template id="conditional-example">
+  <span v-if="value % 15 === 0">FizzBuzz</span>
+  <span v-else-if="value % 3 === 0">Fizz</span>
+  <span v-else-if="value % 5 === 0">Buzz</span>
+  <span v-else>{{ value }}</span>
+</template>
+----
+
+[source,javascript]
+----
+function ConditionalExample(props) {
+  return {
+    $template: 'conditional-example',
+    value: props.value
+  };
+}
+
+ui.create(ConditionalExample({ value: 6 }), host);
+// -> <span>Fizz</span>
+----
+
+include::partial$Mod指南表格.adoc[]

@@ -1,0 +1,143 @@
+= 从脚本和扩展迁移
+
+https://wiki.melvoridle.com/w/Mod_Creation/Migrating_from_Scripts_and_Extensions[原文地址,window=_target]
+
+本指南面向以前创建过用户脚本或扩展并希望将其迁移到与新mod系统兼容的mod创建者。本指南不会介绍新功能，将略过实现细节，并且为了快速迁移mod并运行，可能不会遵循最佳实践。如需更深入的了解，请考虑查阅 xref:mod/基础指南.adoc[Mod开发/基础指南] 进行补充。
+
+== 元数据
+
+无论要迁移的mod是用户脚本还是扩展，之前在相应位置（用户脚本注释块或扩展``manifest.json``文件）定义的绝大多数元数据，都将在mod.io的mod资料页中输入。这包括名称、作者（上传mod.io的帐户）、描述、标签和版本控制。
+
+对于在mod文件内管理的有限元数据，需要有一个**必需**的``manifest.json``文件。此文件必须位于mod打包内容的根目录中。
+
+=== 用户脚本
+
+用户脚本 用户脚本应在manifest中定义一个``“load”``属性，并具有一个字符串值，指向脚本相对于``manifest.json``文件的所在位置。例如，给定以下文件夹结构：
+
+* my-mod（根文件夹）
+** manifest.json
+** script.js
+
+``manifest.json``应该简单地如下：
+
+[source,json]
+----
+{
+  "load": "script.js"
+}
+----
+
+=== 扩展
+
+以前在manifest中定义图标的扩展现在应该在manifest中为``“icon”``属性定义一个单一的值。此图标文件将在游戏中使用，默认情况下显示的最大尺寸为38px x 38px。
+
+以前作为扩展的入口点的内容脚本/样式，现在应该在manifest中作为``“load”``属性定义，值为一个字符串数组，每个条目都是脚本/样式表的相对``manifest.json``文件的位置。例如，给定以下文件夹结构：
+
+* my-mod（根文件夹）
+** icons
+*** my-icon-48.png
+** sources
+*** contentScript.js
+** styles
+*** mainStyle.css
+** manifest.json
+
+和一个以前``manifest.json``（已剥离不相关的属性）:
+
+[source,json]
+----
+{
+  "icons": {
+    "48": "icons/my-icon-48.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["sources/contentScript.js"],
+      "css": ["styles/mainStyle.css"]
+    }
+  ]
+}
+----
+
+根据您提供的扩展结构，以下是新的``manifest.json``示例：
+
+[source,json]
+----
+{
+  "icon": "my-icon-48.png",
+  "load": ["sources/contentScript.js", "styles/mainStyle.css"]
+}
+----
+
+== “加载循环”
+
+用户脚本和扩展程序经常会陷入一种循环，等待游戏加载到某个角色后执行某些操作。
+
+[source,javascript]
+----
+var loadInterval = setInterval(() => {
+  var isGameLoaded = window.isLoaded && !window.currentlyCatchingUp;
+
+  if (isGameLoaded) {
+    clearInterval(loadInterval);
+    // Inject script element or execute code...
+  }
+}, 500);
+----
+
+有了新mod系统的上下文API，就不再需要这样做了。相反，脚本应该使用游戏生命周期钩子，其中最相似的是``onInterfaceReady``：
+
+[source,javascript]
+----
+mod.register(ctx => {
+  ctx.onInterfaceReady(() => {
+    // Code here will only get executed after the game, character, and
+    // offline progress has been loaded.
+  });
+});
+----
+
+您可以在 xref:mod/基础指南.adoc[Mod开发/基础指南] 中了解有关各种游戏生命周期钩子的更多信息。
+
+== 加载打包资源
+
+本节特定于扩展程序，因为这不是用户脚本中通常支持的概念。如果正在迁移的扩展包含脚本、样式表、图像、音频或其他文件，这些文件不会作为``content_scripts``的一部分自动加载，而是在运行时使用，那么这些资源很可能是使用``browser.runtime.getURL``（或``chrome.runtime.getURL``）方法检索的。相反，已迁移的mod应该依赖于新mod上下文API的方法``getResourceUrl``。该方法接收一个字符串值，即请求资源相对于mod包的manifest.json（根目录）的位置。
+
+还为``getResourceUrl``与常见后续任务组合提供了辅助方法。其中一个用于将脚本注入页面的辅助方法为``loadScript``。需要注意的是，``getResourceUrl``是同步的，而所有组合的辅助方法是异步的，返回一个promise。
+
+例如，给定以下文件夹结构：
+
+* my-mod（根文件夹）
+** assets
+*** icon.png
+** scripts
+*** entryScript.js
+*** helper.js
+** manifest.json
+
+假设``entryScript.js``作为manifest的``“load”``属性的一部分加载，那么``entryScript.js``可以检索并使用或加载``icon.png``和``helper.js``，如下所示：
+
+[source,javascript]
+----
+mod.register(async (ctx) => {
+  var iconUrl = ctx.getResourceUrl('assets/icon.png');
+  var iconElement = document.createElement('img');
+  iconElement.src = iconUrl;
+
+  await ctx.loadScript('scripts/helper.js');
+  // Now the contents of helper.js have been injected and executed
+});
+----
+
+如果您想使用JavaScript模块或想了解更多关于各种资源加载方法的信息，可以查看 xref:mod/基础指南.adoc[Mod开发/基础指南]。
+
+== 下一步
+
+希望mod已成功迁移，并在此刻与新mod系统一起使用。但这仅仅是个开始-您可以在其他官方Mod制作指南中探索所有可用的新API和技术：
+
+* xref:mod/入门指南.adoc[Mod开发/入门指南]
+* xref:mod/基础指南.adoc[Mod开发/基础指南]
+* xref:mod/Mod上下文API参考.adoc[Mod开发/Mod上下文API参考]
+* xref:mod/侧边栏API参考.adoc[Mod开发/侧边栏API参考]
+
+include::partial$Mod指南表格.adoc[]

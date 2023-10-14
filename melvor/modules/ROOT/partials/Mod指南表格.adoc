@@ -1,0 +1,13 @@
+[%autowidth]
+|===
+8+^.^|*Mod指南*
+^.^|xref:page$mod/入门指南.adoc[]
+^.^|xref:page$mod/创作工具包.adoc[]
+^.^|xref:page$mod/从脚本和扩展迁移.adoc[]
+^.^|xref:page$mod/基础指南.adoc[]
+^.^|xref:page$mod/Mod上下文API参考.adoc[]
+^.^|xref:page$mod/侧边栏API参考.adoc[]
+^.^|xref:page$mod/使用PetiteVue创建可复用组件.adoc[]
+^.^|xref:page$mod/启用Steam客户端的DevTools.adoc[]
+^.^|xref:page$mod/游戏内功能参考.adoc[]
+|===

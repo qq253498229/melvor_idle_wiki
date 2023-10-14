@@ -1,0 +1,55 @@
+= 创作工具包
+
+https://wiki.melvoridle.com/w/Mod_Creation/Creator_Toolkit[原文地址,window=_target]
+
+Creator Toolkit是Steam游戏内或浏览器中可用的mod创作相关工具的官方平台。
+
+你可以通过Mod管理器（只需搜索“Creator Toolkit”）或 https://mod.io/g/melvoridle/m/creator-toolkit[mod.io网站] 订阅Creator Toolkit。
+
+然后你可以通过以下三种方式之一访问Creator Toolkit：
+
+. 通过Mod管理器中的“Creator Toolkit”选项卡
+. 通过角色选择屏幕上的快捷方式按钮（Mod管理器按钮旁边的星号）
+. 通过游戏内的侧边栏（位于Mod管理器项的正下方）
+
+== 本地Mods
+
+Creator Toolkit的主要功能是加载本地mod，这样可以避免每次开发迭代都需要上传到mod.io。此外，这些本地mod可以链接到mod.io上的mod档案，以快速发布当前本地mod版本。
+
+=== 需要注意本地Mod的重要行为
+
+* 本地mod在Creator Toolkit之后，但在其他任何mod之前加载。但是，可以调整本地mod之间的加载顺序。
+* 如果同时安装了与mod.io mod链接的本地mod，则会自动阻止mod.io版本的加载。
+* 为了使本地mod持久保存数据（*characterStorage*、**accountStorage**和**settings**），该mod必须与mod.io关联，并且您必须通过mod.io订阅并安装该mod。
+
+=== 模式
+
+添加和更新本地mod有两种模式可用。Modfile模式，类似于将每个版本的**.zip**存档上传到mod.io；Directory Link模式，每次游戏重新加载时，会自动创建并加载选定目录的**.zip**存档。
+
+==== Mod文件
+
+使用Modfile模式需要将mod的内容压缩成上传到mod.io所需的文件，然后手动更新本地mod正在使用的文件。
+
+==== 目录链接
+
+Directory Link仅在Steam游戏客户端可用。使用此模式将创建所链接目录的.zip存档，并在每次重新加载游戏时将其用作mod的包。虽然这对于“热重新加载”mod很有用，但也意味着如果有一个非常大的mod或有很多已链接的mod，则在游戏启动时会影响性能。
+
+===== .modignore 文件和文件夹
+
+你可以通过在所链接目录的根目录中创建一个**.modignore**文件，强制Directory Link的zip压缩过程忽略文件和文件夹（这样它们就不会被打包，也不会增加mod的大小）。
+
+**.modignore**文件本身会被自动忽略
+
+该文件应为纯文本，每行一条规则。规则区分大小写，并可以使用 **"*"** 通配符匹配规则中的任何字符。
+
+====== 示例
+
+规则 **webpack.config.js** 匹配 **webpack.config.js**（文件）
+
+规则 **_exclude** 匹配 **_exclude**（文件夹）
+
+规则 **.psd* 匹配 *template.psd*、 *logo.psd*、 *my_cool_icon.psd*
+
+规则 *.*ignore* 匹配 **.gitignore** 、 *.modignore*
+
+include::partial$Mod指南表格.adoc[]

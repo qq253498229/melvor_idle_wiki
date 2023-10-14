@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>使用PetiteVue创建可复用组件 :: 梅尔沃放置指南</title>
+    <meta name="generator" content="Antora 3.1.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../..">梅尔沃放置指南</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="melvor" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">梅尔沃放置</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../战斗/index.html">战斗(no)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/攻击.html">攻击(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/力量.html">力量(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/防御.html">防御(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/生命值.html">生命值(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/远程.html">远程(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/魔法.html">魔法(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/祝祭.html">祝祭(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/屠杀者.html">屠杀者(no)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">非战斗(ing)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/伐木.html">伐木(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/钓鱼.html">钓鱼(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/生火.html">生火(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/烹饪.html">烹饪(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/采矿.html">采矿(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/锻造.html">锻造(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/扒窃.html">扒窃(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/弓匠.html">弓匠(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/制造.html">制造(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/符文锻造.html">符文锻造(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/草药学.html">草药学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/灵巧.html">灵巧(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/召唤.html">召唤(ing)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/星象学.html">星象学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/生活类魔法.html">生活类魔法(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/制图学.html">制图学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/考古学.html">考古学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/农务.html">农务(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/城镇.html">城镇(no)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">练级(no)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/伐木.html">伐木(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/钓鱼.html">钓鱼(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/生火.html">生火(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/烹饪.html">烹饪(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/采矿.html">采矿(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/锻造.html">锻造(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/扒窃.html">扒窃(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/弓匠.html">弓匠(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/制造.html">制造(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/符文锻造.html">符文锻造(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/草药学.html">草药学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/灵巧.html">灵巧(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/召唤-练级.html">召唤(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/星象学.html">星象学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/生活类魔法.html">生活类魔法(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/制图学.html">制图学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/考古学.html">考古学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/农务.html">农务(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/城镇.html">城镇(no)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">其它(no)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/新手指南.html">新手指南(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/指南.html">指南(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/仓库.html">仓库(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/战斗.html">战斗(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/专精.html">专精(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/赚钱.html">赚钱(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/商店.html">商店(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/菜单.html">菜单(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/宠物.html">宠物(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/哥布林突袭.html">哥布林突袭(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/版本信息.html">版本信息(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/使徒的王座DLC.html">使徒的王座DLC(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/探索地图集DLC.html">探索地图集DLC(no)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">参考表格(no)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/道具.html">道具(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/装备.html">装备(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/经验表格.html">经验表格(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/道具升级.html">道具升级(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/战斗区域.html">战斗区域(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/屠杀者区域.html">屠杀者区域(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/副本.html">副本(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/宝箱战利品表格.html">宝箱战利品表格(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/怪物.html">怪物(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/怪物掉落表格.html">怪物掉落表格(no)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">指南(ing)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../指南/战斗-练级.html">战斗-练级(ing)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../指南/熔岩洞窟-指南.html">熔岩洞窟-指南</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../指南/冒险模式-指南.html">冒险模式-指南</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Mod开发</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="入门指南.html">入门指南</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="创作工具包.html">创作工具包</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="从脚本和扩展迁移.html">从脚本和扩展迁移</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="基础指南.html">基础指南</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Mod上下文API参考.html">Mod上下文API参考</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="侧边栏API参考.html">侧边栏API参考</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="使用PetiteVue创建可复用组件.html">使用PetiteVue创建可复用组件</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="启用Steam客户端的DevTools.html">启用Steam客户端的DevTools</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="游戏内功能参考.html">游戏内功能参考</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">工具</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text"><a href="https://consolelog.gitee.io/caniidle/?language=%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87" target="_blank" rel="noopener">我能挂机吗</a></span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">梅尔沃放置</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">梅尔沃放置</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">梅尔沃放置</a></li>
+    <li><a href="index.html">Mod开发</a></li>
+    <li><a href="使用PetiteVue创建可复用组件.html">使用PetiteVue创建可复用组件</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///D:/src/game/melvor_idle_wiki/melvor/modules/ROOT/pages/mod/使用PetiteVue创建可复用组件.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="目录" data-levels="3">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">使用PetiteVue创建可复用组件</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://wiki.melvoridle.com/w/Mod_Creation/Reusable_Components_with_PetiteVue" target="_target">原文地址</a></p>
+</div>
+<div class="paragraph">
+<p>梅尔沃放置附带了 <a href="https://github.com/vuejs/petite-vue">PetiteVue</a>，供mod使用以创建可重用的HTML组件。 除了 <a href="https://github.com/vuejs/petite-vue">官方GitHub页面</a>上的文档，还可以参考 <a href="https://vuejs.org/guide/introduction.html">完整的Vue.js文档</a>（以了解PetiteVue指令的定义和功能，因为有许多完整的Vue.js功能不可用），以帮助使用PetiteVue库。 此外，还有一些辅助函数可帮助mod更轻松地与PetiteVue互动。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_辅助函数"><a class="anchor" href="#_辅助函数"></a>1. 辅助函数</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>这些是梅尔沃放置提供的用于与PetiteVue互动的函数。 为了避免与加载mod时可能出现的边缘情况和奇怪现象，您应该使用这些函数来与 <code>PetiteVue</code> 全局对象互动，而不是直接操作它。</p>
+</div>
+<div class="sect2">
+<h3 id="_ui_createprops_componentprops_host_htmlelement_htmlelement"><a class="anchor" href="#_ui_createprops_componentprops_host_htmlelement_htmlelement"></a>1.1. ui.create(props: ComponentProps, host: HTMLElement): HTMLElement</h3>
+<div class="paragraph">
+<p>创建一个组件实例并将其挂载到HTML中。</p>
+</div>
+<div class="paragraph">
+<p><strong>参数</strong></p>
+</div>
+<div class="paragraph">
+<p><code>props: ComponentProps</code> 您想要实例化的PetiteVue组件函数。</p>
+</div>
+<div class="paragraph">
+<p><code>host: HTMLElement</code> 组件应附加到的元素。</p>
+</div>
+<div class="paragraph">
+<p><strong>返回</strong></p>
+</div>
+<div class="paragraph">
+<p><code>HTMLElement</code> 宿主元素。</p>
+</div>
+<div class="paragraph">
+<p><strong>示例</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;!-- templates.html --&gt;
+&lt;template id="counter-component"&gt;
+  &lt;span class="text-light"&gt;{{ count }}&lt;/span&gt;
+  &lt;button class="btn btn-secondary" @click="inc"&gt;+&lt;/button&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">// manifest.json
+{
+  "load": ["templates.html"]
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><em>JSON中的注释仅用于说明，不是有效的标记</em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">// setup.mjs
+function Counter(props) {
+  return {
+    $template: '#counter-component',
+    count: props.count,
+    inc() {
+      this.count++;
+    }
+  };
+}
+
+export function setup({ onInterfaceReady }) {
+  onInterfaceReady(() =&gt; {
+    // Create and append a Counter component to the bottom of the Woodcutting page
+    ui.create(Counter({ count: 0 }), document.getElementById('woodcutting-container'));
+  });
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ui_createstoreprops_recordstring_unknown_componentstore"><a class="anchor" href="#_ui_createstoreprops_recordstring_unknown_componentstore"></a>1.2. ui.createStore(props: Record&lt;string, unknown&gt;): ComponentStore</h3>
+<div class="paragraph">
+<p>创建一个PetiteVue存储，用于在组件之间共享状态。</p>
+</div>
+<div class="paragraph">
+<p><strong>参数</strong></p>
+</div>
+<div class="paragraph">
+<p><code>props: Record&lt;string, unknown&gt;</code> 存储应包含的属性。</p>
+</div>
+<div class="paragraph">
+<p><strong>返回</strong></p>
+</div>
+<div class="paragraph">
+<p><code>ComponentStore</code> 可在组件之间共享的PetiteVue存储。</p>
+</div>
+<div class="paragraph">
+<p><strong>示例</strong></p>
+</div>
+<div class="paragraph">
+<p>在上面的 <code>ui.create</code> 示例中，如果创建了第二个 <code>Counter</code> 组件，它将包含自己的状态，单击一个组件的递增按钮不会影响另一个组件。 通过使用存储，您可以按以下方式共享状态：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;!-- templates.html --&gt;
+&lt;template id="counter-component-using-store"&gt;
+  &lt;span class="text-light"&gt;{{ store.count }}&lt;/span&gt;
+  &lt;button class="btn btn-secondary" @click="store.inc"&gt;+&lt;/button&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">// manifest.json
+{
+  "load": ["templates.html"]
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><em>JSON中的注释仅用于说明，不是有效的标记</em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">// setup.mjs
+function CounterUsingStore({ store }) {
+  return {
+    $template: '#counter-component-using-store',
+    store
+  };
+}
+
+export function setup({ onInterfaceReady }) {
+  onInterfaceReady(() =&gt; {
+    const store = ui.createStore({
+      count: 0,
+      inc() {
+        this.count++;
+      }
+    });
+
+    // Create and append a CounterUsingStore component to the bottom of the Woodcutting page
+    ui.create(CounterUsingStore({ store }), document.getElementById('woodcutting-container'));
+    // Create and append another CounterUsingStore component to the bottom of the Firemaking page
+    ui.create(CounterUsingStore({ store }), document.getElementById('firemaking-container'));
+  });
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在此示例中，Woodcutting页面上的计数器和Firemaking页面上的计数器应该保持同步。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ui_createstatictemplate_string_host_htmlelement_htmlelement"><a class="anchor" href="#_ui_createstatictemplate_string_host_htmlelement_htmlelement"></a>1.3. ui.createStatic(template: string, host: HTMLElement): HTMLElement</h3>
+<div class="paragraph">
+<p>创建一个静态组件实例（无PetiteVue绑定）并将其挂载到HTML中。 如果只需要创建可重用的静态HTML部分，应优选使用此辅助函数。</p>
+</div>
+<div class="paragraph">
+<p><strong>参数</strong></p>
+</div>
+<div class="paragraph">
+<p><code>template: string</code> 要克隆的模板的选择器字符串。 例如，要针对`&lt;template id="static-component"&gt;&lt;!-- -&#8594;&lt;/template&gt;`，可以使用&#8217;#static-component'`。</p>
+</div>
+<div class="paragraph">
+<p><code>host: HTMLElement</code> 组件应附加到的元素。</p>
+</div>
+<div class="paragraph">
+<p><strong>返回</strong></p>
+</div>
+<div class="paragraph">
+<p><code>HTMLElement</code> 宿主元素。</p>
+</div>
+<div class="paragraph">
+<p><strong>示例</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;!-- static-templates.html --&gt;
+&lt;template id="my-static-component"&gt;
+  &lt;h3&gt;Hello, this is static HTML&lt;/h3&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">// manifest.json
+{
+  "load": ["static-templates.html"]
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><em>JSON中的注释仅用于说明，不是有效的标记</em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">// setup.mjs
+export function setup({ onInterfaceReady }) {
+  onInterfaceReady(() =&gt; {
+    // Create the static component and place it at the bottom of the Woodcutting page
+    ui.createStatic('#my-static-component', document.getElementById('woodcutting-container'));
+  });
+}</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_嵌套静态组件"><a class="anchor" href="#_嵌套静态组件"></a>1.3.1. 嵌套静态组件</h4>
+<div class="paragraph">
+<p>要嵌套静态组件，需要在宿主元素上使用 <code>s-template</code> 属性引用子组件模板。</p>
+</div>
+<div class="paragraph">
+<p>例如，给定以下模板：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;!-- static-templates.html --&gt;
+&lt;template id="static-parent"&gt;
+  &lt;h3&gt;Hello, this is static HTML from the parent&lt;/h3&gt;
+  &lt;div s-template="#static-child"&gt;&lt;/div&gt;
+&lt;/template&gt;
+
+&lt;template id="static-child"&gt;
+  &lt;p&gt;And this HTML is from a static child.&lt;/p&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>可以使用以下方式创建父组件：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">// setup.mjs
+export function setup({ onInterfaceReady }) {
+  onInterfaceReady(() =&gt; {
+    ui.createStatic('#static-parent', document.getElementById('woodcutting-container'));
+  });
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这将导致以下HTML添加到Woodcutting页面底部：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;h3&gt;Hello, this is static HTML from the parent&lt;/h3&gt;
+&lt;div&gt;
+  &lt;p&gt;And this HTML is from a static child.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_有用的模式"><a class="anchor" href="#_有用的模式"></a>2. 有用的模式</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_嵌套组件"><a class="anchor" href="#_嵌套组件"></a>2.1. 嵌套组件</h3>
+<div class="paragraph">
+<p>PetiteVue 组件可以嵌套以创建更大的可重用组件。 这种模式，通常与 PetiteVue 存储结合使用，可以一直延伸到在单个父组件中创建整个修改的用户界面（这是首选的，而不是多次调用 <code>ui.create</code>）。</p>
+</div>
+<div class="paragraph">
+<p>考虑以下模板：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;!-- templates.html --&gt;
+&lt;template id="block-component"&gt;
+  &lt;div class="block"&gt;
+    &lt;div class="block-header" v-scope="BlockHeader(headerProps)"&gt;&lt;/div&gt;
+    &lt;div class="block-content" v-scope="BlockContent(contentProps)"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;template id="block-header"&gt;
+  &lt;h3 class="block-title"&gt;{{ title }}&lt;/h3&gt;
+&lt;/template&gt;
+
+&lt;template id="block-content"&gt;
+  &lt;p v-for="line in lines"&gt;{{ line }}&lt;/p&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>以及定义的组件：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">function Block(props) {
+  return {
+    $template: '#block-component',
+    BlockHeader,
+    BlockContent,
+    headerProps: props.header,
+    contentProps: props.content
+  };
+}
+
+function BlockHeader(props) {
+  return {
+    $template: '#block-header',
+    title: props.title
+  };
+}
+
+function BlockContent(props) {
+  return {
+    $template: '#block-content',
+    lines: props.lines
+  };
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>可以使用以下代码创建一个完整的块组件：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">ui.create(Block({
+  header: { title: 'My Block Component' },
+  content: { lines: ['My first paragraph.', 'My second paragraph.'] }
+}), document.getElementById('woodcutting-container'));</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_编程方式操作组件"><a class="anchor" href="#_编程方式操作组件"></a>2.2. 编程方式操作组件</h3>
+<div class="paragraph">
+<p>如果需要以编程方式操作组件（或存储）的状态，请保存传递给 <code>ui.create</code> 的 <code>props</code> 对象的引用。 状态应该只通过对象上的方法来操作，而不是直接设置属性。</p>
+</div>
+<div class="paragraph">
+<p>例如，使用我们上面的 <code>Counter</code>：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;!-- templates.html --&gt;
+&lt;template id="counter-component"&gt;
+  &lt;span class="text-light"&gt;{{ count }}&lt;/span&gt;
+  &lt;button class="btn btn-secondary" @click="inc"&gt;+&lt;/button&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">// setup.mjs
+function Counter(props) {
+  return {
+    $template: '#counter-component',
+    count: props.count,
+    inc() {
+      this.count++;
+    }
+  };
+}
+
+export function setup({ onInterfaceReady }) {
+  onInterfaceReady(() =&gt; {
+    // Save a reference here
+    const counter = Counter({ count: 0 });
+    ui.create(counter), document.getElementById('woodcutting-container'));
+
+    // Manipulate here to reflect changes in the UI
+    // BAD: counter.count++;
+    // GOOD:
+    counter.inc();
+  });
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_petitevue_快速参考"><a class="anchor" href="#_petitevue_快速参考"></a>3. PetiteVue 快速参考</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>这不是 PetiteVue 功能的详尽介绍，但这些功能可能是最常用的，并提供了每个功能的示例。</p>
+</div>
+<div class="sect2">
+<h3 id="_文本绑定"><a class="anchor" href="#_文本绑定"></a>3.1. 文本绑定</h3>
+<div class="paragraph">
+<p>使用双大括号符号 &lt;code&gt;{{ }}&lt;/code&gt; 在HTML中呈现文本。</p>
+</div>
+<div class="paragraph">
+<p><strong>示例</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;template id="binding-example"&gt;&lt;h1&gt;{{ text }}&lt;/h1&gt;&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">function BindingExample(props) {
+  return {
+    $template: '#binding-example',
+    text: props.text
+  };
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">ui.create(BindingExample({ text: 'Hello, Melvor!' }), host);
+// -&gt; &lt;h1&gt;Hello, Melvor!&lt;/h1&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_属性绑定"><a class="anchor" href="#_属性绑定"></a>3.2. 属性绑定</h3>
+<div class="paragraph">
+<p>使用 <code>v-bind</code> 指令或 <code>:</code> 简写将属性绑定到 props。</p>
+</div>
+<div class="paragraph">
+<p><strong>示例</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;template id="attr-binding-example"&gt;
+  &lt;span v-bind:class="`text-${(warning ? 'warning' : 'info')}`"&gt;
+    This message could be a warning or informational.
+  &lt;/span&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这个表示法实现了相同的效果：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;template id="attr-binding-example"&gt;
+  &lt;span :class="`text-${(warning ? 'warning' : 'info')}`"&gt;
+    This message could be a warning or informational.
+  &lt;/span&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_事件绑定处理"><a class="anchor" href="#_事件绑定处理"></a>3.3. 事件绑定/处理</h3>
+<div class="paragraph">
+<p>使用 <code>v-on</code> 指令或 <code>@</code> 简写绑定事件处理程序。</p>
+</div>
+<div class="paragraph">
+<p><strong>示例</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;template id="event-binding-example"&gt;
+  &lt;button v-on:click="onClick"&gt;Click Me!&lt;/button&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这个表示法实现了相同的效果：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;template id="event-binding-example"&gt;
+  &lt;button @click="onClick"&gt;Click Me!&lt;/button&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>并且可以在组件中使用：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">function EventBindingExample() {
+  return {
+    $template: '#event-binding-template',
+    onClick() {
+      alert('You clicked me!');
+    }
+  };
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_输入值绑定"><a class="anchor" href="#_输入值绑定"></a>3.4. 输入值绑定</h3>
+<div class="paragraph">
+<p>可以使用 <code>v-model</code> 指令绑定输入值。</p>
+</div>
+<div class="paragraph">
+<p><strong>示例</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;template id="input-binding-example"&gt;
+  &lt;input v-model="value" /&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">function InputBindingExample(props) {
+  return {
+    value: props.initialValue,
+    setValue(val) {
+      this.input = val;
+    }
+  };
+}
+
+const input = InputBindingExample({ initialValue: 'this is the initial value' });
+ui.create(input, host);
+// -&gt; &lt;input value="this is the initial value" /&gt;
+input.setValue('now this value');
+// -&gt; &lt;input value="now this value" /&gt;
+
+// Assume the player changes the input in the UI to "new value"
+console.log(input.value); // -&gt; "new value"</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_条件渲染"><a class="anchor" href="#_条件渲染"></a>3.5. 条件渲染</h3>
+<div class="paragraph">
+<p>可以使用 <code>v-if</code>、<code>v-else</code> 和 <code>v-else-if</code> 指令来有条件地渲染元素。</p>
+</div>
+<div class="paragraph">
+<p><strong>示例</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;template id="conditional-example"&gt;
+  &lt;span v-if="value % 15 === 0"&gt;FizzBuzz&lt;/span&gt;
+  &lt;span v-else-if="value % 3 === 0"&gt;Fizz&lt;/span&gt;
+  &lt;span v-else-if="value % 5 === 0"&gt;Buzz&lt;/span&gt;
+  &lt;span v-else&gt;{{ value }}&lt;/span&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">function ConditionalExample(props) {
+  return {
+    $template: 'conditional-example',
+    value: props.value
+  };
+}
+
+ui.create(ConditionalExample({ value: 6 }), host);
+// -&gt; &lt;span&gt;Fizz&lt;/span&gt;</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle" colspan="8"><p class="tableblock"><strong>Mod指南</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="入门指南.html" class="xref page">Mod开发的入门指南</a></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="创作工具包.html" class="xref page">创作工具包</a></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="从脚本和扩展迁移.html" class="xref page">从脚本和扩展迁移</a></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="基础指南.html" class="xref page">基础指南</a></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="Mod上下文API参考.html" class="xref page">Mod上下文API参考</a></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="侧边栏API参考.html" class="xref page">侧边栏API参考</a></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="使用PetiteVue创建可复用组件.html" class="xref page">使用PetiteVue创建可复用组件</a></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="启用Steam客户端的DevTools.html" class="xref page">启用Steam客户端的DevTools</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+
+  </body>
+</html>

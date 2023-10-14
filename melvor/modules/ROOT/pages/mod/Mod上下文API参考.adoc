@@ -1,0 +1,1189 @@
+= Mod上下文API参考
+
+https://wiki.melvoridle.com/w/Mod_Creation/Mod_Context_API_Reference[原文地址,window=_target]
+
+== 访问 Mod 上下文对象
+
+本指南中的所有示例都将假设一个名为ctx的 Mod 上下文对象在当前范围内。
+
+=== 在模块中
+
+在``manifest.json``中，如果一个模块被定义为你的模组的``“设置”（setup）``，那么导出的``setup``函数将接收一个上下文对象作为唯一的参数
+
+[source,javascript]
+----
+export function setup(ctx) {
+  // ...
+}
+----
+
+否则，使用全局的 `mod.getContext` 方法，传入您模块的元对象：
+
+[source,javascript]
+----
+const ctx = mod.getContext(import.meta);
+----
+
+=== 在脚本中
+
+对于脚本来说，推荐的方法是使用全局的 `mod.register` 方法。这只适用于通过 `manifest.json` 的``“load”``属性或 context 对象的 `loadScript` 方法注入的脚本。
+
+[source,javascript]
+----
+mod.register(ctx => {
+  // ...
+});
+----
+
+=== 在生命周期方法中
+
+所有游戏生命周期方法回调也将只接收到各自mod的上下文对象作为唯一参数。
+
+[source,javascript]
+----
+onCharacterLoaded(ctx => {
+  // ...
+});
+----
+
+=== 在开发上下文中
+
+为了方便原型设计，您可以使用全局的 `mod.getDevContext` 方法来获取一个特殊的开发 mod 上下文对象。这不应用于 mod 中，仅用于开发目的（通过控制台）。任何需要资源的 API 都不会起作用，因为开发“mod”不包含任何资源。
+
+[source,javascript]
+----
+const devCtx = mod.getDevContext();
+----
+
+== 获取属性
+
+=== name: string
+
+mod的名字
+
+=== namespace: string | undefined
+
+定义mod的namespace，如果提供的话
+
+=== version: string
+
+当前加载的mod的版本号
+
+[[加载资源]]
+== 加载资源
+
+*🚨所有资源文件路径必须相对于您 mod 的根目录🚨*
+
+=== getResourceUrl(path: string): string
+
+获取您的 Mod 打包中的任何资源的可用 URL。
+
+*参数*
+
+`path: string` 生成 URL 的资源的相对路径
+
+*返回*
+
+`string` 请求的资源的URL
+
+*示例*
+
+[source,javascript]
+----
+const url = ctx.getResourceUrl('sea-shanty-2.ogg');
+const song = new Audio(url);
+song.loop = true;
+song.play();
+----
+
+=== loadModule(path: string): Promise<any>
+
+动态导入一个JavaScript模块。
+
+*参数*
+
+`path: string` 模块资源的相对路径
+
+*返回*
+
+`Promise<any>` 一个 Promise，该 Promise 将解析为包含模块导出特性的对象
+
+*示例*
+
+[source,javascript]
+----
+// my-module.mjs
+export function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+----
+
+[source,javascript]
+----
+const myModule = await ctx.loadModule('my-module.mjs');
+myModule.greet('Melvor'); // Hello, Melvor!
+----
+
+=== loadScript(path: string): Promise<void>
+
+将一个JavaScript文件注入到页面中。
+
+*参数*
+
+`path: string` 脚本资源的相对路径
+
+*返回*
+
+`Promise<void>` 一个 Promise，当注入的脚本执行完毕时，该 Promise 将解析
+
+*示例*
+
+[source,javascript]
+----
+// Await call if wanting the script to run before continuing
+await ctx.loadScript('my-script.js');
+// my-script.js has run
+
+// Don't await if no dependency on script
+ctx.loadScript('my-independednt-script.js');
+// my-independent-script.js has NOT run yet
+----
+
+=== loadTemplates(path: string): Promise<void>
+
+将给定 HTML 文件中包含的所有 `<template>` 元素注入到文档主体中。
+
+*参数*
+
+`path: string` HTML 资源的相对路径
+
+*返回*
+
+`Promise<void>` 一个在所有模板被注入到文档主体后解析的承诺。
+
+*示例*
+
+[source,javascript]
+----
+ctx.loadTemplates('my-templates.html');
+----
+
+=== loadStylesheet(path: string): void
+
+将 CSS 样式表注入到页面中。
+
+*参数*
+
+`path: string` 样式表资源的相对路径
+
+*示例*
+
+[source,javascript]
+----
+ctx.loadStylesheet('my-styles.css');
+----
+
+=== loadData(path: string): Promise<any>
+
+从 JSON 资源加载数据。
+
+*参数*
+
+`path: string` JSON 资源的相对路径
+
+*返回*
+
+`Promise<any>` 一个解析为 JSON 对象的承诺。
+
+*示例*
+
+[source,json]
+----
+// my-data.json
+{
+  "coolThings": [
+    "rocks"
+  ]
+}
+----
+
+_JSON 中的注释仅仅是示意性的，而不是有效的标记。_
+
+[source,javascript]
+----
+// in JavaScript
+const myData = await ctx.loadData('my-data.json');
+console.log(myData.coolThings); // ['rocks']
+----
+
+== 共享资源
+
+=== share(resourcePath: string): void
+
+共享一个打包的 Mod 资源，供其他 Mod 使用。
+
+*参数*
+
+`resourcePath: string` 要共享的资源路径
+
+*示例*
+
+[source,json]
+----
+// manifest.json
+{
+  "namespace": "helloMelvor"
+}
+----
+
+_JSON 中的注释仅仅是示意性的，而不是有效的标记。_
+
+[source,javascript]
+----
+// in JavaScript
+ctx.share('my_cool_image.png');
+ctx.share('Greeter.mjs');
+----
+
+然后其他的 Mod 可以在任何接受 Mod 资源路径的地方使用这个资源。
+
+[source,javascript]
+----
+ctx.getResourceUrl('helloMelvor:my_cool_image.png');
+const { Greeter } = await loadModule('helloMelvor:Greeter.mjs');
+const greeter = new Greeter();
+----
+
+[[生命周期钩子]]
+== 生命周期钩子
+
+=== onModsLoaded(callback: (ctx: ModContext) => void | Promise<void>): void
+
+在所有 Mod 已加载后执行代码（角色选择屏幕）。
+
+*参数*
+
+`callback: (ctx: ModContext) => void | Promise<void>` 一个回调函数，接收 Mod 的上下文对象作为参数。可以是同步或异步的。
+
+*示例*
+
+[source,javascript]
+----
+ctx.onModsLoaded(async (ctx) => {
+  // ...
+});
+----
+
+=== onCharacterSelectionLoaded(callback: (ctx: ModContext) => void | Promise<void>): void
+
+在角色选择屏幕完全加载后执行代码。
+
+*参数*
+
+`callback: (ctx: ModContext) => void | Promise<void>` 一个回调函数，接收 Mod 的上下文对象作为参数。可以是同步或异步的。
+
+*示例*：
+
+[source,javascript]
+----
+ctx.onCharacterSelectionLoaded(async (ctx) => {
+  // ...
+});
+----
+
+=== onInterfaceAvailable(callback: (ctx: ModContext) => void | Promise<void>): void
+
+在角色加载之前但在游戏界面最初被注入到页面中（但尚未初始化）执行代码。主要用于添加界面元素，用于自定义技能，在onCharacterLoaded之前需要出现。
+
+*参数*
+
+callback: (ctx: ModContext) => void | Promise<void> 一个回调函数，接收 Mod 的上下文对象作为参数。可以是同步或异步的。
+
+*示例*
+
+[source,javascript]
+----
+ctx.onInterfaceAvailable(async (ctx) => {
+  // ...
+});
+----
+
+=== onCharacterLoaded(callback: (ctx: ModContext) => void | Promise<void>): void
+
+在玩家选择的角色加载并创建所有游戏对象后，但在离线进度计算之前执行代码。
+
+*参数*
+
+`callback: (ctx: ModContext) => void | Promise<void>` 一个回调函数，接收 Mod 的上下文对象作为参数。可以是同步或异步的。
+
+*示例*
+
+[source,javascript]
+----
+ctx.onCharacterLoaded(async (ctx) => {
+  // ...
+});
+----
+
+=== onInterfaceReady(callback: (ctx: ModContext) => void | Promise<void>): void
+
+在离线进度被计算后，所有游戏内用户界面元素都被创建后执行代码。
+
+*参数*
+
+`callback: (ctx: ModContext) => void | Promise<void>` 一个回调函数，接收 Mod 的上下文对象作为参数。可以是同步或异步的。
+
+*示例*
+
+[source,javascript]
+----
+ctx.onInterfaceReady(async (ctx) => {
+  // ...
+});
+----
+
+[[注册游戏对象]]
+== 注册游戏对象
+
+游戏对象注册 API 可以通过根上下文对象的 `gameData` 属性来访问。
+
+=== addPackage(data: string | GameDataPackage): Promise<void>
+
+注册一个游戏数据包。
+
+*参数*
+
+`data: string | GameDataPackage` 资源路径到您的游戏数据包 `.json` 文件或者有效的 JavaScript GameDataPackage 对象。
+
+*示例*
+
+[source,json]
+----
+// data.json
+{
+  "$schema": "https://melvoridle.com/assets/schema/gameData.json",
+  "data": {
+    // data objects here
+  }
+}
+----
+
+_JSON 中的注释仅仅是示意性的，而不是有效的标记。_
+
+[source,javascript]
+----
+await ctx.gameData.addPackage('data.json');
+----
+
+=== buildPackage(builder: (packageBuilder: GameDataPackageBuilder) => void): BuiltGameDataPackage
+
+使用 `GameDataPackageBuilder` API 构建一个 GameDataPackage 对象。
+
+*参数*
+
+`builder: (packageBuilder: GameDataPackageBuilder) => void` 用于向数据包添加单个游戏对象的构建器。
+
+*返回*
+
+`BuiltGameDataPackage` 游戏数据包的包装器。请参阅下面的信息。
+
+*示例*
+
+[source,javascript]
+----
+ctx.gameData.buildPackage((p) => {
+  // data registration here
+});
+----
+
+==== BuiltGameDataPackage.package: GameDataPackage
+
+（Property）实际构建的 `GameDataPackage` 对象。
+
+==== BuiltGameDataPackage.add(): void
+
+注册已构建的游戏数据包。
+
+*示例*
+
+[source,javascript]
+----
+const pkg = ctx.gameData.buildPackage((p) => { /* ... */ });
+pkg.add();
+----
+
+[[Mod配置]]
+== Mod配置
+
+NOTE: 当通过 Creator Toolkit 将您的 Mod 作为本地 Mod 加载时，您的 Mod 必须与 mod.io 进行关联，并且您必须通过 mod.io 订阅并安装了该 Mod，以便使这些数据持久化。
+
+Mod 设置 API 可以通过根上下文对象上的 `settings` 属性来访问。
+
+=== section(name: string): Section
+
+获取或创建一个设置部分。部分创建的顺序决定了它们在 Mod 设置窗口中的显示顺序。
+
+*参数*
+
+`name: string` 部分的名称。这将显示为设置窗口中的部分标题。
+
+*返回*
+
+`Section` 部分的对象，用于执行添加、设置或获取设置。
+
+*示例*
+
+[source,javascript]
+----
+ctx.settings.section('General');
+ctx.settings.section('Other');
+// Sections will be displayed in the settings window in this order
+// 1. General
+// 2. Other
+----
+
+==== Section.add(config: SettingConfig | SettingConfig[]): void
+
+向部分添加设置。设置添加到部分的顺序决定了它们在 Mod 设置窗口中的显示顺序。
+
+*参数*
+
+`config: SettingConfig | SettingConfig[]` 设置的配置对象或配置对象数组，以一次添加多个设置。请参阅下面的“设置类型”部分以获取设置配置选项。
+
+*示例*
+
+[source,javascript]
+----
+ctx.settings.section('General').add({
+  type: 'switch',
+  name: 'awesomeness-detection',
+  label: 'Awesomeness Detection',
+  hint: 'Determines if you are awesome or not.',
+  default: false
+});
+
+ctx.settings.section('Other').add([{
+    type: 'label',
+    label: 'I am just a label though my story seldom told...'
+  }, {
+    type: 'number',
+    name: 'pick-a-number',
+    label: 'Pick a Number',
+    hint: '1 through 10'
+}]);
+----
+
+==== Section.get(name: string): any
+
+通过其名称属性获取设置的当前值。
+
+*参数*
+
+`name: string` 要获取值的设置的名称
+
+*返回*
+
+`any` 设置的当前值
+
+*示例*
+
+[source,javascript]
+----
+// Assuming the player has typed "1" into the setting
+ctx.settings.section('Other').get('pick-a-number'); // 1
+----
+
+==== Section.set(name: string, value: any): void
+
+通过其名称属性以编程方式设置设置的值。
+
+*参数*
+
+`name: string` 要设置值的设置的名称
+
+`value: any` 要设置的值
+
+*示例*
+
+[source,javascript]
+----
+ctx.settings.section('Other').set('pick-a-number', 5);
+----
+
+=== type(name: string, config: SettingTypeConfig): void
+
+注册一个设置类型，然后可以在添加设置时由任何 Mod 使用。
+
+*参数*
+
+`name: string` 设置类型的名称。这是在添加新设置时用于设置配置的类型属性。其他 Mod 必须在名称前加上您的 Mod 命名空间。
+
+`config: SettingTypeConfig` 定义设置类型行为的对象。请参见下面的定义。
+
+*示例*
+
+[source,json]
+----
+// manifest.json
+{
+  "namespace": "my_mod"
+  // ...
+}
+----
+
+_JSON 中的注释仅仅是示意性的，而不是有效的标记。_
+
+[source,javascript]
+----
+ctx.settings.type('customText', {
+  // See example config in SettingTypeConfig section below
+});
+
+ctx.settings.section('General').add({
+  type: 'customText',
+  // ...
+});
+----
+
+其他 Mod 必须添加您的命名空间以使用您的自定义类型：
+
+[source,javascript]
+----
+ctx.settings.section('Other').add({
+  type: 'my_mod:customText',
+  // ...
+});
+----
+
+[[_settingtypeconfig]]
+==== SettingTypeConfig
+
+所有函数都是必需的。
+
+===== render(name: string, onChange: () => void, config: SettingConfig): HTMLElement
+
+render 函数负责使用传递给配置的属性来渲染设置的 HTML。
+
+`name` 参数可在必要时用作设置的 HTML 中的 id。常见用例是将 `<input>` 的 `name` 和 `id` 属性设置为此值，然后将 `<label>` 的 `for` 属性也设置为此值。
+
+`onChange` 参数应在更改此设置的值时调用。常见用例是将其添加为 `<input>` 元素的 `change` 事件的事件监听器。
+
+`config` 参数包含在添加此设置时传递给配置对象的所有值。例如，`label`，`hint`，``default``等属性。
+
+个别设置可以选择在其 `onChange` 方法中返回验证错误。您可以在具有 `validation-message` 类的元素中显示此验证错误的位置。
+
+[source,javascript]
+----
+// The render function for a simple text box
+function render(name, onChange, config) {
+  const input = document.createElement('input');
+  input.id = name;
+  input.type = 'text';
+  input.name = name;
+  input.addEventListener('change', () => onChange());
+
+  const label = document.createElement('label');
+  label.for = name;
+  label.textContent = config.label;
+
+  if (config.hint) {
+    const hint = document.createElement('small');
+    hint.textContent = config.hint;
+    label.appendChild(hint);
+  }
+
+  const validation = document.createElement('small');
+  validation.classList.add('text-danger', 'validation-message');
+
+  const root = document.createElement('div');
+  root.appendChild(input);
+  root.appendChild(label);
+  root.appendChild(validation);
+
+  return root;
+}
+----
+
+===== get(root: HTMLElement): any
+
+`get` 函数负责检索设置的当前值。它只接收一个参数，即从 render 函数返回的根 HTML 元素，这对于获取当前值可能会有用。
+
+[source,javascript]
+----
+// get function for simple text input defined by above render
+function get(root) {
+  return root.querySelector('input').value;
+}
+----
+
+===== set(root: HTMLElement, value: any): void
+
+`set` 函数负责将 HTML 与当前值保持同步（如果以编程方式更新）。它接收来自 render 函数的根 HTML 元素和要设置的值作为两个参数。
+
+[source,javascript]
+----
+// set function for simple text setting defined above
+function set(root, value) {
+  root.querySelector('input').value = value;
+}
+----
+
+==== 示例
+
+[source,javascript]
+----
+// Use functions defined in above examples as reference
+ctx.settings.type('simpleText', {
+  render: render,
+  get: get,
+  set: set
+});
+----
+
+=== 内置类型
+
+==== 基本设置配置
+
+所有单独的设置都继承这个基本设置配置对象。
+
+[source,javascript]
+----
+interface SettingConfig {
+  type: string; // Type of the setting
+  name: string; // Name of the setting
+  label: string | HTMLElement; // Display label for the setting
+  hint: string | HTMLElement; // Small help text to display alongside the setting
+  default: any; // Default value for the setting
+  onChange(value: any, previousValue: any): void | boolean | string // See notes
+}
+----
+
+`onChange` 选项是一个回调函数，它接收正在设置的新值和设置的先前值。这个函数可以选择返回一个值作为验证器：
+
+* 无返回值 / `undefined ` / `true` / 非字符串的真值（non-string）：验证成功，允许更改值。
+* `false` / 假值：验证失败，设置的值还原到以前的值。
+* ``string ``值：验证失败，设置的值还原到以前的值，并且字符串内容显示在 `.validation-message` 元素中，如果可用（参见上面的自定义渲染）。
+
+==== Text
+
+一个默认情况下接受任何字符的简单文本框。值的类型是``string``。
+
+[source,javascript]
+----
+interface TextConfig implements SettingConfig {
+  type: 'text';
+  maxLength: number; // Max length attribute for the textbox
+}
+----
+
+==== Number
+
+一个仅接受数字的简单文本框。值的类型是``number``。
+
+[source,javascript]
+----
+interface NumberConfig implements SettingConfig {
+  type: 'number';
+  min: number; // Minimum value to be entered
+  max: number; // Maximum value to be entered
+}
+----
+
+==== Switch
+
+一个打开/关闭切换开关。值的类型是``boolean``。
+
+[source,javascript]
+----
+interface SwitchConfig implements SettingConfig {
+  type: 'switch'
+}
+----
+
+==== Dropdown
+
+一个下拉按钮。例如："默认加载页面" 游戏设置。值的类型是``any``。
+
+[source,javascript]
+----
+DropdownConfig implements SettingConfig {
+  type: 'dropdown';
+  color: string; // see Button config
+  options: DropdownOption[]; // see note
+}
+----
+
+`options` 选项定义了可供选择的下拉选项。下拉选项的结构如下：
+
+[source,javascript]
+----
+interface DropdownOption {
+  value: any; // value that is used by the setting
+  display: string | HTMLElement; // display text or element on the option
+}
+----
+
+==== Button
+
+一个按钮。值是``undefined``的。
+
+[source,javascript]
+----
+interface ButtonConfig implements SettingConfig {
+  type: 'button';
+  display: string | HTMLElement; // displayed text or element inside the button
+  color: string; // see note
+  onClick(): void; // triggered on click of the button
+}
+----
+
+`color` 选项附加到以 `btn-` 开头的 CSS 类，如果未定义，则默认为``primary ``颜色（`btn-primary`）。可用的默认颜色有：
+
+* primary: 蓝色
+* secondary: 灰色
+* success: 绿色
+* info: 浅蓝色
+* warning: 黄色
+* danger: 红色
+* dark: 深灰色
+
+==== Checkbox Group
+
+一组复选框。值的类型是任何``any[]``。
+
+[source,javascript]
+----
+interface CheckboxGroupConfig implements SettingConfig {
+  type: 'checkbox-group';
+  options: CheckboxOption[]; // see note
+}
+----
+
+`options` 选项定义了可供选择的复选框。复选框选项的结构如下：
+
+[source,javascript]
+----
+interface CheckboxOption {
+  value: any; // value to be added to array that is set as setting value
+  label: string | HTMLElement;
+  hint: string | HTMLElement;
+}
+----
+
+==== Radio Group
+
+一组单选按钮。值的类型是``any``。
+
+[source,javascript]
+----
+interface RadioGroupConfig implements SettingConfig {
+  type: 'radio-group';
+  options: CheckboxOption[]; // see checkbox group's options schema
+}
+----
+
+==== Label
+
+一个简单的标签。值是``undefined``的。
+
+[source,javascript]
+----
+interface LabelConfig implements SettingConfig {
+  type: 'label';
+}
+----
+
+==== 自定义
+
+自定义渲染的设置。请参阅上面的 xref:mod/Mod上下文API参考.adoc#_settingtypeconfig[SettingTypeConfig] 部分。这与注册自定义设置类型不同，因为这是一次性的，不会注册用于重复使用的类型。值的类型是``any``。
+
+[source,javascript]
+----
+interface CustomConfig implements SettingConfig, SettingTypeConfig {
+  type: 'custom';
+}
+----
+
+[[存储角色数据]]
+== 存储角色数据
+
+NOTE: 当通过 Creator Toolkit 将您的 Mod 作为本地 Mod 加载时，您的 Mod 必须与 mod.io 进行关联，并且您必须通过 mod.io 订阅并安装了该 Mod，以便使这些数据持久化。
+
+角色存储 API 可以通过根上下文对象上的 `characterStorage` 属性来访问。
+
+=== 限制
+
+角色存储只能在加载角色后使用（在生命周期钩子 `onCharacterLoaded` 之后）。
+
+每个角色可以为每个 Mod 存储多达 8,192 字节（8KB）的数据，包括键。只能存储可 JSON 序列化的数据。这包括原始类型（`string`、`number`、`boolean`）以及只包含原始类型或其他符合这一描述的对象和数组的对象和数组。这种序列化/反序列化是自动处理的。
+
+=== setItem(key: string, data: any): void
+
+在角色存储中设置键/值对。
+
+*参数*
+
+`key: string` 用于标识正在存储的数据的键。在调用 `getItem` 和 `removeItem` 时使用。
+
+`data: any` 数据要存储。请参见上面的限制。
+
+*示例*
+
+[source,javascript]
+----
+ctx.characterStorage.setItem('coolThings', ['rocks']);
+----
+
+=== getItem(key: string): any
+
+从角色存储中根据键获取值。
+
+*参数*
+
+`key: string` 要检索的数据的键
+
+*返回*
+
+`any` 数据检索的结果。如果没有存储这样的键，则返回 `undefined`。
+
+*示例*
+
+[source,javascript]
+----
+ctx.characterStorage.getItem('coolThings'); // returns ['rocks']
+----
+
+=== removeItem(key: string): void
+
+通过键从角色存储中移除键/值对。
+
+*参数*
+
+`key: string` 要移除的键/值对的键。
+
+*示例*
+
+[source,javascript]
+----
+ctx.characterStorage.removeItem('coolThings');
+ctx.characterStorage.getItem('coolThings'); // returns undefined
+----
+
+=== clear(): void
+
+从角色存储中移除所有键/值对。
+
+*示例*
+
+[source,javascript]
+----
+ctx.characterStorage.clear();
+----
+
+[[存储账号数据]]
+== 存储账号数据
+
+NOTE: 当通过 Creator Toolkit 将您的 Mod 作为本地 Mod 加载时，您的 Mod 必须与 mod.io 进行关联，并且您必须通过 mod.io 订阅并安装了该 Mod，以便使这些数据持久化。
+
+帐户存储 API 可以通过根上下文对象上的 `accountStorage` 属性来访问。
+
+=== 限制
+
+由于帐户数据的存储方式是基于云的，以及玩家可能遇到的潜在网络问题，帐户存储的数据完整性不能 100% 保证。建议谨慎使用帐户存储。
+
+每个帐户可以为每个 Mod 存储多达 8,192 字节（8KB）的数据，包括键。只能存储可 JSON 序列化的数据。这包括原始类型（`string`、`number`、`boolean`）以及只包含原始类型或其他符合这一描述的对象和数组的对象和数组。这种序列化/反序列化是自动处理的。
+
+=== setItem(key: string, data: any): void
+
+在帐户存储中设置键/值对。
+
+*参数*
+
+`key: string` 用于标识正在存储的数据的键。在调用 `getItem` 和 `removeItem` 时使用。
+
+`data: any` 数据要存储。请参见上面的限制。
+
+*示例*
+
+[source,javascript]
+----
+ctx.accountStorage.setItem('coolThings', ['rocks']);
+----
+
+=== getItem(key: string): any
+
+从帐户存储中根据键获取值。
+
+*参数*
+
+`key: string` 要检索的数据的键
+
+*返回*
+
+`any` 数据检索的结果。如果没有存储这样的键，则返回 `undefined`。
+
+*示例*
+
+[source,javascript]
+----
+ctx.accountStorage.getItem('coolThings'); // returns ['rocks']
+----
+
+=== removeItem(key: string): void
+
+通过键从帐户存储中移除键/值对。
+
+*参数*
+
+`key: string` 要移除的键/值对的键。
+
+*示例*
+
+[source,javascript]
+----
+ctx.accountStorage.removeItem('coolThings');
+ctx.accountStorage.getItem('coolThings'); // returns undefined
+----
+
+=== clear(): void
+
+从帐户存储中移除所有键/值对。
+
+*示例*
+
+[source,javascript]
+----
+ctx.accountStorage.clear();
+----
+
+[[游戏对象修补-钩子]]
+== 游戏对象补丁/钩子
+
+=== patch(className: class, methodOrPropertyName: string): MethodPatch | PropertyPatch
+
+这是方法和 getter/setter 补丁 API 的入口点。根据第二个参数是方法还是 getter/setter 属性，将分别返回 `MethodPatch` 或 `PropertyPatch` 对象。然后应使用 MethodPatch/PropertyPatch 对象来执行指定类和方法/属性的进一步操作。
+
+*参数*
+
+`className: class` 包含要补丁的方法或 getter/setter 的类。应该是实际的类引用，而不是字符串，例如，`Skill`，而不是``'Skill'``。
+
+`methodOrPropertyName: string` 要补丁的方法或 getter/setter 属性的名称。
+
+*返回*
+
+`MethodPatch | PropertyPatcch` 指定类和方法或 getter/setter 属性的补丁对象。请参阅下面的用法。
+
+*示例*
+
+[source,javascript]
+----
+ctx.patch(Skill, 'addXP'); // Returns a MethodPatch
+ctx.patch(Skill, 'level'); // Returns a PropertyPatch
+----
+
+==== MethodPatch.before(hook: (...args: any) => any[] | void): void
+
+在方法体调用之前立即执行回调函数。回调函数的参数是传递给方法调用的参数。可选地，回调函数可以返回一个值数组，以覆盖传递给方法体的参数。如果没有指定返回值（返回 `undefined`），参数将保持不变。
+
+*参数*
+
+`hook: (...args: any) => any[] | void` 要执行的回调钩子。
+
+*示例*
+
+[source,javascript]
+----
+// Double all XP gains
+ctx.patch(Skill, 'addXP').before((amount, masteryAction) => [amount * 2, masteryAction]);
+----
+
+==== MethodPatch.after(hook: (returnValue: any, ...args: any) => any | void): void
+
+在方法体执行完毕后立即执行回调函数。回调函数的第一个参数是方法体返回的值。其余的参数是传递给方法体的参数。可选地，回调函数可以返回一个新值以覆盖方法的返回值。如果没有指定返回值（返回 `undefined`），则返回值将保持不变。
+
+*参数*
+
+`hook: (returnValue: any, ...args: any) => any | void` 要执行的回调钩子。
+
+*示例*
+
+[source,javascript]
+----
+// The player never misses an attack
+ctx.patch(Player, 'rollToHit').after(willHit => {
+  if (!willHit) console.log('A miss? I think not!');
+  return true;
+});
+----
+
+==== MethodPatch.replace(replacement: (replacedMethod: (...args: any) => any, ...args: any) => any): void
+
+执行一个回调函数来代替方法的当前体。回调函数的第一个参数是被替换的方法体。其余的参数是应该传递给方法的参数。回调函数的返回值是方法的返回值。替代函数仍然受到在 `before` 和 `after` 钩子中对参数/返回值的修改的影响。
+
+*参数*
+
+`replacement: (replacedMethod: (...args: any) => any, ...args: any) => any` 用于替代方法体的回调函数。
+
+*示例*
+
+[source,javascript]
+----
+ctx.patch(Skill, 'addXP').replace(function(o, amount, masteryAction) {
+  // Prevent any woodcutting XP
+  if (this.id === 'melvorD:Woodcutting') return;
+
+  // Double any mining XP
+  if (this.id === 'melvorD:Mining') return o(amount * 2, masteryAction);
+
+  // Grant all other XP as normal
+  return o(amount, masteryAction);
+});
+----
+
+值得注意的是，使用 `replace` 方法会替换当前的方法体，这意味着多次调用 `replace` 方法的执行顺序与它们声明的顺序相反：
+
+[source,javascript]
+----
+const xpPatch = ctx.patch(Skill, 'addXP');
+
+xpPatch.replace((o, amount, masteryAction) => {
+  console.log('Replacement #1');
+  return o(amount, masteryAction);
+});
+
+xpPatch.replace({o, amount, masteryAction) => {
+  console.log('Replacement #2');
+  return o(amount, masteryAction);
+});
+
+game.woodcutting.addXP(100);
+// Logs:
+// Replacement #2
+// Replacement #1
+----
+
+==== PropertyPatch.get(getter: (o: () => any) => any): void
+
+在访问 getter 属性时执行提供的函数并返回返回值。
+
+*参数*
+
+`getter: (o: () => any) => any` 要执行的 getter 函数。参数 `o` 是一个引用，指向被替换的 getter 方法，它可以是以前的 getter 补丁或原始的 getter 方法。
+
+*示例*
+
+[source,javascript]
+----
+// Effectively double available Township resources
+ctx.patch(TownshipResource, 'amount').get((o) => o() * 2);
+// Or more practically, make resources unlimited
+ctx.patch(TownshipResource, 'amount').get(() => 999999);
+----
+
+==== PropertyPatch.set(setter: (o: (value: any) => void, value: any) => void): void
+
+在访问 setter 属性时执行提供的函数。
+
+*参数*
+
+`setter: (o: (value: any) => void, value: any) => void` 要执行的 setter 函数。第一个参数 `o` 是一个引用，指向被替换的 setter 方法，它可以是以前的 setter 补丁或原始的 setter 方法。第二个参数 `value` 包含被设置的值。
+
+*示例*
+
+[source,javascript]
+----
+// Sorry, there aren't many setters in the game to use for a practical example
+// Doubles whatever resource amount is being set
+ctx.patch(TownshipResource, 'amount').set((o, amount) => o(amount * 2));
+// While in-game
+game.township.resources.getObjectByID('melvorF:Wood').amount = 1000;
+game.township.renderQueue.resourceAmounts = true;
+// 2000 wood is available
+----
+
+==== PropertyPatch.replace(getter?: (o: () => any) => any, setter?: (o: (value: any) => void, value: any) => void): void
+
+同时调用 `get` 和 `set` 的别名。
+
+*参数*
+
+`getter: (o: () => any) => any` 参见上面的 `get` 参数。
+
+`setter: (o: (value: any) => void, value: any) => void` 参见上面的 `set` 参数。
+
+*示例*
+
+请参见上面的 `get` 和 `set` 示例。
+
+=== isPatched(className: class, methodOrPropertyName: string): boolean
+
+检查方法或 getter/setter 属性是否已经被打补丁。
+
+*参数*
+
+`className: class` 包含要检查是否已经被打补丁的方法或属性的类。应该是实际的类引用，而不是字符串，例如，`Skill`，而不是``'Skill'``。
+
+`methodOrPropertyName: string` 要检查的方法或属性的名称。
+
+*返回*
+
+`boolean` 给定的类方法或属性是否已经被打补丁。
+
+*示例*
+
+[source,javascript]
+----
+ctx.isPatched(Skill, 'addXP'); // false
+ctx.patch(Skill, 'addXP');
+ctx.isPatched(Skill, 'addXP'); // true
+----
+
+[[公开属性与方法]]
+== 公开属性与方法
+
+您可能希望允许其他 Mod 通过您定义的 API 与您的 Mod 进行交互或集成。为此，推荐的方法是使用上下文对象上的 `api` 方法。通过以下方法定义 API 后，其他 Mod 可以通过全局的 `mod.api['your_mods_namespace']` 对象访问它。
+
+=== api(endpoints?: object): object
+
+指定要在全局 `mod.api['your_mods_namespace']` 对象上公开的属性和方法。可以多次调用以添加更多端点。
+
+*参数*
+
+`endpoint: object` 包含您要公开的任何属性或方法的对象。如果省略，将只检索您的 Mod 的当前 API 对象。
+
+*返回*
+
+`object` Mod 的 API 对象
+
+*示例*
+
+[source,javascript]
+----
+// manifest.json
+{
+  "namespace": "helloWorld",
+  "setup": "setup.mjs"
+}
+----
+
+_JSON 中的注释仅用于示意，不是有效的标记。_
+
+[source,javascript]
+----
+// setup.mjs
+export function setup({ api }) {
+  api({
+    greet: name => console.log(`Hello, ${name!}`);
+  });
+}
+----
+
+然后，其他 Mod 将能够与您的 API 进行交互：
+
+[source,javascript]
+----
+// some other mod
+mod.api.helloWorld.greet('Melvor'); // Hello, Melvor!
+----
+
+include::partial$Mod指南表格.adoc[]

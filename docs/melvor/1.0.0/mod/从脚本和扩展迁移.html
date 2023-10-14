@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>从脚本和扩展迁移 :: 梅尔沃放置指南</title>
+    <meta name="generator" content="Antora 3.1.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../..">梅尔沃放置指南</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="melvor" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">梅尔沃放置</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../战斗/index.html">战斗(no)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/攻击.html">攻击(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/力量.html">力量(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/防御.html">防御(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/生命值.html">生命值(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/远程.html">远程(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/魔法.html">魔法(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/祝祭.html">祝祭(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../战斗/屠杀者.html">屠杀者(no)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">非战斗(ing)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/伐木.html">伐木(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/钓鱼.html">钓鱼(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/生火.html">生火(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/烹饪.html">烹饪(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/采矿.html">采矿(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/锻造.html">锻造(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/扒窃.html">扒窃(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/弓匠.html">弓匠(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/制造.html">制造(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/符文锻造.html">符文锻造(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/草药学.html">草药学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/灵巧.html">灵巧(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/召唤.html">召唤(ing)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/星象学.html">星象学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/生活类魔法.html">生活类魔法(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/制图学.html">制图学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/考古学.html">考古学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/农务.html">农务(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../非战斗/城镇.html">城镇(no)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">练级(no)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/伐木.html">伐木(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/钓鱼.html">钓鱼(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/生火.html">生火(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/烹饪.html">烹饪(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/采矿.html">采矿(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/锻造.html">锻造(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/扒窃.html">扒窃(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/弓匠.html">弓匠(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/制造.html">制造(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/符文锻造.html">符文锻造(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/草药学.html">草药学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/灵巧.html">灵巧(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/召唤-练级.html">召唤(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/星象学.html">星象学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/生活类魔法.html">生活类魔法(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/制图学.html">制图学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/考古学.html">考古学(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/农务.html">农务(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../练级/城镇.html">城镇(no)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">其它(no)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/新手指南.html">新手指南(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/指南.html">指南(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/仓库.html">仓库(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/战斗.html">战斗(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/专精.html">专精(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/赚钱.html">赚钱(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/商店.html">商店(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/菜单.html">菜单(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/宠物.html">宠物(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/哥布林突袭.html">哥布林突袭(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/版本信息.html">版本信息(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/使徒的王座DLC.html">使徒的王座DLC(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../其它/探索地图集DLC.html">探索地图集DLC(no)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">参考表格(no)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/道具.html">道具(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/装备.html">装备(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/经验表格.html">经验表格(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/道具升级.html">道具升级(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/战斗区域.html">战斗区域(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/屠杀者区域.html">屠杀者区域(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/副本.html">副本(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/宝箱战利品表格.html">宝箱战利品表格(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/怪物.html">怪物(no)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../参考表格/怪物掉落表格.html">怪物掉落表格(no)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">指南(ing)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../指南/战斗-练级.html">战斗-练级(ing)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../指南/熔岩洞窟-指南.html">熔岩洞窟-指南</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../指南/冒险模式-指南.html">冒险模式-指南</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Mod开发</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="入门指南.html">入门指南</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="创作工具包.html">创作工具包</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="从脚本和扩展迁移.html">从脚本和扩展迁移</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="基础指南.html">基础指南</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Mod上下文API参考.html">Mod上下文API参考</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="侧边栏API参考.html">侧边栏API参考</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="使用PetiteVue创建可复用组件.html">使用PetiteVue创建可复用组件</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="启用Steam客户端的DevTools.html">启用Steam客户端的DevTools</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="游戏内功能参考.html">游戏内功能参考</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">工具</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text"><a href="https://consolelog.gitee.io/caniidle/?language=%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87" target="_blank" rel="noopener">我能挂机吗</a></span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">梅尔沃放置</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">梅尔沃放置</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">梅尔沃放置</a></li>
+    <li><a href="index.html">Mod开发</a></li>
+    <li><a href="从脚本和扩展迁移.html">从脚本和扩展迁移</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///D:/src/game/melvor_idle_wiki/melvor/modules/ROOT/pages/mod/从脚本和扩展迁移.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="目录" data-levels="3">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">从脚本和扩展迁移</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://wiki.melvoridle.com/w/Mod_Creation/Migrating_from_Scripts_and_Extensions" target="_target">原文地址</a></p>
+</div>
+<div class="paragraph">
+<p>本指南面向以前创建过用户脚本或扩展并希望将其迁移到与新mod系统兼容的mod创建者。本指南不会介绍新功能，将略过实现细节，并且为了快速迁移mod并运行，可能不会遵循最佳实践。如需更深入的了解，请考虑查阅 <a href="基础指南.html" class="xref page">Mod开发/基础指南</a> 进行补充。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_元数据"><a class="anchor" href="#_元数据"></a>1. 元数据</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>无论要迁移的mod是用户脚本还是扩展，之前在相应位置（用户脚本注释块或扩展<code>manifest.json</code>文件）定义的绝大多数元数据，都将在mod.io的mod资料页中输入。这包括名称、作者（上传mod.io的帐户）、描述、标签和版本控制。</p>
+</div>
+<div class="paragraph">
+<p>对于在mod文件内管理的有限元数据，需要有一个<strong>必需</strong>的<code>manifest.json</code>文件。此文件必须位于mod打包内容的根目录中。</p>
+</div>
+<div class="sect2">
+<h3 id="_用户脚本"><a class="anchor" href="#_用户脚本"></a>1.1. 用户脚本</h3>
+<div class="paragraph">
+<p>用户脚本 用户脚本应在manifest中定义一个<code>“load”</code>属性，并具有一个字符串值，指向脚本相对于<code>manifest.json</code>文件的所在位置。例如，给定以下文件夹结构：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>my-mod（根文件夹）</p>
+<div class="ulist">
+<ul>
+<li>
+<p>manifest.json</p>
+</li>
+<li>
+<p>script.js</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><code>manifest.json</code>应该简单地如下：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "load": "script.js"
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_扩展"><a class="anchor" href="#_扩展"></a>1.2. 扩展</h3>
+<div class="paragraph">
+<p>以前在manifest中定义图标的扩展现在应该在manifest中为<code>“icon”</code>属性定义一个单一的值。此图标文件将在游戏中使用，默认情况下显示的最大尺寸为38px x 38px。</p>
+</div>
+<div class="paragraph">
+<p>以前作为扩展的入口点的内容脚本/样式，现在应该在manifest中作为<code>“load”</code>属性定义，值为一个字符串数组，每个条目都是脚本/样式表的相对<code>manifest.json</code>文件的位置。例如，给定以下文件夹结构：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>my-mod（根文件夹）</p>
+<div class="ulist">
+<ul>
+<li>
+<p>icons</p>
+<div class="ulist">
+<ul>
+<li>
+<p>my-icon-48.png</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>sources</p>
+<div class="ulist">
+<ul>
+<li>
+<p>contentScript.js</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>styles</p>
+<div class="ulist">
+<ul>
+<li>
+<p>mainStyle.css</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>manifest.json</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>和一个以前<code>manifest.json</code>（已剥离不相关的属性）:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "icons": {
+    "48": "icons/my-icon-48.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["sources/contentScript.js"],
+      "css": ["styles/mainStyle.css"]
+    }
+  ]
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>根据您提供的扩展结构，以下是新的<code>manifest.json</code>示例：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "icon": "my-icon-48.png",
+  "load": ["sources/contentScript.js", "styles/mainStyle.css"]
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_加载循环"><a class="anchor" href="#_加载循环"></a>2. “加载循环”</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>用户脚本和扩展程序经常会陷入一种循环，等待游戏加载到某个角色后执行某些操作。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">var loadInterval = setInterval(() =&gt; {
+  var isGameLoaded = window.isLoaded &amp;&amp; !window.currentlyCatchingUp;
+
+  if (isGameLoaded) {
+    clearInterval(loadInterval);
+    // Inject script element or execute code...
+  }
+}, 500);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>有了新mod系统的上下文API，就不再需要这样做了。相反，脚本应该使用游戏生命周期钩子，其中最相似的是<code>onInterfaceReady</code>：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">mod.register(ctx =&gt; {
+  ctx.onInterfaceReady(() =&gt; {
+    // Code here will only get executed after the game, character, and
+    // offline progress has been loaded.
+  });
+});</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>您可以在 <a href="基础指南.html" class="xref page">Mod开发/基础指南</a> 中了解有关各种游戏生命周期钩子的更多信息。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_加载打包资源"><a class="anchor" href="#_加载打包资源"></a>3. 加载打包资源</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>本节特定于扩展程序，因为这不是用户脚本中通常支持的概念。如果正在迁移的扩展包含脚本、样式表、图像、音频或其他文件，这些文件不会作为<code>content_scripts</code>的一部分自动加载，而是在运行时使用，那么这些资源很可能是使用<code>browser.runtime.getURL</code>（或<code>chrome.runtime.getURL</code>）方法检索的。相反，已迁移的mod应该依赖于新mod上下文API的方法<code>getResourceUrl</code>。该方法接收一个字符串值，即请求资源相对于mod包的manifest.json（根目录）的位置。</p>
+</div>
+<div class="paragraph">
+<p>还为<code>getResourceUrl</code>与常见后续任务组合提供了辅助方法。其中一个用于将脚本注入页面的辅助方法为<code>loadScript</code>。需要注意的是，<code>getResourceUrl</code>是同步的，而所有组合的辅助方法是异步的，返回一个promise。</p>
+</div>
+<div class="paragraph">
+<p>例如，给定以下文件夹结构：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>my-mod（根文件夹）</p>
+<div class="ulist">
+<ul>
+<li>
+<p>assets</p>
+<div class="ulist">
+<ul>
+<li>
+<p>icon.png</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>scripts</p>
+<div class="ulist">
+<ul>
+<li>
+<p>entryScript.js</p>
+</li>
+<li>
+<p>helper.js</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>manifest.json</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>假设<code>entryScript.js</code>作为manifest的<code>“load”</code>属性的一部分加载，那么<code>entryScript.js</code>可以检索并使用或加载<code>icon.png</code>和<code>helper.js</code>，如下所示：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">mod.register(async (ctx) =&gt; {
+  var iconUrl = ctx.getResourceUrl('assets/icon.png');
+  var iconElement = document.createElement('img');
+  iconElement.src = iconUrl;
+
+  await ctx.loadScript('scripts/helper.js');
+  // Now the contents of helper.js have been injected and executed
+});</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果您想使用JavaScript模块或想了解更多关于各种资源加载方法的信息，可以查看 <a href="基础指南.html" class="xref page">Mod开发/基础指南</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_下一步"><a class="anchor" href="#_下一步"></a>4. 下一步</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>希望mod已成功迁移，并在此刻与新mod系统一起使用。但这仅仅是个开始-您可以在其他官方Mod制作指南中探索所有可用的新API和技术：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="入门指南.html" class="xref page">Mod开发/入门指南</a></p>
+</li>
+<li>
+<p><a href="基础指南.html" class="xref page">Mod开发/基础指南</a></p>
+</li>
+<li>
+<p><a href="Mod上下文API参考.html" class="xref page">Mod开发/Mod上下文API参考</a></p>
+</li>
+<li>
+<p><a href="侧边栏API参考.html" class="xref page">Mod开发/侧边栏API参考</a></p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle" colspan="8"><p class="tableblock"><strong>Mod指南</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="入门指南.html" class="xref page">Mod开发的入门指南</a></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="创作工具包.html" class="xref page">创作工具包</a></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="从脚本和扩展迁移.html" class="xref page">从脚本和扩展迁移</a></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="基础指南.html" class="xref page">基础指南</a></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="Mod上下文API参考.html" class="xref page">Mod上下文API参考</a></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="侧边栏API参考.html" class="xref page">侧边栏API参考</a></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="使用PetiteVue创建可复用组件.html" class="xref page">使用PetiteVue创建可复用组件</a></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><a href="启用Steam客户端的DevTools.html" class="xref page">启用Steam客户端的DevTools</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+
+  </body>
+</html>

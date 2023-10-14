@@ -1,0 +1,517 @@
+= 侧边栏API参考
+
+https://wiki.melvoridle.com/w/Mod_Creation/Sidebar_API_Reference[原文地址,window=_target]
+
+`sidebar` 对象是一个全局变量，用于自定义侧边栏（左侧）导航菜单。
+
+侧边栏分为四个级别：
+
+* **侧边栏**(Sidebar)
+** **类别**(Category) +
+例如："战斗"(Combat)
+*** **项目**(Item) +
+例如："战斗(Combat)"下的"攻击(Attack)"
+**** **子项目**(Subitem) +
+例如："完成日志(Completion Log)"下的"技能(Skills)"
+
+== 侧边栏(Sidebar)
+
+全局的``sidebar``对象。
+
+=== category(id: string, config?: CategoryConfig, builder?: (category: Category) => void): Category
+
+_或者_ `category(id: string, builder?: (category: Category) => void): Category`
+
+通过其 `ID` 获取或创建然后获取类别。
+
+*参数*
+
+`id: string` 要获取或创建的类别的 ID。
+
+`config?: CategoryConfig` 一个可选的配置对象，可用于配置新的或现有类别。请参见下面的类别配置（CategoryConfig）。
+
+`builder?: (category: Category) => void` 一个可选的回调函数，接收类别作为参数。可用于向类别添加项目，而无需将其存储为变量。
+
+*返回*
+
+``类别(Category)``对象。
+
+*示例*
+
+[source,javascript]
+----
+// Move COMBAT skills to be below NON-COMBAT
+sidebar.category('Combat', { after: 'Non-Combat' });
+
+// Create a new category "GREETINGS" and add an item beneath it
+sidebar.category('Greetings', { toggleable: true }, (greetings) => {
+  greetings.item('Hello');
+});
+----
+
+=== categories(): Category[]
+
+*返回*
+
+`Category[]` 所有类别的有序数组。
+
+*示例*
+
+[source,javascript]
+----
+const allCategories = sidebar.categories();
+----
+
+=== removeCategory(id: string): void
+
+通过其 `ID` 移除一个类别。
+
+*参数*
+
+`id: string` 要移除的类别的 ID。
+
+*示例*
+
+[source,javascript]
+----
+sidebar.removeCategory('Combat');
+----
+
+=== removeAllCategories(): void
+
+从侧边栏中移除所有类别。尽管不太确定为什么要这样做。
+
+[source,javascript]
+----
+sidebar.removeAllCategories();
+----
+
+== 类别(Category)
+
+请参阅侧边栏的 `category` 方法以了解如何创建类别。
+
+=== 类别配置(CategoryConfig)
+
+所有属性都是可选的。
+
+[source,javascript]
+----
+interface CategoryConfig {
+  rootClass?: string | null; // String separated classes to add to the rootEl
+  categoryClass?: string | null; // String separated classes to add to the categoryEl
+  name?: string | HTMLElement | null; // Override the displayed name (defaults to category id)
+  nameClass?: string | null; // String separated classes to add to the nameEl
+  toggleable?: boolean | null; // Determines if the category can be hidden (example: Combat & Non-Combat)
+  before?: string; // Places the category before another category by id. Cannot be present if after is defined.
+  after?: string; // Places the category after another category by id. Cannot be present if before is defined.
+  onClick?: (() => void) | null; // Code to execute if the category title is clicked
+  onRender?: (elements: CategoryElements) => void; // See notes below
+}
+----
+
+如果创建一个新的类别，既没有定义 `before` 也没有定义 `after`，则该类别将被添加到侧边栏的底部。
+
+您可以将任何属性设置为 null 以删除先前配置的选项。例如，将 `name` 设置为 null 会将类别的显示设置回其 ID。
+
+`onRender` 属性可以设置为一个回调函数，该函数在侧边栏渲染后会接收一个包含类别的 HTML 元素属性的对象。这是因为侧边栏可以在渲染之前进行配置，因此类别的 `rootEl` 属性在渲染之前将是未定义的。`elements` 参数包含以下内容：
+
+[source,javascript]
+----
+interface CategoryElements {
+  rootEl: HTMLLIElement;
+  categoryEl: HTMLDivElement;
+  nameEl: HTMLSpanElement;
+  toggleEl?: HTMLElement;
+}
+----
+
+=== id: string
+
+(属性) 类别的 ID。
+
+=== rootEl: HTMLLIElement
+
+(属性) 类别的根 HTML 元素。包含类别元素（`categoryEl`）和所有项目元素（item）的根 HTML 元素（`rootEl's`）。
+
+=== categoryEl: HTMLDivElement
+
+(属性) 类别的主要 HTML 元素。包含名称元素（`nameEl`）和开关元素（`toggleEl`），如果已定义。
+
+=== nameEl: HTMLSpanElement
+
+(属性) 类别的名称 HTML 元素。包含已定义的``name``属性。
+
+=== toggleEl: HTMLElement
+
+(属性) 类别的开关 HTML 元素（可见性图标）。如果类别的 `toggleable` 属性设置为 `false` 或 `null`，则该属性``undefined``。
+
+=== click(): void
+
+触发类别的已配置 `onClick` 属性（如果存在）。
+
+*示例*
+
+[source,javascript]
+----
+const clickMe = sidebar.category('Click Me', {
+  onClick() {
+    console.log('I have been clicked!');
+  }
+});
+
+clickMe.click(); // I have been clicked!
+----
+
+=== toggle(force?: boolean): void
+
+切换类别的可见性。
+
+*参数*
+
+`force?: boolean` 可选，设置为 `true` 以强制显示类别，设置为 `false` 以隐藏。
+
+*示例*
+
+[source,javascript]
+----
+// Show Combat items if currently hidden, or hide if currently being shown
+sidebar.category('Combat').toggle();
+
+// Hide Non-Combat items
+sidebar.category('Non-Combat').toggle(false);
+----
+
+=== remove(): void
+
+从侧边栏中移除此类别。
+
+*示例*
+
+[source,javascript]
+----
+// Remove Non-Combat skills
+sidebar.category('Non-Combat').remove();
+----
+
+=== item(id: string, config?: ItemConfig, builder?: (item: Item) => void): Item
+
+_或者_ `item(id: string, builder?: (item: Item) => void): Item`
+
+通过其 `ID` 获取或创建然后获取项目。
+
+*参数*
+
+`id: string` 要获取或创建的项目的 ID。
+
+`config?: 项目配置（ItemConfig）` 一个可选的配置对象，可用于配置新的或现有项目。请参见下面的项目配置（ItemConfig）。
+
+`builder?: (item: Item) => void` 一个可选的回调函数，接收项目作为参数。可用于向项目添加子项目，而无需将其存储为变量。
+
+*返回*
+
+``项目（Item）``对象。
+
+*示例*
+
+[source,javascript]
+----
+// Move Astrology above Firemaking
+sidebar.category('Non-Combat').item('melvorD:Astrology', { before: 'melvorD:Firemaking' });
+
+// Create a new item and add a subitem beneath it
+sidebar.category('General').item('Greetings', { nameClass: 'text-warning' }, (greetings) => {
+  greetings.subitem('Hello');
+});
+----
+
+=== removeItem(id: string): void
+
+通过其 `ID` 从类别中移除一个项目。
+
+*参数*
+
+`id: string` 要移除的项目的 ID。
+
+*示例*
+
+[source,javascript]
+----
+sidebar.category('Combat').removeItem('melvorD:Attack');
+----
+
+=== removeAllItems(): void
+
+从类别中移除所有项目。
+
+*示例*
+
+[source,javascript]
+----
+sidebar.category('Combat').removeAllItems();
+----
+
+== 项目(Item)
+
+=== 项目配置(ItemConfig)
+
+所有属性都是可选的。
+
+[source,javascript]
+----
+interface ItemConfig {
+  rootClass?: string | null; // String separated classes to add to the rootEl
+  itemClass?: string | null; // String separated classes to add to the itemEl
+  icon?: string | HTMLElement | null; // Either a URL (string) or an HTMLElement to appear in the item's icon slot.
+  iconClass?: string | null; // String separated classes to add to the iconEl
+  name?: string | HTMLElement | null; // Override the displayed name (defaults to item id)
+  nameClass?: string | null; // String separated classes to add to the nameEl
+  aside?: string | HTMLElement | null; // Text or HTMLElement to be displayed in the aside slot. Example: level (1/99) text on skills.
+  asideClass?: string | null; // String separated classes to add to the asideEl
+  link?: string | null; // URL to open if this item is clicked
+  ignoreToggle?: boolean | null; // Set to true if this item should be visible even if its parent category is hidden. Example: Combat Level under the Combat category.
+  before?: string; // Places the item before another item by id. Cannot be present if after is defined.
+  after?: string; // Places the item after another item by id. Cannot be present if before is defined.
+  onClick?: (() => void) | null; // Code to be executed if the item is clicked
+  onRender?: (elements: ItemElements) => void; // See notes below
+}
+----
+
+如果创建一个新项目，既没有定义 `before` 也没有定义 `after`，则该项目将被添加到类别的底部。
+
+您可以将任何属性设置为 null 以删除先前配置的选项。例如，将 `name` 设置为 `null` 会将项目的显示设置回其 ID。
+
+`onRender` 属性可以设置为一个回调函数，该函数在侧边栏渲染后会接收一个包含项目的 HTML 元素属性的对象。这是因为侧边栏可以在渲染之前进行配置，因此项目的 HTML 元素属性在渲染之前将是``undefined``的。`elements` 参数包含以下内容：
+
+[source,javascript]
+----
+interface ItemElements {
+  rootEl: HTMLLIElement;
+  itemEl: HTMLAnchorElement;
+  iconEl: HTMLSpanElement;
+  nameEl: HTMLSpanElement;
+  asideEl?: HTMLElement;
+  subMenuEl?: HTMLUListElement;
+}
+----
+
+=== id: string
+
+(属性) 项目的 ID。
+
+=== rootEl: HTMLLIElement
+
+(属性) 项目的根 HTML 元素。包含``itemEl``和``subMenuEl``。
+
+=== itemEl: HTMLAnchorElement
+
+(属性) 项目的主要 HTML 元素。包含``iconEl``、``nameEl``和``asideEl``。
+
+=== iconEl: HTMLSpanElement
+
+(属性) 项目的图标 HTML 元素。包含已定义的``icon``属性。
+
+=== nameEl: HTMLSpanElement
+
+(属性) 项目的名称 HTML 元素。包含已定义的``name``属性。
+
+=== asideEl: HTMLElement
+
+(属性) 项目的侧边 HTML 元素。包含已定义的``aside``属性。如果没有设置``aside``属性，则该属性``undefined``。
+
+=== subMenuEl: HTMLUListElement
+
+(属性) 项目的子菜单 HTML 元素。包含任何已定义的子项目。如果没有子项目，则该属性``undefined``。
+
+=== category: Category
+
+(属性) 项目的父类别。
+
+=== click(): void
+
+触发项目的已配置 `onClick` 属性(如果存在)。
+
+*示例*
+
+[source,javascript]
+----
+// Navigate to the Woodcutting page
+sidebar.category('Non-Combat').item('melvorD:Woodcutting').click();
+----
+
+=== toggle(force?: boolean): void
+
+切换项目的子项目菜单的可见性，如果存在子项目。
+
+*参数*
+
+`force?: boolean` 可选，设置为 `true` 以强制显示类别，设置为 `false` 以隐藏。
+
+*示例*
+
+[source,javascript]
+----
+// Collapse (hide) the Completion Log's submenu if currently expanded (shown)
+// Or expand (show) the submenu if currently collapsed (hidden)
+sidebar.category('General').item('Completion Log').toggle();
+
+// Collapse (hide) the Completion Log's submenu
+sidebar.category('General').item('Completion Log').toggle(false);
+----
+
+=== remove(): void
+
+从父类别中移除此项目。
+
+*示例*
+
+[source,javascript]
+----
+// Removes the Summoning skill from the sidebar
+sidebar.category('Non-Combat').item('melvorD:Summoning').remove();
+----
+
+=== subitem(id: string, config?: SubitemConfig, builder?: (subitem: Subitem) => void): Subitem
+
+_或者_ `subitem(id: string, builder: (subitem: Subitem) => void): Subitem`
+
+通过其 ID 获取或创建然后获取子项目。
+
+*参数*
+
+`id: string` 要获取或创建的子项目的 ID。
+
+`config?: 子项目配置(SubitemConfig)` 一个可选的配置对象，可用于配置新的或现有子项目。请参见下面的子项目配置(SubitemConfig)。
+
+`builder?: (subitem: Subitem) => void` 一个可选的回调函数，接收子项目作为参数。
+
+*返回*
+
+``子项目(Subitem)``对象。
+
+*示例*
+
+[source,javascript]
+----
+// Move Pets above Skills in the Completion Log
+sidebar.category('General').item('Completion Log').subitem('Pets', { before: 'Skills' });
+
+// Add a shortcut to Alt. Magic beneath Magic
+sidebar.category('Combat').item('melvorD:Magic').subitem('Alt. Magic', {
+  onClick() {
+    sidebar.category('Non-Combat').item('melvorD:Magic').click();
+  }
+});
+----
+
+=== removeSubitem(id: string): void
+
+通过其 `ID` 从项目中移除一个子项目。
+
+*参数*
+
+`id: string` 要移除的子项目的 ID。
+
+*示例*
+
+[source,javascript]
+----
+sidebar.category('General').item('Completion Log').removeSubitem('Skills');
+----
+
+=== removeAllSubitems(): void
+
+从项目中移除所有子项目。
+
+*示例*
+
+[source,javascript]
+----
+sidebar.category('General').item('Completion Log').removeAllSubitems();
+----
+
+== 子项目(Subitem)
+
+=== 子项目配置(SubitemConfig)
+
+[source,javascript]
+----
+interface SubitemConfig {
+  rootClass?: string | null; // String separated classes to add to the rootEl
+  subitemClass?: string | null; // String separated classes to add to the subitemEl
+  name?: string | HTMLElement | null; // Override the displayed name (defaults to subitem id)
+  nameClass?: string | null; // String separated classes to add to the nameEl
+  aside?: string | HTMLElement | null; // Text or HTMLElement to be displayed in the aside slot. Example: completion percentages in the Completion Log.
+  asideClass?: string | null; // String separated classes to add to the asideEl
+  link?: string | null; // URL to open if this item is clicked
+  before?: string; // Places the subitem before another subitem by id. Cannot be present if after is defined.
+  after?: string; // Places the item after another item by id. Cannot be present if before is defined.
+  onClick?: (() => void) | null; // Code to be executed if the subitem is clicked
+  onRender?: (elements: SubitemElements) => void; // See notes below
+}
+----
+
+如果创建一个新的子项目，既没有定义 `before` 也没有定义 `after`，则子项目将被添加到父项目的子菜单的底部。
+
+您可以将任何属性设置为 `null` 以删除先前配置的选项。例如，将 `name` 设置为 `null` 会将子项目的显示设置回其 ID。
+
+`onRender` 属性可以设置为一个回调函数，该函数在侧边栏渲染后会接收一个包含子项目的 HTML 元素属性的对象。这是因为侧边栏可以在渲染之前进行配置，因此子项目的 HTML 元素属性在渲染之前将是``undefined``的。`elements` 参数包含以下内容：
+
+[source,javascript]
+----
+interface SubitemElements {
+  rootEl: HTMLLIElement;
+  subitemEl: HTMLAnchorElement;
+  nameEl: HTMLSpanElement;
+  asideEl?: HTMLElement;
+}
+----
+
+=== id: string
+
+(属性) 子项目的 ID。
+
+=== rootEl: HTMLLIElement
+
+(属性) 子项目的根 HTML 元素。包含``subitemEl``。
+
+=== subitemEl: HTMLAnchorElement
+
+(属性) 子项目的主要 HTML 元素。包含``nameEl``和``asideEl``。
+
+=== nameEl: HTMLSpanElement
+
+(属性) 子项目的名称 HTML 元素。包含已定义的``name``属性。
+
+=== asideEl: HTMLElement
+
+(属性) 子项目的侧边 HTML 元素。包含已定义的``aside``属性。如果未设置``aside``属性，则该属性``undefined``。
+
+=== item: Item
+
+(属性) 子项目的父项目。
+
+=== click(): void
+
+触发子项目的已配置 `onClick` 属性（如果存在）。
+
+*示例*
+
+[source,javascript]
+----
+// Navigate to the Completion Log's Items page
+sidebar.category('General').item('Completion Log').subitem('Items').click();
+----
+
+=== remove(): void
+
+从父项目中移除此子项目。
+
+*示例*
+
+[source,javascript]
+----
+// Remove Items from the Completion Log sidebar
+sidebar.category('General').item('Completion Log').subitem('Items').remove();
+----
+
+include::partial$Mod指南表格.adoc[]

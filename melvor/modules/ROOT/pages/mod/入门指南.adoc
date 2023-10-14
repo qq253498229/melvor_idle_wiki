@@ -1,0 +1,111 @@
+= Mod开发的入门指南
+
+https://wiki.melvoridle.com/w/Mod_Creation/Getting_Started[原文地址,window=_target]
+
+在梅尔沃放置中，mod与其他带有mod的游戏类似，是由玩家社区创建的游戏修改。 对游戏的修改范围从微小的平衡变化到引入新技能和物品，或简单的生活质量改善到全套自动化工具。 无论它是简单还是复杂，梅尔沃放置中都有各种编程API可帮助您创建mod。
+
+== 前提条件
+
+梅尔沃放置的mod使用JavaScript创建，因此在开始本指南之前，建议至少对JavaScript或一般编程语言有一个入门的理解。
+
+此外，您应该安装您喜欢的编写JavaScript代码的代码编辑器。一些流行的选择是 https://code.visualstudio.com/[VSCode,window=_target] 或 https://www.jetbrains.com/zh-cn/webstorm/promo/[WebStorm,window=_target] 。
+
+== 快速入门
+
+如果您想立即开始创建您的第一个mod，并有一个（大部分是）空白的canvas，请按照以下步骤开始。
+
+=== 项目设置
+
+首先，为你的mod创建一个新的空文件夹。你需要在该新文件夹中创建两个文件：
+
+* manifest.json
+* setup.mjs
+
+**manifest.json**文件用于定义你的mod的元数据，或者为梅尔沃放置提供重要信息，以便知道如何加载你的mod。在**manifest.json**中加入以下代码：
+
+[source,json]
+----
+{
+  "setup": "setup.mjs"
+}
+----
+
+这告诉梅尔沃放置查找一个**setup.mjs**文件并运行其导出的**setup**函数。接下来，我们将在**setup.mjs**中创建该函数：
+
+[source,javascript]
+----
+export function setup() {
+  console.log('Hello From My Mod!');
+}
+----
+
+这里导出的单词很重要，因为它将让Mod管理器访问该setup函数以加载mod。
+
+=== 让它们生效
+
+到目前为止，你已经有了一个可以工作的“mod”，但它还没有真正修改任何内容。让我们让**setup**函数知道我们希望在执行**setup**时接受一个上下文对象（简称为**ctx**），然后修补**Skill**类，使其将所有经验值加倍。
+
+[source,javascript]
+----
+export function setup(ctx) {
+    ctx.patch(Skill, 'addXP').before(function(amount, masteryAction) {
+        return [amount * 2, masteryAction];
+    });
+}
+----
+
+上下文对象将是你的mod执行游戏修改所需的必要条件。请在基础指南中找到有关patch方法和上下文对象可做其他事情的详细信息。
+
+如果你想在此刻测试你的mod，可以跳到打包和添加你的mod部分。
+
+=== 使用玩家输入的值
+
+将XP加倍是可以的，但如果玩家可以自定义乘以的经验值数量，那么这个mod将会更加有用。幸运的是，通过上下文对象的另一个部分（即mod设置），可以轻松实现这一点。
+
+你可以定义一个设置，供玩家使用上下文对象中的settings对象进行更改，并将上面的修补代码修改为使用该值而不是2的值：
+
+[source,javascript]
+----
+export function setup(ctx) {
+  ctx.settings.section('General').add({
+    type: 'number',
+    name: 'xp-multiplier',
+    label: 'XP Multiplier',
+    hint: 'Multiply all XP gains by this amount',
+    default: 1
+  });
+
+  ctx.patch(Skill, 'addXP').before(function(amount, masteryAction) {
+    const xpMultiplier = ctx.settings.section('General').get('xp-multiplier');
+    return [amount * xpMultiplier, masteryAction];
+  });
+}
+----
+
+然后，玩家将能够从侧边栏打开你的mod的设置，并将乘数更改为他们想要的任何数字。
+
+=== 打包以及添加您的mod
+
+一旦你准备好测试你的mod或在Mod管理器中提供该mod，你需要将它打包并上传到mod.io。
+
+打包你的mod就是将内容整体压缩成zip文件这么简单。因此，对于上面的例子，你应该在zip文件的根目录下包含manifest.json和setup.mjs文件。
+
+接下来，你应该导航到mod.io上梅尔沃放置的 https://mod.io/g/melvoridle[Mods]页面，并点击游戏名称旁边的“Add mod”。你需要为你的mod输入一些基本信息，比如名称和摘要（这是在选中mod时在游戏中显示的）。一定要添加相关的标签，特别注意Platforms（该mod只会在选中的平台上下载和安装）和Supported Game Version标签。
+
+如果你只是想测试你的mod并不想对所有人可见，你应该在可见性部分取消选中“Public”。这将防止mod出现在游戏中Mod管理器的Browse选项卡中，但你仍然可以通过mod.io网站订阅该mod，它仍会在游戏中下载。
+
+保存当前详细信息后，你将能够添加该mod的媒体文件（图像，视频），更重要的是添加实际的mod文件本身。在文件管理部分中，点击“Select zip file”并上传你的打包的mod。在下面的字段中给mod一个版本号，并点击“Upload”。
+
+=== 使用您的mod
+
+现在，你可以订阅、下载、安装并使用你的mod了。如果你已经公开了mod，可以尝试在游戏中Mod管理器中搜索它并订阅它。安装后，你需要重新启动游戏才能使mod生效。
+
+如果你将mod设为私密，你可以访问mod的档案URL，该URL位于mod的编辑页面上。或者，如果你点击mod.io上右上角的个人资料图标，并点击“我的库”，你将能够在我的Mods下找到你的mod。一旦进入mod的页面，点击“订阅”按钮，下次加载游戏时，它将自动下载和安装。
+
+一旦安装并重新加载游戏后，你应该可以选取一个角色并看到你的mod在游戏中起作用了！
+
+== 下一步
+
+在这里，强烈推荐阅读 xref:mod/基础指南.adoc[] 以了解不同modding概念和可供你使用的API。
+
+include::partial$Mod指南表格.adoc[]

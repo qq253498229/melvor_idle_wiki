@@ -1,0 +1,19 @@
+= 启用Steam客户端的DevTools
+
+https://wiki.melvoridle.com/w/Mod_Creation/Enabling_DevTools_for_the_Steam_Client[原文地址,window=_target]
+
+对于修改开发者来说，启用 Steam 客户端中的 DevTools 可能会很有益。 您可以通过以下详细的步骤来实现这一目标。 这是一次性操作，除非 Steam 客户端被卸载或重新安装，否则无需重复。
+
+1. 在 Steam 上下载 梅尔沃放置 并找到安装文件夹，例如 `[...]/steamapps/common/梅尔沃放置`。
+** 不确定安装在哪里？ 前往 Steam 游戏库中的 梅尔沃放置，右键点击，然后选择 `管理` → `浏览本地文件`。
+2. 下载 NW.js SDK（Windows 版本：v0.54.0；其他操作系统：v0.49.2）。 版本可能会在未来更改，但您需要下载特定的版本。
+* *64 位 Windows*: https://dl.nwjs.io/v0.71.1/nwjs-sdk-v0.71.1-win-x64.zip
+* *64 位 Linux*: https://dl.nwjs.io/v0.49.2/nwjs-sdk-v0.49.2-linux-x64.tar.gz
+* *其他操作系统*: https://dl.nwjs.io/
+3. 解压所有压缩文件。
+4. 将 `nwjs-sdk*` 文件夹的 *内容* 放置在 梅尔沃放置 安装文件夹中。
+** 当前的 `nwjs-sdk-v0.71.1-win-x64` 文件夹中共有 22 个项目。 将其移动到 梅尔沃放置 文件夹将覆盖超过 100 个现有文件。
+** 如果没有要求您覆盖任何文件，那么您可能做错了什么。
+5. 将提取的扩展的 `icons`、`styles` 和源目录（即 `scripts` 或 `sources`）放在 梅尔沃放置 安装文件夹中。
+
+include::partial$Mod指南表格.adoc[]
