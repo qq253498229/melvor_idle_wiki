@@ -87,4 +87,5 @@
 ** xref:mod/启用Steam客户端的DevTools.adoc[启用Steam客户端的DevTools]
 ** xref:mod/游戏内功能参考.adoc[游戏内功能参考]
 * 工具
-** https://consolelog.gitee.io/caniidle/?language=%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87[我能挂机吗,window=_blank]
+** https://consolelog.gitee.io/caniidle/?language=%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87[我能挂机吗,window=_target]
+** https://consolelog.gitee.io/cff-melvoridle-tools/#/tools/summoning-calculation[梅尔沃工具,window=_target]
