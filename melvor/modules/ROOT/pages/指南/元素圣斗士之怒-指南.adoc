@@ -1,0 +1,30 @@
+= 元素圣斗士之怒-指南
+
+这是一个刷元素圣斗士之怒项链的指南。
+
+要选择最佳选项，可以使用``战斗模拟器``来计算掉率以及战斗所消耗的时间。
+
+其中``制图学``中的``The Cavern of Riches``可以直接发现``Elite Amulet of Strength``、``Elite Amulet of Ranged``以及``Elite Amulet of Magic``
+
+``制图学``中的``The Shimmering Oasis``可以发现20个``Amulet of Glory``以及``Amulet of Accuracy``。
+
+
+|===
+|X200 3+|力量护符 |
+|来源 | 有效HP(包括DR) |掉率 |平均击杀 |平均需要伤害
+|木乃伊 |270 |9.43% |2,121 |572,670
+|潮湿妖怪 |250 |1.14% |17,544 |4,386,000
+|Small Lockbox(AoD) |1-10 力量护符 |29.85% |122 |493 Castle Ruins Excavations
+|===
+
+|===
+|X200 3+|远程护符 |
+|来源 | 有效HP(包括DR) |掉率 |平均击杀 |平均需要伤害
+|强盗 |400 |1.52% |13,158 |5,263,200
+|蜘蛛森林 |4,850 |0.91% |21,978 |115,384,615
+|Poison Bloater(AoD) |3500HP, 1750护盾 |29.41% |340 |1,785,000
+|Small Lockbox(AoD) |1-10 远程护符 |7.463% |488 |1971 Castle Ruins Excavations
+|===
+
+
+
