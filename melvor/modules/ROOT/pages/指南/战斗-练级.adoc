@@ -1058,7 +1058,7 @@ https://consolelog.gitee.io/caniidle/?language=%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96
 
 ==== Fury of the Elemental Zodiacs (FEZ)
 
-精英护身符的最终升级。FEZ有一张表格详细说明了每个护身符上的许多重要统计信息，可以在[[FEZ/Guide]]上找到。如果直到此时已经彻底遵循了指南，以下是每个护身符应该从哪里最快获得的简要总结：
+精英护身符的最终升级。FEZ有一张表格详细说明了每个护身符上的许多重要统计信息，可以在 xref:./元素圣斗士之怒-指南.adoc[元素圣斗士之怒/指南]上找到。如果直到此时已经彻底遵循了指南，以下是每个护身符应该从哪里最快获得的简要总结：
 
 * **Mummy**** 以获取Amulet of Strength**。
 * **Bandit**** 以获取Amulet of Ranged**。

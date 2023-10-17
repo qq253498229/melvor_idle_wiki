@@ -337,5 +337,21 @@ export const i18nData = {
     "monster-Fiozor, the Ancient Necromancer": "费欧泽,古代死灵法师",
     "monster-Wandering Bard": "游方艺人",
     "monster-Spider Queen": "蜘蛛女王",
+
+    "Fury of the Elemental Zodiacs": "元素圣斗士之怒",
+    "Elite Amulet of Strength": "精英力量护符",
+    "Elite Amulet of Ranged": "精英远程护符",
+    "Elite Amulet of Magic": "精英魔法护符",
+    "Elite Amulet of Glory": "精英荣耀护符",
+    "Elite Amulet of Defence": "精英防御护符",
+    "Elite Amulet of Accuracy": "精英精准护符",
+    "Amulet of Strength": "力量护符",
+    "Amulet of Ranged": "远程护符",
+    "Amulet of Magic": "魔法护符",
+    "Amulet of Glory": "荣耀护符",
+    "Amulet of Defence": "防御护符",
+    "Amulet of Accuracy": "精准护符",
+    "Amulet of Fury": "狂怒护符",
+    "Amulet of Torture": "折磨护符",
   }
 }
