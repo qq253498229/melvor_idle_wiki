@@ -913,7 +913,7 @@ https://consolelog.gitee.io/caniidle/?language=%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96
 
 本节将首先概述任何特别有用的增益效果和一些重要的装备，然后再继续。
 
-此时，拥有**使者的王座DLC** 可以在新物品和被动技能方面为玩家带来真正的好处。请查看 **<<_使者的王座_对基础游戏战斗的影响,使者的王座_对基础游戏战斗的影响>>** 部分，了解哪些物品和升级会改变游戏进程。所有**使者的王座DLC**物品都需要100以上的技能等级，并且可能需要很长时间才能获得。战斗装备，如**Divine Helmet**、**Carrion Body**或**Poison Legendary Wizard Hat**，只有在击败**Bane, Instrument of Fear**并完成基本游戏战斗后才能装备。
+此时，拥有**使者的王座DLC** 可以在新物品和被动技能方面为玩家带来真正的好处。请查看 **<<_使者的王座_对基础游戏战斗的影响,使者的王座_对基础游戏战斗的影响>>** 部分，了解哪些物品和升级会改变游戏进程。所有**使者的王座DLC**物品都需要100以上的技能等级，并且可能需要很长时间才能获得。战斗装备，如**神圣头盔**、**朽败背心**或**剧毒传奇巫师帽**，只有在击败**Bane, Instrument of Fear**并完成基本游戏战斗后才能装备。
 
 ==== 主要目标
 
@@ -1056,7 +1056,7 @@ https://consolelog.gitee.io/caniidle/?language=%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96
 * **Magic Wand (Elite)** - 从**Cursed Maiden**掉落，用于制作**Air Imbued Wand** **Water Imbued Wand** **Earth Imbued Wand** **Fire Imbued Wand|Imbued Wands**。
 * **Slayer Helmet (Elite)|Elite Slayer Armor** - 在完成30个精英难度的**屠杀者**任务后，可以在商店购买。
 
-==== Fury of the Elemental Zodiacs (FEZ)
+==== 元素圣斗士之怒 (FEZ)
 
 精英护身符的最终升级。FEZ有一张表格详细说明了每个护身符上的许多重要统计信息，可以在 xref:./元素圣斗士之怒-指南.adoc[元素圣斗士之怒/指南]上找到。如果直到此时已经彻底遵循了指南，以下是每个护身符应该从哪里最快获得的简要总结：
 
