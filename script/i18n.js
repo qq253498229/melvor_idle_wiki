@@ -353,5 +353,9 @@ export const i18nData = {
     "Amulet of Accuracy": "精准护符",
     "Amulet of Fury": "狂怒护符",
     "Amulet of Torture": "折磨护符",
+
+    "Divine Helmet": "神圣头盔",
+    "Carrion Body": "朽败背心",
+    "Poison Legendary Wizard Hat": "剧毒传奇巫师帽",
   }
 }
