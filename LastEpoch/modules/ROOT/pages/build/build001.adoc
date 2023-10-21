@@ -204,9 +204,9 @@ https://forum.lastepoch.com/t/build-compendium-boardman21-v1-0-updated-to-0-8d/2
 
 [NOTE]
 ====
-Discord
-https://discord.com/invite/Eb42DpR9nZ[加入Boardman21's LE Builds Discord服务器！,window=_target]
-在Discord上查看Boardman21's LE Builds社区 - 与其他3080名成员一起聊天，享受免费的语音和文字聊天。
+Discord +
+https://discord.com/invite/Eb42DpR9nZ[加入Boardman21的最后纪元BD Discord服务器！,window=_target] +
+在Discord上查看Boardman21的最后纪元BD社区 - 与其他3080名成员一起聊天，享受免费的语音和文字聊天。
 ====
 
 
