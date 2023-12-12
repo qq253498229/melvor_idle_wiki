@@ -75,6 +75,7 @@
 * 指南(ing)
 ** xref:指南/战斗-练级.adoc[战斗-练级(ing)]
 ** xref:指南/熔岩洞窟-指南.adoc[熔岩洞窟-指南]
+** xref:指南/炼狱要塞-指南.adoc[炼狱要塞-指南]
 ** xref:指南/冒险模式-指南.adoc[冒险模式-指南]
 ** xref:指南/元素圣斗士之怒-指南.adoc[元素圣斗士之怒-指南]
 * xref:mod/index.adoc[Mod开发]
