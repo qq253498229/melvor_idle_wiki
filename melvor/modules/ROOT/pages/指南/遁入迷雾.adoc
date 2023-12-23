@@ -1,0 +1,379 @@
+= 遁入迷雾
+
+== Dungeon Mechanics
+
+=== Afflicted Monsters
+
+The first section of {{ZoneIcon|Into the Mist}} will have the player fight 20 Afflicted versions of random monsters from {{Icon|Combat|nolink=true|Level 165-677}} including Dungeon boss monsters. The only exceptions to this are {{MonsterIcon|Legaran Wurm}}, {{MonsterIcon|Cursed Lich}}, and monsters from {{ZoneIcon|Dark Waters}}, all of which will not appear in this dungeon.
+
+Afflicted monsters have normal stats and special attacks, but have an added +20% [[Damage Reduction]] and a chance to apply the {{Icon|Affliction|ext=svg}} debuff.
+
+Area Effects from [[Slayer Areas]] are not present when fighting the Afflicted versions of {{Skill|Slayer}} monsters.
+
+=== The Final Boss
+
+After defeating 20 Afflicted monsters, the player must defeat three boss phases. Each phase uses a specific combat style and can only be damaged if the player is using the same style. This means that purchasing the {{UpgradeIcon|Dungeon Equipment Swapping}} upgrade from the {{Icon|Shop}} is mandatory for completing this dungeon.
+
+Before each phase, combat will be paused to allow the player a chance to read over the boss's special abilities and change their equipment set. This means, for example, that you do not need to own three separate copies of {{ItemIcon|Fury of the Elemental Zodiacs}}, as you will have time to swap it between each equipment set. Once players are ready, they start the phase by clicking a button.
+
+=== Affliction
+
+Afflicted Monsters and all three final boss phases can apply a special status effect called {{Icon|Affliction|ext=svg}} when they complete an attack. Each attack or special attack that the enemy uses, regardless of whether the attack hits or misses the player, has a 70% chance of applying a stack of Affliction, up to a maximum of 50 stacks. Special attacks that hit more than once will only apply a single stack.
+
+For each stack of Affliction, the player's max {{Skill|Hitpoints}} are reduced by 1% up to 50 stacks (50% max HP). Critically, this will also impact the player's {{UpgradeIcon|Auto Eat}} threshold, making each attack successively more dangerous.
+
+Affliction stacks are reset after the monster is defeated, or if the player leaves combat or dies.
+
+=== Manual Eating
+
+{{ZoneIcon|Into the Mist}} is the first dungeon in the game that typically requires manually eating food. While there are ways to avoid manual eating prior to first completion, the player should prioritize completing the dungeon as soon as possible to get the [[Combat Passive Slot]].
+
+For all phases of the dungeon, the player can survive by manually eating food as long as the enemy's max hit does not exceed the player's max {{Skill|Hitpoints}}.
+
+It is important to note that this dungeon only needs to be completed once, so the strategy is simply not dying, rather than a speedy completion. It is far more important for the player to ensure they have enough {{Skill|Hitpoints|HP}} to survive an attack than not resetting their attack through manual eating. The following are four different methods to eat food:
+# '''{{UpgradeIcon|Auto Eat}}''' — Have Auto Eat heal you without interrupting attacks. No player input!
+# '''Eat after attacks''' — Wait for your attack to finish before eating. Usually after every attack.
+# '''Hold Eat''' — Click and hold the Food button to continuously eat food.
+# '''Spam Eat''' ''(PC players only)'' — Click Food button once, press the Tab key once, then Press Shift+Tab once to select the Food button. Now hold down the Space key to eat faster than simply holding down the button. Clicking anywhere else will undo this.
+
+=== Rewards
+
+Completing {{ZoneIcon|Into the Mist}} will permanently add {{ZoneIcon|Dark Waters}} monsters to the [[Slayer#Master|Master]] tier of {{Skill|Slayer}} Tasks. These monsters all have specific weaknesses and heavily punish the player for using the wrong combat style against them, making it far more difficult to use {{UpgradeIcon|Auto Slayer}} to fulfill the 40 task requirement for unlocking {{ItemIcon|Slayer Gear Upgrade Kit (Master)}}. If desired, {{ZoneIcon|Perilous Peaks}} Master Tasks can be completed before ITM is finished, although this is not required.
+
+Completing {{ZoneIcon|Into the Mist}} also allows the player to use the [[Combat Passive Slot|Passive equipment slot]]. {{PetIcon|Pablo}} is obtained by completing the dungeon 5 separate times.
+
+== Stats and Buffs
+
+=== Minimum Requirements
+
+The only true requirement to complete this dungeon is {{SkillReq|Slayer|90}} and enough {{Skill|Hitpoints|HP}} and [[Damage Reduction]] to not be killed instantly.
+
+The '''recommended''' levels to complete this dungeon are roughly {{SkillReq|Attack|85}}, {{SkillReq|Strength|85}}, {{SkillReq|Defence|85}}, {{Skill|Hitpoints|nolink=true|HP|qty=950}}, {{SkillReq|Ranged|85}}, {{SkillReq|Magic|85}}, {{SkillReq|Prayer|95}}, it is possible for a player to complete the dungeon roughly 10 levels lower in each skill, so if any of your stats are lagging behind, it's not the end of the world.
+
+=== Consumables
+
+*Food:
+**{{ItemIcon|Whale}} or similar. You want a food item that heals for a large amount all at once, so that one click heals you for the vast majority of your HP, no matter what.
+*Potions:
+**{{Icon|Diamond Luck Potion|Diamond Luck Potions}} for the entire dungeon.
+*Summoning Tablets:
+**{{ItemIcon|Dragon}} and {{ItemIcon|Minotaur}}, {{ItemIcon|Centaur}}, or {{ItemIcon|Witch}}.
+*Prayers:
+**These will be outlined on a case-by-case basis for each Boss phase below.
+**{{PrayerIcon|Protect Item}} will not be recommended so as to not plan for failure. There are many ways to ensure you do not die, and losing the power of one of your prayers can actually increase your chance of death.
+*Consumable Slot:
+**{{ItemIcon|Whetstone}}
+**{{ItemIcon|Wizard's Scroll}} - These can be skipped as they don't give any DPS benefit
+*'''{{Icon|Diamond Luck Potion|Diamond Luck Potions}} and {{ItemIcon|Dragon|Dragon Tablets}} are the most important buffs for this dungeon''', the potion will drastically increase the amount of times you actually hit the enemy, and the tablets add a lot of extra damage with their own attacks, buff your damage and accuracy, and the burn effect of Dragons can help getting the bosses HP down quickly so you spend less time at high stacks of affliction.
+
+=== Agility
+
+While agility helps provide useful combat bonuses, it mostly helps lower the floor of the HP level you need to attempt ITM. Typically, switching agility just for ITM is not super important.
+
+{| class="wikitable"
+! Tier !! Obstacle !! Reason
+|-
+! 1
+| Any
+|-
+! 2
+| Any
+|-
+! 3
+| {{AgilityIcon|Pipe Climb}}
+| Only obstacle that provides a combat bonus.
+|-
+! 4
+| {{AgilityIcon|Coal Stones}}
+| No negative bonuses
+|-
+! 5
+| {{AgilityIcon|Cliff Balance}}
+| Be sure to remember the HP increase in your HP/DR damage calculations.
+|-
+! 6
+| {{AgilityIcon|Rocky Waters}}
+| Lake Swim is typically more useful if you are higher level, where the HP increase is proportionally less effective.
+|-
+! rowspan="2" | 7
+| {{AgilityIcon|Boulder Trap}}
+| rowspan="2" | No negative damage modifiers.
+|-
+| {{AgilityIcon|Water Trap}}
+|-
+! 8
+| {{AgilityIcon|Raft Building}}
+| Extra damage and HP.
+|-
+! rowspan="2" | 9
+| {{AgilityIcon|Ice Jump}}
+| rowspan="2" | Ice Jump is typically the only obstacle used on this tier, there's really no reason to stop using it now.
+|-
+| {{AgilityIcon|Frozen Lake Crossing}}
+|-
+! rowspan="2" | 10
+| {{AgilityIcon|Lava Waterfall Dodge}}
+| rowspan="2" | Changing this obstacle from Lava Waterfall Dodge is expensive, and usually not really worth it.
+|-
+| {{AgilityIcon|Ocean Rafting}}
+|-
+! P
+| {{AgilityIcon|Pillar of Combat}}
+| Pillar of Combat is the only DPS-boosting pillar, but it is not necessary to use if you already have a different Pillar as its bonuses are not particularly helpful for this dungeon.
+|}
+
+== Fight Details
+
+=== Afflicted Monsters
+
+In general, waves 1-20 are best completed with your best [[Magic#Magic_Equipment_Stats|Magic gear]] and [[Magic#Ancient_Magicks|Ancient Magicks]] or by actively switching to take advantage of [[Combat Triangle]] bonuses. Typically, these monsters are not very dangerous, swap to the correct combat style, and the monster falls over.
+
+It's highly recommended that once you reach the final boss, you take the time to calculate the DR values and maximum hits per attack of each phase.
+
+=== Notes for all Boss Phases
+
+It is recommended to make a notecard with your effective auto-eat threshhold at various stages of Affliction build-up, typically every 10 stacks or so. This means write down what 40% of your HP is at 90%, 80%, 70%, 60%, 50% Maximum HP, then write down or pay attention to the maximum damage values of each of the bosses attacks so you can make more informed decisions than the general advice given below.
+
+If in doubt at any time, try to eat immediately after one of your attacks finishes, don't rely too heavily on this, as resetting your attack also removes any chance of using special attacks on the next attack.
+
+== Mysterious Figure - Phase 1
+
+{{Equipment/Recommended
+|style=Melee
+|helm1=!{{ItemIcon|Ragnar God Helmet|notext=true}} {{ItemIcon|Terran God Helmet|God Helmets}}
+|helm2=(G) Ancient Helmet
+|helm3=(G) Dragon Helmet
+|neck1=Fury of the Elemental Zodiacs
+|neck2=Elite Amulet of Defence
+|neck3=Elite Amulet of Glory
+|cape1=Ancient Infernal Cape
+|cape2=Infernal Cape
+|cape3=Maximum Skillcape
+|body1=!{{ItemIcon|Ragnar God Platebody|notext=true}} {{ItemIcon|Terran God Platebody|God Platebodies}}
+|body2=(G) Ancient Platebody
+|body3=(G) Dragon Platebody
+|legs1=!{{ItemIcon|Ragnar God Platelegs|notext=true}} {{ItemIcon|Terran God Platelegs|God Platelegs}}
+|legs2=(G) Ancient Platelegs
+|legs3=(G) Dragon Platelegs
+|weapon1=Infernal Claw
+|weapon2=Darksteel Dagger
+|weapon3=Sunset Rapier
+|shield1=Dragonfire Shield
+|shield2=Earth Layered Shield
+|shield3=(G) Dragon Shield
+|gloves1=Ragnar God Gloves
+|gloves2=Terran God Gloves
+|gloves3=Paladin Gloves
+|boots1=Ragnar God Boots
+|boots2=Terran God Boots
+|boots3=(G) Dragon Boots
+|ring1=Ring of Blade Echoes
+|ring2=Fighter Ring
+|ring3=Gold Sapphire Ring
+|gem1=Agile Gem
+|gem2=Accuracy Gem
+|gem3=Evasion Gem
+}}
+
+{{PrayerIcon|Protect from Melee}} and {{PrayerIcon|Battleheart}} or the highest level melee prayer you have available. {{PrayerIcon|Protect from Melee||Protect}} is important here, as it sets the boss's chance to hit to 20%, reducing the chance of healing when using '''Reap and Return''' significantly. If possible, swapping {{PrayerIcon|Protect from Melee||Protect}} to {{PrayerIcon|Piety}} when the boss is using any other attack can help you squeeze in a little extra damage.
+
+The choice to use 1h weapons here is important, as their attack interval is low enough to drop stacks of Mark of Death easily. {{ItemIcon|Terran Godsword}} and {{ItemIcon|Ragnar Godsword}} ({{ItemIcon|Terran Godsword|notext=true}} > {{ItemIcon|Ragnar Godsword|notext=true}}) are both very good and may be able to kill the boss faster depending on your specific stats, but they have a slow attack interval and will generally require you to pay more attention to when you eat.
+
+{{ItemIcon|Ultima Godsword}} is a fantastic weapon that circumvents the drawbacks of a 2h weapon by doing a ridiculous amount of damage. If owned, this weapon should be used, however, it is not necessary or recommended as the weapon can be quite difficult to obtain. Do not use any other equipment that provides a special attack ({{ItemIcon|Ring of Blade Echoes}}) as they will ruin your damage potential by lowering the chance of using one of the Ultima special attacks.
+
+=== Phase 1: Abilities and Eating Methods
+
+* '''Mark of Death''': Typically not dangerous, you want to complete an attack as soon as possible after this attack hits you. Failing to remove the stack of Mark of Death before the next attack hits you massively complicates things.
+* '''Cursed Edge''': Dangerous at medium stacks of affliction, heal to full if this attack deals more than your auto-eat threshold. NOT dangerous if the attack deals at least 60% of your total HP because each hit will cause your auto-eat to set you to at least 80% HP.
+* '''Reap and Return''': Dangerous at high stacks of affliction, if in doubt, hold eat to avoid death. NOT dangerous if the attack deals at least 60% of your total HP
+
+This phase is by far the most difficult, it may be prudent to run if you feel you are in danger.
+
+=== Phase 1: Idle
+
+<div class="warningbox">Manually eating while under the effect of Mark of Death can still kill you, do '''NOT''' manually eat if attempting to idle.</div>
+
+To fully idle Phase 1, you will need a weapon that has an interval faster than 2.6 seconds (all weapons above fit this criteria) and enough HP and DR to survive a 600 damage max hit when your HP is reduced by 50%, the below table lists some common HP checkpoints:
+
+{| class="wikitable"
+! {{Skill|Attack|Melee}} !! Normal !! with {{ItemIcon|Wasteful Ring}}
+|-
+! {{Skill|Hitpoints|HP|qty=1000}}
+| 67%
+| 63%
+|-
+! {{Skill|Hitpoints|HP|qty=1040}}
+| 66%
+| 61%
+|-
+! {{Skill|Hitpoints|HP|qty=1070}}
+| 65%
+| 60%
+|-
+! {{Skill|Hitpoints|HP|qty=1100}}
+| 64%
+| 59%
+|}
+
+== Mysterious Figure - Phase 2
+
+{{Equipment/Recommended
+|style=Ranged
+|helm1=Aeris God Helmet
+|helm2=Terran God Helmet
+|helm3=Slayer Cowl (Elite)
+|neck1=Deadeye Amulet
+|neck2=Fury of the Elemental Zodiacs
+|neck3=Elite Amulet of Ranged
+|cape1=Cape of Prat
+|cape2=Ancient Infernal Cape
+|cape3=Maximum Skillcape
+|body1=Aeris God Platebody
+|body2=(U) Ancient D-hide Body
+|body3=(U) Black D-hide Body
+|legs1=Aeris God Platelegs
+|legs2=(U) Ancient D-hide Chaps
+|legs3=(U) Black D-hide Chaps
+|weapon1=Ancient Crossbow
+|weapon2=Slayer's Crossbow
+|weapon3=Dragon Crossbow
+|shield1=Scaled Shield
+|shield2=(U) Ancient D-hide Shield
+|shield3=(U) Black D-hide Shield
+|ammo1=Jadestone Bolts
+|ammo2=Diamond Bolts
+|ammo3=Emerald Bolts
+|gloves1=Aeris God Gloves
+|gloves2=(U) Ancient D-hide Vambraces
+|gloves3=(U) Black D-hide Vambraces
+|boots1=Aeris God Boots
+|boots2=Terran God Boots
+|boots3=(G) Dragon Boots
+|ring1=Deadeye Ring
+|ring2=Silver Emerald Ring
+|ring3=Ring of Barrage
+|gem1=Agile Gem
+|gem2=Accuracy Gem
+|gem3=Evasion Gem
+}}
+
+{{PrayerIcon|Battleheart}} and {{PrayerIcon|Rigour}} or the highest level Ranged prayers you have available.
+
+2h weapons like the {{ItemIcon|Stormsnap}} are generally fine, but they will require you to pay more attention to when you eat as they have less Damage Reduction due to not being able to wear a shield, and being slow and unwieldy for dropping stacks of Mark of Death.
+
+=== Phase 2: Abilities and Eating Methods
+
+* '''Mark of Death''': Typically not dangerous, you want to complete an attack as soon as possible after this attack hits you. Failing to remove the stack of Mark of Death before the next attack hits you massively complicates things.
+* '''Concealed Danger''': Typically not dangerous unless you fail to remove mark of death.
+* '''Shadowstep''': Does no damage, however, if the boss tries to use it twice in a row she will use a Normal Attack instead, her Normal Attack Max hit is quite high, and becomes much more dangerous if you have failed to remove Mark of Death
+
+This phase is by far the easiest, so it is not critically important to optimize it perfectly, nearly any setup should have no real problem clearing this phase. Eating during this phase should be almost entirely unnecessary.
+
+NOTE: At '''exceptionally high''' stacks of affliction, and while under the effect of Mark of Death, it is possible for the boss's Normal Attack to deal more damage than your total HP. ''This is only possible if you manually eat and fail to remove the Mark of Death before the attack connects''. If this scenario occurs, you must run to guarantee your survival.
+
+=== Phase 2: Idle
+
+<div class="warningbox">Manually eating while under the effect of Mark of Death can still kill you, do '''NOT''' manually eat if attempting to idle.</div>
+
+To fully idle Phase 2, you will need a weapon that has an interval faster than 3.9 seconds (all ranged weapons fit this criteria by default) and enough HP and DR to survive a 772 damage max hit when your HP is reduced by 50%, the below table lists some common HP checkpoints:
+
+{| class="wikitable"
+! {{Skill|Ranged}} !! Normal !! with {{ItemIcon|Wasteful Ring}}
+|-
+! {{Skill|Hitpoints|HP|qty=1000}}
+| 75%
+| 71%
+|-
+! {{Skill|Hitpoints|HP|qty=1040}}
+| 74%
+| 70%
+|-
+! {{Skill|Hitpoints|HP|qty=1070}}
+| 73%
+| 69%
+|-
+! {{Skill|Hitpoints|HP|qty=1100}}
+| 72%
+| 68%
+|}
+
+== Ahrenia|Ahrenia - Phase 3
+
+{{Equipment/Recommended
+|style=Magic
+|helm1=Glacia God Helmet
+|helm2=Ancient Wizard Hat
+|helm3=!{{ItemIcon|Water Expert Wizard Hat|notext=true}} {{ItemIcon|Air Expert Wizard Hat|Expert Wizard Hat}}
+|neck1=Fury of the Elemental Zodiacs
+|neck2=Elite Amulet of Magic
+|neck3=Elite Amulet of Defence
+|cape1=Skull Cape
+|cape2=Ancient Infernal Cape
+|cape3=Maximum Skillcape
+|body1=Glacia God Platebody
+|body2=Ancient Wizard Robes
+|body3=!{{ItemIcon|Water Expert Wizard Robes|notext=true}} {{ItemIcon|Air Expert Wizard Robes|Expert Wizard Robes}}
+|legs1=Glacia God Platelegs
+|legs2=Ancient Wizard Bottoms
+|legs3=!{{ItemIcon|Water Expert Wizard Bottoms|notext=true}} {{ItemIcon|Air Expert Wizard Bottoms|Expert Wizard Bottoms}}
+|weapon1=!{{ItemIcon|Fire Imbued Wand|notext=true}} {{ItemIcon|Air Imbued Wand|Elemental Imbued Wand}}
+|weapon2=Magic Wand (Powerful)
+|weapon3=Cloudburst Staff
+|shield1=Malevolent Ward Shield
+|shield2=Magicburn Shield
+|shield3=Scaled Shield
+|gloves1=Glacia God Gloves
+|gloves2=Terran God Gloves
+|gloves3=(U) Ancient D-hide Vambraces
+|boots1=Glacia God Boots
+|boots2=Ancient Wizard Boots
+|boots3=!{{ItemIcon|Water Expert Wizard Boots|notext=true}} {{ItemIcon|Air Expert Wizard Boots|Expert Wizard Boots}}
+|ring1=Warlock Ring
+|ring2=Silver Magic Band
+|ring3=Ring of Spirit Power
+|gem1=Agile Gem
+|gem2=Evasion Gem
+|gem3=Accuracy Gem
+}}
+
+With {{ItemIcon|Fire Imbued Wand|notext=true}}{{ItemIcon|Air Imbued Wand|Imbued Wands}}:
+*{{Icon|type=spell|Incinerate}}, {{Icon|type=spell|Gust}}, or {{Icon|type=spell|Slicing Winds}}.
+*{{PrayerIcon|Protect from Magic}} and {{PrayerIcon|Stone Skin}}
+
+With {{ItemIcon|Cloudburst Staff}}:
+*{{Icon|Water Surge|type=spell}}, and {{Icon|Fury II|type=aurora}}.
+*{{PrayerIcon|Battleheart}} and {{PrayerIcon|Augury}} or the highest level Magic prayers you have available.
+
+As this phase is relatively weak, {{ItemIcon|Cloudburst Staff}} under most circumstances should deal enough damage to kill Ahrenia before she becomes a real threat, however, as the phase is relatively simple, it is recommended to use the Ancient Magicks as they will allow you to use {{Icon|Damage Reduction Potion|Damage Reduction Potions}} instead of {{ItemIcon|Diamond Luck Potion IV|Diamond Luck}} as your hits are already guaranteed at 20k+ Accuracy Rating.
+
+=== Phase 3: Abilities and Eating Methods
+
+* '''Shadow Burst''': Can be dangerous at low stacks of Affliction. Gives the player -1% Accuracy rating when it hits, up to a maximum of 50%. To guarantee 20k+ Accuracy at maximum stacks of this effect, the player must have 33,333 Accuracy Rating.
+* '''Into the Mist''': Does no damage. Gives the enemy +10% Damage Reduction each time they are hit, so if using Ancient Magicks, it may be prudent to swap to {{Icon|type=spell|Ignite}} or {{Icon|type=spell|Quake}} to get more effective damage for the duration.
+* '''Fallen Light''': Not dangerous.
+
+=== Phase 3: Idle
+
+To fully idle Phase 3, you will only need enough HP and DR to survive an 800 damage max hit when your HP is reduced by 50%, the below table lists some common HP checkpoints:
+
+{| class="wikitable"
+! {{Skill|Magic}} !! Normal !! with {{ItemIcon|Wasteful Ring}}
+|-
+! {{Skill|Hitpoints|HP|qty=1000}}
+| 75%
+| 72%
+|-
+! {{Skill|Hitpoints|HP|qty=1040}}
+| 74%
+| 71%
+|-
+! {{Skill|Hitpoints|HP|qty=1070}}
+| 74%
+| 70%
+|-
+! {{Skill|Hitpoints|HP|qty=1100}}
+| 73%
+| 70%
+|}
+
+
