@@ -58,7 +58,7 @@
 
 该表绘制了一些战斗模拟器的结果，这些结果根据生产所有所需消耗品所需的时间进行了调整，并对每项技能的确切加成进行了一些假设。
 
-您可以在此处查看电子表格。制作一个副本来定制资源值以匹配您自己的值，每个表上还有一列允许您输入自己的模拟人生结果。（https://docs.google.com/spreadsheets/d/1JAuROH4I_dNph9VwBXx7ffoGnWcoHlbsW0doWMBIPU0/edit?usp=sharing[链接,window=_blank]）
+您可以在此处查看电子表格。制作一个副本来定制资源值以匹配您自己的值，每个表上还有一列允许您输入自己的模拟人生结果。（ https://docs.google.com/spreadsheets/d/1JAuROH4I_dNph9VwBXx7ffoGnWcoHlbsW0doWMBIPU0/edit?usp=sharing[链接,window=_blank] ）
 
 [%autowidth]
 |===
