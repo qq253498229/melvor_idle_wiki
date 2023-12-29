@@ -27,7 +27,7 @@
 ** xref:非战斗/考古学.adoc[考古学(no)]
 ** xref:非战斗/农务.adoc[农务(no)]
 ** xref:非战斗/城镇.adoc[城镇(no)]
-* 练级(no)
+* 练级(ing)
 ** xref:练级/伐木.adoc[伐木(no)]
 ** xref:练级/钓鱼.adoc[钓鱼(no)]
 ** xref:练级/生火.adoc[生火(no)]
@@ -37,9 +37,9 @@
 ** xref:练级/扒窃.adoc[扒窃(no)]
 ** xref:练级/弓匠.adoc[弓匠(no)]
 ** xref:练级/制造.adoc[制造(no)]
-** xref:练级/符文锻造.adoc[符文锻造(no)]
-** xref:练级/草药学.adoc[草药学(no)]
-** xref:练级/灵巧.adoc[灵巧(no)]
+** xref:练级/符文锻造.adoc[符文锻造(ing)]
+** xref:练级/草药学.adoc[草药学(ing)]
+** xref:练级/灵巧.adoc[灵巧(ing)]
 ** xref:练级/召唤-练级.adoc[召唤(no)]
 ** xref:练级/星象学.adoc[星象学(no)]
 ** xref:练级/生活类魔法.adoc[生活类魔法(no)]

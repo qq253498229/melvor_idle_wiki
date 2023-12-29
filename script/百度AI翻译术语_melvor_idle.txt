@@ -1,0 +1,421 @@
+Iridan	艾丽丹
+Elite Amulet of Defence	精英防御护符
+armor	护甲
+Sunset Rapier	落日刺剑
+TotH	使者的王座
+Agility	灵巧
+Food	食物
+Throne of the Herald	使者的王座
+Melee	近战
+Hyden	海登
+Unhallowed Wasteland	不洁废土
+Golbin Raid	戈耳宾劫掠
+Amulet of Ranged	远程护符
+Beginners Guide	新手指南
+Tablets	石板
+Ring of Spirit Power	灵魂之力戒指
+Defence	防御
+Runic Ruins	废墟遗迹
+Township	城镇
+Farming	农务
+Skull Cape	骷髅斗篷
+Summoning	召唤
+Into the Mist	遁入迷雾
+Forest of Goo	粘液森林
+Slayer Skillcape	屠杀者斗篷
+Ranged	远程
+Wasteful Ring	铺张之戒
+Book of Occults	秘教之书
+Slayer Helmet	屠杀者头盔
+Woodcutting	伐木
+Magic	魔法
+Fervor	热忱
+Elder Crown	上古之冠
+Money Making	赚钱
+Deedree	狄德利
+Diamond Luck Potions	钻石运势药水
+Perilous Peaks	险恶山脉
+Prayer	祝祭
+Ameria	艾美利亚
+Non-Combat	非战斗
+Simulator	模拟器
+Mining	采矿
+Attack	攻击
+XP	经验
+Air God Dungeon	大气之神地牢
+Hall of Wizards	巫师之厅
+Prat, the Protector of Secrets	天机守护者普拉特
+Dark Waters	幽暗水域
+Hardcore	硬核
+Variel	瓦利尔
+Fire God Dungeon	火焰之神地牢
+Thieving	扒窃
+Smithing	锻造
+Hunter's Ring	猎手戒指
+Stab	戳刺
+Strength	力量
+Tellus	特鲁斯
+Water God Dungeon	流水之神地牢
+Elite Amulet of Glory	精英荣耀护符
+Elite Amulet of Strength	精英力量护符
+Runecrafting	符文锻造
+Necromancer	死灵法师
+Hitpoints	生命值
+Arid Plains	干旱平原
+Ancient Platebody	古代胸甲
+Bank	仓库
+Lifesteal	生命偷取
+Alternative Magic	生活类魔法
+Nysa	尼斯
+Melvor Idle	梅尔沃放置
+Wicked Greater Dragon	妖邪真龙
+Fletching	弓匠
+Arachi	阿拉奇
+Syllia	希里亚
+Progression	进程
+GP	金币
+Amulet of Magic	魔法护符
+Astrology	星象学
+Amulet of Strength	力量护符
+Hunting Greater Dragon	狩猎真龙
+NLP	自然语言处理
+Amulet of Torture	折磨护符
+Qimican	奇米康
+Amulet of Fury	狂怒护符
+Crafting	制造
+bonus	加成
+Terra	泰拉
+Elite Amulet of Accuracy	精英精准护符
+Fishing	钓鱼
+Guide	指南
+Amulet of Looting	财宝护符
+Herblore	草药学
+Volcanic Cave	熔岩洞窟
+Impending Darkness Event	湮灭黑暗活动
+Combat Triangle	战斗三角
+Vale	维拉
+Pets:Pet	宠物
+dungeon	副本
+Fury of the Elemental Zodiacs	元素圣斗士之怒
+Book of Eli	艾利之书
+Ashtar	阿斯塔
+Block	格挡
+Cloudburst Staff	云爆法杖
+Damage Reduction	伤害减免
+Combat	战斗
+Slash	劈砍
+Ko	廓尔
+Elite Amulet of Ranged	精英远程护符
+Elite Amulet of Magic	精英魔法护符
+Archaeology	考古学
+Amulet of Glory	荣耀护符
+Adventure	冒险
+Rosaniya	罗萨妮雅
+Sandstorm Ring	沙尘暴戒指
+Amulet of Defence	防御护符
+Atlas of Discovery	探索地图集
+Mastery	专精
+Cooking	烹饪
+Haemir	海密尔
+Game Mode	游戏模式
+DR	伤害减免
+Auto Eat	自动进食
+Shop	商店
+Amulet of Accuracy	精准护符
+Easter Eggs	彩蛋
+modifier	修正
+Firemaking	生火
+Earth God Dungeon	大地之神地牢
+Cartography	制图学
+Slayer	屠杀者
+Synergy 连携
+yak	牦牛
+Minotaur	牛头人
+Centaur	半人马
+Witch	女巫
+Cyclops	独眼巨人
+Golbin Village	哥布林村落
+Farmlands	农庄
+Graveyard	墓地
+Sandy Shores	砂砾海岸
+Wet Forest	湿漉森林
+Bandit Hideout	强盗窝点
+Giant Dungeon	巨人地牢
+Icy Hills	霜冻山
+Castle of Kings	诸王城堡
+Wizard Tower	巫师之塔
+Dragon Valley	龙之谷
+Elerine Battlegrounds	艾瑞恩战场
+Penumbra	半影之间
+Forest of Goo	粘液森林
+Strange Cave	怪异洞窟
+Holy Isles	神圣群岛
+Runic Ruins	废墟遗迹
+Arid Plains	干旱平原
+High Lands	云巅
+Toxic Swamps	剧毒沼泽
+Desolate Plains	荒芜平原
+Shrouded Badlands	晦暗荒野
+Perilous Peaks	险恶山脉
+Dark Waters	幽暗水域
+Unhallowed Wasteland	不洁废土
+Jungle Labyrinth	丛林迷津
+Lava Lake	岩浆池沼
+Forsaken Tundra	遗忘苔原
+Foggy Lake	霭雾湖泽
+Afflicted City	腐化城镇
+Midnight Valley	午夜幽谷
+Golden Cloud Mountains	金云山丘
+Millennium Gate	千年之门
+Chicken Coop	鸡舍
+Undead Graveyard	亡灵墓地
+Bandit Base	强盗基地
+Hall of Wizards	巫师之厅
+Spider Forest	蜘蛛森林
+Miolite Caves	荧菇洞窟
+Deep Sea Ship	深海宝船
+Frozen Cove	寒冰洞窟
+Dragons Den	龙穴
+Volcanic Cave	熔岩洞窟
+Infernal Stronghold	炼狱要塞
+Air God Dungeon	大气之神地牢
+Water God Dungeon	流水之神地牢
+Earth God Dungeon	大地之神地牢
+Fire God Dungeon	火焰之神地牢
+Ancient Sanctuary	古代圣所
+Underground Lava Lake	熔岩暗沼
+Lightning Region	雷霆地域
+Lair of the Spider Queen	蜘蛛王巢
+Cursed Forest	诅咒之森
+Necromancers Palace	死灵法师宫殿
+Golbin	哥布林
+Ranged Golbin	远程哥布林
+Plant	植物
+Chicken	鸡
+Cow	奶牛
+Junior Farmer	青年农夫
+Adult Farmer	成年农夫
+Master Farmer	专业农夫
+Skeleton	骷髅
+Zombie Hand	僵尸之手
+Zombie	僵尸
+Ghost	幽灵
+Seagull	海鸥
+Tentacle	触手
+Giant Crab	巨型螃蟹
+Confused Pirate	迷途海盗
+Leech	水蛭
+Sweaty Monster	汗津津妖怪
+Wet Monster	湿漉妖怪
+Moist Monster	潮湿妖怪
+Bandit Trainee	新晋强盗
+Bandit	强盗
+Hill Giant	山岭巨人
+Moss Giant	苔藓巨人
+Frozen Archer	寒冰射手
+Frozen Mammoth	寒冰猛犸
+Ice Monster	冰霜怪物
+Steel Knight	钢铁骑士
+Black Knight	黑骑士
+Mithril Knight	秘银骑士
+Adamant Knight	精金骑士
+Rune Knight	符文骑士
+Wizard	巫师
+Master Wizard	大巫师
+Dark Wizard	黑暗巫师
+Green Dragon	绿龙
+Blue Dragon	蓝龙
+Red Dragon	红龙
+Black Dragon	黑龙
+Elerine Archer	艾瑞恩射手
+Elerine Warrior	艾瑞恩战士
+Elerine Mage	艾瑞恩法师
+Mummy	木乃伊
+Statue	雕像
+Stone Snake	石蛇
+Undead Werewolf	不死狼人
+Vampire	吸血鬼
+Fierce Devil	凶猛魔鬼
+Goo Monster	粘液妖怪
+Green Goo Monster	绿色粘液妖怪
+Purple Goo Monster	紫色粘液妖怪
+Scattered Goo Monster	散落粘液妖怪
+Lots of Eyes	大眼魔
+Many Eyed Monster	复眼魔
+Strange Eyed Monster	怪眼魔
+Eyes	小眼魔
+Superior Eyed Monster	至尊复眼魔
+Eye of Fear	惊骇之眸
+Fairy	妖精
+Valkyrie	瓦尔基里
+Angel	天使
+Holy Archer	神圣射手
+Paladin	圣骑士
+Priest	牧师
+Druid	德鲁伊
+Thief	盗贼
+Shaman	萨满
+Necromancer	死灵法师
+Elementalist	元素使
+Turkul Riders	土库尔骑手
+Turkul Archers	土库尔射手
+Turkul Throwers	土库尔投手
+Turkul Giant	土库尔巨人
+Turkul General	土库尔将军
+Sand Beast	沙怪
+Griffin	狮鹫
+Pegasus	天马
+Noxious Serpent	剧毒大蛇
+Venomous Snake	毒蛇
+Giant Moth	巨蛾
+Raging Horned Elite	狂怒精英角兽
+Seething Horned Elite	真视精英角兽
+Dark Horned Elite	黑暗精英角兽
+Furious Horned Elite	凶恶精英角兽
+Rancora Spider	苦痛蜘蛛
+Elder Vampire	上古吸血鬼
+Cursed Maiden	被诅咒的少女
+Bounty Hunter	赏金猎人
+Wicked Greater Dragon	妖邪真龙
+Hunting Greater Dragon	狩猎真龙
+Chaotic Greater Dragon	混沌真龙
+Umbora	恩波拉
+Rokken	洛肯
+Ku-tul	卡-图阿
+Legaran Wurm	拉格朗地龙
+Cursed Lich	诅咒巫妖
+Spiked Red Claw	尖刺红爪
+Greater Skeletal Dragon	骸骨真龙
+Hungry Plant	饥饿植株
+Poison Toad	剧毒蟾蜍
+Kongamato	康加马托
+Conda	森蚺
+Alraune	风茄
+Burning Snake	炎蟒
+Infernal Golem	炼狱魔像
+Magic Fire Demon	炎魔
+Manticore	蝎尾狮
+Gret-Yun	归云
+Large Ice Troll	大型冰霜巨怪
+Frost Golem	霜魔像
+Polar Bear	北极熊
+Spectral Ice Wolf	冰霜魂狼
+Ice Hydra	冰封九头蛇
+Siren	海妖
+Monster Croc	巨鳄
+Leviathan	海兽
+Twin Sea Dragon Serpent	双子海龙
+Shadow Beast	暗影怪
+Plague Doctor	瘟疫医生
+Cockatrice	鸡蛇
+Goliath Werewolf	欧利亚狼人
+Phantom	魅影
+Banshee	女妖
+Spectre	幽灵
+Torvair	托维亚尔
+Arctair	阿克塔尔
+Harkair	哈卡尔
+Vorloran Devastator	沃罗兰毁灭者
+Vorloran Watcher	沃罗兰守望者
+Vorloran Protector	沃罗兰保卫者
+Guardian of the Herald	使徒守卫者
+Chick	小鸡仔
+Mumma Chicken	老母鸡
+Zombie Leader	僵尸首领
+Bandit Leader	强盗首领
+Elder Wizard	上古巫师
+Spider	蜘蛛
+Brown Spider	褐蜘蛛
+Evil Spider	邪恶蜘蛛
+Spider King	蜘蛛王
+Miolite Sprig	荧菇芽
+Miolite Trio	三重荧菇
+Miolite Warden	荧菇守望者
+Miolite Monarch	荧菇君王
+Pirate	海盗
+First Mate	大副
+Pirate Captain	海盗船长
+The Kraken	克拉肯
+Ice Troll	冰霜巨怪
+Ice	冰霜
+Protector of Ice	冰霜守护者
+Elder Dragon	古龙
+Bat	蝙蝠
+Big Bat	大蝙蝠
+The Eye	眼魔
+Resurrected Eye	复生之眼
+Vicious Serpent	凶恶大蛇
+Fire Spirit	火焰之灵
+Prat, the Protector of Secrets	天机守护者普拉特
+Malcs, the Guardian of Melvor	梅尔芙守护者马尔克斯
+Cerberus	刻耳柏洛斯
+Fearful Eye	恐惧之眼
+Red Devil	红魔
+Phoenix	凤凰
+Incendius	炎狱驹
+Prat, the Guardian of Secrets	天机捍卫者普拉特
+Malcs, the Leader of Dragons	群龙之首马尔克斯
+Air Guard	大气卫士
+Air Monster	大气妖怪
+Air Golem	大气魔像
+Aleron	阿莱荣
+Voltaire	沃尔泰
+Aeris	阿里亚斯
+Water Guard	流水卫士
+Water Monster	流水妖怪
+Water Golem	流水魔像
+Lissia	利西亚
+Murtia	莫提亚
+Glacia	格拉西娅
+Earth Guard	大地卫士
+Earth Monster	大地妖怪
+Earth Golem	大地魔像
+Mistral	密史脱拉
+Ophidia	奥菲迪亚
+Terran	特兰
+Fire Guard	火焰卫士
+Fire Monster	火焰妖怪
+Fire Golem	火焰魔像
+Pyra	皮拉
+Ignis	伊格尼斯
+Ragnar	拉格纳
+Morellia	莫雷利亚
+Trogark	特罗格
+Lightning Spirit	雷霆之魂
+Lightning Monkey	雷霆猿猴
+Lightning Golem	雷霆魔像
+RaZu, Lord of the Skies	拉祖,九天之主
+Scouter Spider	巡哨蜘蛛
+Trapper Spider	陷阱蜘蛛
+Wicked Spider	邪祟蜘蛛
+Basher Spider	碎骨蜘蛛
+Enforcer Spider	典刑蜘蛛
+Guardian Spider	护卫蜘蛛
+Tree Giant	林木巨人
+Tree Spirit	林木之灵
+Cursed Spirit	诅咒之灵
+Lady Darkheart	黑心女士
+Cursed Skeleton Warrior	诅咒骷髅战士
+Bel-Noth	贝尔-诺斯
+Dark Knight	暗黑骑士
+Fiozor, the Ancient Necromancer	费欧泽,古代死灵法师
+Wandering Bard	游方艺人
+Spider Queen	蜘蛛女王
+Fury of the Elemental Zodiacs	元素圣斗士之怒
+Elite Amulet of Strength	精英力量护符
+Elite Amulet of Ranged	精英远程护符
+Elite Amulet of Magic	精英魔法护符
+Elite Amulet of Glory	精英荣耀护符
+Elite Amulet of Defence	精英防御护符
+Elite Amulet of Accuracy	精英精准护符
+Amulet of Strength	力量护符
+Amulet of Ranged	远程护符
+Amulet of Magic	魔法护符
+Amulet of Glory	荣耀护符
+Amulet of Defence	防御护符
+Amulet of Accuracy	精准护符
+Amulet of Fury	狂怒护符
+Amulet of Torture	折磨护符
+Divine Helmet	神圣头盔
+Carrion Body	朽败背心
+Poison Legendary Wizard Hat	剧毒传奇巫师帽

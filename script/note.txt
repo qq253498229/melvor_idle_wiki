@@ -1,0 +1,4 @@
+百度AI翻译平台
+https://fanyi.baidu.com/mtpe-individual/multimodal#/
+术语库设置
+https://fanyi.baidu.com/mtpe-individual/language-assets/term
