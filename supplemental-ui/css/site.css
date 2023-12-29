@@ -2486,3 +2486,7 @@ footer.footer {
 * {
     font-family: "Source Han Sans CN"
 }
+
+.nav-item.is-active > a.nav-link {
+    font-weight: bold;
+}

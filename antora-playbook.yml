@@ -1,10 +1,13 @@
 site:
-  title: 梅尔沃放置指南
+  title: 游戏指南
   start_page: melvor::index.adoc
 content:
   sources:
     - url: .
       start_path: melvor
+      branches: [HEAD]
+    - url: .
+      start_path: LastEpoch
       branches: [HEAD]
 ui:
   bundle:
