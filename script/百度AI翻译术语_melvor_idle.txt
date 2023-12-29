@@ -66,6 +66,7 @@ Ancient Platebody	古代胸甲
 Bank	仓库
 Lifesteal	生命偷取
 Alternative Magic	生活类魔法
+Alt Magic  生活类魔法
 Nysa	尼斯
 Melvor Idle	梅尔沃放置
 Wicked Greater Dragon	妖邪真龙
@@ -419,3 +420,7 @@ Amulet of Torture	折磨护符
 Divine Helmet	神圣头盔
 Carrion Body	朽败背心
 Poison Legendary Wizard Hat	剧毒传奇巫师帽
+Air Adept Wizard Hat  大气门徒巫师帽
+Air Adept Wizard Robes  大气门徒巫师长袍
+Air Adept Wizard Bottoms  大气门徒巫师下装
+Air Adept Wizard Boots  大气门徒巫师靴
