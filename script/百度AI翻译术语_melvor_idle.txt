@@ -66,7 +66,7 @@ Ancient Platebody	古代胸甲
 Bank	仓库
 Lifesteal	生命偷取
 Alternative Magic	生活类魔法
-Alt Magic  生活类魔法
+Alt Magic	生活类魔法
 Nysa	尼斯
 Melvor Idle	梅尔沃放置
 Wicked Greater Dragon	妖邪真龙
@@ -129,7 +129,7 @@ Firemaking	生火
 Earth God Dungeon	大地之神地牢
 Cartography	制图学
 Slayer	屠杀者
-Synergy 连携
+Synergy	连携
 yak	牦牛
 Minotaur	牛头人
 Centaur	半人马
@@ -420,7 +420,114 @@ Amulet of Torture	折磨护符
 Divine Helmet	神圣头盔
 Carrion Body	朽败背心
 Poison Legendary Wizard Hat	剧毒传奇巫师帽
-Air Adept Wizard Hat  大气门徒巫师帽
-Air Adept Wizard Robes  大气门徒巫师长袍
-Air Adept Wizard Bottoms  大气门徒巫师下装
-Air Adept Wizard Boots  大气门徒巫师靴
+Air Adept Wizard Hat	大气门徒巫师帽
+Air Adept Wizard Robes	大气门徒巫师长袍
+Air Adept Wizard Bottoms	大气门徒巫师下装
+Air Adept Wizard Boots	大气门徒巫师靴
+players	玩家
+Manual Eating	手动进食
+boss	BOSS
+buffs	增益状态
+buff	增益状态
+Consumables	消耗品
+Consumable	消耗品
+Prayers	祝祭
+Prayer	祝祭
+Whetstone	磨刀石
+scroll	卷轴
+dragon	龙
+HP	生命值
+idle	挂机
+helm	头盔
+body	护甲
+leg	护腿
+boot	靴子
+glove	手套
+cape	斗篷
+neck	项链
+ring	戒指
+gem	宝石
+weapon	武器
+shield	盾牌
+Ancient Infernal Cape	炼狱斗篷
+Ragnar	拉格纳
+Eating	进食
+Cargo Net	渔网
+Rope Swing	秋千
+Rope Climb	绳索攀爬
+River Crossing	渡口
+Balance Beam	平衡梁
+Monkey Bars	攀爬架
+Rope Jump	绳索跳跃
+Stepping Stones	垫脚石速跑
+Pit Jump	深坑跳远
+Pipe Climb	管道攀爬
+Burning Coals	滚烫煤炭
+Pipe Balance	管道平衡
+Balance Seesaw	平衡跳板
+Cave Trail	洞窟远足
+Gap Jump	沟壑跳远
+Mud Crawl	泥地匍匐
+Cave Climb	洞穴攀爬
+Mud Dive	泥地俯冲
+Coal Stones	煤炭阵
+Rooftop Run	屋顶跑酷
+Rock Climb	攀岩
+Tree Climb	爬树
+Cliff Balance	岩壁平衡
+Mountain Climb	翻山越岭
+Cliff Climb	岩壁攀爬
+Raft Drifting	木筏漂流
+Tree Hop	树顶飞跃
+Forest Trail	林道远足
+Lake Swim	湖中游泳
+Rocky Waters	崎岖水域
+Tree Balance	树顶平衡
+Spike Trap	尖刺陷阱
+Heat Trap	灼热陷阱
+Water Trap	激流陷阱
+Freezing Trap	冰冻陷阱
+Boulder Trap	巨石陷阱
+Runic Trail	遗迹远足
+Sweltering Pools	闷热池水
+Spike Jump	尖刺跳跃
+A Lovely Jog	舒缓慢跑
+Raft Building	木筏建造
+Pipe Crawl	管道爬行
+Tree Hang	树木悬挂
+Cave Maze	洞窟迷宫
+Ocean Drifting	海上漂流
+Water Jump	激流跳跃
+Frozen Lake Crossing	穿越冻湖
+Ice Jump	冰川跳跃
+Lava Jump	岩浆跳跃
+Boulder Move	巨石挪动
+Dragon Fight	斗龙
+Waterfall	瀑布
+Lava Waterfall Dodge	岩浆瀑布躲避
+Ocean Rafting	海洋漂流
+Pipe Maze	坑道迷宫
+Pit Maze	管道迷宫
+Forest Maze	寒冰迷宫
+Water Maze	激流迷宫
+Frozen Maze	森林迷宫
+Boulder Balance	巨石平衡
+Forest Jog	森林漫步
+Rune Crawl	符文匍匐
+Monkey Trail	猿猴远足
+Cave Waters	洞窟水域
+Balance Trap	平衡陷阱
+Cave Trap	洞窟陷阱
+Rope Trap	结绳陷阱
+Burning Trap	燃烧陷阱
+Ice Trap	冰霜陷阱
+Waterfall Climb	瀑布攀爬
+Rooftop Climb	屋顶攀爬
+Forest Climb	森林攀爬
+Freezing Climb	冰冻攀爬
+Gap Climb	沟壑攀爬
+Freezing Rafting	冰冻漂流
+Lava Trail	熔岩远足
+Mountain Trail	峻岭远足
+Waterfall Crossing	穿越瀑布
+Water Dive	激流俯冲

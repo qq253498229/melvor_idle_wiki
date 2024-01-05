@@ -1,5 +1,7 @@
 = 流水之神地牢-指南
 
+https://wiki.melvoridle.com/w/Water_God_Dungeon/Guide[原文地址,window=_blank]
+
 == 为什么刷流水之神地牢?
 
 * 商店中的博学多识技能 - 大大加快符文锻造和草药学。

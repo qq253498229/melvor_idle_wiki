@@ -319,7 +319,7 @@
     <a class="nav-link" href="火焰之神地牢-指南.html">火焰之神地牢-指南</a>
   </li>
   <li class="nav-item is-current-page" data-depth="2">
-    <a class="nav-link" href="遁入迷雾.html">遁入迷雾</a>
+    <a class="nav-link" href="遁入迷雾.html">遁入迷雾(ing)</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="冒险模式-指南.html">冒险模式-指南</a>
@@ -385,19 +385,19 @@
     <span class="version">1.0.0</span>
   </div>
   <ul class="components">
-    <li class="component">
-      <a class="title" href="../../../le/1.0.0/index.html">最后纪元</a>
-      <ul class="versions">
-        <li class="version is-latest">
-          <a href="../../../le/1.0.0/index.html">1.0.0</a>
-        </li>
-      </ul>
-    </li>
     <li class="component is-current">
       <a class="title" href="../index.html">梅尔沃放置</a>
       <ul class="versions">
         <li class="version is-current is-latest">
           <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../le/1.0.0/index.html">最后纪元</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../le/1.0.0/index.html">1.0.0</a>
         </li>
       </ul>
     </li>
@@ -414,10 +414,10 @@
   <ul>
     <li><a href="../index.html">梅尔沃放置</a></li>
     <li>指南(ing)</li>
-    <li><a href="遁入迷雾.html">遁入迷雾</a></li>
+    <li><a href="遁入迷雾.html">遁入迷雾(ing)</a></li>
   </ul>
 </nav>
-<div class="edit-this-page"><a href="file:///Users/wangbin/src/game/melvor_idle_wiki/melvor/modules/ROOT/pages/指南/遁入迷雾.adoc">Edit this Page</a></div>
+<div class="edit-this-page"><a href="file:///D:/src/game/melvor_idle_wiki/melvor/modules/ROOT/pages/指南/遁入迷雾.adoc">Edit this Page</a></div>
 </div>
   <div class="content">
 <aside class="toc sidebar" data-title="目录" data-levels="3">
@@ -425,493 +425,779 @@
 </aside>
 <article class="doc">
 <h1 class="page">遁入迷雾</h1>
-<div class="sect1">
-<h2 id="_dungeon_mechanics"><a class="anchor" href="#_dungeon_mechanics"></a>1. Dungeon Mechanics</h2>
+<div id="preamble">
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_afflicted_monsters"><a class="anchor" href="#_afflicted_monsters"></a>1.1. Afflicted Monsters</h3>
 <div class="paragraph">
-<p>The first section of {{ZoneIcon|Into the Mist}} will have the player fight 20 Afflicted versions of random monsters from {{Icon|Combat|nolink=true|Level 165-677}} including Dungeon boss monsters. The only exceptions to this are {{MonsterIcon|Legaran Wurm}}, {{MonsterIcon|Cursed Lich}}, and monsters from {{ZoneIcon|Dark Waters}}, all of which will not appear in this dungeon.</p>
-</div>
-<div class="paragraph">
-<p>Afflicted monsters have normal stats and special attacks, but have an added +20% [[Damage Reduction]] and a chance to apply the {{Icon|Affliction|ext=svg}} debuff.</p>
-</div>
-<div class="paragraph">
-<p>Area Effects from [[Slayer Areas]] are not present when fighting the Afflicted versions of {{Skill|Slayer}} monsters.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_the_final_boss"><a class="anchor" href="#_the_final_boss"></a>1.2. The Final Boss</h3>
-<div class="paragraph">
-<p>After defeating 20 Afflicted monsters, the player must defeat three boss phases. Each phase uses a specific combat style and can only be damaged if the player is using the same style. This means that purchasing the {{UpgradeIcon|Dungeon Equipment Swapping}} upgrade from the {{Icon|Shop}} is mandatory for completing this dungeon.</p>
-</div>
-<div class="paragraph">
-<p>Before each phase, combat will be paused to allow the player a chance to read over the boss&#8217;s special abilities and change their equipment set. This means, for example, that you do not need to own three separate copies of {{ItemIcon|Fury of the Elemental Zodiacs}}, as you will have time to swap it between each equipment set. Once players are ready, they start the phase by clicking a button.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_affliction"><a class="anchor" href="#_affliction"></a>1.3. Affliction</h3>
-<div class="paragraph">
-<p>Afflicted Monsters and all three final boss phases can apply a special status effect called {{Icon|Affliction|ext=svg}} when they complete an attack. Each attack or special attack that the enemy uses, regardless of whether the attack hits or misses the player, has a 70% chance of applying a stack of Affliction, up to a maximum of 50 stacks. Special attacks that hit more than once will only apply a single stack.</p>
-</div>
-<div class="paragraph">
-<p>For each stack of Affliction, the player&#8217;s max {{Skill|Hitpoints}} are reduced by 1% up to 50 stacks (50% max HP). Critically, this will also impact the player&#8217;s {{UpgradeIcon|Auto Eat}} threshold, making each attack successively more dangerous.</p>
-</div>
-<div class="paragraph">
-<p>Affliction stacks are reset after the monster is defeated, or if the player leaves combat or dies.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_manual_eating"><a class="anchor" href="#_manual_eating"></a>1.4. Manual Eating</h3>
-<div class="paragraph">
-<p>{{ZoneIcon|Into the Mist}} is the first dungeon in the game that typically requires manually eating food. While there are ways to avoid manual eating prior to first completion, the player should prioritize completing the dungeon as soon as possible to get the [[Combat Passive Slot]].</p>
-</div>
-<div class="paragraph">
-<p>For all phases of the dungeon, the player can survive by manually eating food as long as the enemy&#8217;s max hit does not exceed the player&#8217;s max {{Skill|Hitpoints}}.</p>
-</div>
-<div class="paragraph">
-<p>It is important to note that this dungeon only needs to be completed once, so the strategy is simply not dying, rather than a speedy completion. It is far more important for the player to ensure they have enough {{Skill|Hitpoints|HP}} to survive an attack than not resetting their attack through manual eating. The following are four different methods to eat food:
-# '''{{UpgradeIcon|Auto Eat}}''' — Have Auto Eat heal you without interrupting attacks. No player input!
-# '''Eat after attacks''' — Wait for your attack to finish before eating. Usually after every attack.
-# '''Hold Eat''' — Click and hold the Food button to continuously eat food.
-# '''Spam Eat''' ''(PC players only)'' — Click Food button once, press the Tab key once, then Press Shift+Tab once to select the Food button. Now hold down the Space key to eat faster than simply holding down the button. Clicking anywhere else will undo this.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_rewards"><a class="anchor" href="#_rewards"></a>1.5. Rewards</h3>
-<div class="paragraph">
-<p>Completing {{ZoneIcon|Into the Mist}} will permanently add {{ZoneIcon|Dark Waters}} monsters to the [[Slayer#Master|Master]] tier of {{Skill|Slayer}} Tasks. These monsters all have specific weaknesses and heavily punish the player for using the wrong combat style against them, making it far more difficult to use {{UpgradeIcon|Auto Slayer}} to fulfill the 40 task requirement for unlocking {{ItemIcon|Slayer Gear Upgrade Kit (Master)}}. If desired, {{ZoneIcon|Perilous Peaks}} Master Tasks can be completed before ITM is finished, although this is not required.</p>
-</div>
-<div class="paragraph">
-<p>Completing {{ZoneIcon|Into the Mist}} also allows the player to use the [[Combat Passive Slot|Passive equipment slot]]. {{PetIcon|Pablo}} is obtained by completing the dungeon 5 separate times.</p>
-</div>
+<p><a href="https://wiki.melvoridle.com/w/Into_the_Mist/Guide" target="_blank" rel="noopener">原文地址</a></p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_stats_and_buffs"><a class="anchor" href="#_stats_and_buffs"></a>2. Stats and Buffs</h2>
+<h2 id="_副本机制"><a class="anchor" href="#_副本机制"></a>1. 副本机制</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_minimum_requirements"><a class="anchor" href="#_minimum_requirements"></a>2.1. Minimum Requirements</h3>
+<h3 id="_痛苦的怪物"><a class="anchor" href="#_痛苦的怪物"></a>1.1. 痛苦的怪物</h3>
 <div class="paragraph">
-<p>The only true requirement to complete this dungeon is {{SkillReq|Slayer|90}} and enough {{Skill|Hitpoints|HP}} and [[Damage Reduction]] to not be killed instantly.</p>
+<p>遁入迷雾的第一部分将让玩家与20个痛苦版本的165-677级随机怪物战斗，其中包括副本首领怪物。
+唯一的例外是<strong>拉格朗地龙</strong>、<strong>诅咒巫妖</strong>和<strong>幽暗水域</strong>的怪物，所有这些都不会出现在副本中。</p>
 </div>
 <div class="paragraph">
-<p>The '''recommended''' levels to complete this dungeon are roughly {{SkillReq|Attack|85}}, {{SkillReq|Strength|85}}, {{SkillReq|Defence|85}}, {{Skill|Hitpoints|nolink=true|HP|qty=950}}, {{SkillReq|Ranged|85}}, {{SkillReq|Magic|85}}, {{SkillReq|Prayer|95}}, it is possible for a player to complete the dungeon roughly 10 levels lower in each skill, so if any of your stats are lagging behind, it&#8217;s not the end of the world.</p>
+<p>痛苦的怪物有正常的属性和特殊攻击，但增加了+20%<strong>伤害减免</strong>，并有机会应用<strong>痛苦</strong>减伤。</p>
+</div>
+<div class="paragraph">
+<p>与痛苦版本的<strong>屠杀者</strong>怪物战斗时，<strong>屠杀者区域</strong>的区域效果不存在。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_consumables"><a class="anchor" href="#_consumables"></a>2.2. Consumables</h3>
+<h3 id="_最终boss"><a class="anchor" href="#_最终boss"></a>1.2. 最终Boss</h3>
 <div class="paragraph">
-<p><strong>Food:
-<strong>{{ItemIcon|Whale}} or similar. You want a food item that heals for a large amount all at once, so that one click heals you for the vast majority of your HP, no matter what.
-*Potions:
-</strong>{{Icon|Diamond Luck Potion|Diamond Luck Potions}} for the entire dungeon.
-*Summoning Tablets:
-<strong>{{ItemIcon|Dragon}} and {{ItemIcon|Minotaur}}, {{ItemIcon|Centaur}}, or {{ItemIcon|Witch}}.
-*Prayers:
-</strong>These will be outlined on a case-by-case basis for each Boss phase below.
-<strong>{{PrayerIcon|Protect Item}} will not be recommended so as to not plan for failure. There are many ways to ensure you do not die, and losing the power of one of your prayers can actually increase your chance of death.
-*Consumable Slot:
-</strong>{{ItemIcon|Whetstone}}
-*</strong>{{ItemIcon|Wizard&#8217;s Scroll}} - These can be skipped as they don&#8217;t give any DPS benefit
-*'''{{Icon|Diamond Luck Potion|Diamond Luck Potions}} and {{ItemIcon|Dragon|Dragon Tablets}} are the most important buffs for this dungeon''', the potion will drastically increase the amount of times you actually hit the enemy, and the tablets add a lot of extra damage with their own attacks, buff your damage and accuracy, and the burn effect of Dragons can help getting the bosses HP down quickly so you spend less time at high stacks of affliction.</p>
+<p>在击败20个痛苦的怪物后，玩家必须击败三个boss阶段。
+每个阶段都使用特定的战斗风格，只有当玩家使用相同的风格时才能被损坏。
+这意味着必须从<strong>商店</strong>购买<strong>副本装备交换</strong>升级才能完成这个副本。</p>
+</div>
+<div class="paragraph">
+<p>在每个阶段之前，战斗都会暂停，让玩家有机会阅读BOSS的特殊能力并更换他们的装备。
+这意味着，例如，你不需要拥有三个单独的副本<strong>元素圣斗士之怒</strong>，因为你有时间在每个装备集之间交换它。
+一旦玩家准备好了，他们点击一个按钮开始这个阶段。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_agility"><a class="anchor" href="#_agility"></a>2.3. Agility</h3>
+<h3 id="_痛苦"><a class="anchor" href="#_痛苦"></a>1.3. 痛苦</h3>
 <div class="paragraph">
-<p>While agility helps provide useful combat bonuses, it mostly helps lower the floor of the HP level you need to attempt ITM. Typically, switching agility just for ITM is not super important.</p>
+<p>痛苦的怪物和所有三个最后的BOSS阶段可以在他们完成攻击时应用一种特殊的状态效果，称为“痛苦”。
+敌人使用的每一次攻击或特殊攻击，无论攻击是否命中或未命中玩家，都有70%的机会施加一堆痛苦，最多50堆。
+命中一次以上的特殊攻击将只应用一个堆栈。</p>
 </div>
 <div class="paragraph">
-<p>{| class="wikitable"
-! Tier !! Obstacle !! Reason
-|-
-! 1
-| Any
-|-
-! 2
-| Any
-|-
-! 3
-| {{AgilityIcon|Pipe Climb}}
-| Only obstacle that provides a combat bonus.
-|-
-! 4
-| {{AgilityIcon|Coal Stones}}
-| No negative bonuses
-|-
-! 5
-| {{AgilityIcon|Cliff Balance}}
-| Be sure to remember the HP increase in your HP/DR damage calculations.
-|-
-! 6
-| {{AgilityIcon|Rocky Waters}}
-| Lake Swim is typically more useful if you are higher level, where the HP increase is proportionally less effective.
-|-
-! rowspan="2" | 7
-| {{AgilityIcon|Boulder Trap}}
-| rowspan="2" | No negative damage modifiers.
-|-
-| {{AgilityIcon|Water Trap}}
-|-
-! 8
-| {{AgilityIcon|Raft Building}}
-| Extra damage and HP.
-|-
-! rowspan="2" | 9
-| {{AgilityIcon|Ice Jump}}
-| rowspan="2" | Ice Jump is typically the only obstacle used on this tier, there&#8217;s really no reason to stop using it now.
-|-
-| {{AgilityIcon|Frozen Lake Crossing}}
-|-
-! rowspan="2" | 10
-| {{AgilityIcon|Lava Waterfall Dodge}}
-| rowspan="2" | Changing this obstacle from Lava Waterfall Dodge is expensive, and usually not really worth it.
-|-
-| {{AgilityIcon|Ocean Rafting}}
-|-
-! P
-| {{AgilityIcon|Pillar of Combat}}
-| Pillar of Combat is the only DPS-boosting pillar, but it is not necessary to use if you already have a different Pillar as its bonuses are not particularly helpful for this dungeon.
-|}</p>
+<p>每叠加一次痛苦，玩家的最大生命值减少1%，最多50次叠加（50%最大生命值）。
+至关重要的是，这也会影响玩家的自动进食阈值，使每次攻击依次变得更加危险。</p>
+</div>
+<div class="paragraph">
+<p>怪物被击败后，或者玩家离开战斗或死亡后，痛苦堆叠会重置。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_手动进食"><a class="anchor" href="#_手动进食"></a>1.4. 手动进食</h3>
+<div class="paragraph">
+<p><strong>遁入迷雾</strong> 是游戏中第一个需要手动吃食物的副本。
+虽然有一些方法可以避免在第一次完成之前手动进食，但玩家应该优先完成副本，尽快获得 <strong>战斗被动槽</strong> 。</p>
+</div>
+<div class="paragraph">
+<p>对于副本的所有阶段，玩家可以通过手动吃食物生存，只要敌人的最大命中不超过玩家的最大<strong>生命值</strong>。</p>
+</div>
+<div class="paragraph">
+<p>需要注意的是，这个副本只需要完成一次，所以策略根本不是死亡，而是快速完成。
+对于玩家来说，确保他们有足够的<strong>生命值</strong>在攻击中生存比不通过手动进食重置攻击更重要。以下是四种不同的食物吃法：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>自动进食</strong> - 让自动进食在不中断攻击的情况下治愈你。没有玩家输入！</p>
+</li>
+<li>
+<p><strong>攻击后进食</strong> - 等待攻击结束后再吃。通常在每次攻击后。</p>
+</li>
+<li>
+<p><strong>连续进食</strong> - 点击并按住食物按钮，连续吃食物。</p>
+</li>
+<li>
+<p><strong>Spam Eat</strong> <em>（仅限PC玩家）</em> - 单击食物按钮一次，按Tab键一次，然后按Shift+Tab键一次以选择食物按钮。现在，按住空格键比简单地按住按钮吃得更快。单击其他位置将撤消此操作。</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_奖励"><a class="anchor" href="#_奖励"></a>1.5. 奖励</h3>
+<div class="paragraph">
+<p>完成<strong>遁入迷雾</strong>将永久将<strong>幽暗水域</strong>怪物添加到<strong>屠杀者</strong>任务的<strong>大师级</strong>。
+这些怪物都有特定的弱点，并因玩家使用错误的战斗风格来对付他们而受到严厉惩罚，这使得使用<strong>自动屠杀者</strong>来满足解锁<strong>屠杀者装备升级套件（大师）</strong>的40任务要求变得更加困难。
+如果需要，<strong>险恶山脉</strong>主任务可以在ITM完成之前完成，尽管这不是必需的。</p>
+</div>
+<div class="paragraph">
+<p>完成<strong>遁入迷雾</strong>还允许玩家使用<strong>被动装备插槽</strong><strong>巴勃罗</strong>是通过完成副本5次单独获得的。</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_fight_details"><a class="anchor" href="#_fight_details"></a>3. Fight Details</h2>
+<h2 id="_统计和缓冲"><a class="anchor" href="#_统计和缓冲"></a>2. 统计和缓冲</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_afflicted_monsters_2"><a class="anchor" href="#_afflicted_monsters_2"></a>3.1. Afflicted Monsters</h3>
+<h3 id="_最低要求"><a class="anchor" href="#_最低要求"></a>2.1. 最低要求</h3>
 <div class="paragraph">
-<p>In general, waves 1-20 are best completed with your best [[Magic#Magic_Equipment_Stats|Magic gear]] and [[Magic#Ancient_Magicks|Ancient Magicks]] or by actively switching to take advantage of [[Combat Triangle]] bonuses. Typically, these monsters are not very dangerous, swap to the correct combat style, and the monster falls over.</p>
+<p>完成这个副本的唯一真正要求是<strong>屠杀者90级</strong>和足够的<strong>生命值</strong>和<strong>伤害减免</strong>不会被立即杀死。</p>
 </div>
 <div class="paragraph">
-<p>It&#8217;s highly recommended that once you reach the final boss, you take the time to calculate the DR values and maximum hits per attack of each phase.</p>
+<p>完成这个副本的<strong>推荐</strong>等级大致为<strong>攻击85级</strong>，<strong>力量85级</strong>、<strong>防御85级</strong>和<strong>950生命值</strong>、<strong>远程85级</strong>以及<strong>魔法85级</strong>或<strong>祝祭95级</strong>，
+玩家完成副本的每项技能都有可能降低10级，所以如果你的任何数据落后，那就不是世界末日。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_notes_for_all_boss_phases"><a class="anchor" href="#_notes_for_all_boss_phases"></a>3.2. Notes for all Boss Phases</h3>
-<div class="paragraph">
-<p>It is recommended to make a notecard with your effective auto-eat threshhold at various stages of Affliction build-up, typically every 10 stacks or so. This means write down what 40% of your HP is at 90%, 80%, 70%, 60%, 50% Maximum HP, then write down or pay attention to the maximum damage values of each of the bosses attacks so you can make more informed decisions than the general advice given below.</p>
-</div>
-<div class="paragraph">
-<p>If in doubt at any time, try to eat immediately after one of your attacks finishes, don&#8217;t rely too heavily on this, as resetting your attack also removes any chance of using special attacks on the next attack.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_mysterious_figure_phase_1"><a class="anchor" href="#_mysterious_figure_phase_1"></a>4. Mysterious Figure - Phase 1</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>{{Equipment/Recommended
-|style=Melee
-|helm1=!{{ItemIcon|Ragnar God Helmet|notext=true}} {{ItemIcon|Terran God Helmet|God Helmets}}
-|helm2=(G) Ancient Helmet
-|helm3=(G) Dragon Helmet
-|neck1=Fury of the Elemental Zodiacs
-|neck2=Elite Amulet of Defence
-|neck3=Elite Amulet of Glory
-|cape1=Ancient Infernal Cape
-|cape2=Infernal Cape
-|cape3=Maximum Skillcape
-|body1=!{{ItemIcon|Ragnar God Platebody|notext=true}} {{ItemIcon|Terran God Platebody|God Platebodies}}
-|body2=(G) Ancient Platebody
-|body3=(G) Dragon Platebody
-|legs1=!{{ItemIcon|Ragnar God Platelegs|notext=true}} {{ItemIcon|Terran God Platelegs|God Platelegs}}
-|legs2=(G) Ancient Platelegs
-|legs3=(G) Dragon Platelegs
-|weapon1=Infernal Claw
-|weapon2=Darksteel Dagger
-|weapon3=Sunset Rapier
-|shield1=Dragonfire Shield
-|shield2=Earth Layered Shield
-|shield3=(G) Dragon Shield
-|gloves1=Ragnar God Gloves
-|gloves2=Terran God Gloves
-|gloves3=Paladin Gloves
-|boots1=Ragnar God Boots
-|boots2=Terran God Boots
-|boots3=(G) Dragon Boots
-|ring1=Ring of Blade Echoes
-|ring2=Fighter Ring
-|ring3=Gold Sapphire Ring
-|gem1=Agile Gem
-|gem2=Accuracy Gem
-|gem3=Evasion Gem
-}}</p>
-</div>
-<div class="paragraph">
-<p>{{PrayerIcon|Protect from Melee}} and {{PrayerIcon|Battleheart}} or the highest level melee prayer you have available. {{PrayerIcon|Protect from Melee||Protect}} is important here, as it sets the boss&#8217;s chance to hit to 20%, reducing the chance of healing when using '''Reap and Return''' significantly. If possible, swapping {{PrayerIcon|Protect from Melee||Protect}} to {{PrayerIcon|Piety}} when the boss is using any other attack can help you squeeze in a little extra damage.</p>
-</div>
-<div class="paragraph">
-<p>The choice to use 1h weapons here is important, as their attack interval is low enough to drop stacks of Mark of Death easily. {{ItemIcon|Terran Godsword}} and {{ItemIcon|Ragnar Godsword}} ({{ItemIcon|Terran Godsword|notext=true}} &gt; {{ItemIcon|Ragnar Godsword|notext=true}}) are both very good and may be able to kill the boss faster depending on your specific stats, but they have a slow attack interval and will generally require you to pay more attention to when you eat.</p>
-</div>
-<div class="paragraph">
-<p>{{ItemIcon|Ultima Godsword}} is a fantastic weapon that circumvents the drawbacks of a 2h weapon by doing a ridiculous amount of damage. If owned, this weapon should be used, however, it is not necessary or recommended as the weapon can be quite difficult to obtain. Do not use any other equipment that provides a special attack ({{ItemIcon|Ring of Blade Echoes}}) as they will ruin your damage potential by lowering the chance of using one of the Ultima special attacks.</p>
-</div>
-<div class="sect2">
-<h3 id="_phase_1_abilities_and_eating_methods"><a class="anchor" href="#_phase_1_abilities_and_eating_methods"></a>4.1. Phase 1: Abilities and Eating Methods</h3>
+<h3 id="_消耗品"><a class="anchor" href="#_消耗品"></a>2.2. 消耗品</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>'''Mark of Death''': Typically not dangerous, you want to complete an attack as soon as possible after this attack hits you. Failing to remove the stack of Mark of Death before the next attack hits you massively complicates things.</p>
+<p>食物：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>鲸鱼</strong> 或类似的东西。你需要一种食物，它可以一次治愈大量的生命值，这样无论发生什么，只要点击一下就能治愈你的绝大多数生命值。</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
-<p>'''Cursed Edge''': Dangerous at medium stacks of affliction, heal to full if this attack deals more than your auto-eat threshold. NOT dangerous if the attack deals at least 60% of your total HP because each hit will cause your auto-eat to set you to at least 80% HP.</p>
+<p>药剂：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>钻石运势药水</strong> 适用于整个副本。</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
-<p>'''Reap and Return''': Dangerous at high stacks of affliction, if in doubt, hold eat to avoid death. NOT dangerous if the attack deals at least 60% of your total HP</p>
+<p>召唤石板：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>龙</strong> 和 <strong>牛头人</strong>、<strong>半人马</strong> 或 <strong>女巫</strong>。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>祝祭：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>以下将针对每个Boss阶段逐一概述这些内容。</p>
+</li>
+<li>
+<p>不建议使用<strong>防御相关祝祭</strong>，以免发生故障。有很多方法可以确保你不会死，失去其中一个祝祭的效果实际上会增加你的死亡几率。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>可消费插槽：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>磨刀石</strong></p>
+</li>
+<li>
+<p><strong>巫师卷轴</strong> - 可以跳过这些卷轴，因为它们不会给DPS带来提升</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>钻石运势药水</strong> 和 <strong>龙石板</strong> <strong>是这个副本最重要的增益</strong>，药剂会大大增加你实际打击敌人的次数，石板会通过自己的攻击增加很多额外伤害，增加你的伤害和精度，龙的燃烧效果可以帮助你快速降低BOSS的生命值，这样你就可以减少在高强度痛苦中花费的时间。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_灵巧"><a class="anchor" href="#_灵巧"></a>2.3. 灵巧</h3>
+<div class="paragraph">
+<p>虽然灵巧有助于提供有用的战斗奖励，但它主要有助于降低尝试遁入迷雾所需的生命值。通常，仅为遁入迷雾切换灵巧并不十分重要。</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">级别</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">障碍</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">理由</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">任意</p></td>
+<td class="tableblock halign-left valign-top" rowspan="2"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">任意</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">管道攀爬</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">唯一提供战斗加成的障碍物。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">煤炭阵</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">没有负奖金</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">岩壁平衡</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">一定要记住你的生命值/伤害减免伤害计算中的生命值增加。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">崎岖水域</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lake Swim通常在你的等级更高的情况下更有用，因为你的生命值增加的效果会相应降低。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">巨石陷阱</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">没有负面伤害修正。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">激流陷阱</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">木筏建造</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">额外伤害和生命值。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">冰川跳跃</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">冰霜跳跃通常是这一层上使用的唯一障碍，现在真的没有理由停止使用它。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">穿越冻湖</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">熔岩瀑布躲避</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock">从熔岩瀑布躲避改变这个障碍物是昂贵的，通常并不值得。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">海洋漂流</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">被动</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">战斗灵巧柱</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">战斗灵巧柱是唯一的DPS灵巧柱，但如果你已经有了不同的灵巧柱，就没有必要使用它，因为它的奖金对这个副本没有特别的帮助。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_战斗细节"><a class="anchor" href="#_战斗细节"></a>3. 战斗细节</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_痛苦的怪物_2"><a class="anchor" href="#_痛苦的怪物_2"></a>3.1. 痛苦的怪物</h3>
+<div class="paragraph">
+<p>一般来说，第1-20波最好使用您最好的<strong>魔法装备</strong>和<strong>古代魔法</strong>完成，或者主动切换以利用<strong>战斗三角</strong>奖金。
+通常，这些怪物不是很危险，换成正确的战斗风格，怪物就会摔倒。</p>
+</div>
+<div class="paragraph">
+<p>强烈建议您在到达最终BOSS后，花时间计算每个阶段的伤害减免值和每次攻击的最大命中率。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_所有boss阶段的注意事项"><a class="anchor" href="#_所有boss阶段的注意事项"></a>3.2. 所有Boss阶段的注意事项</h3>
+<div class="paragraph">
+<p>建议在痛苦积累的各个阶段，通常每10堆左右，制作一张带有有效自动进食阈值的笔记卡。
+这意味着在90%、80%、70%、60%、50%的最大生命值下，记下你40%的生命值，然后记下或注意每个boss攻击的最大伤害值，这样你就可以做出比下面给出的一般建议更明智的决定。</p>
+</div>
+<div class="paragraph">
+<p>如果在任何时候有疑问，请尝试在一次攻击结束后立即进食，不要过于依赖这一点，因为重置攻击也会消除在下一次攻击中使用特殊攻击的机会。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_神秘人物_第一阶段"><a class="anchor" href="#_神秘人物_第一阶段"></a>4. 神秘人物-第一阶段</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">插槽</p></td>
+<td class="tableblock halign-center valign-middle" colspan="3"><p class="tableblock">物品（最有效 → 最无效）</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">头盔</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">神盔</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">古代头盔</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">龙之盔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">护甲</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">神之护甲</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">古代护甲</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">龙之护甲</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">护腿</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">神之护腿</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">古代护腿(镀金)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">龙之护腿(镀金)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">靴子</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">拉格纳神靴子</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">特兰神灵靴子</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">龙之靴子(镀金)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">手套</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">拉格纳神手套</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">特兰神灵手套</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">圣骑士手套</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">斗篷</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">炼狱斗篷</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">炼狱斗篷</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">最大技能斗篷</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">颈部</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">元素圣斗士之怒</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">精英防御护符</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">精英荣耀护符</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">戒指</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">刀锋回响之戒</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">战士之戒</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">金蓝宝石戒指</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">宝石</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">敏捷宝石</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">精准宝石</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">回避宝石</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">武器</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">炼狱之爪</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">暗钢匕首</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">落日刺剑</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">盾牌</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">龙焰盾牌</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">地层盾牌</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">龙盾(镀金)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Protect from Melee</strong> 和 <strong>Battleheart</strong> 或你现有的最高等级近战祝祭。<strong>Protect from Melee</strong> 在这里很重要，因为它将BOSS的命中率设定为20%，显著降低了使用*Reap and Return* 时恢复生命的几率。
+如果可能的话，当BOSS使用其他攻击时，将*Protect from Melee*替换为*Piety*可以帮助你额外挤出一些伤害。</p>
+</div>
+<div class="paragraph">
+<p>在这里选择使用1小时武器是很重要的，因为它们的攻击间隔足够低，可以轻松地放下死亡标记。<strong>特兰神剑</strong> 和 <strong>拉格纳神剑</strong> (<strong>特兰神剑 &gt; 拉格纳神剑</strong>) 都非常出色，可能能够更快地杀死BOSS，具体取决于你的特定属性，但它们的攻击间隔较慢，通常需要你更加注意吃饭的时间。</p>
+</div>
+<div class="paragraph">
+<p>《Ultima Godsword》是一个出色的武器，通过造成可观的伤害量来规避2h武器的缺点。
+如果拥有，这把武器应该被使用，然而，这不是必要或推荐的，因为这把武器可能很难获得。
+不要使用任何其他提供特殊攻击的设备（<strong>刀锋回响之环</strong>），因为它们会降低使用Ultima特殊攻击的机会，从而破坏你的攻击潜力。</p>
+</div>
+<div class="sect2">
+<h3 id="_第1阶段能力和进食方法"><a class="anchor" href="#_第1阶段能力和进食方法"></a>4.1. 第1阶段：能力和进食方法</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>死亡标记</strong>：通常不危险，你希望在这次攻击击中你后尽快完成一次攻击。
+未能在下一次攻击对你造成大量伤害之前移除那堆死亡标记会使事情变得异常复杂。</p>
+</li>
+<li>
+<p><strong>诅咒之刃</strong>：中等堆叠的痛苦下危险，如果这次攻击造成的伤害超过你的自动进食阈值，则治疗到满血。
+如果攻击造成至少60%的总生命值，则不危险，因为每次攻击都会使你的自动进食设定为至少80%的生命值。
+<strong>收获与回报</strong>：在高堆的痛苦中很危险，如果有疑问，请暂停进食以避免死亡。
+如果攻击造成的伤害至少达到你总生命值的60%，则不危险。</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>This phase is by far the most difficult, it may be prudent to run if you feel you are in danger.</p>
+<p>这个阶段是最困难的，如果你觉得有危险，谨慎行事可能是明智的。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_phase_1_idle"><a class="anchor" href="#_phase_1_idle"></a>4.2. Phase 1: Idle</h3>
-<div class="paragraph">
-<p>&lt;div class="warningbox"&gt;Manually eating while under the effect of Mark of Death can still kill you, do '''NOT''' manually eat if attempting to idle.&lt;/div&gt;</p>
-</div>
-<div class="paragraph">
-<p>To fully idle Phase 1, you will need a weapon that has an interval faster than 2.6 seconds (all weapons above fit this criteria) and enough HP and DR to survive a 600 damage max hit when your HP is reduced by 50%, the below table lists some common HP checkpoints:</p>
-</div>
-<div class="paragraph">
-<p>{| class="wikitable"
-! {{Skill|Attack|Melee}} !! Normal !! with {{ItemIcon|Wasteful Ring}}
-|-
-! {{Skill|Hitpoints|HP|qty=1000}}
-| 67%
-| 63%
-|-
-! {{Skill|Hitpoints|HP|qty=1040}}
-| 66%
-| 61%
-|-
-! {{Skill|Hitpoints|HP|qty=1070}}
-| 65%
-| 60%
-|-
-! {{Skill|Hitpoints|HP|qty=1100}}
-| 64%
-| 59%
-|}</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_mysterious_figure_phase_2"><a class="anchor" href="#_mysterious_figure_phase_2"></a>5. Mysterious Figure - Phase 2</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>{{Equipment/Recommended
-|style=Ranged
-|helm1=Aeris God Helmet
-|helm2=Terran God Helmet
-|helm3=Slayer Cowl (Elite)
-|neck1=Deadeye Amulet
-|neck2=Fury of the Elemental Zodiacs
-|neck3=Elite Amulet of Ranged
-|cape1=Cape of Prat
-|cape2=Ancient Infernal Cape
-|cape3=Maximum Skillcape
-|body1=Aeris God Platebody
-|body2=(U) Ancient D-hide Body
-|body3=(U) Black D-hide Body
-|legs1=Aeris God Platelegs
-|legs2=(U) Ancient D-hide Chaps
-|legs3=(U) Black D-hide Chaps
-|weapon1=Ancient Crossbow
-|weapon2=Slayer&#8217;s Crossbow
-|weapon3=Dragon Crossbow
-|shield1=Scaled Shield
-|shield2=(U) Ancient D-hide Shield
-|shield3=(U) Black D-hide Shield
-|ammo1=Jadestone Bolts
-|ammo2=Diamond Bolts
-|ammo3=Emerald Bolts
-|gloves1=Aeris God Gloves
-|gloves2=(U) Ancient D-hide Vambraces
-|gloves3=(U) Black D-hide Vambraces
-|boots1=Aeris God Boots
-|boots2=Terran God Boots
-|boots3=(G) Dragon Boots
-|ring1=Deadeye Ring
-|ring2=Silver Emerald Ring
-|ring3=Ring of Barrage
-|gem1=Agile Gem
-|gem2=Accuracy Gem
-|gem3=Evasion Gem
-}}</p>
-</div>
-<div class="paragraph">
-<p>{{PrayerIcon|Battleheart}} and {{PrayerIcon|Rigour}} or the highest level Ranged prayers you have available.</p>
-</div>
-<div class="paragraph">
-<p>2h weapons like the {{ItemIcon|Stormsnap}} are generally fine, but they will require you to pay more attention to when you eat as they have less Damage Reduction due to not being able to wear a shield, and being slow and unwieldy for dropping stacks of Mark of Death.</p>
-</div>
-<div class="sect2">
-<h3 id="_phase_2_abilities_and_eating_methods"><a class="anchor" href="#_phase_2_abilities_and_eating_methods"></a>5.1. Phase 2: Abilities and Eating Methods</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>'''Mark of Death''': Typically not dangerous, you want to complete an attack as soon as possible after this attack hits you. Failing to remove the stack of Mark of Death before the next attack hits you massively complicates things.</p>
-</li>
-<li>
-<p>'''Concealed Danger''': Typically not dangerous unless you fail to remove mark of death.</p>
-</li>
-<li>
-<p>'''Shadowstep''': Does no damage, however, if the boss tries to use it twice in a row she will use a Normal Attack instead, her Normal Attack Max hit is quite high, and becomes much more dangerous if you have failed to remove Mark of Death</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>This phase is by far the easiest, so it is not critically important to optimize it perfectly, nearly any setup should have no real problem clearing this phase. Eating during this phase should be almost entirely unnecessary.</p>
-</div>
-<div class="admonitionblock note">
+<h3 id="_阶段_1_挂机"><a class="anchor" href="#_阶段_1_挂机"></a>4.2. 阶段 1: 挂机</h3>
+<div class="admonitionblock warning">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
-At '''exceptionally high''' stacks of affliction, and while under the effect of Mark of Death, it is possible for the boss&#8217;s Normal Attack to deal more damage than your total HP. ''This is only possible if you manually eat and fail to remove the Mark of Death before the attack connects''. If this scenario occurs, you must run to guarantee your survival.
+在死亡标记的影响下手动进食仍然可能杀死你，如果试图挂机，请*不要*手动进食。
 </td>
 </tr>
 </table>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_phase_2_idle"><a class="anchor" href="#_phase_2_idle"></a>5.2. Phase 2: Idle</h3>
 <div class="paragraph">
-<p>&lt;div class="warningbox"&gt;Manually eating while under the effect of Mark of Death can still kill you, do '''NOT''' manually eat if attempting to idle.&lt;/div&gt;</p>
+<p>要完全挂机第1阶段，你需要一个间隔快于2.6秒的武器（所有高于这个标准的武器都符合条件）并且有足够的生命值和伤害减免来承受当你的生命值减少50%时的最大600点伤害，下表列出了一些常见的生命值检查点：</p>
 </div>
-<div class="paragraph">
-<p>To fully idle Phase 2, you will need a weapon that has an interval faster than 3.9 seconds (all ranged weapons fit this criteria by default) and enough HP and DR to survive a 772 damage max hit when your HP is reduced by 50%, the below table lists some common HP checkpoints:</p>
-</div>
-<div class="paragraph">
-<p>{| class="wikitable"
-! {{Skill|Ranged}} !! Normal !! with {{ItemIcon|Wasteful Ring}}
-|-
-! {{Skill|Hitpoints|HP|qty=1000}}
-| 75%
-| 71%
-|-
-! {{Skill|Hitpoints|HP|qty=1040}}
-| 74%
-| 70%
-|-
-! {{Skill|Hitpoints|HP|qty=1070}}
-| 73%
-| 69%
-|-
-! {{Skill|Hitpoints|HP|qty=1100}}
-| 72%
-| 68%
-|}</p>
-</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">近战</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">普通</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">佩戴铺张之戒</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1000HP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">67%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">63%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1040HP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">66%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">61%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1070HP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">65%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">60%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1100HP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">59%</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_ahreniaahrenia_phase_3"><a class="anchor" href="#_ahreniaahrenia_phase_3"></a>6. Ahrenia|Ahrenia - Phase 3</h2>
+<h2 id="_神秘人物_第二阶段"><a class="anchor" href="#_神秘人物_第二阶段"></a>5. 神秘人物 - 第二阶段</h2>
 <div class="sectionbody">
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">头盔</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">阿里亚斯神头盔</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">特兰神头盔</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">屠杀者面罩（精英）</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">护甲</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">阿里亚斯神板护甲</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">古代龙皮护甲(升级)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">黑色龙皮护甲(升级)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">护腿</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">阿里亚斯神板护腿</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">古代龙皮护腿(升级)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">黑色龙皮护腿(升级)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">靴子</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">阿里亚斯神靴子</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">特兰神靴子</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">龙靴子(镀金)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">手套</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">阿里亚斯神手套</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">古代龙皮护腕(升级)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">黑色龙皮护腕(升级)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">斗篷</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">普拉特角</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">炼狱斗篷</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">最大技能斗篷</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">项链</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">死眼护符</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">元素圣斗士之怒</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">精英远程护符</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">戒指</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">死眼戒指</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">银绿戒指</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">屏障之环</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">宝石</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">敏捷宝石</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">精准宝石</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">回避宝石</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">武器</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">古代的十字弓</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">屠杀者的十字弓</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">龙之十字弓</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">盾牌</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">鳞片盾牌</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">古代龙皮盾牌(升级)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">黑色龙皮盾牌(升级)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">弹药</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">翡翠螺栓</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">钻石螺栓</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">绿宝石螺栓</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
-<p>{{Equipment/Recommended
-|style=Magic
-|helm1=Glacia God Helmet
-|helm2=Ancient Wizard Hat
-|helm3=!{{ItemIcon|Water Expert Wizard Hat|notext=true}} {{ItemIcon|Air Expert Wizard Hat|Expert Wizard Hat}}
-|neck1=Fury of the Elemental Zodiacs
-|neck2=Elite Amulet of Magic
-|neck3=Elite Amulet of Defence
-|cape1=Skull Cape
-|cape2=Ancient Infernal Cape
-|cape3=Maximum Skillcape
-|body1=Glacia God Platebody
-|body2=Ancient Wizard Robes
-|body3=!{{ItemIcon|Water Expert Wizard Robes|notext=true}} {{ItemIcon|Air Expert Wizard Robes|Expert Wizard Robes}}
-|legs1=Glacia God Platelegs
-|legs2=Ancient Wizard Bottoms
-|legs3=!{{ItemIcon|Water Expert Wizard Bottoms|notext=true}} {{ItemIcon|Air Expert Wizard Bottoms|Expert Wizard Bottoms}}
-|weapon1=!{{ItemIcon|Fire Imbued Wand|notext=true}} {{ItemIcon|Air Imbued Wand|Elemental Imbued Wand}}
-|weapon2=Magic Wand (Powerful)
-|weapon3=Cloudburst Staff
-|shield1=Malevolent Ward Shield
-|shield2=Magicburn Shield
-|shield3=Scaled Shield
-|gloves1=Glacia God Gloves
-|gloves2=Terran God Gloves
-|gloves3=(U) Ancient D-hide Vambraces
-|boots1=Glacia God Boots
-|boots2=Ancient Wizard Boots
-|boots3=!{{ItemIcon|Water Expert Wizard Boots|notext=true}} {{ItemIcon|Air Expert Wizard Boots|Expert Wizard Boots}}
-|ring1=Warlock Ring
-|ring2=Silver Magic Band
-|ring3=Ring of Spirit Power
-|gem1=Agile Gem
-|gem2=Evasion Gem
-|gem3=Accuracy Gem
-}}</p>
-</div>
-<div class="paragraph">
-<p>With {{ItemIcon|Fire Imbued Wand|notext=true}}{{ItemIcon|Air Imbued Wand|Imbued Wands}}:
-*{{Icon|type=spell|Incinerate}}, {{Icon|type=spell|Gust}}, or {{Icon|type=spell|Slicing Winds}}.
-*{{PrayerIcon|Protect from Magic}} and {{PrayerIcon|Stone Skin}}</p>
-</div>
-<div class="paragraph">
-<p>With {{ItemIcon|Cloudburst Staff}}:
-*{{Icon|Water Surge|type=spell}}, and {{Icon|Fury II|type=aurora}}.
-*{{PrayerIcon|Battleheart}} and {{PrayerIcon|Augury}} or the highest level Magic prayers you have available.</p>
-</div>
-<div class="paragraph">
-<p>As this phase is relatively weak, {{ItemIcon|Cloudburst Staff}} under most circumstances should deal enough damage to kill Ahrenia before she becomes a real threat, however, as the phase is relatively simple, it is recommended to use the Ancient Magicks as they will allow you to use {{Icon|Damage Reduction Potion|Damage Reduction Potions}} instead of {{ItemIcon|Diamond Luck Potion IV|Diamond Luck}} as your hits are already guaranteed at 20k+ Accuracy Rating.</p>
+<p><strong>Battleheart</strong> 和 <strong>Rigour</strong> 或您可用的最高级别的远程祝祭。
+像*Stormsnap*这样的2小时武器通常不错，但它们会要求你更加注意吃饭的时间，因为它们由于不能佩戴盾牌而具有较少的伤害减免，并且对于掉落成堆的死亡标记来说又慢又笨拙。</p>
 </div>
 <div class="sect2">
-<h3 id="_phase_3_abilities_and_eating_methods"><a class="anchor" href="#_phase_3_abilities_and_eating_methods"></a>6.1. Phase 3: Abilities and Eating Methods</h3>
+<h3 id="_第二阶段能力和进食方法"><a class="anchor" href="#_第二阶段能力和进食方法"></a>5.1. 第二阶段：能力和进食方法</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>'''Shadow Burst''': Can be dangerous at low stacks of Affliction. Gives the player -1% Accuracy rating when it hits, up to a maximum of 50%. To guarantee 20k+ Accuracy at maximum stacks of this effect, the player must have 33,333 Accuracy Rating.</p>
+<p><strong>死亡标记</strong>：通常不危险，你希望在这次攻击击中你之后尽快完成一次攻击。
+在下一次攻击对你造成大量伤害之前，未能移除那堆死亡标记会使事情变得异常复杂。
+<strong>隐藏危险</strong>：通常没有危险，除非你没有移除死亡标记。</p>
 </li>
 <li>
-<p>'''Into the Mist''': Does no damage. Gives the enemy +10% Damage Reduction each time they are hit, so if using Ancient Magicks, it may be prudent to swap to {{Icon|type=spell|Ignite}} or {{Icon|type=spell|Quake}} to get more effective damage for the duration.</p>
+<p><strong>Shadowstep</strong>：不会造成伤害，但是如果BOSS试图连续使用两次，她会使用普通攻击，她的普通攻击最大命中相当高，如果你未能移除死亡标记，她将变得更加危险。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>这个阶段是迄今为止最简单的，因此完美优化它并不是至关重要的，几乎任何设置都应该没有真正的问题来清除这个阶段。
+在这个阶段，进食应该几乎完全是不必要的。</p>
+</div>
+<div class="paragraph">
+<p>警告：在*异常高的*痛苦堆叠下，并且在死亡标记的影响下，BOSS的普通攻击可能会造成超过你生命值的伤害。<strong>只有在攻击连接之前，你手动食用并未能移除死亡标记，这才可能发生</strong>。
+如果发生这种情况，你必须跑来保证你的生存。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_第二阶段挂机"><a class="anchor" href="#_第二阶段挂机"></a>5.2. 第二阶段：挂机</h3>
+<div class="paragraph">
+<p>警告：在死亡标记的影响下手动进食仍然可能杀死你，如果试图挂机，请*不要*手动进食。</p>
+</div>
+<div class="paragraph">
+<p>要完全挂机第2阶段，你需要一个间隔快于3.9秒的武器（所有远程武器默认都满足这个条件）以及足够的生命值和伤害减免，以在生命值减少50%时承受最大772点伤害的攻击。下表列出了一些常见的生命值检查点：</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">远程</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">普通</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">带有铺张之戒</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1000HP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">75%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">71%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1040HP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">74%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">70%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1070HP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">73%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">69%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1100HP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">72%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">68%</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_阿雷尼亚_第3阶段"><a class="anchor" href="#_阿雷尼亚_第3阶段"></a>6. 阿雷尼亚 - 第3阶段</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">头盔</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">格拉西娅神灵头盔</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">古代巫师帽</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">专家巫师帽</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">护甲</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">格拉西娅神灵护甲</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">古代巫师长袍</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">专家巫师长袍</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">护腿</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">格拉西娅神灵护腿</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">古代巫师下装</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">专家巫师下装</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">靴子</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">格拉西娅神灵靴子</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">古代巫师靴子</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">专家巫师靴子</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">手套</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">格拉西娅神灵手套</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">特兰神灵手套</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">古代龙皮护腕(升级)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">斗篷</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">骷髅斗篷</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">炼狱斗篷</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">最大技能斗篷</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">项链</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">元素圣斗士之怒</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">精英魔法护符</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">精英防御护符</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">名称</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">巫师戒指</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">银魔法带</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">灵魂之力戒指</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">宝石</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">敏捷宝石</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">规避宝石</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">精准宝石</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">武器</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">元素充能魔杖</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">魔法魔杖（强）</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">云爆法杖</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">盾牌</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">恶意防护盾</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">魔法燃烧盾</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">鳞盾</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>使用灌注魔杖：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>焚烧</strong>、<strong>狂风</strong>或<strong>风切</strong>。</p>
 </li>
 <li>
-<p>'''Fallen Light''': Not dangerous.</p>
+<p><strong>保护免受魔法</strong> 和 <strong>石肤</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>使用<strong>云爆法杖</strong>：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>水浪*和*狂怒II</strong>。</p>
+</li>
+<li>
+<p><strong>Battleheart</strong> 和 <strong>Augury</strong> 或你现有的最高等级魔法祝祭。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>由于这个阶段相对较弱，在大多数情况下，云爆法杖应该能够造成足够的伤害，在Ahrenia成为一个真正的威胁之前杀死她。然而，由于这个阶段相对简单，建议使用古代魔法，因为这将允许你使用伤害减免药剂而不是钻石幸运，因为你的命中已经保证在20k+的准确率评级。</p>
+</div>
+<div class="sect2">
+<h3 id="_第三阶段能力和进食方法"><a class="anchor" href="#_第三阶段能力和进食方法"></a>6.1. 第三阶段：能力和进食方法</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>暗影爆发</strong>：在低层痛苦状态下可能很危险。
+命中时，给予玩家-1%的准确率，最高可达50%。
+为了在这种效果的最大堆栈中保证20k+的准确度，玩家必须拥有33,333的准确度评级。
+遁入迷雾：不造成伤害。
+每次敌人被击中时，给予他们+10%的伤害减免，因此，如果使用的是古代魔法，为了在持续时间内获得更有效的伤害，可能明智的做法是切换到*点燃*或*地震*。</p>
+</li>
+<li>
+<p><strong>坠落之光</strong>: 并不危险。</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_phase_3_idle"><a class="anchor" href="#_phase_3_idle"></a>6.2. Phase 3: Idle</h3>
+<h3 id="_第三阶段挂机"><a class="anchor" href="#_第三阶段挂机"></a>6.2. 第三阶段：挂机</h3>
 <div class="paragraph">
-<p>To fully idle Phase 3, you will only need enough HP and DR to survive an 800 damage max hit when your HP is reduced by 50%, the below table lists some common HP checkpoints:</p>
+<p>要完全挂机第3阶段，你只需要有足够的生命值和伤害减免来承受一次最大伤害为800的攻击，当你的生命值减少50%时，下表列出了一些常见的生命值检查点：</p>
 </div>
-<div class="paragraph">
-<p>{| class="wikitable"
-! {{Skill|Magic}} !! Normal !! with {{ItemIcon|Wasteful Ring}}
-|-
-! {{Skill|Hitpoints|HP|qty=1000}}
-| 75%
-| 72%
-|-
-! {{Skill|Hitpoints|HP|qty=1040}}
-| 74%
-| 71%
-|-
-! {{Skill|Hitpoints|HP|qty=1070}}
-| 74%
-| 70%
-|-
-! {{Skill|Hitpoints|HP|qty=1100}}
-| 73%
-| 70%
-|}</p>
-</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">魔法</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">正常</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">佩戴铺张之戒</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1000HP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">75%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">72%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1040HP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">74%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">71%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1070HP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">74%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">70%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1100HP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">73%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">70%</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>

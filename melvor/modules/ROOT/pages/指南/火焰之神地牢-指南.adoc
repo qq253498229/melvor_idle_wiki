@@ -1,5 +1,7 @@
 = 火焰之神地牢-指南
 
+https://wiki.melvoridle.com/w/Fire_God_Dungeon/Guide[原文地址,window=_blank]
+
 == 手动Build
 
 如果你想尽快获得商店技能控制的艺术，你可能需要手动通关火神地牢。

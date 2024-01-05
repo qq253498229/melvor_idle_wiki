@@ -1,5 +1,7 @@
 = 大气之神地牢-指南
 
+https://wiki.melvoridle.com/w/Air_God_Dungeon/Guide[原文地址,window=_blank]
+
 == 为什么刷大气之神地牢?
 
 * 解锁商店中的 永恒疾速技能(-15%制造和弓匠间隔)，大幅度提高制造和弓匠的速度。

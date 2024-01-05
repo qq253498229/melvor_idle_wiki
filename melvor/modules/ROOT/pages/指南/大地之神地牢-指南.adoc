@@ -1,5 +1,7 @@
 = 大地之神地牢-指南
 
+https://wiki.melvoridle.com/w/Earth_God_Dungeon/Guide[原文地址,window=_blank]
+
 == 装备
 
 由于战斗三角，建议用魔法通关地神地牢，因为这里的敌人大多是近人，包括最终的BOSS特兰。

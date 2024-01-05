@@ -1,6 +1,8 @@
 = 炼狱要塞-指南
 :stem:
 
+https://wiki.melvoridle.com/w/Infernal_Stronghold/Guide[原文地址,window=_blank]
+
 == 为什么刷炼狱要塞？
 
 对于炼狱要塞，主要有三个目标：
