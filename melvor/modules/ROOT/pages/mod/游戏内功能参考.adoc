@@ -27,14 +27,14 @@ game.bank.addItemByID(itemID, quantity, logLost, found, ignoreSpace)
 |===
 |属性 |类型 |可选？ |默认值 |描述
 
-|itemID |字符串 |否 | |物品的ID。 \ +
+|itemID |字符串 |否 | |物品的ID。 +
 要查看物品及其ID的完整列表，请参阅：[[物品表]]
 
 |quantity |整数 |否 | |要添加的物品数量。
 
 |logLost |布尔值 |是 |false |如果为`true`，无法放入银行的物品将被记录为丢失
 
-|found |布尔值 |是 |false |确定通过此函数添加的物品是否将包括在完成日志中的该物品的“找到次数”统计数据中。因此，除非将此参数设置为`true`，以这种方式添加的任何物品都不会对玩家的物品完成百分比产生贡献。 \ +
+|found |布尔值 |是 |false |确定通过此函数添加的物品是否将包括在完成日志中的该物品的“找到次数”统计数据中。因此，除非将此参数设置为`true`，以这种方式添加的任何物品都不会对玩家的物品完成百分比产生贡献。 +
 注意：添加*银行槽令牌*时，建议将此参数设置为`true`，否则这可能会导致游戏计算玩家的银行空间量的方式出现问题。
 
 |ignoreSpace |布尔值 |是 |false |如果为`true`，即使银行已满，也将物品添加到银行
@@ -64,7 +64,7 @@ game.bank.removeItemQuantityByID(itemID, quantity, removeItemCharges)
 |===
 |属性 |类型 |可选？ |默认值 |描述
 
-|itemID |字符串 |否 | |物品的ID。 \ +
+|itemID |字符串 |否 | |物品的ID。  +
 要查看物品及其ID的完整列表，请参阅：[[物品表]]
 
 |quantity |整数 |否 | |要删除的物品数量。
@@ -93,6 +93,7 @@ game.bank.removeItemQuantityByID("melvorD:Oak_Logs", 10);
 
 可以使用 _game.currency.add_ 函数来增加玩家当前的货币余额。
 
+[%autowidth]
 [source,javascript]
 ----
 game.<currency>.add(amount)
@@ -100,6 +101,7 @@ game.<currency>.add(amount)
 
 ==== 属性
 
+[%autowidth]
 [source,javascript]
 |===
 |属性 |类型 |可选？ |默认值 |描述
@@ -127,6 +129,7 @@ game.<currency>.remove(amount)
 
 ==== 属性
 
+[%autowidth]
 |===
 |属性 |类型 |可选？ |默认值 |描述
 
@@ -153,6 +156,7 @@ game.<currency>.set(amount)
 
 ==== 属性
 
+[%autowidth]
 |===
 |属性 |类型 |可选？ |默认值 |描述
 
@@ -179,6 +183,7 @@ game.combat.player.addPrayerPoints(amount)
 
 === 属性
 
+[%autowidth]
 |===
 |属性 |类型 |可选？ |默认值 |描述
 
@@ -207,6 +212,7 @@ game.skill.addXP(xp)
 
 === 属性
 
+[%autowidth]
 |===
 |属性 |类型 |可选？ |默认值 |描述
 
@@ -235,10 +241,11 @@ game.skill.addMasteryXP(masteryAction, xp)
 
 === 属性
 
+[%autowidth]
 |===
 |属性 |类型 |可选？ |默认值 |描述
 
-|masteryAction |对象 |否 | |要向其添加精通经验的操作。通过 `game.skill.actions.getObjectByID(id)` 获取，其中 `skill` 应替换为技能的名称（全小写），`id`是操作的ID。 \ +
+|masteryAction |对象 |否 | |要向其添加精通经验的操作。通过 `game.skill.actions.getObjectByID(id)` 获取，其中 `skill` 应替换为技能的名称（全小写），`id`是操作的ID。 +
 可以通过在控制台中输入以下内容来获得操作ID的列表： `console.log(game.skill.actions.allObjects.map((a) => a.id + ' - ' + a.name).join('\n'))`。
 
 |xp |整数 |是 |0 |要添加的经验量。
@@ -270,6 +277,7 @@ game.skill.addMasteryPoolXP(xp)
 
 === 属性
 
+[%autowidth]
 |===
 |属性 |类型 |可选？ |默认值 |描述
 
@@ -296,6 +304,7 @@ game.petManager.unlockPetByID(petID)
 
 === 属性
 
+[%autowidth]
 |===
 |属性 |类型 |可选？ |默认值 |描述
 
@@ -322,10 +331,11 @@ game.summoning.discoverMark(mark)
 
 === 属性
 
+[%autowidth]
 |===
 |属性 |类型 |可选？ |默认值 |描述
 
-|mark |对象 |否 | |要发现的标记。通过 `game.summoning.actions.getObjectByID` (markID)获得，其中 `markID` 是标记的ID。 \ +
+|mark |对象 |否 | |要发现的标记。通过 `game.summoning.actions.getObjectByID` (markID)获得，其中 `markID` 是标记的ID。 +
 可以通过在控制台中输入以下内容来获得标记ID的列表： `console.log(game.summoning.actions.allObjects.map((a) => a.id + ' - ' + a.name).join('\n'))`。
 |===
 
