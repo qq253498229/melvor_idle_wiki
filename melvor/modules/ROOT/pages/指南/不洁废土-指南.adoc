@@ -1,0 +1,211 @@
+= 不洁废土-指南
+
+https://wiki.melvoridle.com/w/Unhallowed_Wasteland/Guide[原文地址,window=_blank]
+
+After completing the T90 weapon grinds, you are ready to face *Unhallowed Wasteland* (UW) - the hardest pre-99 *Slayer* area. +
+To access it, you need to purchase a *Map to the Unhallowed Wasteland*.
+
+The area requires maximizing a different stat than DR.
+All of the monsters here will heal a % of their current HP every 2 attacks, which will massively hinder your DPS regardless of the setup.
+To mitigate this, you need a cumulative 100% Flat Slayer Area Effect Negation.
+
+Here's an example of the gear required for melee:
+
+[%autowidth]
+|===
+|Item |Slot |Slayer Area +
+Effect Negation %
+|Slayer Helmet (Master) |Head |20%
+|Slayer Platebody (Master) |Body |20%
+|Slayer Cowl (Master) |Passive |20%
+|Max Skillcape/Slayer Skillcape |Cape |25%
+|Hunter's Ring |Ring |10%
+|Agility Pillar of Combat |Agility |5%
+2+|Total |100%
+|===
+
+For the other combat styles, you'll be wearing the equivalent Master Slayer armor.
+Note that you cannot ever wear two of the same item, so whichever item you choose to put in the passive slot must be one of the armor pieces not currently equipped in your chest/head slots.
+
+It should be noted that while UW is listed first, _completing the *Impending Darkness Event* will strictly make this grind faster!_ You can complete ID without any of the UW gear sets, and the shields greatly speed up these grinds.
+
+While you are here, you will be working to acquire all of the set bonus gear, dropped from each of the UW monsters:
+
+* *Poison Virulence Gloves*/*Poison Virulence Ring* - Upgrades from *Worm Spike*/*Poison Essence* respectively, dropped by *Legaran Wurm*
+* *Burning Madness Gloves*/*Burning Madness Ring* - Upgrades from *Cursed Hands*/*Burning Essence* respectively, dropped by *Cursed Lich*
+* *Spiked Shell Gloves*/*Spiked Shell Ring* - Upgrades from *Tough Shell*/*Stinging Essence* respectively, dropped by *Spiked Red Claw*
+* *Relentless Fury Gloves*/*Relentless Fury Ring* - Upgrades from *Desecrated Bones*/*Undead Essence* respectively, dropped by *Greater Skeletal Dragon*
+
+== Buffs
+
+=== Agility
+
+[%autowidth]
+|===
+|# |Obstacle |Reason
+|1 |X .2+|
+|2 |X
+|3 |*Agility Pipe Climb* |No particular reason beyond being the only obstacle that grants any combat benefits.
+|4 |*Agility Coal Stones* |No negative modifiers, technically saves some food.
+|5 |*Agility Cliff Balance* |+20 hp. This does make your prayers cost more, but as you're buying your prayer points anyways, the cost increase isn't quite as painful.
+|6 |*Agility Lake Swim* |+3% damage, +1% DR. *Agility Rocky Waters* may help as a first line of defense for surviving if you're mildly undergeared, but will not be considered the default.
+|7 |*Agility Boulder Trap* |No negative combat modifiers.
+|8 |*Agility Spike Jump* |+5% Chance to Double Items. *Agility Pipe Crawl* will be slightly faster, but the negative to slayer coins hurts, especially for Magic sets using the *Cyclops* synergy.
+|9 |*Agility Ice Jump* |This obstacle does everything you want it to.
+|10 |*Agility Lava Waterfall Dodge* |*Agility Ocean Rafting* is technically the best dps option. Lava Waterfall Dodge is recommended slightly above it, as you preserve some of your ammo and runes, earn more coins, and have an easier time swapping to skilling to restock.
+|P |*Agility Pillar of Combat* |Lots of beneficial combat bonuses
+|===
+
+=== Prayer
+
+For Melee, use *Battleheart* and *Piety* or the highest level combat style prayers you have available.
+
+For Ranged, use *Battleheart* and *Rigour* or the highest level combat style prayers you have available.
+
+For Magic, use see the specific monster for suggestions
+
+=== Potions
+
+For all combat styles, use *Diamond Luck Potions*
+
+For Ranged, with *Shockwave*, it is sometimes possible that *Ranged Strength Potion IV* is stronger than Diamond Luck Potions.
+This should never be done without checking Combat Sim for yourself, and should never be done unless the potion is specifically *Ranged Strength Potion IV*, and not any lower mastery.
+
+=== Summoning
+
+For Melee, use *Dragon* and *Minotaur*
+
+For Ranged, use *Dragon* and *Centaur*
+
+For Magic, use *Dragon* and *Witch*
+
+Notably for Magic, using *Cyclops* and *Witch* tablets will earn you significantly more coins at a fairly minimal loss of kills per hour.
+
+Below are some gear suggestions.
+As the final pre-100 combat area, it is assumed that you have access to all buffs.
+However, depending on your specific setup, your optimal gear may change.
+
+== Legaran Wurm
+
+[%autowidth]
+|===
+|Slot 2+|Better to Worse
+|Head |Slayer Helmet (Master) .2+|
+|Body |Slayer Platebody (Master)
+|Leggings |Ragnar God Platelegs |Terran God Platelegs
+|Boots |Ragnar God Boots |Terran God Boots
+|Hands |Ragnar God Gloves |Terran God Gloves
+|Cape |Maximum Skillcape |Slayer Skillcape
+|Passive |Slayer Cowl (Master) |
+|Neck |Fighter Amulet |Fury of the Elemental Zodiacs
+|Ring |Hunter's Ring |
+|Weapon |Tidal Edge |Infernal Claw
+|Offhand |Shield of Melee Power |Dragonfire Shield
+|===
+
+Using the *Dragonfire Shield* instead of the *Shield of Melee Power* does not impact any of your gearing choices, but will be slower.
+
+Legaran Wurms are the main enemy where your *Astrology* bonuses change what equipment you wear.
+With absolutely no combat bonuses from astrology, *Tidal Edge* and *Fighter Amulet* are your best bet.
+With enough stardust spent, *Fury of the Elemental Zodiacs* overtakes Fighter for kills per hour, however, Fighter Amulet will always consume less food for only a minor hit to DPS.
+With even more stardust spent, *Infernal Claw* once again takes the cake, the lemons, and all the loot.
+
+For consumables, Melee has few stipulations, just equip whatever kills the enemy the fastest
+
+* *Diamond Luck Potions*
+* *Battleheart* and *Piety* or *Protect from Ranged* (-14% KPH, -60% food usage)
+* *Minotaur* and *Dragon* tablets
+
+== Cursed Lich
+
+[%autowidth]
+|===
+|Slot 2+|Better to Worse
+|Head |*Slayer Cowl (Master)* .5+|
+|Body |*Slayer Leather Body (Master)*
+|Leggings |*Aeris God Platelegs*
+|Boots |*Aeris God Boots*
+|Hands |*Aeris God Gloves*
+|Cape |*Maximum Skillcape* |*Slayer Skillcape*
+|Passive |*Slayer Wizard Hat (Master)* |
+|Neck |*Deadeye Amulet* |*Fury of the Elemental Zodiacs*
+|Ring |*Hunter's Ring* .2+|
+|Weapon |*Shockwave*
+|Offhand |*Shield of Ranged Power* |*Scaled Shield*
+|===
+
+Using the *Scaled Shield* instead of the *Shield of Ranged Power* does not impact any of your gearing choices, but will be slower.
+
+For consumables, we don't use *Dragon* because Cursed Liches are immune to Burn.
+
+* *Diamond Luck Potions*
+* *Battleheart* and *Rigour* or *Protect from Magic* (-8% KPH, -60% food usage)
+* *Centaur* and from better to worse: *Witch*, or *Cyclops*.
+
+== Spiked Red Claw
+
+[%autowidth]
+|===
+|Slot 2+|Better to Worse
+|Head |Slayer Wizard Hat (Master) .5+|
+|Body |Slayer Wizard Robes (Master)
+|Leggings |Glacia God Platelegs
+|Boots |Glacia God Boots
+|Hands |Glacia God Gloves
+|Cape |Maximum Skillcape |Slayer Skillcape
+|Passive |Slayer Helmet (Master) .3+|
+|Neck |Fury of the Elemental Zodiacs
+|Ring |Hunter's Ring
+|Weapon |Cloudburst Staff |Ocean Song
+|Offhand |Shield of Magic Power |Earth Layered Shield
+|===
+
+The **Cloudburst Staff** is approximately 10% faster at killing Spiked Red Claws, however, it requires the use of **Damage Reduction Potion IV**, and will consume significantly more food, runes, and potions
+
+* **Cloudburst Staff**:
+* **Damage Reduction Potion IV**
+* **Battleheart** and **Augury**
+* **Witch** and **Dragon** tablets or **Witch** and **Cyclops** tablets
+* **Water Surge**, **Decay**, and **Fury II**
+
+The **Ocean Song** build with **Shield of Magic Power** equipped, and both **Leonardo** and **Erran**), requires 1% more DR.
+The **Safeguard** prayer gives you this 1% DR at the lowest cost to DPS. **Stone Skin** is a more expensive alternative if you don't have one of the DR pets
+
+Using the **Earth Layered Shield** instead of the **Shield of Magic Power** allows you to use **Augury** safely, however it is still slower than the Shield of Power.
+
+* **Ocean Song**:
+* **Diamond Luck Potions**
+* **Battleheart** and **Safeguard** or **Stone Skin**
+* **Witch** and **Dragon** tablets or **Witch** and **Cyclops** tablets
+* **Fire Surge**, **Decay**, and **Surge II**
+
+== Greater Skeletal Dragon
+
+[%autowidth]
+|===
+|Slot 2+|Better to Worse
+|Head |**Slayer Wizard Hat (Master)** .5+|
+|Body |**Slayer Wizard Robes (Master)**
+|Leggings |**Glacia God Platelegs**
+|Boots |**Glacia God Boots**
+|Hands |**Glacia God Gloves**
+|Cape |**Maximum Skillcape** |**Slayer Skillcape**
+|Passive |**Slayer Helmet (Master)** .4+|
+|Neck |**Fury of the Elemental Zodiacs**
+|Ring |**Hunter's Ring**
+|Weapon |**Ocean Song**
+|Offhand |**Shield of Magic Power** |**Earth Layered Shield**
+|===
+
+Using the **Earth Layered Shield** instead of the **Shield of Magic Power** does not impact any of your gearing choices, but will be slower.
+
+Greater Dragons are the most dangerous enemy currently in the game as Affliction buildup can result in an unfortunate death.
+This can be mitigated best, like most untimely deaths, by killing the enemy before they kill you.
+'''The most important element to beating Greater Skeletal Dragons is **Protect from Melee** as it massively reduces your chance of death, while ''increasing'' your DPS due to you spending less time stunned.'''
+
+* **Diamond Luck Potions** or **Damage Reduction Potion IV**
+* **Battleheart** and **Protect from Melee**
+* **Witch** and **Dragon** tablets
+* **Fire Surge**, and **Surge II**.
+Don't bother with [[Curses]] because it is immune to them.
+
